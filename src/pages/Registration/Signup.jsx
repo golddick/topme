@@ -78,9 +78,14 @@ function Signup() {
           <div className='Names'>         
           <input type='text' placeholder='First Name' className="fName" />          
           <input type='text' placeholder='Last Name' className="lName"/>
+          
+          </div>
+          <div className='Names'>         
+          <input type='text' placeholder='Email' className="Email" />          
+          <input type='text' placeholder='Username' className="Sname"/>
+          
           </div>
           <div className="Auth">
-          <input type='email' placeholder='Email/Username' className='email'/>
           <input type='password' placeholder='Password'className='psw'  value={password} onChange={handlePasswordChange}/>
           <input type='password' placeholder='Confirm Password' className='cpsw' value={confirmPassword} onChange={handleConfirmPasswordChange}/>
           </div>
@@ -90,7 +95,7 @@ function Signup() {
       {/* {!isPasswordValid && <span style={{ color: 'red' }}>Password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.</span>}
       <br /> */}
           {/* <button disabled={password !== confirmPassword || !isPasswordValid}>Next</button> */}
-          <button >Next</button>
+          <button >SIGN UP</button>
         </form>
         <div className="footer">
         <Footer/>

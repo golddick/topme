@@ -1,6 +1,7 @@
-import React from 'react'
+import './index.scss'
 import Signup from './pages/Registration/Signup'
 import Login from './pages/login/Login'
+import Angel from './pages/Angel-profile/Angel';
 import {
   BrowserRouter ,
   Routes,
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Signup/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/angel' element={<Angel/>}/>
           </Routes>
         </BrowserRouter>
       </>

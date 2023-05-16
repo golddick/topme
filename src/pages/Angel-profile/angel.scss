@@ -1,0 +1,21 @@
+body {
+    background: #f3f3f3;
+  
+.A_profile{
+    
+    .profileWrapper{
+        display: flex;
+
+        .profileLeft{
+            flex: 2;
+         
+        }
+
+
+        .profileCenter{
+            flex: 6;
+        }
+    }
+
+}
+}

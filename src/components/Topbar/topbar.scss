@@ -1,0 +1,86 @@
+.TopBar{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+    .Icon{
+        width: 20px;
+        height: 20px;
+        color: gray;
+    }
+
+    .topRight{
+        padding-left: 350px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+   
+    .searchbar{
+        display: flex;
+        height: 45px;
+        width: 400px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+
+        .searchIcon {
+            font-size: 25px !important;
+            margin-left: 10px;
+          }
+          
+          .searchInput {
+            border: none;
+            width: 85%;
+          }
+          
+          .searchInput:focus {
+            outline: none;
+          }
+
+        }
+    }
+
+    .topCenter{
+
+    padding-left: 250px;
+    
+    button{
+        background-color: #EBFFFA;
+        color: #68EDCB;
+        font-family: 'Poppins';
+        font-weight: 500;
+        line-height: 21px;
+        font-size: 16px;
+        width: 256px;
+        height: 45px;
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+}
+
+    .topLeft{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        width: 250px;
+        height: 45px;
+        align-items: center;
+
+        .icons{
+            justify-content:space-between ;
+            margin-left: auto;
+        }
+        .Icon{
+            margin: 0 20px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
