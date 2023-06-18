@@ -1,9 +1,14 @@
+body{
+    background: #d05454;
+
+
 .wrapper{
     overflow:hidden;
-height: 100%;
+height: 100vh;
 padding: 0;
 margin: 0;
-
+background-color: #f3f3f3;
+position: static;
 
     .backGroundImgbuttom {
         height: 15%;
@@ -84,7 +89,7 @@ margin: 0;
 
 .login{
     background-color:#ffffff;
-    height: 80vh;
+    height: 90%;
     width: 100%;
     display: flex;
     // flex-direction: column;
@@ -233,8 +238,14 @@ margin: 0;
     
 } 
     .footer{
-        align-items: center;
-                align-self: center;
-                padding-left: 45%;
+        margin-left: 500px;
+        top: -100px;
+        position: relative;
     }
+}
+
+.navLink{
+    text-decoration: none;
+    color: inherit;
+}
 }

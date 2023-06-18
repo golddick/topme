@@ -3,7 +3,7 @@ body {
     position: relative;
     
   
-.A_profile{
+.D_profile{
     
     .profileWrapper{
         display: flex;
@@ -14,14 +14,27 @@ body {
 
 
         .profileCenter{
+            margin-top: 20px;
         margin-left: -50px;
         flex: 5;
         width: 100%;
-        
         }
 
 
     }
 
+}
+.navLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bottom{
+
+    .icon{
+        color: #68EDCB;
+        margin-left: 1400px;
+        font-size: 30px;
+    }
 }
 }

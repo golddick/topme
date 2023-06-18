@@ -1,8 +1,7 @@
 import './topbar.scss'
 import SearchIcon from '@mui/icons-material/Search';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined';
 import {FiFilter} from 'react-icons/fi'
+import {  NavLink } from 'react-router-dom';
 
 
 function Topbar() {
@@ -19,14 +18,9 @@ function Topbar() {
         <FiFilter className="Icon" />
         </div>
        
-        <div className="topLeft">
-          <TurnedInNotOutlinedIcon className="Icon" />
-          <div>
-          <div className="icons">
-            <NotificationsNoneOutlinedIcon className="Icon" />
-            <span className="topbarIconBadge">8</span>
-            </div>
-          </div>
+        <div className="DonorRight">
+          <p>sign in</p>
+          <span> <NavLink to='/signup' className='navLink' >angels sign up</NavLink></span>
         </div>
     </div>
   )

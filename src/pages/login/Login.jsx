@@ -14,7 +14,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 function Login() {
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={{backgroundColor: 'white'}}>
         <div className="header">
       <HeaderLogin/>
       </div>

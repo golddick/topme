@@ -1,0 +1,332 @@
+body {
+    background: #ffffff;
+    position: relative;
+    
+  
+.D_profile{
+    
+    .profileWrapper{
+        display: flex;
+
+        .profileLeft{
+            flex: 2;
+        }
+
+
+        .profileCenter{
+            margin-top: 20px;
+        margin-left: -50px;
+        flex: 5;
+        width: 100%;
+
+        .postinfo{
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 800px;
+
+            .icon{
+                width: 35px;
+                height: 35px;
+                background: rgba(104, 237, 203, 0.15);
+                border-radius: 100px;
+                color:#68EDCB;
+                justify-content: center;
+                
+            }
+            .info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 800px;
+            align-items: center;
+            text-align: center;
+
+            .infoLeft{
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4px 8px;
+                    gap: 8px;
+                    width: 167px;
+                    height: 23px;
+                    background: rgba(104, 237, 203, 0.15);
+                    border-radius: 4px;
+
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 15px;
+                    letter-spacing: 0.015em;
+                    text-transform: uppercase;
+                    color: #68EDCB;
+                }
+
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.0015em;
+                    color: #000000;
+                }
+            }
+
+            .infoRight{
+
+              .Rinfo{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+              
+                .Icons{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4px;
+                    gap: 8px;
+                    width: 28px;
+                    height: 28px;
+                    background: rgba(126, 28, 255, 0.15);
+                    color: #7E1CFF;
+                    border-radius: 100px;
+                    margin-bottom: 5px;
+                }
+
+                span{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 15px;
+                    letter-spacing: 0.015em;
+                    text-transform: uppercase;
+                    color: #7E1CFF;
+                    margin-top: 5px;
+                }
+            }
+            }
+            }
+        }
+
+        .PostText{
+            margin-top: 20px;
+            margin-left: 50px;
+            width: 800px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.0025em;
+            color: #000000;
+        }
+
+        .videos{
+            margin-left: 50px;
+            width: 800px;
+            height: 417px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .postbio{
+            background-color: #000000;
+            margin-left: 50px;
+            width: 800px;
+            height: 100px;
+            border-radius: 0 0 16px 16px;
+            color: #ffffff;
+            padding-top: 20px;
+
+            span{
+                padding-left: 20px;
+                padding-top: 20px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FFFFFF;
+            }
+
+            p{
+                font-family: 'Poppins';
+                padding-left: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.0015em;
+                color: #FFFFFF;
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                white-space: nowrap; 
+            }
+        }
+        .btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 32px;
+            gap: 10px;
+            width: 353px;
+            bottom: 1207px;
+            background: #EBFFFA;
+            border-radius: 8px;
+            margin-left: 300px;
+            margin-top: 50px;
+
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.0125em;
+            text-transform: uppercase;
+            color: #68EDCB;
+        }
+
+         .horizontal-line {
+        border: 0;
+        height: 1px;
+        background-color: #000000;
+        margin: 1rem 0;
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 800px;}   
+        
+        }
+
+
+        .cont{
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            width: 800px;
+            justify-content: space-between;
+
+            .right{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 2px 8px;
+                gap: 12px;
+                //position: absolute;
+                width: 91px;
+                height: 25px;
+                color: #FFFFFF;
+                background: #000000;
+                border-radius: 4px;
+            }
+
+            .update{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 8px;
+                width: 54px;
+                height: 23px;
+                background: rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 0.015em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+
+
+            
+     }
+
+     .postImg{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        width: 800px;
+     
+
+            img{
+                width: 250px;
+                height: 223px;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+        
+
+    }
+     .down{
+        margin-left: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        justify-content: space-between;
+        letter-spacing: 0.0025em;
+        color: #808080;
+
+        span{
+            margin-right: 5px;
+            align-items: center;
+        }
+        .dot{
+            font-size: 25px;
+        }
+        .icon{
+            font-size: 15px;
+            padding-right: 5px;
+        }
+    }
+
+
+    }
+
+}
+.navLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.bottom{
+            margin-top: 456px;
+    .icon{
+        color: #68EDCB;
+        margin-left: 1400px;
+        font-size: 30px;
+    }
+}
+
+
+// .postImg{
+//     width: 90%;
+
+
+//     .img{
+
+//     }
+// }
+
+
+}

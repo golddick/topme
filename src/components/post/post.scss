@@ -1,0 +1,422 @@
+.post{
+    margin-bottom: 20px;
+    .postLink{
+        font-family: 'Poppins';
+        font-style: normal;
+        margin: 10px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align:start;
+        letter-spacing: 0.0015em;
+        cursor: pointer;
+        .link{
+            padding-right: 50px;
+        }
+        .link:hover{
+            color: #68EDCB;
+        }
+    }
+
+    .postStat{
+        width: calc(95% - 50px);
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-top: 30px;
+        .right{
+
+            .top{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 0.015em;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+
+                .fPost{
+                    color: #9747FF;
+                    width: 93px;
+                    height: 23px;
+                    background: rgba(151, 71, 255, 0.15);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .status-ongoing {
+                    color:  #FF6B6B;
+                    width: 93px;
+                    height: 23px;
+                    background: rgba(255, 107, 107, 0.15);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                  }
+                  .status-completed {
+                    color: #68EDCB;
+                    background: rgba(104, 237, 203, 0.15);
+                    width: 93px;
+                    height: 23px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                  }
+
+            }
+            
+            .postTime{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                justify-content: space-between;
+                letter-spacing: 0.0025em;
+                color: #808080;
+
+                span{
+                    margin-right: 5px;
+                    align-items: center;
+                }
+                .dot{
+                    font-size: 25px;
+                }
+                .icon{
+                    font-size: 15px;
+                    padding-right: 5px;
+                }
+            }
+
+           
+        }
+        .left{
+               justify-content: center;
+               align-content: center;
+               text-align: center;
+            span{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 2px 8px;
+                gap: 12px;
+                position: absolute;
+                width: 91px;
+                height: 25px;
+                right: 66px;
+                color: white;
+                background: #000000;
+                border-radius: 4px;
+                justify-content: center;
+            }
+        }
+    }
+
+    .postStory{
+        width: calc(95% - 50px);
+        margin-left: 50px;
+        position: relative;
+        .top{
+            
+            width: 400px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.0015em;
+            color: #000000;
+        }
+        .center{
+
+            img{
+                height: 500px;
+                width: 950px;
+                position: absolute;
+                border-radius: 10px;
+            }
+
+        }
+
+        .storyTop{
+            position: relative;
+            //top:31%;
+            height: 500px;
+            width: 950px;
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+
+            .top{
+                margin-top: 10px;
+                width: 900px;
+                display: flex;
+                justify-content: space-between;
+               margin-right: 20px;
+
+               span{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.0125em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+                backdrop-filter: blur(5px);
+                width: 274px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 10px;
+                
+               }
+               .icon{
+                color: #68EDCB;
+                font-size: 20px;
+               }
+            }
+
+            .down{
+
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.0025em;
+                    color: #FFFFFF;
+
+                }
+            }
+        }
+
+    }
+}
+
+.noFeaturePost {
+    .postStat{
+        width: calc(798.55px - 50px);
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-top: 30px;
+        .right{
+
+            .top{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 0.015em;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+
+                .fPost{
+                    color: #9747FF;
+                    width: 65px;
+                    height: 23px;
+                    background: rgba(151, 71, 255, 0.15);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .status-ongoing {
+                    color:  #FF6B6B;
+                    width: 93px;
+                    height: 23px;
+                    background: rgba(255, 107, 107, 0.15);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                  }
+                  
+                  .status-completed {
+                    color: #68EDCB;
+                    background: rgba(104, 237, 203, 0.15);
+                    width: 93px;
+                    height: 23px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                  }
+
+            }
+            
+            .down{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                justify-content: space-between;
+                letter-spacing: 0.0025em;
+                color: #808080;
+
+                span{
+                    margin-right: 5px;
+                    align-items: center;
+                }
+                .dot{
+                    font-size: 25px;
+                }
+                .icon{
+                    font-size: 15px;
+                    padding-right: 5px;
+                }
+            }
+
+           
+        }
+        .left{
+               justify-content: center;
+               align-content: center;
+               text-align: center;
+            span{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 2px 8px;
+                gap: 12px;
+                position: absolute;
+                width: 91px;
+                height: 25px;
+                right: 66px;
+                color: white;
+                background: #000000;
+                border-radius: 4px;
+                justify-content: center;
+                margin-right: 20%;
+            }
+        }
+    }
+
+    .postStory{
+        width: calc(798.55px - 50px);
+        margin-left: 50px;
+        position: relative;
+        .top{
+            
+            width: 400px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.0015em;
+            color: #000000;
+        }
+        .center{
+
+            img{
+                height: 500px;
+                width: 798.55px;
+                position: absolute;
+                border-radius: 10px;
+            }
+
+        }
+
+        .storyTop{
+            position: relative;
+            //top:31%;
+            height: 500px;
+            width:  100%;
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+
+            .top{
+                margin-top: 10px;
+                width: 760px;
+                display: flex;
+                justify-content: space-between;
+               
+
+               span{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.0125em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: rgba(0, 0, 0, 0.15);
+                border-radius: 8px;
+                backdrop-filter: blur(5px);
+                width: 274px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 10px;
+                
+               }
+               .icon{
+                color: #68EDCB;
+                font-size: 20px;
+               }
+            }
+
+            .down{
+                justify-content: start;
+                text-align: start;
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.0025em;
+                    color: #FFFFFF;
+                    width: 700px;
+                    position: static;
+
+                }
+              
+            }
+
+            
+        }
+
+    }
+
+  }

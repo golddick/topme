@@ -1,6 +1,6 @@
 import './login.scss'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-
+import {  NavLink } from 'react-router-dom';
 
 
 
@@ -12,7 +12,7 @@ function HeaderLogin() {
         </div>
         <div className="right">
             <span className="txt">Not an Angel?</span>
-            <button>sign up</button>
+            <button><NavLink to='/signup' className='navLink' >Sign up</NavLink></button>
         </div>
     </div>
   )

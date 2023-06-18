@@ -7,7 +7,7 @@
     .Icon{
         width: 20px;
         height: 20px;
-        color: gray;
+        color: #68EDCB;
     }
 
     .topRight{
@@ -20,7 +20,7 @@
         display: flex;
         height: 45px;
         width: 400px;
-        background-color: white;
+        background-color: #f3f3f3;
         border-radius: 30px;
         display: flex;
         box-sizing: border-box;
@@ -29,11 +29,13 @@
         .searchIcon {
             font-size: 25px !important;
             margin-left: 10px;
+            color: #68EDCB;
           }
           
           .searchInput {
             border: none;
             width: 85%;
+            background-color: #f3f3f3;
           }
           
           .searchInput:focus {
@@ -43,44 +45,91 @@
         }
     }
 
-    .topCenter{
+//     .topCenter{
 
-    padding-left: 250px;
+//     padding-left: 250px;
     
-    button{
-        background-color: #EBFFFA;
-        color: #68EDCB;
-        font-family: 'Poppins';
-        font-weight: 500;
-        line-height: 21px;
-        font-size: 16px;
-        width: 256px;
-        height: 45px;
-        display: flex;
-        border: none;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-    }
-}
+
+// }
 
     .topLeft{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         margin-left: auto;
-        width: 250px;
+        width: 70px;
         height: 45px;
         align-items: center;
-
-        .icons{
-            justify-content:space-between ;
-            margin-left: auto;
-        }
+        margin-right: 10px;
+        gap: 10px;
+        justify-content:space-between ;
+         margin-right: 20px;
+          
+        
         .Icon{
-            margin: 0 20px;
-            height: 20px;
-            width: 20px;
+            height: 25px;
+            width: 25px;
+            color: #68EDCB;
+            position: relative;
+        }
+
+        .topbarIconBadge{
+            width: 15px;
+            height: 15px;
+            background-color:  #68EDCB;;
+            border-radius: 50%;
+            color: white;
+            position: absolute;
+           top: 7px;
+            right: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+    }
+
+
+    .DonorRight{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        cursor: pointer;
+
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.0125em;
+            text-transform: uppercase;
+            color: #000000;
+            text-align: center;
+            margin: 0 ; 
+        }
+
+        span{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 24px;
+            width: 162px;
+            height: 45px;
+            background: #68EDCB;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.0125em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0 ; 
         }
     }
 }

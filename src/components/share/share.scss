@@ -1,0 +1,103 @@
+.share{
+    width: 94%;
+    height: 172px;
+    margin: 10px;
+    background: white;
+    border-radius: 16px;
+    .shareWrapper{
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            align-items: center;
+            // justify-content: space-between;
+            gap: 10px;
+
+            img{
+                height: 65px;
+                width: 65px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            input{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.0125em;
+                border-radius: 10px;
+                height: 40px;
+                outline: none;
+                border: 2px solid gray;
+
+
+                &::placeholder{
+                    color: rgb(9, 7, 7);
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.0125em;
+                    text-transform: uppercase;
+                    align-items: center;
+                    align-content: center;
+                    padding-left: 20px;
+
+                }
+            }
+        }
+
+        .buttom{
+            display: flex;
+            gap: 10px;
+            margin-left: 100px;
+          
+
+            button{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                display: flex;
+                letter-spacing: 0.0125em;
+                text-transform: uppercase;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                height: 40px;
+                width: 150px;
+                border-radius: 10px;
+                border: 1px solid #68EDCB;
+                background-color: white;
+                cursor: pointer;
+
+                .icon{
+                    padding-right: 10px;
+                    color: #68EDCB;
+                    font-size: 20px;
+                }
+
+               
+            }
+        }
+    }
+    .desc{
+        width: 500px;
+    }
+    .title{
+
+        &::placeholder{
+        padding-left: 30px;
+        color: darkmagenta;
+         }
+    }
+
+   
+}

@@ -1,0 +1,100 @@
+.widget{
+    width: 94%;
+    display: flex;
+    height: 200px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+.widgetWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center ;
+   // background-color: deeppink;
+    img{
+        position: relative;
+        width: 210px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-top: 10px;
+       
+    }
+
+    .widgetInfo{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        height: 160px;
+        background-color: transparent;
+
+    span{
+        color: white;
+        justify-content: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.001em;
+        text-transform: uppercase;
+    }
+
+    p{
+        height: 70px;
+        width:70px;
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 144px;
+        letter-spacing: -0.015em;
+        color: #FFFFFF;
+    }
+
+    button{
+        width: 162px;
+        height: 29px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: none;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        gap: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.0125em;
+        text-transform: uppercase;
+        color: #000000;
+        position: relative;
+        cursor: pointer;
+
+       
+    }
+    }
+}
+.num{
+    margin-top:10px ;
+}
+.btn{
+    height: 30px;
+    margin-top: -10px;
+}
+}

@@ -1,6 +1,6 @@
 import './leftbar.scss'
 import React, { useState } from 'react';
-import {  NavLink, useLocation } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import Person4OutlinedIcon from '@mui/icons-material/Person4Outlined';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import {TbDeviceAnalytics} from 'react-icons/tb'
@@ -17,30 +17,14 @@ import {FaFacebookF ,FaInstagram, FaTwitter} from 'react-icons/fa'
 function Leftbar() {
 
 
-  // const [clickedColor, setClickedColor] = useState('black');
-  // const [activeColor, setActiveColor] = useState('#68EDCB');
-  // const [activeLink, setActiveLink] = useState('');
-
-  // const handleLinkClick = (linkName) => {
-  //   if (activeLink === linkName) {
-  //     return; // Return early if the link is already active
-  //   }
-
-  //   setActiveLink(linkName);
-  //   setClickedColor('black');
-  // };
-
+  const [clickedColor, setClickedColor] = useState('black');
+  const [activeColor, setActiveColor] = useState('#68EDCB');
   const [activeLink, setActiveLink] = useState('');
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
+    setClickedColor(' black');
   };
-
-  const isCurrentPage = (url) => {
-    const location = useLocation();
-    return location.pathname === url;
-  };
-
 
   return (
     <div className='Leftbar' >
@@ -78,44 +62,9 @@ function Leftbar() {
        </div>
        {/* <div className="horizontal-line"></div> */}
        
-       <div className="center">
-
-       <div    className={`nav ${isCurrentPage('/') ? 'active' : ''}`}
-          onClick={() => handleLinkClick('/')}>
-            <PersonOutlineIcon className='icon'/>
-            <span >
-           <NavLink to='/' className='navLink'>Profile</NavLink></span>
-          </div>
-         
-         <div    className={`nav ${isCurrentPage('/analytics') ? 'active' : ''}`}
-          onClick={() => handleLinkClick('/analytics')}>
-        <TbDeviceAnalytics className='icon'/>
-        <span> <NavLink to='/analytics' className='navLink' >Analytics</NavLink></span>
+      
+      
         </div>
-
-        <div className="nav">
-        <FaRegEnvelope className='icon'/>
-        {/* <span> <NavLink to='' className='navLink' >Message</NavLink></span>  */}
-        <span>Message</span>
-               <p>4</p>
-        </div>
-        <div className="nav">
-        <SendOutlinedIcon className='icon'/>
-        <span>Email</span>
-        </div>
-        {/* <div className="nav">
-        <TurnedInNotOutlinedIcon className='icon'/>
-        <span>Wishlist</span>
-        </div> */}
-        <button>CREATE CAMPAIGN</button>
-        </div>
-        
-        <div className="logout">
-            <LogoutOutlinedIcon className='icon'/> &nbsp;&nbsp; <span>Logout</span>
-        </div>
-     
-        </div>
-        
   )
 }
 

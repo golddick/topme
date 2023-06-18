@@ -1,112 +1,159 @@
-import './signup.scss'
-import body1 from '../../assets/body1.png'
-import body2 from '../../assets/body2.png'
-import Footer from '../../components/footer/Footer'
+import './signup.scss';
+import body1 from '../../assets/body1.png';
+import body2 from '../../assets/body2.png';
+import Footer from '../../components/footer/Footer';
 import { useState } from 'react';
-
- 
-
+import { NavLink, useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 function Signup() {
 
-  // const [password, setPassword] = useState('');
-  // const [confirmPassword, setConfirmPassword] = useState('');
-  // const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
-  // const handlePasswordChange = (event) => {
-  //   setPassword(event.target.value);
+  const [isRegistered, setIsRegistered] = useState(false);
 
-  //   if (event.target.value !== confirmPassword) {
-  //     setErrorMessage('Passwords do not match');
-  //   } else {
-  //     setErrorMessage('');
-  //   }
-  // };
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    password: '',
+    confirmpassword: '',
+  });
 
-  // const handleConfirmPasswordChange = (event) => {
-  //   setConfirmPassword(event.target.value);
-
-  //   if (event.target.value !== password) {
-  //     setErrorMessage('Passwords do not match');
-  //   } else {
-  //     setErrorMessage('');
-  //   }
-  // };
-
-
-
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-    if (confirmPassword && e.target.value !== confirmPassword) {
-      setPasswordError('Passwords do not match');
-    } else {
-      setPasswordError('');
-    }
-  };
-
-  const handleConfirmPasswordChange = (e) => {
-    setConfirmPassword(e.target.value);
-    if (password && e.target.value !== password) {
-      setPasswordError('Passwords do not match');
-    } else {
-      setPasswordError('');
-    }
+  const handleInputChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Submit the form
+    const { password, confirmpassword } = formData;
+  
+    if (password !== confirmpassword) {
+      setPasswordError('Passwords do not match');
+      return;
+    }
+    setPasswordError('');
+
+    const timeout = 100000;
+
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => {
+        reject(new Error('Request timed out'));
+      }, timeout);
+    });
+
+    axios
+      .post('http://162.255.87.139:5034/api/Auth/register', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        mode: 'cors',
+        timeout: timeout,
+      })
+      .then((response) => {
+        if (!response.data.success) {
+          throw new Error('Registration failed');
+        }
+        return response.data;
+      })
+      .then((data) => {
+        console.log('Registration response:', data);
+        setIsRegistered(true);
+        console.log('Registration successful', data);
+        navigate('/login');
+      })
+      .catch((error) => {
+        console.error('Registration failed', error);
+        setErrorMessage('An error occurred during registration: ' + error.message);
+      });
   };
 
-  // const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
-  // const isPasswordValid = passwordPattern.test(password);
+  // if (isRegistered) {
+  //   return <Redirect to="/login" />;
+  // }
 
   return (
-    <div className='signup'>
+    <div className="signup">
       <div className="wrapper"></div>
-        <div className="formContainer">
+      <div className="formContainer">
         <h1>
-        Become an Angel{' '}
-        <span style={{color:' rgba(104, 237, 203, 1)', backgroundColor: 'white', fontSize: '4rem'}}>.</span>{' '}
-      </h1>
-        <h2>Already a user? &nbsp;Log in</h2>
-        <form  onSubmit={handleSubmit}>
-          <div className='Names'>         
-          <input type='text' placeholder='First Name' className="fName" />          
-          <input type='text' placeholder='Last Name' className="lName"/>
-          
-          </div>
-          <div className='Names'>         
-          <input type='text' placeholder='Email' className="Email" />          
-          <input type='text' placeholder='Username' className="Sname"/>
-          
+          Become an Angel{' '}
+          <span style={{ color: 'rgba(104, 237, 203, 1)', backgroundColor: 'white', fontSize: '4rem' }}>.</span>{' '}
+        </h1>
+
+        <h2>
+          Already a user? &nbsp;
+          <NavLink to="/login" className="navLink">
+            Log in
+          </NavLink>
+        </h2>
+        <form onSubmit={handleSubmit}>
+          <div className="Names">
+            <input
+              type="text"
+              placeholder="First Name"
+              className="fName"
+              name="firstname"
+              value={formData.firstname}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="lName"
+              name="lastname"
+              value={formData.lastname}
+              onChange={handleInputChange}
+            />
           </div>
           <div className="Auth">
-          <input type='password' placeholder='Password'className='psw'  value={password} onChange={handlePasswordChange}/>
-          <input type='password' placeholder='Confirm Password' className='cpsw' value={confirmPassword} onChange={handleConfirmPasswordChange}/>
+            <input
+              type="text"
+              placeholder="Email"
+              className="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              className="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              className="cpsw"
+              name="confirmpassword"
+              value={formData.confirmpassword}
+              onChange={handleInputChange}
+            />
           </div>
           <br />
-      {passwordError && <span style={{ color: 'red' }}>{passwordError}</span>}
-      <br />
-      {/* {!isPasswordValid && <span style={{ color: 'red' }}>Password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.</span>}
-      <br /> */}
-          {/* <button disabled={password !== confirmPassword || !isPasswordValid}>Next</button> */}
-          <button >SIGN UP</button>
+          {passwordError && <span style={{ color: 'red' }}>{passwordError}</span>}
+          {errorMessage && <span style={{ color: 'red' }}>{errorMessage}</span>}
+          <br />
+          <button type="submit">SIGN UP</button>
         </form>
         <div className="footer">
-        <Footer/>
+          <Footer />
         </div>
-        </div>
-        <div className="bgImg">
-      <img src={body2} alt="" className='backGroundImg' />
-      <img src={body1} alt="" className='backGroundImg' />
       </div>
-        </div>
-  )
+      <div className="bgImg">
+        <img src={body2} alt="" className="backGroundImg" />
+        <img src={body1} alt="" className="backGroundImg" />
+      </div>
+    </div>
+  );
 }
 
-export default Signup
+export default Signup;
