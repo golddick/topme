@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import {  NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import Search from '../../search/Search';
-import ErrorBoundary from '../../errboundary';
+// import ErrorBoundary from '../../errboundary';
 
 
 function Hometop() {
@@ -60,9 +60,9 @@ function Hometop() {
         </div>
         {isOpen && (
           <div className="popup">
-            <ErrorBoundary>
+            {/* <ErrorBoundary> */}
             <Search closePopup={closePopup} />
-            </ErrorBoundary>
+            {/* </ErrorBoundary> */}
           </div>
         )}
       </div>
