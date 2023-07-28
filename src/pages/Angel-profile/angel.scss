@@ -14,9 +14,22 @@ body {
 
 
         .profileCenter{
-        margin-left: -50px;
+        //margin-left: -50px;
         flex: 5;
         width: 100%;
+
+   .topBar{
+    position: static;
+    top: 0;
+    z-index: 100;
+   //margin-bottom: 100px;
+   }
+
+   .postContent{
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+
+   }
         
         }
 

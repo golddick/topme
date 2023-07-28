@@ -1,0 +1,280 @@
+.AngelDonate{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: black;
+
+    .donateInfo{
+        display: flex;
+        padding: 180px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+        width: 90%;
+       
+
+        h3{
+            display: flex;
+            margin-left: 400px;
+
+            color: #000;
+            text-align: right;
+            font-family: Poppins;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.3px;
+        }
+
+        .donateType{
+            display: flex;
+            width: 1200px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            margin-top: -20px;
+
+            .type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                width: 270px;
+                height: 60px;
+                background-color: #000;
+                color: white;
+              
+                span {
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  text-align: center;
+                  display: flex;
+                  align-items: center; /* Added */
+                  text-transform: uppercase;
+                }
+              
+                p {
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.024px;
+              
+                  border-radius: 100px;
+                  background: #fff;
+                  display: flex;
+                  margin-top: 15px;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  height: 25px;
+                  width: 25px;
+                }
+              }
+         
+              
+        }
+
+
+        .donateType2{
+            display: flex;
+            width: 1300px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            margin-top: -20px;
+
+            .type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                width: 270px;
+                height: 60px;
+                background-color: #000;
+                color: white;
+              
+                span {
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  text-align: center;
+                  display: flex;
+                  align-items: center; /* Added */
+                  text-transform: uppercase;
+                }
+              
+                p {
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.024px;
+              
+                  border-radius: 100px;
+                  background: #fff;
+                  display: flex;
+                  margin-top: 15px;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  height: 25px;
+                  width: 25px;
+                }
+              }
+              
+        }
+
+
+        .donateType3{
+            display: flex;
+            width: 1000px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            margin-top: -20px;
+
+            .type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                width: 270px;
+                height: 60px;
+                background-color: #000;
+                color: white;
+              
+                span {
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  text-align: center;
+                  display: flex;
+                  align-items: center; /* Added */
+                  text-transform: uppercase;
+                }
+              
+                p {
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.024px;
+              
+                  border-radius: 100px;
+                  background: #fff;
+                  display: flex;
+                  margin-top: 15px;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  height: 25px;
+                  width: 25px;
+                }
+
+                
+              }
+              
+        }
+
+
+        .donateType4{
+            display: flex;
+            width: 900px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            margin-top: -20px;
+
+            .type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                width: 270px;
+                height: 60px;
+                background-color: #000;
+                color: white;
+              
+                span {
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  text-align: center;
+                  display: flex;
+                  align-items: center; /* Added */
+                  text-transform: uppercase;
+                }
+              
+                p {
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.024px;
+              
+                  border-radius: 100px;
+                  background: #fff;
+                  display: flex;
+                  margin-top: 15px;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  height: 25px;
+                  width: 25px;
+                }
+              }
+              
+        }
+        .type:hover {
+            border: 3px solid #68EDCB;
+          }
+          .type:hover span {
+            color:#68EDCB;
+          }
+          
+          .type:hover p {
+            color: #68EDCB
+          }
+    }
+}

@@ -1,0 +1,93 @@
+.editprofile{
+    display: flex;
+    position: absolute;
+    visibility: visible;
+.edit{
+    width: 380px;
+    height: auto;
+    border-radius: 16px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img{
+        display: flex;
+        width: 200.889px;
+        height: 200.889px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    margin-bottom: 50px;
+
+    span{
+        color: #808080;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.175px;
+        text-transform: uppercase;
+        text-align: start;
+        margin-bottom: -20px;
+    }
+    .fName, .bio, .nin, .pNumber, .email, .location{
+        display: flex;
+        border: 1px solid #808080;
+        border-radius: 8px;
+        display: inline-flex;
+        height: 44px;
+        padding: 10px;
+        align-items: center;
+        
+        input{
+            flex-shrink: 0;
+            border: none;
+            outline: none;
+            width: 260px;
+            height: auto;
+        }
+
+        .editIcon{
+            width: 23px;
+            height: 21px;
+            color: #68EDCB;
+        }
+    }
+button{
+    display: inline-flex;
+    padding: 11.5px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #000;
+    width: 200px;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: 80px;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.175px;
+    text-transform: uppercase;
+}
+   
+  }
+
+}
+   
+}

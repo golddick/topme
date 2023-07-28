@@ -17,9 +17,9 @@ function Analytics() {
         <div className="profileLeft">
           <Leftbar/></div>
           <div className="profileCenter">
-          <div className="widget" style={{width: '100%'}}>  <Widget/></div>
+          <div className="widget" >  <Widget/></div>
            
-           <div className="stats" style={{width: '91%'}}> <Stats/></div>
+           <div className="stats"> <Stats/></div>
             <Atable/>
             </div>
         </div>

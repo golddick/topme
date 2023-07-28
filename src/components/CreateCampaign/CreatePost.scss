@@ -1,0 +1,307 @@
+.CreatePost{
+    
+    .Wrapper{
+        display: flex;
+
+        .Left{
+            flex: 2;
+        }
+
+
+        .Center{
+       // margin-left: -50px;
+        flex: 5;
+        width: 100%;
+        
+        .post{
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: -8px 8px 10px 0px rgba(136, 188, 138, 0.15);
+            width: 940px;
+            height: 440px;
+            flex-shrink: 0;
+        .header {
+            display: flex;
+            flex-direction: row;
+            height: 30px;
+            width: 940px;
+            padding: 12px 24px;
+            align-items: center;
+            gap: 10px;
+            background: #68EDCB;
+            justify-content: space-between;
+          
+          
+          h3 {
+            color: #FFF;
+            font-size: 16px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.024px;
+            text-transform: uppercase;
+            text-align: left;
+            left: 0;
+            margin: 0; 
+          }
+          
+          .icon{
+            font-size: 20px;
+            color:  #FFF;
+          }
+        }
+
+        .title{
+
+            display: flex;
+            //justify-content: center;
+            align-self: center;
+            height: 45px;
+            width: 800px;
+            padding: 12px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            background: #F6F6F6;
+            margin-left: 100px;
+            margin-top: 10px;
+
+            .categoryDropdown{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                user-select: none;
+
+                .dropdownBtn{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 200px;
+                    height: 100%;
+                    color: #68EDCB;
+                    background: transparent;
+                    font-size: 13px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: normal;
+                    letter-spacing: 0.035px;
+                    text-transform: uppercase;
+                }
+                .dropdownContent{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 100px;
+                    width: 200px;
+                    height: auto;
+                    background-color: transparent;
+
+                    .dropdownItem{
+                        font-size: 13px;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.035px;
+                    }
+                    .dropdownItem:hover{
+                        cursor: pointer;
+                        color: #000000;
+                        background-color: #68EDCB;
+                        width: 150px;
+                        height: auto;
+                    }
+                }
+            }
+
+            span{
+                color: #68EDCB;
+                font-size: 14px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.035px;
+                text-transform: uppercase;
+            }
+           input{
+            height: 45px;
+            width: 600px;
+            background:transparent;
+            border: none;
+            outline: none;
+
+           }
+
+        }
+
+        .horizontal{
+            background: rgba(128, 128, 128, 0.50);
+            width: 850px;
+            height: 1.5px;
+            margin-top: 15px;
+            margin-left: 45px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+           }
+
+           .form{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+
+            span{
+                color: rgba(128, 128, 128, 0.50);
+                font-size: 14px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.035px;
+                text-transform: uppercase;
+                position: absolute;
+                left: 100px;
+               
+            }
+      
+            .input{
+                height: 233px;
+                width: 750px;
+                padding: 12px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #ffffff;
+                border: none;
+                display: flex;
+                outline: none;
+                font-size: 14px;
+                font-family: Poppins;
+                font-style: normal;
+                margin-top: 10px;
+            }
+        
+           }
+
+           .postInfo{
+            width: 790px;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 70px;
+            gap: 20px;
+           // background-color: coral;
+            
+            .amount{
+                width: 303px;
+                height: 45px;
+           
+                display: flex;
+                flex-direction: row;
+                padding: 12px;
+                align-items: center;
+                gap: 10px;
+                background: #F6F6F6;
+                border-radius: 4px;
+
+                span{
+                    color: #68EDCB;
+                    font-size: 10px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    letter-spacing: 0.035px;
+                    width: 50px;
+
+                  
+                }
+                .examount{
+                    width: 95px;
+                   }
+
+                input{
+                    width: 130px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                   
+                }
+            }
+
+            .upload{
+                display: flex;
+                right: 0;
+                //margin-left: 200px;
+                flex-wrap: wrap;
+
+                .file{
+                    display: flex;
+                    padding: 10.5px 10px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                    background: rgba(255, 107, 107, 0.20);
+                    width: 135PX;
+                    height: 45PX;
+
+                    color: #FF6B6B;
+                    font-size: 14px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.035px;
+                }
+              
+            }
+
+           .sendbtn{
+            cursor: pointer;
+            display: flex;
+            align-content: center;
+            button{
+                display: flex;
+                color: #F6F6F6;
+                border-radius: 4px;
+                background: #68EDCB;
+                width: 119PX;
+                height: 45PX;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                border: none;
+            }
+           }
+           }
+        }
+
+        }
+
+
+    }
+    .item{
+        color: #FF6B6B;
+        font-size: 14px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.035px;
+        display: flex;
+        gap: 20px;
+    }
+}

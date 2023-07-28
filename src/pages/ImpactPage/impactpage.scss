@@ -1,0 +1,276 @@
+.Impactpage{
+
+    .navTop{
+        display: flex;
+        width: 100%;
+        height: 101px;
+        padding: 16px 70px;
+        align-items: center;
+        gap: 44px;
+        background: #FFF;
+    
+        
+
+        .navCont{
+        display: flex;   
+        align-items: center;   
+        gap: 44px;
+
+        .icon{
+            width: 48px;
+            height: 48px;
+        }
+
+            .search{
+                display: flex;
+                width: 307.8px;
+                //justify-content: center;
+                //justify-content: space-around;
+                align-items: center;
+                //gap: 20px;
+                flex-shrink: 0;
+                height: 69px;
+                border-radius: 16px;
+                background: #F6F6F6;
+
+                .searchIcon{
+                    width: 26px;
+                    height: 26px;
+                    margin-left: 20px;
+                }
+
+                input{
+                    border-radius: 16px;
+                    background: #F6F6F6;
+                    border: none;
+                    height: 50px;
+                    width: 320px;
+                    margin: 20px;
+                    outline: none;
+
+                    &::placeholder{
+                        color: rgba(0, 0, 0, 0.50);
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.175px;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+                
+
+            }
+
+            .text{
+                display: flex;
+                padding: 12px;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+                span{
+                    color: #000;
+                    text-align: right;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+
+                }
+
+                .itextIcon{
+                    width: 24px;
+                    height: 24px;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .containerText{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background: #000;
+        color: #FFF;
+       padding-top: 80px;
+
+        h5{
+            color: #FFF;
+            text-align: right;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: 75px;
+        }
+    }
+
+    .imapactContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        grid-gap: 10px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 200px;
+        padding-top: 50px;
+        background: #000;
+        color: #FFF;
+        
+
+             
+          
+            
+        .impactBox{
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+            width: 300px;
+            height: 419px;
+            flex-shrink: 0;
+            margin: 10px;
+
+            border-radius: 8px;
+            background: #FFF;
+            overflow: hidden;
+
+          
+            img{
+                width: 280px;
+                height: 217px;
+                flex-shrink: 0;
+                margin: 12px;
+                border-radius: 4px;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+                
+            }
+
+            .profileImg:hover{
+                transform: scale(1.2);
+            }
+
+
+
+            .impactBody{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin: 10px;
+                    
+                   
+
+                .name{
+                    display: flex;
+                    gap: 10px;
+                   
+                   
+
+                    span{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.014px;
+                    }
+
+                    .nameIcon{
+                        display: flex;
+                        width: 18px;
+                        height: 17.308px;
+                        padding-bottom: 0px;
+                        justify-content: center;
+                        align-items: center;
+                        color: #68EDCB;
+                    }
+
+                }
+
+                .address{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-left: 10px;
+                    .Icon{
+                        width: 15px;
+                        height: 15px;
+                        color: #808080;
+                    }
+                    
+                    span{
+                        color: #808080;
+                        /* Overline/overline 1 */
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.15px;
+                        text-transform: uppercase;
+
+                    }
+                }
+
+
+                p{
+                    margin-top: 10px;
+                    color: #000;
+                    flex-wrap: wrap;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px;
+                }
+
+            }
+        }
+
+            .btn{
+                display: flex;
+                gap: 10px;
+                width: 200px;
+                height: 37px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                color: #68EDCB;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+            }
+
+            .btn:hover{
+                color: white;
+                background-color: #68EDCB;
+            }
+    
+
+    }
+    .navlink{
+        text-decoration: none;
+       }
+}

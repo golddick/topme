@@ -7,6 +7,9 @@ import Donor from './pages/Donor-profile/Donor';
 import Completed from './pages/Donor-profile/Completed';
 import Ongoing from './pages/Donor-profile/Ongoing';
 import PostDetails from './pages/PostDetails/PostDetails';
+import CreatePost from './components/CreateCampaign/CreatePost';
+import LandingPage from './pages/landingPage/LandingPage';
+import Impactpage from './pages/ImpactPage/Impactpage';
 import {
   BrowserRouter ,
   Routes,
@@ -27,12 +30,15 @@ function App() {
           <Routes>
             <Route path='/signup' element={<Signup/>}/>
             <Route path='/login' element={<Login/>}/>
-            <Route path='/' element={<Angel/>}/>
+            <Route path='/profile' element={<Angel/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
             <Route path='/donor' element={<Donor/>}/>
             <Route path='/Completed' element={<Completed/>}/>
             <Route path='/Ongoing' element={<Ongoing/>}/>
             <Route path='/PostDetails' element={<PostDetails/>}/>
+            <Route path='/CreatePost' element={<CreatePost/>}/>
+            <Route path='/' element={<LandingPage/>}/>
+            <Route path='/impact' element={<Impactpage/>}/>
           </Routes>
         </BrowserRouter>
       </>

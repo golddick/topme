@@ -64,7 +64,6 @@ function Post() {
 
   return (
     <div className="post">
-         <div className="Icon" style={{fontSize:'25px', marginBottom:'-60px'}}><BsArrowLeftCircle/></div>
       {posts.map((post, index) => (
         <div key={index} className={`postItem ${post.featuredpost ? 'featuredPost' : 'noFeaturePost'}`}>
           <div className="postStat">

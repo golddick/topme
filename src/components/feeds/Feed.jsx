@@ -1,7 +1,6 @@
 import './feed.scss'
 import Widget from '../widgets/Widget'
 import Stats from '../stats/Stats'
-import Share from '../share/Share'
 import Post from '../post/Post'
 import Link from '../postLink/link'
 
@@ -15,9 +14,6 @@ function Feed() {
     <div className="stats">
       <Stats/>
     </div>
-    {/* <div className="share">
-    <Share/>
-    </div> */}
     <div className="post">
     <Link/>
     <Post/>

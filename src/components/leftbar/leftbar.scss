@@ -2,10 +2,10 @@
     width: 350px;
     height: auto;
     border-radius: 20px;
-    margin: 5px;
-    padding: 10px;
+    margin: 20px;
+    padding: 30px;
     padding-top: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position:sticky;
      top:0;
     justify-content: space-between;
@@ -19,17 +19,36 @@
         background-color: rgb(179, 179, 179);
       }
 
+      .back{
+        width:24px;
+        height: 24px;
+      }
+
     .top{
         
+        margin-top: -28px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+        .editProfile{
+            margin-left:300px ;
+            width: 24px;
+            height: 24px;
+        }
+
+
 
         .profileImg{
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-           margin-left: 100px;
-            position: relative;
+          margin-left: 60px;
+          align-items: center;
+            margin-top: 20px;
             border: 5px solid white;
+            
         }
 
         .name{
@@ -90,7 +109,7 @@
                 text-align: center;
                 margin-top: 20px;
                 margin-bottom: 20px;
-                margin-left: 120px;
+                margin-left: 85px;
             }
         }
 
@@ -98,7 +117,7 @@
             display: flex;
             flex-direction: row;
             width: 200px;
-            margin-left: 80px;
+            margin-left: 40px;
             justify-content: space-between;
             align-items: center;
             background-color: black;
@@ -171,11 +190,16 @@
                 cursor: pointer;
                 text-align: center;
                 align-items: center;
+                height: 30px;
+
+                span{
+
+                }
                 
                
                 p{
-                    width: 25px;
-                    height: 25px;
+                    width: 20px;
+                    height: 20px;
                     border-radius: 50%;
                     background-color: #68EDCB;
                     color: black;
@@ -184,11 +208,18 @@
                     align-items: center;
                     margin-left: auto;
                     justify-content: center;
+                    display: flex;
+                    //margin-top: 15px;
+                    //position: sticky;
+                    right: 10px;
+                    font-size: 15px;
+
                 }
 
             }
             .nav:hover{
-                color: #68EDCB;
+               // color: #68EDCB;
+                border: 1px solid  #68EDCB;
                 
             }
            .nav.clicked {
@@ -209,8 +240,21 @@
                 justify-content: center;
                 border-radius: 10px;
                 margin-left: 30px;
-                margin-top: 30px;
+                //margin-top: 30px;
                 cursor: pointer;
+                gap: 5px;
+                
+            }
+            button:hover{
+                opacity:9;
+                color: #EBFFFA;
+                background-color: #68EDCB;
+            }
+
+           .clicked{
+                color: #cf9135;
+                background-color: #68EDCB;
+                
             }
         }
 
@@ -219,8 +263,6 @@
                 padding-top: 100px;
                 margin-bottom: 10px;
                 cursor: pointer;
-
-
                 display: flex;
                 align-items: center;
                 color: #FF6B6B;;

@@ -18,6 +18,7 @@ function Signup() {
     email: '',
     password: '',
     confirmpassword: '',
+    usertypeid: '1',
   });
 
   const [passwordError, setPasswordError] = useState('');
@@ -49,15 +50,14 @@ function Signup() {
     });
 
     axios
-      .post('http://162.255.87.139:5034/api/Auth/register', formData, {
+      .post('http://162.255.87.139:5034/api/v1/Auth/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
-        mode: 'cors',
         timeout: timeout,
       })
       .then((response) => {
-        if (!response.data.success) {
+        if (!response.data) {
           throw new Error('Registration failed');
         }
         return response.data;
@@ -74,9 +74,9 @@ function Signup() {
       });
   };
 
-  // if (isRegistered) {
-  //   return <Redirect to="/login" />;
-  // }
+  if (isRegistered) {
+    return <Redirect to="/login" />;
+  }
 
   return (
     <div className="signup">

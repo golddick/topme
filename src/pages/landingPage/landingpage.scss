@@ -1,0 +1,15 @@
+.landing{
+    background-color: black;
+    color: white;
+
+    .homtop{
+        position: static;
+    top: 0;
+    z-index: 100;
+    }
+
+    .landingbody{
+        overflow-y: auto;
+        height: calc(100vh - 60px);
+    }
+}

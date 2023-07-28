@@ -11,13 +11,12 @@ background-color: #f3f3f3;
 position: static;
 
     .backGroundImgbuttom {
-        height: 15%;
-        width: 20%;
-       padding-left:85%;
+    height: 15%;
+    width: 20%;
+    margin-left:85%;
     transform: rotate(5deg);
-    position: relative;
-    margin-top: -80px;
-    
+    position: fixed;
+    margin-top: -40px;
    
     }
 
@@ -213,7 +212,7 @@ position: static;
             font-weight: bold;
             height: 30px;
             width: 250px;
-           margin-left: 27%;
+           margin-left: 25%;
            margin-top: 30px;
         
                 
