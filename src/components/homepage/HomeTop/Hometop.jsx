@@ -26,7 +26,9 @@ function Hometop() {
         <div className="topLeft">
           <span>about</span>
           <span>faq</span>
+          <NavLink to='/HowitWorks' className='navlink'>
           <span>how it works </span>
+          </NavLink>
 
           <div className="search"  onClick={handlePopupOpen}>
             <SearchIcon className='searchicon'/>
@@ -60,9 +62,8 @@ function Hometop() {
         </div>
         {isOpen && (
           <div className="popup">
-            {/* <ErrorBoundary> */}
             <Search closePopup={closePopup} />
-            {/* </ErrorBoundary> */}
+       
           </div>
         )}
       </div>

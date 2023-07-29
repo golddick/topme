@@ -10,6 +10,7 @@ import PostDetails from './pages/PostDetails/PostDetails';
 import CreatePost from './components/CreateCampaign/CreatePost';
 import LandingPage from './pages/landingPage/LandingPage';
 import Impactpage from './pages/ImpactPage/Impactpage';
+import HowitWorks from './pages/How-itWorks/HowitWorks';
 import {
   BrowserRouter ,
   Routes,
@@ -39,6 +40,7 @@ function App() {
             <Route path='/CreatePost' element={<CreatePost/>}/>
             <Route path='/' element={<LandingPage/>}/>
             <Route path='/impact' element={<Impactpage/>}/>
+            <Route path='/HowitWorks' element={<HowitWorks/>}/>
           </Routes>
         </BrowserRouter>
       </>
