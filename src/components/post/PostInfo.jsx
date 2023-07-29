@@ -3,7 +3,7 @@ import { BsGift } from 'react-icons/bs';
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
 import { TbShare3 } from 'react-icons/tb';
 import { CiLocationOn } from 'react-icons/ci';
-import Progressbar from '../Progressbar/Progressbar';
+// import Progressbar from '../Progressbar/Progressbar';
 import React, { useState,useEffect } from 'react';
 import {BsArrowLeftCircle} from 'react-icons/bs'
 
@@ -112,9 +112,9 @@ function Post() {
                   <BsGift className="icon" /> donation Target: <b>$21,000</b>
                 </span>
               </div>
-              <div className="down" style={{margin:'0' , padding:'0', alignSelf: 'flex-start' }}>
+              {/* <div className="down" style={{margin:'0' , padding:'0', alignSelf: 'flex-start' }}>
               <Progressbar value={progress}/>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
