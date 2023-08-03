@@ -1,6 +1,5 @@
-import './Updateprofile.scss'
+import './upprofile.scss'
 import ProfileUpdate from '../../components/profileUpdate/ProfileUpdate'
-import Leftbar from '../../components/leftbar/Leftbar'
 import Topbar from '../../components/Topbar/Topbar'
 
 function Updateprofile() {
