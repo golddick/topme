@@ -148,6 +148,7 @@ function Signup() {
           <Footer />
         </div>
       </div>
+      
       <div className="bgImg">
         <img src={body2} alt="" className="backGroundImg" />
         <img src={body1} alt="" className="backGroundImg" />

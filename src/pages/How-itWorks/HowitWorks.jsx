@@ -7,6 +7,9 @@ import {  NavLink } from 'react-router-dom';
 import Hometop from '../../components/homepage/HomeTop/Hometop'
 import YouTube from 'react-youtube';
 import React, { useState } from 'react';
+import {BsDot} from 'react-icons/bs'
+import { AiFillCaretRight } from 'react-icons/ai';
+import AngelFooter from '../../components/homepage/footer/AngelFooter';
 
 
 function getVideoIdFromUrl(url) {
@@ -59,10 +62,11 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
    </div>
    <div className="option">
       
-      <NavLink to='/signup' className='navlink'>
-      <div className="selectTab"  >
       
-         <span>1</span>
+      <div className="selectTab"  >
+      <span>1</span>
+      <NavLink to='/signup' className='navlink'>
+     
          <div className="innerbox"  style={{ backgroundColor: innerBoxColor }} >
          <div className="svgImgleft" >
          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="179" viewBox="0 0 210 179" fill="url(#myGradient)">
@@ -81,10 +85,14 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
          </div>
          </div>
          <p>SIGN UP TO BECOME AN ANGEL</p>
-         <p>hwfa</p>
+         </NavLink>
+         <div className="downText">
+        <p> <BsDot className='textIcon'/>Click the “sign in” button</p>
+        <p> <BsDot  className='textIcon'/>Finish application and wait for approval.</p>
+        </div>
        
        </div>
-       </NavLink>
+    
  
  
        <div className="selectTab">
@@ -93,6 +101,10 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
          <img src={Frame2}alt="" />
          </div>
          <p>CREATE AN IMPACT STORY</p>
+         <div className="downText">
+        <p> <BsDot className='textIcon'/>Click the “sign in” button</p>
+        <p> <BsDot  className='textIcon'/>Finish application and wait for approval.</p>
+        </div>
        </div>
  
  
@@ -102,10 +114,19 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
           <img src={Frame} alt="" />
          </div>
          <p>SHARE WITH FRIENDS & FAMILY</p>
+         <div className="downText">
+        <p> <BsDot className='textIcon'/>Click the “sign in” button</p>
+        <p> <BsDot  className='textIcon'/>Finish application and wait for approval.</p>
+        </div>
        </div>
  
- 
       </div>
+
+      <NavLink to='/signup' className='navLink'>
+            <button className='logBtn'>Become an Angel <AiFillCaretRight /> </button>
+          </NavLink>
+
+    <AngelFooter/>
     </div>
   )
 }

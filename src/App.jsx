@@ -11,6 +11,8 @@ import CreatePost from './components/CreateCampaign/CreatePost';
 import LandingPage from './pages/landingPage/LandingPage';
 import Impactpage from './pages/ImpactPage/Impactpage';
 import HowitWorks from './pages/How-itWorks/HowitWorks';
+import Updateprofile from './pages/UpdateProfile/Updateprofile';
+import Addprofile from './pages/UpdateProfile/Addprofile'
 import {
   BrowserRouter ,
   Routes,
@@ -41,6 +43,8 @@ function App() {
             <Route path='/' element={<LandingPage/>}/>
             <Route path='/impact' element={<Impactpage/>}/>
             <Route path='/HowitWorks' element={<HowitWorks/>}/>
+            <Route path='/updateProfile' element={<Updateprofile/>}/>
+            <Route path='/addProfile' element={<Addprofile/>}/>
           </Routes>
         </BrowserRouter>
       </>

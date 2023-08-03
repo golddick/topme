@@ -74,7 +74,12 @@ class Impactpage extends Component {
 
     return (
       <div className="Impactpage">
-        <Hometop />
+         <div className="homtop">
+         <Hometop />
+         </div>
+        
+        <div className="impactWrapper">
+
         <div className="navTop">
           <div className="navCont">
           <NavLink to="/" className="navLink" >
@@ -135,6 +140,7 @@ class Impactpage extends Component {
         </div>
         <AngelDonate/>
         <Angelfooter/>
+        </div>
       </div>
      
       

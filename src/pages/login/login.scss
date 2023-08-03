@@ -1,14 +1,13 @@
 body{
-    background: #d05454;
+    background: #f3f3f3;
 
 
 .wrapper{
-    overflow:hidden;
 height: 100vh;
 padding: 0;
 margin: 0;
-background-color: #f3f3f3;
-position: static;
+background-color: white;
+
 
     .backGroundImgbuttom {
     height: 15%;
@@ -23,7 +22,7 @@ position: static;
     .backGroundImgtop{
         height: 15%;
         width: 20%;
-        position: absolute;
+        position: fixed;
     }
 
         .loginHeader{
@@ -33,7 +32,7 @@ position: static;
             display: flex;
             justify-content: space-between;
             justify-items: center;
-            padding: 10px;
+            margin: 20px;
             text-align: center;
             align-items: center;
             padding-left: 50px;
@@ -110,6 +109,7 @@ position: static;
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        justify-content: center;
         position: absolute;
        
         
@@ -135,6 +135,8 @@ position: static;
             width:100%;
             display: flex;
              flex-direction: column;
+             align-items: center;
+             justify-content: center;
             gap: 15px;
             overflow: hidden;
             
@@ -183,8 +185,9 @@ position: static;
             font-family: Poppins;
             font-weight: 300;
             align-items: center;
-            justify-content:space-between;
-            width:auto;
+           justify-content: center;
+           gap: 50px;
+            width:100%;
 
             .check{
                 display: flex;
@@ -212,7 +215,6 @@ position: static;
             font-weight: bold;
             height: 30px;
             width: 250px;
-           margin-left: 25%;
            margin-top: 30px;
         
                 
@@ -220,7 +222,8 @@ position: static;
             .loginIcons{
                 display: flex;
                 margin-top: 10px;
-                width: 300px;
+                // width: 250px;
+                gap: 100px;
                 justify-content:space-between;
                 align-items: center;
                 align-self: center;
@@ -236,11 +239,11 @@ position: static;
    
     
 } 
-    .footer{
-        margin-left: 500px;
-        top: -100px;
-        position: relative;
-    }
+    // .footer{
+    //     margin-left: 500px;
+    //     top: -100px;
+    //     position: relative;
+    // }
 }
 
 .navLink{
@@ -248,3 +251,21 @@ position: static;
     color: inherit;
 }
 }
+
+
+@media  screen and (max-width: 1024px) {
+    // .container.testimonials_container {
+    //     width: 60%;
+    // }
+  }
+  
+  /* MEDIA QUERIES (SMALL DEVICES)*/
+  @media screen and  (max-width: 600px) {
+    //  .container.testimonials_container {
+    //      width: var(--container-width-sm);
+    //  }
+  
+    //  .client_review {
+    //      width: var(--container-width-sm);
+    //  }
+  }

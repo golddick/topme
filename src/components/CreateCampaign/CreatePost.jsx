@@ -127,14 +127,14 @@ function CreatePost() {
       ExpectedFunds: ExpectedFunds,
       DueDate: dueDate,
       CampaignImage: CampaignImage,
-      // UserAccountId : UserAccountId,
+      UserAccountId : UserAccountId,
       CampaignCategoryId: selectedCategory.campaignCategoryId,
       // isPublished: false
       
 
     };
    
-     console.log(dataToUpdate)
+    
 
 
     axios.put(`http://162.255.87.139:5034/api/v1/Campaign/createacampaign?id=${UserAccountId}`, dataToUpdate) 
@@ -143,7 +143,7 @@ function CreatePost() {
         console.log(response.data);
         setIsLoading(false);
         setSuccessMessage('Campaign updated successfully.');
-
+        console.log(dataToUpdate)
       })
       .catch(error => { 
         // Handle errors if any

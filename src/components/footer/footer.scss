@@ -5,8 +5,9 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
-gap: 20px;
-width: 500px;
+gap: 10px;
+width: 450px;
+margin-left: 20px;
 margin-top: 30px;
  span{
 
@@ -16,3 +17,20 @@ margin-top: 30px;
  }
 
 }
+
+@media  screen and (max-width: 1024px) {
+   // .container.testimonials_container {
+   //     width: 60%;
+   // }
+ }
+ 
+ /* MEDIA QUERIES (SMALL DEVICES)*/
+ @media screen and  (max-width: 600px) {
+   //  .container.testimonials_container {
+   //      width: var(--container-width-sm);
+   //  }
+ 
+   //  .client_review {
+   //      width: var(--container-width-sm);
+   //  }
+ }

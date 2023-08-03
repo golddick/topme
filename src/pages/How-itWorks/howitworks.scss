@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
    gap: 50px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+
 
     .howbody{
         display: flex;
@@ -93,14 +94,78 @@
                    object-fit: cover;
                   margin-bottom: 20px;
                 }
-        
          
             }
-        
-          
+
+            .downText{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                justify-content: start;
+                .textIcon{
+                    font-size: 20px;
+                    color: #68EDCB;
+                }
+                p{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                }
+            }
+        }  
         }
-        }
+
+            
         .navlink{
             text-decoration: none;
         }
+
+        .logBtn{
+            width: 236px;
+            height: 56px;
+            display: flex;
+            padding: 16px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            background: #68EDCB;
+            margin-top: 50px;
+            border: none;
+            margin-left: 600px;
+            margin-bottom: 200px;
+
+
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+        }
+
+
+        
 }
+
+@media  screen and (max-width: 1024px) {
+    // .container.testimonials_container {
+    //     width: 60%;
+    // }
+  }
+  
+  /* MEDIA QUERIES (SMALL DEVICES)*/
+  @media screen and  (max-width: 600px) {
+    //  .container.testimonials_container {
+    //      width: var(--container-width-sm);
+    //  }
+  
+    //  .client_review {
+    //      width: var(--container-width-sm);
+    //  }
+  }

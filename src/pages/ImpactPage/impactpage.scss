@@ -1,5 +1,20 @@
 .Impactpage{
 
+
+
+
+    .homtop{
+        position: static;
+    top: 0;
+    z-index: 100;
+    }
+
+    .impactWrapper{
+
+        overflow-y: auto;
+        height: calc(100vh - 60px); 
+    }
+
     .navTop{
         display: flex;
         width: 100%;
@@ -16,7 +31,7 @@
         align-items: center;   
         gap: 44px;
 
-        .icon{
+        .icon{ 
             width: 48px;
             height: 48px;
         }
@@ -274,3 +289,21 @@
         text-decoration: none;
        }
 }
+
+
+@media  screen and (max-width: 1024px) {
+    // .container.testimonials_container {
+    //     width: 60%;
+    // }
+  }
+  
+  /* MEDIA QUERIES (SMALL DEVICES)*/
+  @media screen and  (max-width: 600px) {
+    //  .container.testimonials_container {
+    //      width: var(--container-width-sm);
+    //  }
+  
+    //  .client_review {
+    //      width: var(--container-width-sm);
+    //  }
+  }

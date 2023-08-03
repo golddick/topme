@@ -80,7 +80,7 @@ function Login() {
     if (userData) {
       fetchUserType();
     }
-  }, [userData]); // Add userData as a dependency for the useEffect hook
+  }, [userData]); 
 
 
   const isUserDataIncomplete = (userData) => {
@@ -96,7 +96,7 @@ function Login() {
   
       if (userType === 'Angel') {
         if (isUserDataIncomplete(userData)) {
-          navigate('/update-profile');
+          navigate('/addProfile');
         } else {
           navigate('/profile');
         }
@@ -140,12 +140,13 @@ function Login() {
           </form>
           {loginSuccess && <p>Login successful!</p>}
           {loginError && <p>Login failed. Please check your credentials and try again.</p>}
+          <div className="footer">
+        <Footer />
+      </div>
         </div>
       </div>
       <img src={body2} alt="" className="backGroundImgbuttom" />
-      <div className="footer">
-        <Footer />
-      </div>
+    
     </div>
   );
 }

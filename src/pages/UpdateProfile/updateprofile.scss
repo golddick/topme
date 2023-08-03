@@ -3,42 +3,49 @@ body {
     position: relative;
     
   
-.D_profile{
-    
-    .profileWrapper{
-        display: flex;
+.Updateprofile{
 
-        .profileLeft{
+    .homtop{
+        position: static;
+    top: 0;
+    z-index: 100;
+    }
+
+    
+    .updateprofileContainer{
+        display: flex;
+        overflow-y: auto;
+        height: calc(100vh - 60px); 
+
+        .updateprofileContainerLeft{
             flex: 2;
         }
 
 
-        .profileCenter{
-            margin-top: 20px;
-        margin-left: -50px;
+        .updateprofileContainercenter{
         flex: 5;
         width: 100%;
+
+//    .topBar{
+//     position: static;
+//     top: 0;
+//     z-index: 100;
+//    //margin-bottom: 100px;
+//    }
+
+//    .postContent{
+//     overflow-y: auto;
+//     height: calc(100vh - 60px);
+
+//    }
+        
         }
 
 
     }
 
 }
-.navLink{
-    text-decoration: none;
-    color: inherit;
 }
-
-.bottom{
-
-    .icon{
-        color: #68EDCB;
-        margin-left: 1400px;
-        font-size: 30px;
-    }
-}
-}
-
 
 @media  screen and (max-width: 1024px) {
     // .container.testimonials_container {

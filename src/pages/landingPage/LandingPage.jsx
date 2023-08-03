@@ -19,7 +19,7 @@ function LandingPage() {
     <AngelDonate/>
     <AngelFooter/>
     </div>
-    </div>
+    </div> 
   )
 }
 
