@@ -51,7 +51,7 @@ function Login() {
           setLoginSuccess(true);
           setLoginError(false);
           console.log('Login successful!');
-          console.log(data.message);
+          console.log(data.message); 
           // Store the complete user data in state
            setUserData(data); 
            localStorage.setItem('userData', JSON.stringify(data)); 
