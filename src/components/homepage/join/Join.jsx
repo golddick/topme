@@ -1,6 +1,6 @@
 import './join.scss'
 import Male from '../../../assets/male.png'
-import Female from '../../../assets/female.png'
+import Female from '../../../assets/Female.png'
 import {BiCaretRight} from 'react-icons/bi'
 
 function Join() {
