@@ -4,6 +4,7 @@ import DarkLogo from '../../../assets/blacklogo.svg'
 import {BsYoutube , BsInstagram , BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
 import React, { useState } from 'react';
+import {  NavLink } from 'react-router-dom';
 
 function AngelFooter() {
 
@@ -15,9 +16,11 @@ function AngelFooter() {
 
   const handlePopupClose = () => {
     setIsOpen(false);
+  }; 
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-
 
   return (
     <div className='AngelFooter'>
@@ -121,12 +124,14 @@ function AngelFooter() {
 
         <div className="FooterContent">
         <h4>LINKS</h4>
-          <span>Home</span>
-          <span>About</span>
-          <span>Angels</span>
-          <span>Blogs</span>
-          <span>Contact Us</span>
-          <span>FAQ</span>
+        <NavLink to='/' className='navLink'>
+          <span onClick={scrollToTop}>Home</span>
+          </NavLink>
+          <NavLink to='/about' className='navLink'><span onClick={scrollToTop}>About</span> </NavLink>
+          <NavLink to='/impact' className='navLink'><span onClick={scrollToTop}>Angels</span> </NavLink>
+          <NavLink to='/blog' className='navLink'><span onClick={scrollToTop}>Blogs</span> </NavLink>
+          <NavLink to='/contact' className='navLink'><span onClick={scrollToTop}>Contact Us</span> </NavLink>
+          <NavLink to='#' className='navLink'><span onClick={scrollToTop}> FAQ</span></NavLink>
         </div>
 
         <div className="FooterContent">
@@ -140,9 +145,9 @@ function AngelFooter() {
 
         <div className="FooterContent">
         <h4>RESOURCES</h4>
-          <span>How it Works</span>
-          <span>Pricing and Fees</span>
-          <span>Guarantee Page</span>
+        <NavLink to='/HowitWorks' className='navLink'> <span onClick={scrollToTop}>How it Works</span></NavLink>
+        <NavLink to='/pricing' className='navLink'><span> onClick={scrollToTop}Pricing and Fees</span></NavLink>
+        <NavLink to='/guarantee' className='navLink'> <span onClick={scrollToTop}>Guarantee Page</span></NavLink>
 
         </div>
 
