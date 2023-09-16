@@ -1,0 +1,199 @@
+.Claim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    color: #000;
+    // margin-top: 100px;
+
+    .claimCont{
+       
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 774px;
+        background: #FFF;
+        color: #000;
+        padding: 20px;
+        // margin-top: 100px;
+
+        .submitHeader{
+            margin-top: 20px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+
+            .h2{
+                color: #000;
+                font-family: Poppins;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h5{
+                color: #808080;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.03px;
+                width: 774px;
+            }
+        }
+
+        .claimForm{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            width: 100%;
+            margin: 20px;
+           background-color: #FFF;
+
+            input{
+                border-radius: 8px;
+                border: 2px solid #000;
+                background: #FFF;
+                display: flex;
+                width: 774px;
+                padding: 24px;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .inputRoll{
+                display: flex;
+                width: 774px;
+                align-items: flex-start;
+                gap: 40px;
+
+                .input{
+                    display: flex;
+                    height: 60px;
+                    padding: 24px;
+                    align-items: center;
+                    gap: 24px;
+                    flex: 1 0 0;
+                    border-radius: 8px;
+                    border: 2px solid #000;
+                    // background: #983535;
+                  
+                }
+                .nation{
+                    padding: 10px;
+                    height: 69px;
+                    border-radius: 8px;
+                    border: 2px solid #000;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    
+                    input{
+                        border: none;
+                        height: 60px;
+                    }
+                    .dropdownIcon{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    
+                    img{
+                        height: 28px;
+                        width: 28px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        flex: 1 0 0;
+                    }
+                }
+
+            }
+
+            .bollen{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                align-self: stretch;
+                background-color: #FFF;
+
+                h5{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.014px;
+                }
+             }
+
+             .uploadFile{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+
+                h4{
+                    color: #808080;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.014px;
+                }
+
+                input{
+                    display: flex;
+                    align-items: center;
+                    width: 774px;
+                    height: 69px;
+                    padding: 24px;
+                    align-items: center;
+                    gap: 10px;
+                }
+             }
+
+             button{
+                display: flex;
+                height: 45px;
+                padding: 12px 44px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #68EDCB;
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+             }
+             
+       
+        }
+        p{
+            color: #808080;
+            width: 774px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.03px;
+         }
+        
+    }
+}

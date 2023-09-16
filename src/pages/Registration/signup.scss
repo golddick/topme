@@ -1,5 +1,6 @@
 .signup{
     background-color:#FFFFFF;
+    margin-top: -100px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -15,16 +16,29 @@
         justify-content: space-between;
         position:static;
         width: 110%;
-        margin-top: 500px;
-        padding-top: 50px;
+        // margin-top: 500px;
+        // padding-top: 50px;
         //background-color: #68EDCB;
 
+ 
+    // .backGroundImg{
+    //     width:400px;
+    //     height: 400px;
+    //     position: relative;
+    //     justify-content: space-between;
+    // }
 
-    .backGroundImg{
-        width:400px;
-        height: 400px;
-        position: relative;
-        justify-content: space-between;
+    .backGroundImgRight{
+        height: 320px;
+        width: 300px;
+        margin-top: 600px;
+    }
+
+    .backGroundImgLeft{
+        height: 320px;
+        width: 300px;
+        margin-top: 600px;
+
     }
 
   
@@ -164,18 +178,10 @@
 
 
 @media  screen and (max-width: 1024px) {
-    // .container.testimonials_container {
-    //     width: 60%;
-    // }
+   
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {
-    //  .container.testimonials_container {
-    //      width: var(--container-width-sm);
-    //  }
-  
-    //  .client_review {
-    //      width: var(--container-width-sm);
-    //  }
+
   }

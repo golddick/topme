@@ -1,65 +1,37 @@
+
+
+
 body {
     background: #ffffff;
     position: relative;
     
   
 .Updateprofile{
-
-    .homtop{
-        position: static;
-    top: 0;
-    z-index: 100;
-    }
-
     
-    .updateprofileContainer{
+    .updateContainer{
         display: flex;
-        overflow-y: auto;
-        height: calc(100vh - 60px); 
 
-        .updateprofileContainerLeft{
+        .updateContainerLeft{
             flex: 2;
         }
+ 
 
-
-        .updateprofileContainercenter{
+        .updateContainercenter{
+        overflow-y: auto;
+        height: calc(1000px - 60px);
         flex: 5;
         width: 100%;
-
-//    .topBar{
-//     position: static;
-//     top: 0;
-//     z-index: 100;
-//    //margin-bottom: 100px;
-//    }
-
-//    .postContent{
-//     overflow-y: auto;
-//     height: calc(100vh - 60px);
-
-//    }
         
         }
-
-
     }
-
 }
 }
 
 @media  screen and (max-width: 1024px) {
-    // .container.testimonials_container {
-    //     width: 60%;
-    // }
+
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {
-    //  .container.testimonials_container {
-    //      width: var(--container-width-sm);
-    //  }
-  
-    //  .client_review {
-    //      width: var(--container-width-sm);
-    //  }
+   
   }

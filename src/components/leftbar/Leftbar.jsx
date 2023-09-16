@@ -119,7 +119,7 @@ function Leftbar() {
         <div className="profileInfo">
             <img src={profilePhoto}
             alt="" className="profileImg"/>
-               </div>
+               </div> 
                <div className="name">
                <span className='userName'>{firstname} {lastname} &nbsp;&nbsp;
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17"  viewBox="0 0 21 17" fill="none">
@@ -138,6 +138,7 @@ function Leftbar() {
                 <FaTwitter className='ICON'/>
                 </div>
                 </div>
+
                 <div className="engagements">
                     <div className="engagement">
                         <span>10k</span>
@@ -150,6 +151,7 @@ function Leftbar() {
                         <p>CAMPAIGNS</p>
                     </div>
                 </div>
+                
        </div>
        {/* <div className="horizontal-line"></div> */}
        
@@ -170,9 +172,10 @@ function Leftbar() {
         </NavLink>
 
         <div className="nav">
+        {/* <div className="messagediv"> */}
         <FaRegEnvelope className='icon'/>
-        {/* <span> <NavLink to='' className='navLink' >Message</NavLink></span>  */}
         <span>Message</span>
+        {/* </div> */}
                <p>4</p>
         </div>
         <div className="nav">

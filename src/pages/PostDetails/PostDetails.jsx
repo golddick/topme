@@ -1,22 +1,27 @@
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import { useState } from 'react';
 import Slider from "react-slick";
- 
+ import AngelFooter from '../../components/homepage/footer/AngelFooter';
 import './postdetails.scss'
 import Sidebar from "../../components/leftbar/Sidebar";
-import Donortopbar from "../../components/Topbar/Donortopbar";
+import Hometop from '../../components/homepage/HomeTop/Hometop';
 import Postinfo from "../../components/post/PostInfo";
 import { FaEnvelope } from "react-icons/fa";
 import { BsPersonCheck } from "react-icons/bs";
 import { MdQueryStats, MdOutlineVolunteerActivism } from "react-icons/md";
-import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
-import Dogeatdog from "../../assets/dog.webm";
+import YouTube from 'react-youtube';
 import {TbShare3} from 'react-icons/tb'
 import { TiLocationOutline } from "react-icons/ti";
 
 
+function getVideoIdFromUrl(url) {
+  // Extract the video ID from the YouTube URL
+  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[7]) ? match[7] : '';
+}
 
 function PostDetails() {
 
@@ -54,19 +59,61 @@ function PostDetails() {
       }
     ]
   };
+  const youtubeLinkUrl = 'https://www.youtube.com/watch?v=MhBYWBu9-9Q';
+  const videoId = getVideoIdFromUrl(youtubeLinkUrl);
+
+const opts = {
+  height: '400',
+  width: '800px',
+  borderRadius: '10px',
+  playerVars: {
+  controls: 1,
+  autoplay: 0,
+  },
+};
+
+
+function TruncatedContent({ content }) {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const toggleContent = () => {
+    setShowFullContent(!showFullContent);
+  };
+
+  const truncateContent = (text, limit) => {
+    const words = text.split(' ');
+    if (words.length > limit) {
+      return words.slice(0, limit).join(' ') + '...';
+    }
+    return text;
+  };
+
+  return (
+    <div className='textContent'>
+      <p className="PostText">
+        {showFullContent ? content : truncateContent(content, 100)}
+      </p>
+      {content.split(' ').length > 50 && (
+        <button onClick={toggleContent}>
+          {showFullContent ? 'Read Less' : 'Read More'}
+        </button>
+      )}
+    </div>
+  );
+}
+
 
 
   return (
-    <div className="D_profile">
-      <Donortopbar />
+    <div className="D_profile" >
+      <Hometop   />
       <div className="profileWrapper">
         <div className="profileLeft">
           <Sidebar />
         </div>
-     
         <div className="profileCenter">
           <Postinfo/>
-
+ 
           <div className="postinfo">
             <BsPersonCheck className="icon" />
             <div className="info">
@@ -87,7 +134,7 @@ function PostDetails() {
             </div>
           </div>
 
-          <p className="PostText">
+           <TruncatedContent content="   
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -108,25 +155,11 @@ function PostDetails() {
             Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
             Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
             fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc.
-          </p>
+            consequat, leo eget bibendum sodales, augue velit cursus nunc.." />
 
-          <Video
-            loop
-            muted
-            controls={[
-              "PlayPause",
-              "Seek",
-              "Time",
-              "Volume",
-              "Fullscreen",
-            ]}
-            poster="https://cdn.icon-icons.com/icons2/2226/PNG/512/play_icon_134504.png"
-            className="videos"
-          >
-            <source src={Dogeatdog} />
-            <track label="English" kind="subtitles" srcLang="en" default />
-          </Video>
+      <div className="videos">
+    <YouTube videoId={videoId} opts={opts} />
+    </div>
 
           <div className="postbio">
             <span>Help build a legacy for the Makoko kids.</span>
@@ -174,7 +207,7 @@ function PostDetails() {
               <div className="imageWrapper"><img className="img" src="https://media.istockphoto.com/id/972902010/photo/brazilian-boy-smiling.jpg?s=612x612&w=0&k=20&c=ALUJXfPS7_HV_khXC7PwMDEHaBPxttY8BcalDpEmlxA=" alt="" /></div>
                 </Slider>
   
-          <p className="PostText">
+          <TruncatedContent content="
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -195,22 +228,27 @@ function PostDetails() {
             Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
             Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
             fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc.
-          </p>
-
+            consequat, leo eget bibendum sodales, augue velit cursus nunc.." />
           <button className='btn'>donate</button>
 
 
          
-        </div>
+        </div> 
+{/*        
+       <div className="profileRight">
+      <div className="rightContent">
+
+      </div>
+       </div> */}
       </div>
       
+   
           <div className="bottom" >
               <FaEnvelope className='icon'/>
-          </div>
+          </div> 
           
-
-        
+  
+        <AngelFooter/>
     </div>
   );
 }

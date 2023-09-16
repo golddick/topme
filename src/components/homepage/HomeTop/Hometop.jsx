@@ -1,14 +1,20 @@
 import './hometop.scss'
 import SearchIcon from '@mui/icons-material/Search';
-// import Logo from '../../../assets/logo.png'
+import {BiChevronDown} from 'react-icons/bi'
 import {  NavLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState ,useEffect, useRef } from 'react';
 import Search from '../../search/Search';
+import Logo from '../../../assets/greenLogo.png'
+import BLogo from '../../../assets/blacklogo.svg'
+
 // import ErrorBoundary from '../../errboundary';
 
 
 function Hometop() {
   const [isOpen, setIsOpen] = useState(false);
+  const [extraopen, setExtraopen] = useState(false);
+  const [howitworks, setHowitworks] = useState(false)
+  const popupRef = useRef(null);
 
   const handlePopupOpen = () => {
     setIsOpen(true);
@@ -19,21 +25,90 @@ function Hometop() {
       setIsOpen(false);
     }
   
+    const openHow =() =>{
+      setHowitworks(!howitworks);
+    }
+  
+const openExtra =() =>{
+  setExtraopen(!extraopen);
+}
+
+const handleOutsideClick = (event) => {
+  if (popupRef.current && !popupRef.current.contains(event.target)) {
+    setExtraopen(false);
+    setHowitworks(false);
+  }
+};
+
+useEffect(() => {
+  if (extraopen || howitworks) {
+    document.addEventListener('mousedown', handleOutsideClick);
+  } else {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  }
+
+  return () => {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  };
+}, [extraopen, howitworks]);
+
 
 
   return (
     <div className="tophome">
-        <div className="topLeft">
+       
+      <div className="largeTopbar">
+      <div className="topLeft">
+          <NavLink to='/about' className='navlink'>
           <span>about</span>
-          <span>faq</span>
-          <NavLink to='/HowitWorks' className='navlink'>
-          <span>how it works </span>
           </NavLink>
-
-          <div className="search"  onClick={handlePopupOpen}>
-            <SearchIcon className='searchicon'/>
-            <span>search</span>
-          </div>
+          <NavLink to='/impact' className='navlink'>
+          <span>angels</span>
+          </NavLink>
+          <span onClick={openExtra}>extras <BiChevronDown/></span>
+          {
+            extraopen && (
+             <div ref={popupRef}  className="extraPopup">
+              <NavLink to='/contact' className='navlink'>
+               <div className="contact">
+                <div className="span">Contact</div>
+                <img src={Logo} alt="" />
+              </div>
+              </NavLink>
+              <NavLink to='/blog' className='navLink'>
+              <div className="blog">
+              <div className="span">Blog</div>
+              </div>
+              </NavLink>
+             </div>
+            )
+          }
+         
+          <span onClick={openHow}>how it works  <BiChevronDown/></span>
+          {
+            howitworks && (
+             <div ref={popupRef} style={{marginLeft:'400px'}} className="extraPopup">
+               <NavLink to='/HowitWorks' className='navlink'>
+               <div   className="contact">
+                <div className="span">how</div>
+                <img src={Logo} alt="" />
+                <div className="span">works</div>
+              </div>
+              </NavLink>
+              <NavLink to='/pricing' className='navlink'>
+              <div className="blog">
+              <div className="span">pricing and fees</div>
+              </div>
+              </NavLink>
+              <NavLink to='/guarantee' className='navlink'>
+              <div className="blog">
+              <div className="span">guarantees page</div>
+              </div>
+              </NavLink>
+             </div>
+            )
+          }
+     
         
         </div>
 
@@ -50,11 +125,16 @@ function Hometop() {
   <path d="M116.939 22.2846C111.526 22.2846 107.118 17.8651 107.118 12.438C107.118 7.01079 111.526 2.59131 116.939 2.59131C122.352 2.59131 126.76 7.01079 126.76 12.438C126.76 17.8651 122.352 22.2846 116.939 22.2846ZM116.939 3.6278C112.093 3.6278 108.152 7.57942 108.152 12.438C108.152 17.2965 112.093 21.2481 116.939 21.2481C121.785 21.2481 125.726 17.2965 125.726 12.438C125.726 7.57942 121.785 3.6278 116.939 3.6278Z" fill="#68EDCB"/>
   <path d="M126.243 13.9926C125.389 13.9926 124.692 13.2944 124.692 12.4378C124.692 8.14792 121.218 4.66416 116.939 4.66416C112.66 4.66416 109.186 8.14792 109.186 12.4378C109.186 13.2944 108.489 13.9926 107.635 13.9926C106.781 13.9926 106.084 13.2944 106.084 12.4378C106.084 6.43483 110.952 1.55469 116.939 1.55469C122.926 1.55469 127.794 6.43483 127.794 12.4378C127.794 13.2944 127.097 13.9926 126.243 13.9926Z" fill="#68EDCB"/>
   <path d="M172.864 29.5255C171.773 21.0968 164.551 14.7339 156.065 14.7339C146.725 14.7339 139.123 22.3564 139.123 31.7208C139.123 41.0852 146.725 48.7077 156.065 48.7077C160.179 48.7077 164.141 47.2106 167.228 44.497L168.04 43.7844L164.027 39.185L163.215 39.8976C161.234 41.6322 158.7 42.5896 156.072 42.5896C151.234 42.5896 146.955 39.2713 145.641 34.6935H172.778L172.893 33.7434C172.972 33.0884 173.015 32.4046 173.015 31.7208C173.015 30.9866 172.964 30.2452 172.871 29.5183L172.864 29.5255ZM145.677 28.5825C147.034 24.0335 151.219 20.8521 156.065 20.8521C160.911 20.8521 165.089 24.0335 166.453 28.5825H145.684H145.677Z" fill="white"/>
-</svg>
+          </svg>
         </div>
         </NavLink>
 
         <div className="topRight">
+    
+        <div className="Search" onClick={handlePopupOpen}>
+        <SearchIcon className='searchicon'/>
+          <span>search</span>
+        </div>
         <NavLink to='/login' className='navlink'>
           <span>Login</span>
           </NavLink>
@@ -62,12 +142,32 @@ function Hometop() {
           <span className='sign-up' > angle sign up</span>
           </NavLink>
         </div>
-        {isOpen && (
-          <div className="popup">
+      </div>
+         
+
+
+        {isOpen && ( 
+        
             <Search closePopup={closePopup} />
        
-          </div>
         )}
+
+
+
+<div className="mobileTopbar">
+          <div className="innerbar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+          <path d="M14.3269 15.04L17.8 18.4M8.8 5.20001C10.7882 5.20001 12.4 6.81178 12.4 8.80001M16.68 9.44001C16.68 13.7699 13.1699 17.28 8.84 17.28C4.51009 17.28 1 13.7699 1 9.44001C1 5.11009 4.51009 1.60001 8.84 1.60001C13.1699 1.60001 16.68 5.11009 16.68 9.44001Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <NavLink to='/' className='navLink'>
+          <img src={BLogo} alt="" />
+          </NavLink>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M9.8 19.4H21.2M2 12.2H21.2M2 5H21.2" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+          </div>
+      </div>
+
       </div>
   )
 }

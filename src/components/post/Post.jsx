@@ -3,6 +3,10 @@ import { BsGift } from 'react-icons/bs';
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
 import { TbShare3 } from 'react-icons/tb';
 import { CiLocationOn } from 'react-icons/ci';
+import {RiAddBoxLine} from 'react-icons/ri';
+import VerticalProgressbar from '../../components/Progressbar/Progressbar';
+import './post.scss'
+
 
 function Post() {
   const posts = [
@@ -61,12 +65,15 @@ function Post() {
                 </span>
               </div>
               <div className="postTime">
+                <div className="thread">
+                  +2 threads
+                </div>
+                <span className="dot">.</span>
                 <span>19/04/2023</span>
                 <span className="dot">.</span>
                 <span>1 month ago</span>
                 <span className="dot">.</span>
-                <span>Duration 6 months</span>
-                <span className="dot">.</span>
+             
                 <span>
                   <CiLocationOn className="icon" />
                   Lagos, Nigeria
@@ -84,11 +91,11 @@ function Post() {
             <div className="top">
               <p>{post.postheader}</p>
             </div>
-            <div className="center">
+        <div className="center">
               <img src={post.postimg} alt="" />
-            </div>
-            <div className="storyTop">
-              <div className="top">
+
+              <div className="storyTop">
+              <div className="topStory">
                 <span>
                   <VolunteerActivismOutlinedIcon className="icon" /> donation so far: <b>$10,000</b>
                 </span>
@@ -96,12 +103,24 @@ function Post() {
                   <BsGift className="icon" /> donation Target: <b>$21,000</b>
                 </span>
               </div>
+              <div className="progressbar">
+                  <VerticalProgressbar/>
+                </div>
+              <div className="storyCenter">
+                <div className="addImpact">
+                  <RiAddBoxLine/>
+                  <span>add to impact story</span>
+                </div>
+                <button>donate</button>
+              </div>
               <div className="down">
                 <p>{post.postbio}</p>
               </div>
             </div>
-          </div>
+            </div>
+           
         </div>
+          </div>
       ))}
     </div>
   );

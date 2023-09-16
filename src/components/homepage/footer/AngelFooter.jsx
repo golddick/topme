@@ -1,5 +1,6 @@
 import './footerangel.scss'
 import Logo from '../../../assets/Logo.png'
+import DarkLogo from '../../../assets/blacklogo.svg'
 import {BsYoutube , BsInstagram , BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
 import React, { useState } from 'react';
@@ -46,7 +47,7 @@ function AngelFooter() {
             <span>About</span>
             <span>Angels</span>
             <span>Blogs</span>
-            <span>Contact Us</span>
+            <span>Contact Us</span> 
             <span>FAQ</span>
           </div>
 
@@ -85,6 +86,8 @@ function AngelFooter() {
         </div>
        
       </div>
+
+
       {isOpen && (
         <div className="popup">
           <div className="popupContent">
@@ -112,6 +115,65 @@ function AngelFooter() {
         </div>
       )}
       
+
+        <div className="mobileFooter">
+          <img src={DarkLogo} alt="" />
+
+        <div className="FooterContent">
+        <h4>LINKS</h4>
+          <span>Home</span>
+          <span>About</span>
+          <span>Angels</span>
+          <span>Blogs</span>
+          <span>Contact Us</span>
+          <span>FAQ</span>
+        </div>
+
+        <div className="FooterContent">
+        <h4>PARTNERS</h4>
+          <span>Photoman</span>
+          <span>Abuja Diplomat</span>
+          <span>BIGWIG</span>
+          <span>oneID</span>
+          <span>Technology Advisors</span>
+        </div>
+
+        <div className="FooterContent">
+        <h4>RESOURCES</h4>
+          <span>How it Works</span>
+          <span>Pricing and Fees</span>
+          <span>Guarantee Page</span>
+
+        </div>
+
+        <div className="bottomContent">
+          <div className="top">
+          &copy; <span>topme, 2023</span>
+          </div>
+          <div className="bottomInf">
+            <span>privacy policy</span>
+            <span>cookie policy</span>
+            <span>terms & condition</span>
+          </div>
+        </div>
+
+        <div className="bottomIcon">
+      <div className="footerIcons">
+          <BsYoutube className='icons'/>
+          </div>
+          <div className="footerIcons">
+          <FaFacebookF className='icons'/>
+          </div>
+          <div className="footerIcons">
+          <BsInstagram className='icons'/>
+          </div>
+          <div className="footerIcons">
+          <BsTwitter className='icons'/>
+          </div>
+      </div>
+        </div>
+
+
       <div className="vertical"></div>
 
       <div className="bottomfooter">

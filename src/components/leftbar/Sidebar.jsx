@@ -15,9 +15,12 @@ function Leftbar() {
 
   return (
     <div className='Leftbar' >
-        <NavLink to='/' className='navLink'>
+         <NavLink to='/' className='navLink'>
         <IoIosArrowDropleftCircle className="back"/>
         </NavLink>
+     <div className="barwrapper">
+
+    
        <div className="top" style={{border:'2px solid #68EDCB', marginTop:'50px',   borderRadius:' 20px',  height: 'auto'}}  >
         <div className="profileInfo">
             <img src="https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=" 
@@ -54,9 +57,10 @@ function Leftbar() {
                     </div>
                 </div>
        </div>
-       {/* <div className="horizontal-line"></div> */}
+ 
        
       
+     </div>
       
         </div>
   )

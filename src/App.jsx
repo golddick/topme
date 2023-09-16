@@ -13,6 +13,12 @@ import Impactpage from './pages/ImpactPage/Impactpage';
 import HowitWorks from './pages/How-itWorks/HowitWorks';
 import Updateprofile from './pages/UpdateProfile/Updateprofile';
 import Addprofile from './pages/UpdateProfile/Addprofile'
+import About from './pages/AboutTopme/About';
+import Blog from './pages/blog/Blog';
+import Contact from './pages/contact/Contact';
+import Guarantee from './pages/Guarantee/Guarantee';
+import Claim from './pages/Claim-form/Claim';
+import Pricing from './pages/pricing/Pricing';
 import {
   BrowserRouter ,
   Routes,
@@ -45,6 +51,13 @@ function App() {
             <Route path='/HowitWorks' element={<HowitWorks/>}/>
             <Route path='/updateProfile' element={<Updateprofile/>}/>
             <Route path='/addProfile' element={<Addprofile/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/blog' element={<Blog/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/guarantee' element={<Guarantee/>}/>
+            <Route path='/Claim-form' element={<Claim/>}/>
+            <Route path='/pricing' element={<Pricing/>}/>
+            
           </Routes>
         </BrowserRouter>
       </>

@@ -110,7 +110,7 @@ function Signup() {
               name="lastname"
               value={formData.lastname}
               onChange={handleInputChange}
-            />
+            /> 
           </div>
           <div className="Auth">
             <input
@@ -150,8 +150,8 @@ function Signup() {
       </div>
       
       <div className="bgImg">
-        <img src={body2} alt="" className="backGroundImg" />
-        <img src={body1} alt="" className="backGroundImg" />
+        <img src={body2} alt="" className="backGroundImgRight" />
+        <img src={body1} alt="" className="backGroundImgLeft" />
       </div>
     </div>
   );

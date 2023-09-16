@@ -4,117 +4,93 @@ function AngelDonate() {
   return (
     <div className='AngelDonate'>
       <div className="donateInfo">
-        <h3>Donate to a cause</h3>
+        <h3>Angels by Cities</h3>
 
         <div className="donateType">
-        <div className="type">
-        <span>charity</span>
-            <p>22</p>
-          </div>
 
-          <div className="type">
-        <span>education</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>ENVIRONMENT</span>
-            <p>33</p>
-          </div>
-
-          <div className="type">
-        <span>business</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>animal</span>
+         {/* <div className="type">
+        <div className="typeContent">
+        <span>lagos</span>
             <p>54</p>
+        </div>
+          </div>  */}
+
+          <div className="type">
+        <div className="typeContent">
+        <span>lagos</span>
+            <p>54</p>
+        </div>
+          </div> 
+
+          <div className="type">
+        <div className="typeContent">
+        <span>lagos</span>
+            <p>54</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>asaba</span>
+            <p>54</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>ibadan</span>
+            <p>54</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>ojo</span>
+            <p>54</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>yaba</span>
+            <p>54</p>
+        </div>
           </div>
        
+          <div className="type">
+        <div className="typeContent">
+        <span>yaba</span>
+            <p>54</p>
+        </div>
+          </div>
 
+          <div className="type">
+        <div className="typeContent">
+        <span>pluto</span>
+            <p>95</p>
+        </div>
+          </div>
+          <div className="type">
+        <div className="typeContent">
+        <span>ikoyi</span>
+            <p>10</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>london</span>
+            <p>24</p>
+        </div>
+          </div>
+
+          <div className="type">
+        <div className="typeContent">
+        <span>kaduna</span>
+            <p>14</p>
+        </div>
+          </div>
          
-        </div>
-
-
-        <div className="donateType2" >
-        <div className="type">
-        <span>medical</span>
-            <p>22</p>
-          </div>
-
-          <div className="type">
-        <span>funeral</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>emergency</span>
-            <p>33</p>
-          </div>
-
-          <div className="type">
-        <span>community</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>competition</span>
-            <p>54</p>
-          </div>
-       
-        </div>
-
-        <div className="donateType3" >
-        <div className="type">
-        <span>creative</span>
-            <p>22</p>
-          </div>
-
-          <div className="type">
-        <span>event</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>faith</span>
-            <p>33</p>
-          </div>
-
-          <div className="type">
-        <span>family</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>sport</span>
-            <p>54</p>
-          </div>
-       
-        </div>
-
-
-        <div className="donateType4" >
-        <div className="type">
-        <span>travel</span>
-            <p>22</p>
-          </div>
-
-          <div className="type">
-        <span>volunter</span>
-            <p>12</p>
-          </div>
-
-          <div className="type">
-        <span>wishes</span>
-            <p>33</p>
-          </div>
-
-          <div className="type">
-        <span>others</span>
-            <p>0</p>
-          </div>
-       
         </div>
 
         

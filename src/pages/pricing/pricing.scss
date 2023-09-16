@@ -1,0 +1,364 @@
+.Pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: #FFF;
+
+    .Pricingcont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        .pricingHeader{
+            margin-top: 50px;
+            display: flex;
+            width: 302.031px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            h4{
+                color: #000;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.03px;
+            }
+        }
+
+        .pricingCard{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            position: relative;
+            width: 100%;
+            height: 714px;
+            flex-shrink: 0;
+
+            .cardTop{
+                position: absolute;
+                top: 0;
+                margin-top: -10px;
+                height: 40px;
+                width: 100%;
+                border-radius: 0 0 200% 200%; 
+                background-color: #FFF; 
+                overflow: hidden; 
+            }
+
+            .cardbuttom{
+                position: absolute;
+                bottom: 0;
+                margin-bottom: -10px;
+                height: 40px;
+                width: 100%;
+                border-radius: 100% 100% 0 0; 
+                background-color: #FFF; 
+                overflow: hidden; 
+            }
+            
+            .cardBody{
+                display: inline-flex;
+                align-items: center;
+                gap: 51px;
+
+                .bodyleft{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 32px;
+                    align-self: stretch;
+                    width: 363px;
+
+                    h4{
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.03px;
+                        text-transform: uppercase;
+                    }
+
+                    p{
+                        color: #68EDCB;
+                        font-family: Poppins;
+                        font-size: 96px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -1.44px;
+                    }
+
+                    h6{
+                        color: #FFF;
+                        align-self: stretch;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.035px;
+                    }
+
+                
+                }
+
+                .bodyright{
+                    width: 431px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 32px;
+                    align-self: stretch;
+
+                    h4{
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.03px;
+                        text-transform: uppercase;
+                    }
+
+                    p{
+                        color: #68EDCB;
+                        font-family: Poppins;
+                        font-size: 96px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -1.44px;
+                    }
+
+                    h6{
+                        color: #FFF;
+                        align-self: stretch;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.035px;
+                    }
+                }
+
+                .horzontalLine{
+                    width: 1px;
+                    height: 239px;
+                    background: #808080;
+                }
+            }
+        }
+
+        .paymentTrans{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1180px;
+            height: 350px;
+            gap: 40px;
+            flex-shrink: 0;
+            margin: 20px;
+            background-color: transparent;
+            position: relative;
+
+            .leftP{
+                display: flex;
+                position: absolute;
+                left: 0;
+                top: 0;
+                align-items:center ;
+                justify-content: center;
+                // padding: 10px;
+                background-color: transparent;
+
+                h4{
+                  
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 34px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: 0.085px;
+                    width: 569px;
+                    height: 100%;
+                   
+                }
+            }
+
+            .rightp{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: absolute;
+                width: 570px;
+                height: 295px;
+                flex-shrink: 0;
+                top: 0;
+                right: 0;
+                
+            h5{
+                color: #000;
+                width: 570px;
+                height: 100%;
+                height: 295px;
+                flex-shrink: 0;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.024px;
+                padding: 10px;
+            }
+            }
+
+            .paystackLogo{
+                position: absolute;
+                bottom: 0;
+                right: 200px;
+            }
+        }
+
+        .transCont{
+            width: 1180px;
+            height: 200px;
+            background-color: #FFF;
+            padding: 20px;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+            display: flex;
+            
+            .TLeft{
+                color: #000;
+                text-align: right;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 570px;
+                height: 174px;
+                flex-shrink: 0;
+                letter-spacing: 0.024px;
+            }
+            .TRight{
+                color: #000;
+                text-align: right;
+                font-family: Poppins;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: 0.085px;
+                width: 569px;
+            }
+
+
+        }
+
+        .optionTop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1180px;
+            height: 155px;
+            margin: 20px;
+            background-color: #FFFFFF;
+            .leftTop{
+                color: #000;
+                font-family: Poppins;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: 0.085px;
+                width: 407px;
+            }
+
+            .rightTop{
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+
+                h4{
+                    overflow: hidden;
+                    color: #000;
+                    text-overflow: ellipsis;
+                    whitespace: nowrap;
+                    width: 570px;
+                    height: 52px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                }
+
+                .topBtn{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 59px;
+                   
+
+                    .reg{
+                        cursor: pointer;
+                        display: flex;
+                        padding: 16px 32px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 16px;
+                        background: #68EDCB;
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.175px;
+                        text-transform: uppercase;
+                    }
+
+                    .conSup{
+                        cursor: pointer;
+                        display: flex;
+                        padding: 16px 32px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 16px;
+                        border: 1px solid #000;
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.175px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

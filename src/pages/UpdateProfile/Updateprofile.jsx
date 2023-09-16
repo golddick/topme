@@ -10,12 +10,12 @@ function Updateprofile() {
     <Topbar />
     </div>
      
-   <div className="updateprofileContainer">
-   <div className="updateprofileContainerLeft">
+   <div className="updateContainer">
+   <div className="updateContainerLeft">
           <Leftbar/>
     </div>
 
-    <div className="updateprofileContainercenter">
+    <div className="updateContainercenter">
     <ProfileUpdate/>
     </div>
    </div>

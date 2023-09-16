@@ -108,7 +108,7 @@ function Login() {
 
 
   return (
-    <div className="wrapper" style={{ backgroundColor: 'white' }}>
+    <div className="wrapper" >
       <div className="header">
         <HeaderLogin />
       </div>
@@ -116,7 +116,7 @@ function Login() {
       <div className="login">
         <div className="formContainer">
           <h1>
-            Angel Login{' '}
+            User Login{' '}
             <span style={{ color: 'rgba(104, 237, 203, 1)', backgroundColor: 'white', fontSize: '4rem' }}>.</span>{' '}
           </h1>
           <form>

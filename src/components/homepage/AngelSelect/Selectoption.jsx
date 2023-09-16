@@ -2,6 +2,7 @@ import './Selectoption.scss'
 import Frame from '../../../assets/Frame.svg'
 import Frame2 from '../../../assets/Frame.png'
 import {  NavLink } from 'react-router-dom';
+import Option from '../../Option/Option'
 
 
 
@@ -12,11 +13,25 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
 
   return (
     <div className='select'>
-      <div className="selecttext">
-      <h2>Unleash your inner Angel and make a <br/>difference today!</h2>
+    <div className="selectBody">
+        <div className="selecttext">
+      <h2>Unleash your inner Angel and make a difference today!</h2>
       <h4>Sign up to become an Angel</h4>
       </div>
-      <div className="option">
+    <Option/>
+    </div>
+    </div>
+  )
+}
+
+export default Selectoption
+
+
+
+  {/* <div className="option">
+
+       
+
       
       <NavLink to='/signup' className='navlink'>
       <div className="selectTab"  >
@@ -42,7 +57,7 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
          <p>SIGN UP TO BECOME AN ANGEL</p>
        
        </div>
-       </NavLink>
+       </NavLink> 
  
  
        <div className="selectTab">
@@ -63,9 +78,4 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
        </div>
  
  
-      </div>
-    </div>
-  )
-}
-
-export default Selectoption
+      </div> */}

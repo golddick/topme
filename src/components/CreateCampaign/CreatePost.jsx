@@ -196,7 +196,7 @@ function CreatePost() {
                    )}
                  </div>
                   )}
-                  </div>
+                  </div> 
             </div>
             <div className="horizontal"></div>
             <div className='form'>

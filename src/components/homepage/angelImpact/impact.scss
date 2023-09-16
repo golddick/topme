@@ -1,18 +1,20 @@
 .Impact{
     display: flex;
     flex-direction: column;
-    //align-items: center;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: 100%;
+    background-color: #000;
 
     .angelImpact{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 85%;
+        width:90%;
         height: auto;
         margin-top: 60px;
-        margin-left: 100px;
+        // margin-left: 100px;
 
 
         .impactText{
@@ -47,15 +49,9 @@
             //display: flex;
             // justify-content: center;
              width: auto;
-             height: 900px;
-              margin: 10px;
+             height: auto;
+              //padding: 10px;
                
-              .campaignImpact{
-                //  display: flex;
-                //  flex-direction: row;
-                //  background-color: firebrick;
-                //  width: auto;
-                // height: 900px;
                  
               
                 
@@ -65,7 +61,7 @@
                 justify-content: center;
                flex-direction: column;
                 width: 367px;
-                height: 419px;
+                height: auto;
                 flex-shrink: 0;
                 margin: 10px;
 
@@ -189,10 +185,12 @@
                     background-color: #68EDCB;
                 }
         
-    }
+    
         }
+ 
+        
         .viewMore{
-            display: flex;
+            display: none;
             justify-content: center;
             gap: 10px;
             align-items: center;
@@ -234,6 +232,9 @@
    .navlink{
     text-decoration: none;
    }
+   .mobileImpactText{
+    display: none;
+   }
 }
 
 
@@ -245,11 +246,149 @@
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {
-    //  .container.testimonials_container {
-    //      width: var(--container-width-sm);
-    //  }
-  
-    //  .client_review {
-    //      width: var(--container-width-sm);
-    //  }
+
+        .Impact{
+            display: inline-flex;
+           // margin: 10px;
+            margin-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 29px;
+            width: 100%;
+            height: auto;
+            background-color: #000;
+
+
+
+            .angelImpact{
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                // height: auto;
+                // background-color: brown;
+
+                .impactText{
+                    display: none;
+                }
+               .mobileImpactText{
+                display: block;
+                display: flex;
+                width: 360px;
+                gap: 10px;
+                padding: 0px 12px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                h1{
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 34px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115%;
+                    align-self: stretch;
+                    letter-spacing: 0.085px;
+                }
+                .sideText{
+                    display: flex;
+                    justify-content: flex-end;
+                    //align-items: flex-end;
+                    width: 100%;
+                    
+
+                    h3{
+                        color: #FFF;
+                        text-align: right;
+                        align-self: stretch;
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.15px;
+                        text-transform: uppercase;
+                    }
+                }
+                h4{
+                    color: #FFF;
+                    text-align: right;
+                    
+                    /* Body/Body 2 */
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.035px;
+                }
+               }
+
+               .impactPost{
+               
+                .slick-prev,
+                .slick-next {
+                display: none !important;
+                }
+
+                .impactBox{
+                    display: flex;
+                    width: 336px;
+                    height: 350px;
+                    padding: 12px 12px 16.692px 12px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    margin: 10px;
+                    padding: 0;
+                   background: #FFF;
+
+                   img{
+                    padding-top: 10px;
+                    width: 312px;
+                    height: 165px;
+                    border-radius: 4px;
+                   }
+                   .impactBody{
+                    display: flex;
+                    align-items: start;
+                    background-color: transparent;
+                   }
+                   .btn{
+                    color: #43C4B2;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.15px;
+                    text-transform: uppercase;
+                    margin-left: -130px;
+                   }
+                }
+            
+               }
+               .viewAll{
+                border-radius: 100px;
+                background: #FFF;
+                margin-left: 100px;
+                display: flex;
+                padding: 10px 32px;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+
+                span{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.15px;
+                    text-transform: uppercase;
+                }
+            }
+            }
+        }
   }

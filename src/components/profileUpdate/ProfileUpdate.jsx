@@ -1,6 +1,6 @@
 import './profileupdate.scss';
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
-import { BiPencil } from 'react-icons/bi';
+import { RiAddBoxLine } from 'react-icons/ri';
+import { BiPencil, BiSolidChevronDown, BiCamera } from 'react-icons/bi';
 import Add from '../../assets/addimage.png';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -16,10 +16,10 @@ function ProfileUpdate() {
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
-  const [profilePhoto, setProfilePhoto] = useState('');
+  const [profilePhoto, setProfilePhoto] = useState(null);
   const [firstname, setFirstName] = useState('');
   const [lastname, setLastName] = useState('');
-  const [description, setDescription] = useState('');
+  const [description, setDescription] = useState(''); 
   const [nin, setNin] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
@@ -29,9 +29,9 @@ function ProfileUpdate() {
   const [validIdDocument, setValidDoc] = useState('');
 
   // Function to handle the change of valid documents
-  const handleValidDocChange = (e) => {
-    const selectedFiles = e.target.files;
-    setValidDoc(selectedFiles);
+  const handleValidDocChange = (event) => {
+    const file = event.target.files[0];
+    setValidDoc(file);
   };
 
   // Function to handle profile update
@@ -108,6 +108,9 @@ function ProfileUpdate() {
   }, []);
 
   
+
+
+
   return (
     <div className='ProfileUpdate'>
         <div className="ProfileUpdateContainer">
@@ -117,13 +120,19 @@ function ProfileUpdate() {
                   type="file"
                   id="file"
                   accept="image/*"  // Allow multiple file selection
+                  onChange={(e) => setProfilePhoto(e.target.files[0])}
                 />
-                <label htmlFor="file" className="file">
+                <label htmlFor="file" className="addprofile">
                 {profilePhoto ? (
-              <img src={profilePhoto} alt="Profile" />
+              <img src={URL.createObjectURL(profilePhoto)} alt="Profile" />
             ) : (
-              <img src={Add} alt="Add Profile" />
+              <div className="addimage">
+          <BiCamera className='uploadIcon'/>
+          </div>
             )}
+          <div className="addimage">
+          <BiCamera className='uploadIcon'/>
+          </div>
                 </label>
           
               </div>
@@ -131,6 +140,7 @@ function ProfileUpdate() {
 
              <div className="updateContainer">
              <form >
+               <div className="formTop">
                <div className="name">
                 <div className="fName">
                 <span>First Name</span>
@@ -147,38 +157,7 @@ function ProfileUpdate() {
                 </div>
                 </div>
                </div>
-               
-                <div className="bio">
-                <span>Bio</span>
-                <div className="biobox">
-                <textarea id="bio" name="bio" rows="30" cols="80" className='input' value={description} onChange={(e) => setDescription(e.target.value)} ></textarea>  
-                    <BiPencil className='editIcon'/>
-                </div>
-                </div>
 
-                <div className="name">
-
-                <div className="nin">
-                <span>NIN</span>
-                <div className="inputbox">
-                <input type="number" value={nin} onChange={(e) => setNin(e.target.value)} />
-                    <AiOutlineEyeInvisible className='editIcon'/>
-                </div>
-                </div>
-
-                <div className="pNumber">
-                <span>Phone Number</span>
-                <div className="inputbox">
-                <input type="number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-                    <BiPencil className='editIcon'/>
-                    </div>
-                </div>
-               </div>
-               
-                
-                
-               
-               <div className="name">
                <div className="email">
                 <span>Email</span>
                 <div className="inputbox">
@@ -186,42 +165,116 @@ function ProfileUpdate() {
                     <BiPencil className='editIcon'/>
                 </div>
                 </div>
+               </div>
+               
+               <div className="bioData">
 
-                <div className="location">
-                <span>Location</span>
+               <div className="name">
+                <div className="fName">
+                <span>Gender</span>
                 <div className="inputbox">
-                <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
+                <input type="text"  value={firstname} onChange={(e) => setFirstName(e.target.value)}/>
+                    <BiSolidChevronDown className='editIcon'/>
+                </div>
+                </div>
+                <div className="lName">
+                <span>Phone Number</span>
+                <div className="inputbox">
+                <input type="text"  value={lastname} onChange={(e) => setLastName(e.target.value)} />
+                    <BiPencil className='editIcon'/>
+                </div>
+                </div>
+             
+               </div>
+
+
+               <div className="name">
+                <div className="fName">
+                <span>states</span>
+                <div className="inputbox">
+                <input type="text"  value={firstname} onChange={(e) => setFirstName(e.target.value)}/>
+                    <BiSolidChevronDown className='editIcon'/>
+                </div>
+                </div>
+                <div className="lName">
+                <span>cities</span>
+                <div className="inputbox">
+                <input type="text"  value={lastname} onChange={(e) => setLastName(e.target.value)} />
+                    <BiSolidChevronDown className='editIcon'/>
+                </div>
+                </div>
+               </div>
+
+
+               <div className="address">
+                <span>office address</span>
+                <div className="inputbox">
+                <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <BiPencil className='editIcon'/>
+                </div>
+                </div>
+               
+               <div className="bio">
+                <span>Bio</span>
+                <div className="biobox">
+                <textarea id="bio" name="bio" rows="30" cols="80" className='input' value={description} onChange={(e) => setDescription(e.target.value)} ></textarea>  
+                    <BiPencil className='editIcon'/>
+                </div>
+                </div>
+
+               </div>
+              
+              <div className="formButtom">
+
+           <div className="socialLink">
+                <div className="inboxName">
+                <span>instagram link</span>
+                <div className="inputbox">
+                <input type="text" value={nin} onChange={(e) => setNin(e.target.value)} />
+                    <BiPencil className='editIcon'/>
+                </div>
+                </div>
+
+                <div className="inboxName">
+                <span>youtube link</span>
+                <div className="inputbox">
+                <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                     <BiPencil className='editIcon'/>
                     </div>
                 </div>
+
+                <div className="inboxName">
+                <span>twitter link</span>
+                <div className="inputbox">
+                <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                    <BiPencil className='editIcon'/>
+                    </div>
                 </div>
 
-                <div className="name">
-               <div className="email">
+           </div>
+
+           <div className="validDoc">
                 <span>Valid Document </span>
                 <div className="inputbox">
 
                 <input
+                style={{display:'none'}}
                   type="file"
                   id="file"
                   accept="multiple"  // Allow multiple file selection
                   onChange={handleValidDocChange}
                 />
-                {/* <input type="email"  /> */}
-                    <BiPencil className='editIcon'/>
+                 <label htmlFor="file" className="file">
+                  {validIdDocument? validIdDocument : 'Upload Valid Doc'}
+                  <RiAddBoxLine className='editIcon'/>
+                 </label>
+                
                 </div>
                 </div>
 
-                <div className="location">
-                <span>Office Address</span>
-                <div className="inputbox">
-                <input type="text" value={officeAddress} onChange={(e) => setOfficeAdd(e.target.value)} />
-                    <BiPencil className='editIcon'/>
-                    </div>
-                </div>
-                </div>
-            
+              </div>
 
+              
                     <button  onClick={handleUpdate} disabled={isLoading}>request update </button>
                     
             </form>

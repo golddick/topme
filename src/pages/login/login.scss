@@ -1,13 +1,18 @@
-body {
-    background: #f3f3f3;
-  }
+
   
   .wrapper {
-    position: relative;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    
     height: 100vh;
+    width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    margin-top: -100px;
+    background-color: #FFF;
   
     .backGroundImgbuttom {
       height: 10%;
@@ -16,13 +21,15 @@ body {
       transform: rotate(5deg);
       bottom: 0;
       position: absolute;
+   
     }
   
     .backGroundImgtop {
       height: 10%;
-      width: 15%;
+      width: 10%;
       top: 0;
       position: absolute;
+
     }
   
     .loginHeader {
@@ -41,6 +48,7 @@ body {
       .left {
         width: 20px;
         height: 20px;
+        margin-left: -30px;
       }
   
       .right {
@@ -73,7 +81,7 @@ body {
     }
   
     .login {
-      background-color: #ffffff;
+      background-color: transparent;
       height: 100%;
       width: 100%;
       display: flex;
@@ -83,7 +91,7 @@ body {
   
       .formContainer {
         height: auto;
-        width: 35%;
+        width: 50%;
         padding: 10px;
         background-color: white;
         display: flex;
@@ -117,6 +125,7 @@ body {
           justify-content: center;
           gap: 15px;
           overflow: hidden;
+          margin-bottom: 200px;
   
           .Auth {
             .email, .psw, .cpsw {
@@ -152,6 +161,7 @@ body {
             align-items: center;
             justify-content: center;
             gap: 50px;
+            
             width: 100%;
   
             .check {
@@ -213,9 +223,103 @@ body {
 
 }
 
+@media  screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+    position: fixed;
+    scroll-behavior: smooth;
+
+
+      .backGroundImgbuttom{
+       display: none;
+
+      }
+
+      .backGroundImgtop{
+       display: none;
+
+      }
+
+      .loginHeader{
+        padding: 10px;
+       
+
+          .left {
+
+          }
+          .right{
+            font-size: 12px;
+            font-weight: 100;
+
+              .txt{
+                font-size: 12px;
+              }
+  
+              button{
+                  
+              }
+          }
+      }
+
+      .login {
+          background: rgb(255, 255, 255);
+          width: 100%;
+
+          .formContainer{
+              width: 80%;
+              // margin-top: 100px;
+
+              h1{
+                  font-size: 25px;
+                  font-weight: 300;
+                  line-height: 90px;
+                  
+
+              }
+
+              form{
+
+
+                  .Auth {
+                      .email, .psw, .cpsw {
+                        border-bottom: 2.5px solid #000000;
+                        margin-bottom: 30px;
+                      }
+                    }
+                    .setLogin{
+                      display: flex;
+                      flex-direction: row;
+                      font-size: 12px;
+                      font-family: Poppins;
+                      font-weight: 400;
+                      gap: 40px;
+                      
+                      .check{
+                          span{
+                             
+                          }
+                      }
+                      .fmp {
+                          color: #68EDCB;
+                          font-size: 12px;
+                          font-family: Poppins;
+                          font-weight: 400;
+                        }
+                    }
+              }
+          }
+
+      }
+
+  }
+}
+
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     .wrapper {
+      width: 100%;
+      position: fixed;
+      scroll-behavior: smooth;
 
 
         .backGroundImgbuttom{
@@ -227,16 +331,18 @@ body {
         }
 
         .loginHeader{
-
+          padding: 10px;
+         
 
             .left {
 
             }
             .right{
-
+              font-size: 12px;
+              font-weight: 100;
 
                 .txt{
-
+                  font-size: 12px;
                 }
     
                 button{
@@ -246,7 +352,7 @@ body {
         }
 
         .login {
-            background: red;
+            background: rgb(255, 255, 255);
             width: 100%;
 
             .formContainer{
@@ -271,11 +377,11 @@ body {
                       }
                       .setLogin{
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         font-size: 12px;
                         font-family: Poppins;
                         font-weight: 400;
-                        gap: 10px;
+                        gap: 40px;
                         
                         .check{
                             span{

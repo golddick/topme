@@ -19,7 +19,7 @@ function Search({ closePopup }) {
 
     useEffect(() => {
         setTimeout(() => {
-            const impactdata = [
+            const impactdata = [ 
               {
                 impactImg:
                   'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
@@ -56,7 +56,9 @@ function Search({ closePopup }) {
     
     <div className='search' >
         <div className="searchContainer">
-            <div className="topContainer">
+
+          
+            <div className="topContainer" > 
             <div className="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="170" height="45" viewBox="0 0 174 50" fill="none">
                 <path d="M40.4396 48.7149C31.1212 48.7149 23.5474 41.1139 23.5474 31.7783C23.5474 22.4427 31.1284 14.8418 40.4396 14.8418C49.7508 14.8418 57.3318 22.4427 57.3318 31.7783C57.3318 41.1139 49.7508 48.7149 40.4396 48.7149ZM40.4396 21.0607C34.5456 21.0607 29.75 25.8689 29.75 31.7783C29.75 37.6878 34.5456 42.4959 40.4396 42.4959C46.3336 42.4959 51.1292 37.6878 51.1292 31.7783C51.1292 25.8689 46.3336 21.0607 40.4396 21.0607Z" fill="black"/>
@@ -81,9 +83,9 @@ function Search({ closePopup }) {
             </div>
             </div>
 
-            <div className="contentContainer">
+            <div className="contentContainer" >
                 <div className="left"></div>
-                <div className="center">
+                <div className="center" >
                     <h4>Recent Search</h4>
                     <div className="recent">
                         <span>Women's right <AiOutlineClose/></span>
@@ -91,7 +93,7 @@ function Search({ closePopup }) {
                         <span>Female children who need education <AiOutlineClose/></span>
                     </div>
 
-                    <h4>Category</h4>
+                    <h4>Cities</h4>
                     <div className="category">
                         <span>charity </span>
                         <span>education </span>
@@ -140,7 +142,7 @@ function Search({ closePopup }) {
           )}
 
                     </div>
-              <button className='button' id="close-popup-button" onClick={handleClosePopup}>close</button>
+              {/* <button className='button' id="close-popup-button" onClick={handleClosePopup}>close</button> */}
                 </div>
                 <div className="right"></div>
             </div>

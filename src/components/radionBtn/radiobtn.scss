@@ -1,0 +1,47 @@
+.radioBtn {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: transparent;
+  
+    .yesBtn,
+    .no {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+  
+      .circle {
+        width: 24px;
+        height: 24px;
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+  
+        .innerCircle {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: transparent;
+          transition: background-color 0.3s ease;
+        }
+      }
+  
+      span {
+        font-size: 16px;
+      }
+  
+      &.active {
+        .circle {
+          border-color: #68EDCB;
+  
+          .innerCircle {
+            background-color: #68EDCB;
+          }
+        }
+      }
+    }
+  }
+  
