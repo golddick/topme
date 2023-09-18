@@ -146,7 +146,7 @@ function AngelFooter() {
         <div className="FooterContent">
         <h4>RESOURCES</h4>
         <NavLink to='/HowitWorks' className='navLink'> <span onClick={scrollToTop}>How it Works</span></NavLink>
-        <NavLink to='/pricing' className='navLink'><span> onClick={scrollToTop}Pricing and Fees</span></NavLink>
+        <NavLink to='/pricing' className='navLink'><span  onClick={scrollToTop}>Pricing and Fees</span></NavLink>
         <NavLink to='/guarantee' className='navLink'> <span onClick={scrollToTop}>Guarantee Page</span></NavLink>
 
         </div>

@@ -45,7 +45,7 @@ function Guarantee() {
                 <h6>Here’s how it works:</h6>
 
                 <div className="issueCont">
-
+  
                 <div className="issueBox">
                     <div className="issueText">
                     <div className="num">1</div>

@@ -11,68 +11,58 @@
     position: absolute;
     padding: 20px;
     
-    .bgImg{
-        display: flex;
-        justify-content: space-between;
-        position:static;
-        width: 110%;
-        // margin-top: 500px;
-        // padding-top: 50px;
-        //background-color: #68EDCB;
-
- 
-    // .backGroundImg{
-    //     width:400px;
-    //     height: 400px;
-    //     position: relative;
-    //     justify-content: space-between;
-    // }
-
-    .backGroundImgRight{
-        height: 320px;
-        width: 300px;
-        margin-top: 600px;
-    }
-
-    .backGroundImgLeft{
-        height: 320px;
-        width: 300px;
-        margin-top: 600px;
-
-    }
-
-  
-
+mobileLogo{
+    display: none;
 }
-    
+     
 
     .formContainer{
-        // border: 1px solid black; 
-        height: auto;
-       width: 35%;
+        width: 762px;
+        height: 889px;
+        flex-shrink: 0;
         padding: 10px;
-        overflow: hidden;
+       // overflow: hidden;
         background-color: white;
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        align-items: start; 
-        position: absolute;
+        // align-items: start; 
+        // position: absolute;
        
 
         h1{
+            display: inline-flex;
+            padding: 10px 4px;
+            align-items: center;
+            gap: 16px;
+
+            color: #000;
             font-family: Poppins;
-            font-size: 40px;
+            font-size: 60px;
+            font-style: normal;
             font-weight: 300;
-            line-height: 90px;
-            letter-spacing: -0.005em;
+            line-height: normal;
+            letter-spacing: -0.3px;
             text-align: center;
             cursor: pointer;
-            margin: 20px;
 
+            img{
+                width: 171.93px;
+                height: 48.715px;
+                object-fit: cover;
+            }
+
+            .dot{
+           
+                color: #43C4B2;
+                background-color: #FFFFFF;
+                //font-size: 60px;
+            }
          
         }
+
+       
 
 
         h2{
@@ -90,14 +80,15 @@
         }
 
         form{
-            background-color: rgb(255, 255, 255);
-            width:100%;
+            background-color: #FFFFFF;
+            width:90%;
+            height: auto;
             display: flex;
              flex-direction: column;
              justify-content: center;
              align-items: center;
             gap: 15px;
-            overflow: hidden;
+            //overflow: hidden;
             
 
 
@@ -109,33 +100,281 @@
                 
                 
                
-                .fName, .lName, .Email, .Sname {
+                .fName, .lName{
                     flex-basis: 40%;
-                    margin-bottom: 10px;
-                    border-bottom: 2.5px solid #000000;
+                    border-bottom: 2px solid #000000;
                     width: 50px;
                     
                   }
+
+                  .error{
+                    border-bottom: 2px solid red;
+                  }
+
+                  input{
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    height: 35px;
+                    padding: 10px;
+                    input:focus {
+                        background-color: rgb(253, 253, 253);
+                      }
+                      
+                    &::placeholder{
+                        color: rgb(9, 7, 7);
+                        //styleName: Headers/H5;
+                        font-family: Poppins;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
 
                         
             }
 
             .Auth{
-                .email, .password, .cpsw{
-                    border-bottom: 2.5px solid #000000;
-                    margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+               
+               
+
+                .password ,.email{
+                    //background: olivedrab;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    height: 45px;
+                  
+                    //border-bottom: 2px solid #000000;
+    
+                    .error{
+                        border-bottom: 2px solid red;
+                     
+                      }
+
+                    input{
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                       // background-color: olivedrab;
+                        width: 100%;
+                        height: 40px;
+                        padding: 10px;
+                        border-bottom: 2px solid #000000;
+                        input:focus {
+                            background-color: rgb(253, 253, 253);
+                          }
+                          
+                        &::placeholder{
+                            color: rgb(9, 7, 7);
+                            //styleName: Headers/H5;
+                            font-family: Poppins;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                        }
+                    }
+                    .viewPassword{
+                        color: #43C4B2;
+                        margin-left: -30px;
+                    }
+    
                 }
                
             }
            
+          .error-message{
+            color: red;
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 36px;
+            letter-spacing: 0em;
+          }
 
-            input{
+          .bottomText{
+            display: none;
+          }
+        
+        button{
+           background: #fafafa;
+           color: #43C4B2;
+           font-family: Poppins;
+           font-size: 14px;
+           font-style: normal;
+           font-weight: 500;
+           line-height: normal;
+           letter-spacing: 0.175px;
+           text-transform: uppercase;
+           display: flex;
+            width: 364px;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            border: 2px solid #43C4B2;
+        }
+           
+        .progressStyle {
+            background-color: red;
+            /* Add any other styles you want for the progress state */
+          }
+        }
+
+        .footer{
+            margin-top: 200px;
+        }
+    }
+   
+    .navLink{
+        text-decoration: none;
+        color: #43C4B2;
+    }
+
+
+}
+
+
+@media  screen and (max-width: 1024px) {
+   
+  }
+  
+  /* MEDIA QUERIES (SMALL DEVICES)*/
+  @media screen and  (max-width: 600px) {
+.signup{
+    background: #FFFFFF;
+   // margin-top: -100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: static;
+    padding: 0;
+    //padding: 20px;
+
+    .mobileLogo{
+        display: flex;
+        width: 84.703px;
+        height: 24px;
+        flex-shrink: 0;
+        margin-top : 20px;
+    }
+    .formContainer{
+       background: #FFFFFF;
+       //display: none;
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       gap: 10px;
+       height: calc(100vh - 24px);
+       //align-self: stretch;
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+       padding: 0;
+
+
+       h1{
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 275;
+        line-height: normal;
+
+        img{
+            width: 100px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .dot{
+           
+            color: #43C4B2;
+            background-color: #FFFFFF;
+            font-size: 40px;
+        }
+       }
+       
+       h2{
+        color: #808080;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.048px;
+       // margin-top: -30px;
+         margin-left: -200px;
+       }
+
+       form{
+        //display: none;
+         display: inline-flex;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 24px;
+         //background-color: goldenrod;
+         width: 100%;
+        height: 650px;
+         padding: 10px;
+         //margin: -100px;
+    //    overflow: scroll;
+
+        
+
+
+        .Names{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            
+            
+           
+            .fName, .lName{
+                display: flex;
+                width: 100%;
+                height: 47px;
+                padding: 16px 12px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 8px;
+                background: #F6F6F6;
+                border: none;
+                
+              }
+
+              .error{
+                border: 2px solid red;
+              }
+
+              input{
                 cursor: pointer;
                 border: none;
                 outline: none;
-                background-color: transparent;
                 width: 100%;
-                height: 30px;
+                height: 35px;
+                padding: 10px;
                 input:focus {
                     background-color: rgb(253, 253, 253);
                   }
@@ -152,36 +391,117 @@
                 }
             }
 
-        button{
-           background: #fafafa;
-           color: #68EDCB;
-            border: 1.5px solid #68EDCB;
-            cursor: pointer;
-            font-weight: bold;
-            height: 30px;
-            width: 250px;
-           margin-top: 10px;
+                    
         }
+
+        .Auth{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+            align-items: flex-start;
            
-        .progressStyle {
-            background-color: red;
-            /* Add any other styles you want for the progress state */
-          }
+           
+
+            .password ,.email{
+             
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                height: 45px;
+              
+              
+
+                .error{
+                    border: 2px solid red;
+                 
+                  }
+
+                input{
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                   display: flex;
+                   width: 100%;
+                   height: 47px;
+                   padding: 16px 12px;
+                   align-items: center;
+                   gap: 10px;
+                   border-radius: 8px;
+                   background: #F6F6F6;
+                    input:focus {
+                        background-color: rgb(253, 253, 253);
+                      }
+                      
+                    &::placeholder{
+                        color: rgb(9, 7, 7);
+                        //styleName: Headers/H5;
+                        font-family: Poppins;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+                .viewPassword{
+                    color: #43C4B2;
+                    margin-left: -30px;
+                }
+
+            }
+           
+        }
+       
+      .error-message{
+        color: red;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 36px;
+        letter-spacing: 0em;
+      }
+    .bottomText{
+        display: flex;
+
+        h3{
+            color: #000;
+
+            /* Overline/overline 1 */
+            font-family: Poppins;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.15px;
+            text-transform: uppercase;
         }
     }
-   
-    .navLink{
-        text-decoration: none;
-        color: #68EDCB;
+
+    button{
+        display: flex;
+        width: 312px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        background: #43C4B2;
+        align-self: center;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.175px;
+        text-transform: uppercase;
+    }
+    }
+    }
+    .footer{
+       display: none;
     }
 }
-
-
-@media  screen and (max-width: 1024px) {
-   
-  }
-  
-  /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
-
-  }
+  }//

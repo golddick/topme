@@ -1,6 +1,5 @@
 .Pricing{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
@@ -18,24 +17,50 @@
         .pricingHeader{
             margin-top: 50px;
             display: flex;
-            width: 302.031px;
+            flex-direction: column;
+           height: auto;
             padding: 10px;
             justify-content: center;
             align-items: center;
             gap: 10px;
 
-            h4{
-                color: #000;
-                text-align: center;
-                text-transform: uppercase;
+            .header{
+                display: flex;
+                width: 302.031px;
+                justify-content: center;
+                gap: 10px;
+                h4{
+                    color: #000;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+               
+                }
+            }
+
+         
+
+            h3{
+                width: 774px;
+                height: 140px;
+                flex-shrink: 0;
+                margin-bottom: 10px;
+                color: #808080;
                 font-family: Poppins;
-                font-size: 20px;
+                font-size: 34px;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 line-height: normal;
-                letter-spacing: 0.03px;
+                letter-spacing: 0.085px;
             }
         }
+
+     
 
         .pricingCard{
             display: flex;
@@ -45,14 +70,14 @@
             background-color: #000;
             position: relative;
             width: 100%;
-            height: 714px;
+            height: 720px;
             flex-shrink: 0;
 
             .cardTop{
                 position: absolute;
                 top: 0;
                 margin-top: -10px;
-                height: 40px;
+                height: 100px;
                 width: 100%;
                 border-radius: 0 0 200% 200%; 
                 background-color: #FFF; 
@@ -63,7 +88,7 @@
                 position: absolute;
                 bottom: 0;
                 margin-bottom: -10px;
-                height: 40px;
+                height: 100px;
                 width: 100%;
                 border-radius: 100% 100% 0 0; 
                 background-color: #FFF; 
@@ -95,7 +120,7 @@
                     }
 
                     p{
-                        color: #68EDCB;
+                        color: #43C4B2;
                         font-family: Poppins;
                         font-size: 96px;
                         font-style: normal;
@@ -166,6 +191,9 @@
                 }
             }
         }
+
+       .pricingBody{
+
 
         .paymentTrans{
             display: flex;
@@ -240,7 +268,7 @@
         }
 
         .transCont{
-            width: 1180px;
+            width: 100%;
             height: 200px;
             background-color: #FFF;
             padding: 20px;
@@ -280,9 +308,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 1180px;
+            width: 100%;
             height: 155px;
-            margin: 20px;
+           margin-top: 20px;
+           margin-bottom: 20px;
             background-color: #FFFFFF;
             .leftTop{
                 color: #000;
@@ -292,7 +321,8 @@
                 font-weight: 300;
                 line-height: normal;
                 letter-spacing: 0.085px;
-                width: 407px;
+                padding-left: 20px;
+                width: 400px;
             }
 
             .rightTop{
@@ -329,7 +359,7 @@
                         justify-content: center;
                         align-items: center;
                         gap: 16px;
-                        background: #68EDCB;
+                        background: #43C4B2;
                         color: #FFF;
                         font-family: Poppins;
                         font-size: 14px;
@@ -360,5 +390,349 @@
                 }
             }
         }
+
+        .mobilePaymentTrans, .optionHeader{
+            display: none;
+        }
+       }
     }
 }
+
+@media  screen and (max-width: 600px) {
+        .Pricing{
+
+            .Pricingcont{
+
+                .pricingHeader{
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                   height: 100px;
+                    margin-bottom: 10px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 10px;
+                   // background-color: violet;
+        
+                    .header{
+                        display: flex;
+                        width: 100%;
+                        //background-color: chartreuse;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        h4{
+                            color: #000;
+                            font-family: Poppins;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 110%; /* 35.2px */
+                            letter-spacing: -0.16px;
+                           
+                       
+                        }
+                    }
+        
+                 
+        
+                    h3{
+                        color: #808080;
+                        width: 100%;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.048px;
+                        //display: none;
+                    }
+                }
+        
+
+              
+
+                .pricingCard{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                    //display: none;
+
+                    .cardBody{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: auto;
+                        padding: 10px;
+                        background-color: #000;
+                        
+
+                        .bodyleft{
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 24px;
+                            margin-top: 100px;
+                            align-self: stretch;
+                            justify-content: center;
+                            
+
+                            h4{
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.024px;
+                                text-transform: uppercase;
+                            }
+
+                            p{
+                                color: #43C4B2;
+                                font-family: Poppins;
+                                font-size: 40px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: -0.6px;
+                            }
+
+                            h6{
+                                color: #FFF;
+                                align-self: stretch;
+                                font-family: Poppins;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.048px;
+                            }
+                        }
+                        .bodyright{
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 24px;
+                            margin-bottom: 100px;
+                            align-self: stretch;
+
+                            h4{
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.024px;
+                                text-transform: uppercase;
+                            }
+
+                            p{
+                                color: #43C4B2;
+                                font-family: Poppins;
+                                font-size: 40px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: -0.6px;
+                            }
+
+                            h6{
+                                color: #FFF;
+                                align-self: stretch;
+                                font-family: Poppins;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.048px;
+                            }
+                        }
+
+                        .horzontalLine{
+                            width: 100%;
+                            height: 2px;
+                        }
+
+                    }
+                }
+
+              .pricingBody{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .paymentTrans{
+                    display: none;            
+                }
+
+                .mobilePaymentTrans{
+                    width: 100vw;
+                    padding: 10px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 44px;
+
+                    .topTrans,.bottomTrans{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 24px;
+                        align-self: stretch;
+                        h3{
+                            color: #000;
+                            font-family: Poppins;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            width: 100%;
+                        }
+                        p{
+                            color: #000;
+                            width: 100%;
+                            font-family: Poppins;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.048px;
+                        }
+                    }
+
+
+                }
+                .transCont{
+                    display: none;
+                }
+
+                .optionTop{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 24px;
+                    align-self: stretch;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                    padding: 10px;
+
+                    .leftTop{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0;
+                        padding: 0;
+
+                        h2{
+                            color: #000;
+                            font-family: Poppins;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+
+                    .rightTop{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 24px;
+                        align-self: stretch;
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 10px;
+
+
+                            h4{
+                                color: #000;
+                                //display: none;
+                                width: 100%;
+                                font-family: Poppins;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.048px;
+                            }
+
+                            .topBtn{
+                                //display: none;
+                                align-items: center;
+                                gap: 20px;
+                                width: 100%;
+                                align-self: stretch;
+
+                                .reg{
+                                    display: flex;
+                                    padding: 12px 16px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 16px;
+                                    flex: 1 0 0;
+                                    background: #43C4B2;
+                                    width: 158px;
+                                    height: 48px;
+                                    color: #FFF;
+                                    font-family: Poppins;
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 0.15px;
+                                    text-transform: uppercase;
+                                }
+
+                                .conSup{
+                                    width: 158px;
+                                    height: 48px;
+                                    display: flex;
+                                    padding: 12px 32px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 16px;
+                                    flex: 1 0 0;
+                                    border: 1px solid #000;
+
+                                    color: #000;
+                                    font-family: Poppins;
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 0.15px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        
+                    }
+                }
+
+                .optionHeader{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:100%;
+                    margin-bottom: 10px;
+                    padding: 10px;
+
+                    h3{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+              }
+            }
+        }
+  }
