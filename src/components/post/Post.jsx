@@ -103,7 +103,7 @@ function Post() {
               <div className="postStoryTop">
               <div className="topStory">
                 <span>
-                  <VolunteerActivismOutlinedIcon className="storyicon" style={{fontSize:'20px' }}/> donation so far: <b>$10,000</b>
+                  <BsGift className="storyicon" style={{fontSize:'20px' }}/> donation so far: <b>$10,000</b>
                 </span>
                 <span>
                   <BsGift className="storyicon" /> donation Target: <b>$21,000</b>
