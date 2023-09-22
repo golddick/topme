@@ -177,7 +177,7 @@ export default class LazyLoad extends Component {
                         <p>{item.impactBio}</p>
                       </div>
                        
-                      <NavLink to='/angelProfile' className='navlink'>
+                      <NavLink to='/donor' className='navlink'>
                       <div className="btn">
                         <span>
                           view impact story <BiChevronRight />

@@ -31,12 +31,9 @@ function Donor() {
 
 
           <div className="PageContainerRight">
-          {/* <div className="Page_postContainer"> */}
             <Post/>
-            {/* <Post/> */}
             </div>
             
-            {/* </div> */}
 
         </div>
            <div className="joinTab" > <Join /></div>
