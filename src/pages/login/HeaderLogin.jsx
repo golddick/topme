@@ -12,7 +12,9 @@ function HeaderLogin() {
         </div>
         <div className="right">
             <span className="txt">Not an Angel?</span>
-            <button><NavLink to='/signup' className='navLink' >Sign up</NavLink></button>
+            <NavLink to='/signup' className='navLink' >
+            <button>Sign up</button>
+            </NavLink>
         </div>
     </div>
   )

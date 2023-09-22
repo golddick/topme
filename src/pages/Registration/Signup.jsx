@@ -410,8 +410,8 @@ function Signup() {
       <img src={BlackLogo} alt="" className="mobileLogo" />
       <div className="formContainer">
         <h1>
-          Become a <img src={GreenLogo} alt="" /> Angel{' '}
-          <span className="dot">.</span>{' '}
+          Become a <img src={GreenLogo} alt="" /> Angel
+          <span className="dot">.</span>
         </h1>
 
         <h2>

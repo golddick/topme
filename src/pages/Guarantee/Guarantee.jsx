@@ -84,7 +84,7 @@ function Guarantee() {
                 </svg>
                 </div>
             </div>
-          
+           
         </div>
         <Footer/>
         </div>

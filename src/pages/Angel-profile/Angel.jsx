@@ -4,28 +4,37 @@ import Leftbar from '../../components/leftbar/Leftbar'
 import Widget from '../../components/widgets/Widget'
 import Stats from '../../components/stats/Stats'
 import Post from '../../components/post/Post'
+import Notifiction from '../../components/notification/Notifiction'
 
 
-function Angel() {
+function AngelProfile() {
   return (
-    <div className='A_profile'>
-        < Topbar/>
-        <div className="profileWrapper">
-        <div className="profileLeft">
-          <Leftbar/></div>
-          <div className="profileCenter">
-           <div className="topBar">
+    <div className='profile'> 
+        <div className="mobileHeader">
+          < Topbar/>
+        </div>
+       
+        <div className="profile_Containerleft">
+          <Leftbar/>
+          </div>
+          <div className="Profile-ContainerRight">
+           <div className="Profile-topBar">
            <div className="widget"><Widget/></div>
             <div className="stat"><Stats/></div>
            </div>
-           <div className="postContent">
-           <div className="postedCampaign"> <Post/></div>
+           <div className="Profile_ContainerBody" style={{overflowY: 'scroll'}}>
+           <div className="postContainer">
+             <Post/>
+             </div>
+             <div className="notificationContainer">
+              <Notifiction/>
+             </div>
            </div>
            
             </div>
-        </div>
+        
     </div>
   )
 }
 
-export default Angel
+export default AngelProfile

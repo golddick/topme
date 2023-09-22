@@ -1,12 +1,11 @@
 .widget{
-    width: 90%;
     display: flex;
-    height: 200px;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    margin-bottom: 20px;
-    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+   //gap: 80px;
+    padding-left: 10px;
+    background-color: #FFF;
     //position: sticky;
 
 .widgetWrapper{

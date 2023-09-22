@@ -1,37 +1,27 @@
 import './notification.scss'
+import {BsPatchCheck} from 'react-icons/bs'
+
+
 
 function Notifiction() {
 
-
-  const closePopup = () => {
-    setPopupOpen(false);
-  };
   return (
-    <div className='Notifiction'>
-               <div className="popup">
-          <div className="popup-content">
-            <h3>Notification</h3>
-            <p>This is a notification message.</p>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <h3>New Notification</h3>
-            <p>This is a sample notification.</p>
-            <button onClick={closePopup}>Close</button>
-          </div>
+    <div className="notification">
+    <h2>notification</h2>
+    <div className="notificationBox">
+      <div className="boxTop">
+        <BsPatchCheck className='notIcon'/>
+        <span>TOP DONATION</span>
+      </div>
+      <div className="boxBottom">
+        <h3><b>Anonymous </b>donated $1,200</h3>
+        <div className="notTime">
+          <h5>1 hour ago <b>.</b > 08:32 PM</h5>
         </div>
-        
-        </div>
+      </div>
+    </div>
+
+  </div>
   )
 }
 

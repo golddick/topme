@@ -1,35 +1,42 @@
-body {
-    background: #ffffff;
-    position: relative;
-    
-  
-.A_profile{
-    
-    .profileWrapper{
+.Analytics_profile{
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+    margin-top: -100px;
+    display:grid ;
+    grid-template-columns: 1fr 5fr ; 
+    grid-template-rows: 100vh; 
+
+    .Analytics_profile-mobileHeader{
+        display: none;
+    }
+   
+
+    .Analytics_Containerleft{
+        flex: 1;
         display: flex;
-
-        .profileLeft{
-            flex: 2;
-        }
-
-
-        .profileCenter{
-       // margin-left: -10px;
-        flex: 5;
+        background-color: #FFF;
+        flex-direction: column;
+        height: 100%;
         width: 100%;
-        //background-color: chocolate;
-        
-        .widget{
-  
-      
-           
-        }
-        }
 
-
+        position: static;
     }
 
-}
+    .Analytics_ContainerRight{
+        display: flex;
+        flex: 5;
+        background-color: #FFF;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+
+        .Analytics_topBar{
+
+        }
+
+    }
 }
 
 @media  screen and (max-width: 1024px) {
@@ -47,4 +54,4 @@ body {
     //  .client_review {
     //      width: var(--container-width-sm);
     //  }
-  }
+  } 

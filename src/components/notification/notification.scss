@@ -1,10 +1,103 @@
-.Notifiction{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 1000px;
-    width: 60px;
-    background-color: coral;
+.notification{
+  display: inline-flex;
+  padding: 12px 24px 27px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 16px;
+background: #000;
+margin-top: 50px;
+position: static;
+  h2{
+    color: #FFF;
+
+    /* Subtitle/subtitle 1 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.024px;
+  }
+  .notificationBox{
+    border-radius: 12px;
+    display: flex;
+    padding: 12px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    .boxTop{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .notIcon{
+        display: flex;
+        width: 23px;
+        height: 21px;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+      }
+      span{
+        display: flex;
+        padding: 4px 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: rgba(151, 71, 255, 0.15);
+
+
+        color: #9747FF;
+
+        /* Overline/overline 1 */
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.15px;
+        text-transform: uppercase;
+      }
+    }
+
+    .boxBottom{
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      align-self: stretch;
+      h3{
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.035px;
+      }
+
+      .notTime{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        h5{
+          color: #808080;
+
+          /* Caption/caption 1 */
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.048px;
+        }
+      }
+    }
+  }
 }
 
 

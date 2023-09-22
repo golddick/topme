@@ -39,7 +39,7 @@ function Homepage() {
         </div>
       <div className="mobileImg">
       <img src={Male} alt="" />
-      <img src={Female} alt="" />
+      <img src={Female} alt="" /> 
       </div>
     </div>
   );

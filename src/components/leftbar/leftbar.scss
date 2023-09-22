@@ -1,14 +1,13 @@
 .Leftbar{
-    position: sticky;
+   // position: static;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: 100vh;
     border-radius: 20px;
-     margin: 10px;
     gap: 20px;
-    padding-top: 10px;
+    //padding-top: 10px;
     background-color: #FFF;
    
     ::-webkit-scrollbar {
@@ -21,30 +20,32 @@
         background-color: rgb(179, 179, 179);
       }
 
-
-      .back{
-        position: absolute;
-        top: 0;
-        width:24px;
-        height: 24px;
+      .logoImage{
+        display: flex;
+        width: 171.93px;
+        height: 35px;
+        margin-bottom: 20px;
+        
+        img{
+            width: 171.93px;
+            height: 35px;
+            flex-shrink: 0;
+           
+        }
       }
+
 
         
         .top{
-            
-            margin-top: -28px;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-    
-            .editProfile{
-                margin-left:300px ;
-                width: 24px;
-                height: 24px;
-            }
-    
-    
+            width: 270px;
+            margin-top: -35px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            background-color: #FFF;
+
+           .profileInfo{
     
             .profileImg{
                 width: 150px;
@@ -52,11 +53,41 @@
                 border-radius: 50%;
                 object-fit: cover;
              // margin-left: 60px;
-              align-items: center;
-               // margin-top: 20px;
+              align-items: center; 
+               margin-top: -20px;
                 border: 5px solid white;
                 
             }
+
+           }
+
+           .editProfile{
+            //padding-top: 100px;
+           //margin-left:50px ;
+          // padding-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 20px;
+            width: 100%;
+            height: 24px;
+            background-color: #FFF;
+            
+
+            span{
+                
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 30px;
+                text-align: center;
+                color: #000;  
+                
+            }
+        }
+    
+          
     
             .name{
                 font-family: 'Poppins';
@@ -68,33 +99,41 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                margin-top:40px;
     
                 p{
-                    font-weight: 300;
-                    font-size: 14px;
-                    line-height: 21px;
-                    align-items: center;
-                    text-align: center;
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+                    width: 270px;
                 }
     
                 .info{
                     display: flex;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 10px;
-                    line-height: 15px;
-                    align-items: start;
-                    justify-content: start;
-                    letter-spacing: 0.0125em;
-                    text-transform: uppercase;
-                    gap: 10px;
-                    color: #808080;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    //gap: 24px;
+                    padding: 5px;
+                    background-color: transparent;
     
-    
+                    
+                    span{
+                        color: rgba(0, 0, 0, 0.50);
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.125px;
+                        text-transform: uppercase;
+                    }
                     .Icon{
                         font-size: 20px;
+                        color: rgba(0, 0, 0, 0.50);
                     }
     
                     .address{
@@ -105,10 +144,15 @@
     
                 .icons{
                     display: flex;
-                    margin: 10px;
-                    gap: 10px;
-                    width: 150px;
                     justify-content: center;
+                    align-items: center;
+                    gap: 44px;
+
+                    .ICON{
+                        width: 22.8px;
+                        height: 16px;
+                        color: #000;
+                    }
                 }
             }
     
@@ -166,6 +210,40 @@
                     }
                 }
             }
+
+            button{
+                display: flex;
+                height: 48px;
+                padding: 12px 32px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border-radius: 8px;
+                background: #E7FFFC;
+
+                color: #43C4B2;
+
+                /* Button/button 1 */
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+            }
+
+            .mailIcon{
+                display: flex;
+                width: 52px;
+                height: 45px;
+                padding: 1px 0.4px 0px 1px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                color: #43C4B2;
+            }
         }
        
     
@@ -173,18 +251,22 @@
             .center{
                 display: flex;
                 flex-direction: column;
+               // gap: 20px;
+                //background-color: chartreuse;
                 //margin-top: 70px;
                
                 .nav{
-                    margin-bottom: 20px;
                     display: flex;
-                    gap: 10px;
-                    text-align: center;
+                    padding: 12px 24px;
                     align-items: center;
                     width: 100%;
+                    gap: 20px;
+                    background-color: transparent;
                     position: relative;
     
                     span{
+                        display: flex;
+                        align-items: center;
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 400;
@@ -195,40 +277,47 @@
                     }
                     
                    
-                    p{
+                    .messageNot{
+                        align-self: flex-end;
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
-                        background-color: #68EDCB;
+                        background-color: #43C4B2;
                         color: black;
                         cursor: pointer;
                        justify-content: center;
                        align-items: center;
                         display: flex;
-                     position: absolute;
-                     right: 0;
+                        position: absolute;
+                        right: 2px;
                         font-size: 15px;
     
+                    }
+
+                    .icon{
+                        width: 24px;
+                        height: 24px;
                     }
     
                 }
                 .nav:hover{
-                   // color: #68EDCB;
-                    border: 1px solid  #68EDCB;
+                   color: #43C4B2;
+                    border: 2px dotted  #43C4B2;
                     
                 }
-               .nav.clicked {
-                color: #68EDCB;
-               }
+            //    .nav.clicked {
+            //     color: #68EDCB;
+            //    }
                 button{
+                    margin-top: 10px;
                     background-color: #EBFFFA;
-                    color: #68EDCB;
+                    color: #43C4B2;
                     font-family: 'Poppins';
                     font-weight: 500;
                     line-height: 21px;
                     font-size: 16px;
                     width: 256px;
-                    height: 45px;
+                    height: 35px;
                     display: flex;
                     border: none;
                     align-items: center;
@@ -236,25 +325,30 @@
                     border-radius: 10px;
                     cursor: pointer;
                     gap: 5px;
+                    text-transform: uppercase;
                     
                 }
                 button:hover{
                     opacity:9;
                     color: #EBFFFA;
-                    background-color: #68EDCB;
+                    background-color: #43C4B2;
                 }
     
-               .clicked{
-                    color: #cf9135;
-                    background-color: #68EDCB;
+            //    .active{
+            //         color: #cf9135;
+            //         background-color: #68EDCB;
+
+            //         .activeLine{
+            //             background-color: red;
+            //         }
                     
-                }
+            //     }
             }
     
               
                 .logout{
-                    padding-top: 100px;
-                    margin-bottom: 10px;
+                    padding-top: 10px;
+                    // margin-bottom: 10px;
                     margin-left: -150px;
                     cursor: pointer;
                     display: flex;
@@ -281,7 +375,9 @@
                 color: inherit;
             }
             .active{
-                color:  #68EDCB;
+                color:  #43C4B2;
+                //opacity: 0;
+                transition: opacity 3.0s ease;
             }
       
 

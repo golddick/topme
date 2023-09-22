@@ -17,7 +17,7 @@ function Stats() {
       <div className="right">
       <span>Total Expected expenitures</span>
         <p>$22,000</p>
-      </div>
+      </div> 
       </div>
     </div>
   )

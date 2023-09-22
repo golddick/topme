@@ -1,9 +1,10 @@
 import React from 'react';
 import { BsGift } from 'react-icons/bs';
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
-import { TbShare3 } from 'react-icons/tb';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
 import {RiAddBoxLine} from 'react-icons/ri';
+import {BsHeart} from 'react-icons/bs'
 import VerticalProgressbar from '../../components/Progressbar/Progressbar';
 import './post.scss'
 
@@ -52,6 +53,11 @@ function Post() {
 
   return (
     <div className="post">
+      <div className="PostStatus">
+       <div className="causes"> <span>Ongoing Causes</span></div>
+       <div className="causes"> <span>Completed Causes</span></div>
+       <div className="causes"> <span>All Causes</span></div>
+      </div>
       {posts.map((post, index) => (
         <div key={index} className={`postItem ${post.featuredpost ? 'featuredPost' : 'noFeaturePost'}`}>
           <div className="postStat">
@@ -67,7 +73,7 @@ function Post() {
               <div className="postTime">
                 <div className="thread">
                   +2 threads
-                </div>
+                </div>  
                 <span className="dot">.</span>
                 <span>19/04/2023</span>
                 <span className="dot">.</span>
@@ -80,21 +86,21 @@ function Post() {
                 </span>
               </div>
             </div>
-            <div className="left">
-              <span>
-                Share <TbShare3 />
-              </span>
+            
+            <div className="statleft">
+              <BsThreeDotsVertical className='dotIcon' />
             </div>
           </div>
 
           <div className="postStory">
-            <div className="top">
+          
               <p>{post.postheader}</p>
-            </div>
+            
         <div className="center">
               <img src={post.postimg} alt="" />
 
               <div className="storyTop">
+              <div className="postStoryTop">
               <div className="topStory">
                 <span>
                   <VolunteerActivismOutlinedIcon className="icon" /> donation so far: <b>$10,000</b>
@@ -103,15 +109,19 @@ function Post() {
                   <BsGift className="icon" /> donation Target: <b>$21,000</b>
                 </span>
               </div>
+
               <div className="progressbar">
                   <VerticalProgressbar/>
                 </div>
+              </div>
+              
               <div className="storyCenter">
-                <div className="addImpact">
-                  <RiAddBoxLine/>
-                  <span>add to impact story</span>
-                </div>
-                <button>donate</button>
+                <button>Top Me</button>
+              <div className="likeBtn">
+                <BsHeart className='LikeIcon'/>
+                <span>12 Likes</span>
+              </div>
+
               </div>
               <div className="down">
                 <p>{post.postbio}</p>

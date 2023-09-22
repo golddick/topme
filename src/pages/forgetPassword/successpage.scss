@@ -1,0 +1,161 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+
+    .mobileLogo{
+
+    }
+
+
+    .pageBody{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        background-color: #FFF;
+        width: 100%;
+
+        img{
+            width: 272px;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .pageText{
+            display: flex;
+            width: 488px;
+           // background-color: crimson;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            h2{
+                color: #000;
+                text-align: center;
+                
+                /* Headers/H5 */
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h4{
+                color: #000;
+                text-align: center;
+                align-self: stretch;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.08px;
+            }
+        }
+
+        button{
+            
+            display: flex;
+            width: 488px;
+            padding: 12px 44px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 8px;
+            background: #43C4B2;
+
+
+            color: #FFF;
+            text-align: center;
+            
+            /* Button/button 1 */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+@media  screen and (max-width: 600px) {
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+   // padding: 20px;
+    background-color: #FFF;
+    .mobileLogo{
+
+    }
+
+    .pageBody{
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 30px);
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        background-color: #FFF;
+        padding: 20px;
+        margin-top: 200px;
+        img{
+            width: 176px;
+            height: 143px;
+        }
+
+        .pageText{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            h2{
+                color: #000;
+                text-align: center;
+                
+                /* Headers/H6 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.03px;
+            }
+    
+            h4{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        button{
+            display: flex;
+            width: 312px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 200px;
+        }
+    }
+
+   
+
+}
+  }

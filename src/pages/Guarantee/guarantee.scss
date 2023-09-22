@@ -12,11 +12,11 @@
 
         display: flex;
         flex-direction: column;
-        //align-items: center;
+        align-items: center;
         justify-content: center;
         width: 100%;
         //margin: 20px;
-        background-color: transparent;
+        // background-color: brown;
        
 
         .GuaranteetopText{
@@ -268,9 +268,10 @@
         width: 100vw;
         //padding: 20px 24px;
         align-items: flex-start;
+        
 
         .GuaranteeWrapper{
-
+           
             .GuaranteetopText{
                 //display: none;
                 display: flex;
@@ -280,6 +281,7 @@
                 align-items: center;
                 gap: 24px;
                 padding: 10px;
+                
 
                 h2{
                     color: #000;

@@ -1,7 +1,8 @@
 import './index.scss'
 import Signup from './pages/Registration/Signup'
 import Login from './pages/login/Login'
-import Angel from './pages/Angel-profile/Angel';
+import AngelProfile from './pages/Angel-profile/Angel';
+// import Angel from './pages/Angel-profile/Angel';
 import Analytics from './pages/Analytics/Analytics';
 import Donor from './pages/Donor-profile/Donor';
 import Completed from './pages/Donor-profile/Completed';
@@ -19,6 +20,9 @@ import Contact from './pages/contact/Contact';
 import Guarantee from './pages/Guarantee/Guarantee';
 import Claim from './pages/Claim-form/Claim';
 import Pricing from './pages/pricing/Pricing';
+import Forgetpasswoord from './pages/forgetPassword/Forgetpasswoord';
+import ResetPassword from './pages/forgetPassword/ResetPassword'
+import SuccessPage from './pages/forgetPassword/SuccessPage';
 import {
   BrowserRouter ,
   Routes,
@@ -39,7 +43,7 @@ function App() {
           <Routes>
             <Route path='/signup' element={<Signup/>}/>
             <Route path='/login' element={<Login/>}/>
-            <Route path='/profile' element={<Angel/>}/>
+            <Route path='/angelProfile' element={<AngelProfile/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
             <Route path='/donor' element={<Donor/>}/>
             <Route path='/Completed' element={<Completed/>}/>
@@ -57,6 +61,9 @@ function App() {
             <Route path='/guarantee' element={<Guarantee/>}/>
             <Route path='/Claim-form' element={<Claim/>}/>
             <Route path='/pricing' element={<Pricing/>}/>
+            <Route path='/RequestLink' element={<Forgetpasswoord/>}/>
+            <Route path='/ResetPassword' element={<ResetPassword/>}/>
+            <Route path='/SuccessPage' element={<SuccessPage/>}/>
             
           </Routes>
         </BrowserRouter>

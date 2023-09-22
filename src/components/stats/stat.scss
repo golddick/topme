@@ -1,9 +1,12 @@
 .stats{
-  width:940px;
+  width:100%;
   height: 70px;
   background-color:  #000000;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  // margin-top: 20px;
+  // margin-bottom: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+  
 
   .statsWrapper{
     display: flex;
@@ -15,7 +18,7 @@
   }
 
   .right, .center, .left{
-
+    margin: 5px;
     justify-content: center;
     text-align: center;
     display: flex;

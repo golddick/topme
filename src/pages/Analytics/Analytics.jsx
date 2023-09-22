@@ -11,19 +11,27 @@ import Atable from '../../components/analytic-Table/Atable'
 
 function Analytics() {
   return (
-    <div className='A_profile'>
-        < Topbar/>
-        <div className="profileWrapper">
-        <div className="profileLeft">
-          <Leftbar/></div>
-          <div className="profileCenter">
-          <div className="widget" >  <Widget/></div>
-           
-           <div className="stats"> <Stats/></div>
-            <Atable/>
-            </div>
-        </div>
+
+    <div className='Analytics_profile'> 
+    <div className="Analytics_profile-mobileHeader">
+      < Topbar/>
     </div>
+   
+    <div className="Analytics_Containerleft">
+      <Leftbar/>
+      </div>
+      <div className="Analytics_ContainerRight">
+       <div className="Analytics_topBar">
+       <div className="widget"><Widget/></div>
+        <div className="stat"><Stats/></div>
+       </div>
+       <div className="AnalyticsBody" style={{overflowY: 'scroll'}}>
+       <Atable/>
+       </div>
+       
+        </div>
+    
+</div>
   )
 }
 

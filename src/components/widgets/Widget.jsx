@@ -40,7 +40,7 @@ function Widget() {
        <span>Decline Campaign(s) </span>
        <p>6 +</p>
        <button>View All</button>
-        </div>
+        </div> 
         
    </div>
      </div>

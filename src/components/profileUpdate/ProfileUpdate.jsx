@@ -114,7 +114,7 @@ function ProfileUpdate() {
   return (
     <div className='ProfileUpdate'>
         <div className="ProfileUpdateContainer">
-        <div className="upload">
+        {/* <div className="upload">
                 <input
                   style={{ display: 'none' }}
                   type="file"
@@ -135,7 +135,7 @@ function ProfileUpdate() {
           </div>
                 </label>
           
-              </div>
+              </div> */}
        
 
              <div className="updateContainer">
