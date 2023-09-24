@@ -2,14 +2,6 @@
     margin-top: 100px;
 
 
-
-
-    // .homtop{
-    //     position: static;
-    // top: 0;
-    // z-index: 100;
-    // }
-
     .impactWrapper{
 
         overflow-y: auto;
@@ -108,6 +100,10 @@
                 }
             }
         }
+    }
+
+    .mobileFilterBar{
+        display: none;
     }
 
     .containerText{
@@ -339,11 +335,338 @@
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {
-    //  .container.testimonials_container {
-    //      width: var(--container-width-sm);
-    //  }
-  
-    //  .client_review {
-    //      width: var(--container-width-sm);
-    //  }
+    .Impactpage{
+       // margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+        .impactWrapper{
+    
+            overflow-y: auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #FFF;
+
+
+            .navTop{
+                display: none;
+                //display: flex;
+                width: 100%;
+                height: 101px;
+                padding: 16px 70px;
+                align-items: center;
+                gap: 44px;
+                background: #FFF;
+            
+                
+        
+                .navCont{
+                display: flex;   
+                align-items: center;   
+                gap: 44px;
+        
+                .icon{ 
+                    width: 48px;
+                    height: 48px;
+                }
+        
+                    .impactsearch{
+                        display: flex;
+                        width: 307.8px;
+                        //justify-content: center;
+                        //justify-content: space-around;
+                        align-items: center;
+                        //gap: 20px;
+                        flex-shrink: 0;
+                        height: 69px;
+                        border-radius: 16px;
+                        background: #F6F6F6;
+        
+                        .searchIcon{
+                            width: 26px;
+                            height: 26px;
+                            margin-left: 20px;
+                        }
+        
+                        input{
+                            border-radius: 16px;
+                            background: #F6F6F6;
+                            border: none;
+                            height: 50px;
+                            width: 320px;
+                            margin: 20px;
+                            outline: none;
+        
+                            &::placeholder{
+                                color: rgba(0, 0, 0, 0.50);
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.175px;
+                                text-transform: uppercase;
+                            }
+        
+                        }
+        
+                        
+        
+                    }
+        
+                    .text{
+                        display: flex;
+                        padding: 12px;
+                        align-items: center;
+                        gap: 12px;
+                        cursor: pointer;
+                        span{
+                            color: #000;
+                            text-align: right;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.175px;
+                            text-transform: uppercase;
+        
+                        }
+        
+                        .itextIcon{
+                            width: 24px;
+                            height: 24px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+           .mobileFilterBar{
+            display: block;
+           }
+        
+            .containerText{
+                display: none;
+                width: 100%;
+                height: 60px;
+                //display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                background: #bc5151;
+                color: #FFF;
+               //padding-top: 80px;
+        
+                h5{
+                    color: #FFF;
+                    text-align: right;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-right: 75px;
+                }
+            }
+        
+            .imapactContainer{
+                padding: 0;
+                width: 100%;
+                height: auto;
+                background: #000;
+                color: #FFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 50px;
+                //align-items: center;
+                
+        
+                     
+                  
+                    
+                .impactBox{
+                    display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   justify-content: center;
+                   align-self: center;
+                   width: 336px;
+                   height: 334px;
+                    flex-shrink: 0;
+                    margin: 10px;
+                    margin-left: 25px;
+                    border-radius: 8px;
+                    background: #FFF;
+                    overflow: hidden;
+        
+                  
+                    img{
+                        width: 312px;
+                        height: 165px;
+                        flex-shrink: 0;
+                        //margin: 12px;
+                        border-radius: 4px;
+                        object-fit: cover;
+                        transition: transform 0.3s ease;
+                        
+                    }
+        
+                    .profileImg:hover{
+                        transform: scale(1.2);
+                    }
+        
+        
+        
+                    .impactBody{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            margin: 10px;
+                            
+                           
+        
+                        .name{
+                            display: flex;
+                            gap: 10px;
+                           
+                           
+        
+                            span{
+                                color: #000;
+                                font-family: Poppins;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.048px;
+                            }
+        
+                            .nameIcon{
+                                display: flex;
+                                width: 18px;
+                                height: 17.308px;
+                                padding-bottom: 0px;
+                                justify-content: center;
+                                align-items: center;
+                                color: #68EDCB;
+                            }
+        
+                        }
+        
+                        .address{
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            margin-left: 10px;
+                            .Icon{
+                                width: 15px;
+                                height: 15px;
+                                color: #808080;
+                            }
+                            
+                            span{
+                                color: #808080;
+                                font-family: Poppins;
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.15px;
+                                text-transform: uppercase;
+        
+                            }
+                        }
+        
+        
+                        p{
+                            overflow: hidden;
+                            color: #000;
+                            text-overflow: ellipsis;
+                            whitespace: nowrap;
+                            font-family: Poppins;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.04px;
+                        }
+        
+                    }
+                }
+        
+                    .btn{
+                        color: #43C4B2;
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.15px;
+                        text-transform: uppercase;
+                        margin-left: -200px;
+                    }
+        
+                    .btn:hover{
+                        color: white;
+                        background-color: #43C4B2;
+                    }
+            
+        
+            }
+        
+            .custom-dots {
+                background-color: transparent;
+                border-radius: 10px;
+                
+               // padding: 10px;
+                display: flex;
+                gap: 30px;
+              }
+              
+              .dots-list {
+                margin: 0;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                gap: 20px;
+                /* Add more styling if needed */
+              }
+              
+              .custom-paging {
+                width: 30px;
+                color: #000;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+                border-radius: 4px;
+                border: 2px solid #000;
+                background: #ffffff;
+                //margin-right: 20px;
+                /* Add more styling if needed */
+              }
+              .custom-paging:hover{
+                background-color: #43C4B2;
+              }
+        
+            .navlink{
+                text-decoration: none;
+               }
+        }
+    
+      
+    }
   }

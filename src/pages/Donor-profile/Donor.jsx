@@ -37,7 +37,7 @@ function Donor() {
 
         </div>
            <div className="joinTab" > <Join /></div>
-           {/* kkdmmxmmxmxmxmmxmxmmxmxmmxmxmxmxmxmxmxmxmxmxmxmmxmxmxmxmxm */}
+
            <div className="tabFooter"> <AngelFooter/></div>
     </div>
   )

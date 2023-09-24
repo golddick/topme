@@ -114,7 +114,9 @@ export default class LazyLoad extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            rows:2,
+            initialSlide: 4,
+            rows:4,
+            dots:false,
           
           }
         },

@@ -23,6 +23,7 @@ import Pricing from './pages/pricing/Pricing';
 import Forgetpasswoord from './pages/forgetPassword/Forgetpasswoord';
 import ResetPassword from './pages/forgetPassword/ResetPassword'
 import SuccessPage from './pages/forgetPassword/SuccessPage';
+import CampaignDetails from './pages/campaignDetails/CampaignDeatail';
 import {
   BrowserRouter ,
   Routes,
@@ -48,7 +49,7 @@ function App() {
             <Route path='/donor' element={<Donor/>}/>
             <Route path='/Completed' element={<Completed/>}/>
             <Route path='/Ongoing' element={<Ongoing/>}/>
-            <Route path='/PostDetails' element={<PostDetails/>}/>
+            <Route path='/CampaignDetails' element={<CampaignDetails/>}/>
             <Route path='/CreatePost' element={<CreatePost/>}/>
             <Route path='/' element={<LandingPage/>}/>
             <Route path='/impact' element={<Impactpage/>}/>
@@ -64,6 +65,7 @@ function App() {
             <Route path='/RequestLink' element={<Forgetpasswoord/>}/>
             <Route path='/ResetPassword' element={<ResetPassword/>}/>
             <Route path='/SuccessPage' element={<SuccessPage/>}/>
+            <Route path='/postDetails' element={<PostDetails/>}/>
             
           </Routes>
         </BrowserRouter>

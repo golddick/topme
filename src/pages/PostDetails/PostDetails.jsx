@@ -15,7 +15,7 @@ import YouTube from 'react-youtube';
 import {TbShare3} from 'react-icons/tb'
 import { TiLocationOutline } from "react-icons/ti";
 
-
+ 
 function getVideoIdFromUrl(url) {
   // Extract the video ID from the YouTube URL
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;

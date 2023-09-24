@@ -184,8 +184,9 @@
         height: auto;
         margin-top: 20px;
         background-color: #FFF;
+        align-self: center;
         //margin: 20px;
-        //margin-left: 50px;
+        margin-left: -5px;
        //position: relative;
         p{
             
@@ -207,9 +208,11 @@
             .center{
                 display: flex;
                 flex-direction: column;
-                background-color: #FFF;
+                background-color: #100505;
                 width: 100%;
                 height: auto;
+                overflow: hidden;
+                border-radius: 10px;
                 
                // position: relative;
                 //display: inline-block;
@@ -217,7 +220,7 @@
                 img{
                     width: 540px;
                     height: 500px;
-                    overflow: hidden;
+                    overflow: visible;
                     object-fit: cover;
                     // display: block;
                     border-radius: 10px;
