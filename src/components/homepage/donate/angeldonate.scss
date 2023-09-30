@@ -65,7 +65,7 @@
                 line-height: normal;
                 text-align: center;
                 display: flex;
-                align-items: center; /* Added */
+                align-items: center; 
                 text-transform: uppercase;
               }
             
@@ -97,14 +97,14 @@
         }
 
         .type:hover {
-            border: 3px solid #68EDCB;
+            border: 3px solid #43C4B2;
           }
           .type:hover span {
-            color:#68EDCB;
+            color:#43C4B2;
           }
           
           .type:hover p {
-            color: #68EDCB
+            color: #43C4B2
           }
     }
 }

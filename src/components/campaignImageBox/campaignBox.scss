@@ -1,0 +1,364 @@
+.CampaignBox{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1.5px solid #43C4B2;
+
+    .c_topBox{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        //gap: 24px;
+        align-self: stretch;
+        //background-color: goldenrod;
+        //height: 53px;
+
+        .cTop{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            //background-color: blueviolet;
+
+            span{
+                display: flex;
+                height: 23px;
+                padding: 4px 8px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                background: rgba(0, 0, 0, 0.15);
+                color: #000;
+
+                /* Overline/overline 1 */
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.15px;
+                text-transform: uppercase;
+            }
+
+            .share{
+                display: flex;
+                padding: 2px 8px;
+                align-items: center;
+                gap: 12px;
+                border-radius: 4px;
+                background: #000;
+
+                color: #FFF;
+
+                /* Button/button 1 */
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+
+            
+            }
+            .shareIcon{
+                display: none;
+               }
+        }
+
+        .c_info{
+            display: flex;
+            padding: 2px 0px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+
+            color: #808080;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.03px;
+        }
+    }
+
+    .image-gallery{
+        display: flex;
+        //flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        //background-color: darkblue;
+        flex: 1 0 0;
+        
+
+       .galleryTop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        img{
+            display: flex;
+            width: 260px;
+            height: 223px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+       }
+
+       .galleryBottom{
+            display: flex;
+            width: 100%;
+        img{
+            display: flex;
+            width: 100%;
+            height: 223px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+       }
+       
+    }
+    .donTrack{
+        display: none;
+    }
+
+    .mobiletrun{
+        display: none;
+    }
+
+    ._topMe{
+        display: flex;
+        width: 353px;
+        height: 48px;
+        padding: 12px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #E7FFFC;
+
+        color: #43C4B2;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.175px;
+        text-transform: uppercase;
+
+        .MobTop{
+            display: none;
+        }
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .CampaignBox{
+        display: flex;
+       padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        border-radius: 12px;
+        border: 1.5px solid #43C4B2;
+    
+        .c_topBox{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            align-self: stretch;
+          
+    
+            .cTop{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                //background-color: blueviolet;
+    
+                span{
+                    display: flex;
+                    height: 23px;
+                    padding: 4px 8px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    background: rgba(0, 0, 0, 0.15);
+                    color: #000;
+    
+                    /* Overline/overline 1 */
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.15px;
+                    text-transform: uppercase;
+                }
+    
+                .share{
+                    display: none;
+                    padding: 2px 8px;
+                    align-items: center;
+                    gap: 12px;
+                    border-radius: 4px;
+                    background: #000;
+    
+                    color: #FFF;
+    
+                    /* Button/button 1 */
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+    
+                   
+                }
+                .shareIcon{
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+    
+            .c_info{
+                display: flex;
+                padding: 2px 0px;
+                align-items: center;
+                gap: 8px;
+                align-self: stretch;
+    
+                color: #808080;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.03px;
+            }
+        }
+    
+        .image-gallery{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            
+    
+           .galleryTop{
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+    
+            img{
+                display: flex;
+                width: 158px;
+                height: 158px;
+                border-radius: 8px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                object-fit: cover;
+            }
+           }
+    
+           .galleryBottom{
+                display: none;
+                width: 100%;
+            img{
+                display: flex;
+                width: 158px;
+                height: 158px;
+                border-radius: 8px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                object-fit: cover;
+            }
+           }
+           
+        }
+        .donTrack{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: 20px;
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+            align-self: stretch;
+        
+            h3{
+                color: #000;
+                padding-top: 10px;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.15px;
+                text-transform: uppercase;
+            }
+        
+            span{
+                color: #000;
+
+                /* Button/button 1 */
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.175px;
+                text-transform: uppercase;
+            }
+         }
+
+         .webTrun{
+            display: none;
+         }
+         .mobiletrun{
+            display: block;
+         }
+        ._topMe{
+            display: flex;
+            width: 336px;
+            height: 45px;
+            margin: 0;
+            padding: 12px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            background: #43C4B2;
+
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.048px;
+
+
+            .MobTop{
+                display: flex;
+            }
+        }
+    } 
+  }

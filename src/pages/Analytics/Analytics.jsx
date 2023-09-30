@@ -1,7 +1,6 @@
 import './analytics.scss'
 import Topbar from '../../components/Topbar/Topbar'
 import Leftbar from '../../components/leftbar/Leftbar'
-import Feed from '../../components/feeds/Feed'
 import Table from '../../components/Table/Table'
 import Widget from '../../components/widgets/Widget'
 import Stats from '../../components/stats/Stats'

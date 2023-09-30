@@ -11,7 +11,7 @@ import Loader from '../../components/loader/Loader';
 import Hometop from '../../components/homepage/HomeTop/Hometop';
 import Option from '../../components/Option/Option'
 import Angelfooter from '../../components/homepage/footer/AngelFooter'
-import FilterTab from '../../components/mobileComponent /filterTab';
+import FilterBar from '../../components/mobileComponent /FilterBar';
 
 export default class LazyLoad extends Component {
   state = {
@@ -281,7 +281,7 @@ export default class LazyLoad extends Component {
           </div>
         </div>
         <div className="mobileFilterBar">
-         <FilterTab/>
+         <FilterBar/>
         </div>
         <div className="containerText">
           <h5>Angels Near You</h5>

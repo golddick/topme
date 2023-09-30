@@ -109,7 +109,7 @@ const rows = [
 ];
 
   return (
-    <div style={{ height: 'auto', width: '92%' , marginLeft: '10px', overflow: 'hidden' ,marginTop: '30px'}} className='table'>
+    <div style={{ height: 'auto', width: '100%' , marginLeft: '10px', overflow: 'hidden' ,marginTop: '30px'}} className='table'>
       <DataGrid
         rows={rows}
         columns={columns}

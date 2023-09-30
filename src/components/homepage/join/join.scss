@@ -71,20 +71,25 @@
                     text-transform: uppercase;
                 }
 
-                button{
+                .howBtn{
                     display: flex;
-                    width: 221px;
+                     width: 254px;
+                     height: 100%;
+                     margin: 0;
+                     padding: 0;
                     padding: 16px 44px;
                     justify-content: center;
                     align-items: center;
+                    background-color: transparent;
                     gap: 16px;
-                    flex-shrink: 0;
                     align-self: stretch;
                     border-radius: 100px;
                     border: 1px solid #808080;
 
 
                     color: #000;
+
+                    /* Button/button 1 */
                     font-family: Poppins;
                     font-size: 14px;
                     font-style: normal;
@@ -186,8 +191,8 @@
                         text-transform: uppercase;
                     }
 
-                    button{
-                        display: flex;
+                    .howBtn{
+                        display: flex; 
                         padding: 10px 24px;
                         justify-content: center;
                         align-items: center;
@@ -197,6 +202,7 @@
                         border: 1.5px solid #000;
                         width: 288px;
                         height: 35px;
+                        background-color: transparent;
 
                         color: #000;
                         text-align: center;

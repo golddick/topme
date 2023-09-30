@@ -44,7 +44,7 @@ function App() {
           <Routes>
             <Route path='/signup' element={<Signup/>}/>
             <Route path='/login' element={<Login/>}/>
-            <Route path='/angelProfile' element={<AngelProfile/>}/>
+            <Route path='/profile' element={<AngelProfile/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
             <Route path='/donor' element={<Donor/>}/>
             <Route path='/Completed' element={<Completed/>}/>

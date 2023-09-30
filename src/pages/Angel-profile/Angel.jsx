@@ -4,13 +4,15 @@ import Leftbar from '../../components/leftbar/Leftbar'
 import Widget from '../../components/widgets/Widget'
 import Stats from '../../components/stats/Stats'
 import Post from '../../components/post/Post'
+import MobilePost from '../../components/mobileComponent /mobilePostCont/MobilePost'
 import Notifiction from '../../components/notification/Notifiction'
+import PostStatus from '../../components/postLink/PostStatus'
 
 
 function AngelProfile() {
   return (
     <div className='profile'> 
-        <div className="mobileHeader">
+        <div className="mobileHeader"> 
           < Topbar/>
         </div>
        
@@ -25,6 +27,12 @@ function AngelProfile() {
            <div className="Profile_ContainerBody" style={{overflowY: 'scroll'}}>
            <div className="postContainer">
              <Post/>
+             </div>
+             <div className="mobileCont">
+              <PostStatus/>
+              <MobilePost/>
+              <MobilePost/>
+              <MobilePost/>
              </div>
              <div className="notificationContainer">
               <Notifiction/>

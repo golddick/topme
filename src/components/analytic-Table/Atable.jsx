@@ -68,9 +68,10 @@ function Atable() {
             <td>
             <Checkbox {...label} className="checkbox"/>
             </td>
-            <td className='tb'>{item.title}</td>
+           {/* <div className="tbBox"> <td className='tb'>{item.title}</td></div> */}
+           <td className='tb' style={{ height:'100%'}}>{item.title}</td>
         <td>
-              <button className={`status-${item.status.toLowerCase().replace(' ', '-')}`}>{item.status}</button>
+              <div className={`status-${item.status.toLowerCase().replace(' ', '-')}`}>{item.status}</div>
             </td>
             <td className='tb'>{item.dateCreated}</td>
             <td className='tb'>{item.dueDate}</td>
@@ -79,8 +80,9 @@ function Atable() {
             <td className='tb'>{item.donationReceived}</td>
             <td className='tb'> {item.receivingOrganization}</td>
             <td className='tb'>
-              <button className='btn'>View More <IoIosArrowForward/></button>
+              <div className='btn'>View More <IoIosArrowForward/></div>
             </td>
+            {/* <td>dd</td> */}
           </tr>
         ))}
       </tbody>

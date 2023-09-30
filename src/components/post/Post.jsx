@@ -6,6 +6,7 @@ import { CiLocationOn } from 'react-icons/ci';
 import {RiAddBoxLine} from 'react-icons/ri';
 import {BsHeart} from 'react-icons/bs'
 import VerticalProgressbar from '../../components/Progressbar/Progressbar';
+import PostStatus from '../postLink/PostStatus';
 import './post.scss'
 
 
@@ -53,11 +54,7 @@ function Post() {
 
   return (
     <div className="post">
-      <div className="PostStatus">
-       <div className="causes"> <span>Ongoing Causes</span></div>
-       <div className="causes"> <span>Completed Causes</span></div>
-       <div className="causes"> <span>All Causes</span></div>
-      </div>
+      <PostStatus/>
       {posts.map((post, index) => (
         <div key={index} className={`postItem ${post.featuredpost ? 'featuredPost' : 'noFeaturePost'}`}>
           <div className="postStat">

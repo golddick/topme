@@ -164,7 +164,7 @@ function Leftbar() {
                     </div>
                 </div>
 
-                <button>CREATE ANGEL SUPPORT</button>
+                <div className='CASbtn'>CREATE ANGEL SUPPORT</div>
                 
        </div>
        {/* <div className="horizontal-line"></div> */}

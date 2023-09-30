@@ -1,0 +1,141 @@
+.AngelProgress{
+    display: flex;
+    width: 540px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    border-radius: 0px 16px 16px 16px;
+    background: #000;
+
+    h1{
+        align-self: stretch;
+        color: #FFF;
+
+        /* Subtitle/subtitle 2 */
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.014px;
+    }
+
+    .progress_bar{
+        width: 492px;
+        height: 0px;
+        flex-shrink: 0;
+        border-bottom: 2px solid #43C4B2;
+    }
+
+    .fundRow{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        gap: 10px;
+
+        span{
+            display: flex;
+            padding: 8px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            background: #FFF;
+
+            color: #000;
+
+            /* Caption/caption 1 */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.048px;
+        }
+
+        p{
+            display: flex;
+            padding-top: 10px;
+            align-items: center;
+            color: #FFF;
+            flex: 1 0 0;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.03px;
+        }
+    }
+    
+}
+
+@media  screen and (max-width: 1024px) {
+    .AngelProgress{
+        display: flex;
+        width: 336px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border-radius: 0px 16px 16px 16px;
+        background: #000;
+    
+        h1{
+            color: #FFF;
+            align-self: stretch;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.048px;
+        }
+    
+        .progress_bar{
+            width: 100%;
+            height: 0px;
+            flex-shrink: 0;
+            border-bottom: 2px solid #43C4B2;
+        }
+    
+        .fundRow{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            gap: 10px;
+    
+            span{
+                display: flex;
+                width: 50px;
+                //padding: 8px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 8px;
+                background: #FFF;
+                color: #000;
+                flex: 1 0 0;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.15px;
+                text-transform: uppercase;
+            }
+    
+            p{
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.014px;
+            }
+        }
+        
+    }
+  }

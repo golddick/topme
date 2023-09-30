@@ -1,0 +1,169 @@
+.ManuTab{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 44px 0px 203px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 44px;
+    //border-radius: 0px 0px 32px 32px;
+   background-color: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(67, 196, 178, 0.12);
+
+    .menuTop{
+        display: flex;
+        padding: 0px 24px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            height: 24px;
+        }
+        .closeTab{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .menuCenter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 24px;
+        gap: 24px;
+
+        span{
+            // display: flex;
+            // padding: 20px 24px;
+            // align-items: center;
+            // gap: 24px;
+            // align-self: stretch;
+
+            color: #000;
+
+            /* Caption/caption 1 */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.048px;
+            text-transform: uppercase;
+            //background-color: chocolate;
+        }
+
+        .menuText{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .extraPopup{
+            display: flex;
+            flex-direction: column;
+
+            .contact{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                .span{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                    text-transform: uppercase;
+                }
+                img{
+                    width: 50px;
+                    height: 15px;
+                }
+
+            }
+            .blog{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 160px;
+                height: 40px;
+                .span{
+                    color: #030202;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                    text-transform: uppercase;
+                   }
+            }
+        }
+    }
+
+    .menuBottom{
+        display: flex;
+        width: 100%;
+        padding: 0px 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+
+        .regBtn{
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 100px;
+            background: #43C4B2;
+
+
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+        }
+
+        .loginBtn{
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 100px;
+            border: 1px solid #000;
+
+            color: #000;
+
+            /* Button/button 1 */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+        }
+    }
+
+    .navlink{
+        text-decoration: none;
+    }
+
+}

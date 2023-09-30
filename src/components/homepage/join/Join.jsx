@@ -17,7 +17,7 @@ function Join() {
                     <span>become an angel</span>
                         <BiCaretRight/>
                 </div>
-                <button>how it works </button>
+                <button className='howBtn'>how it works </button>
             </div>
         </div>
         <div className="right">

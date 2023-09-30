@@ -26,7 +26,7 @@ function AngelDonate() {
         <div className="typeContent">
         <span>lagos</span>
             <p>54</p>
-        </div>
+        </div> 
           </div>
 
           <div className="type">

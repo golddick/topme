@@ -6,6 +6,7 @@ import React, { useState ,useEffect, useRef } from 'react';
 import Search from '../../search/Search';
 import Logo from '../../../assets/greenLogo.png'
 import BLogo from '../../../assets/blacklogo.svg'
+import MenuTab from '../../mobileComponent /menuTab/MenuTab';
 
 // import ErrorBoundary from '../../errboundary';
 
@@ -14,6 +15,7 @@ function Hometop() {
   const [isOpen, setIsOpen] = useState(false);
   const [extraopen, setExtraopen] = useState(false);
   const [howitworks, setHowitworks] = useState(false)
+  const [menuTab, setMenuTab] = useState(false)
   const popupRef = useRef(null);
 
   const handlePopupOpen = () => {
@@ -29,9 +31,17 @@ function Hometop() {
       setHowitworks(!howitworks);
     }
   
-const openExtra =() =>{
-  setExtraopen(!extraopen);
-}
+    const openExtra =() =>{
+      setExtraopen(!extraopen);
+    }
+
+    const openMobileMenu = () => {
+      setMenuTab(!menuTab)
+    }
+
+    function closeMobilemenu () {
+      setMenuTab(false);
+    }
 
 const handleOutsideClick = (event) => {
   if (popupRef.current && !popupRef.current.contains(event.target)) {
@@ -162,12 +172,16 @@ useEffect(() => {
         <NavLink to='/' className='navLink'>
           <img src={BLogo} alt="" />
           </NavLink>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" onClick={openMobileMenu}>
           <path d="M9.8 19.4H21.2M2 12.2H21.2M2 5H21.2" stroke="black" stroke-width="2" stroke-linecap="round"/>
         </svg>
           </div>
-      </div>
 
+          {menuTab &&(
+            <MenuTab closeMobilemenu={closeMobilemenu}/>
+          )}
+      </div>
+         
       </div>
   )
 }

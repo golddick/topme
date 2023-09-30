@@ -1,7 +1,7 @@
 import './donor.scss'
 import Sidebar from '../../components/leftbar/Sidebar'
 import Donortopbar from '../../components/Topbar/Donortopbar'
-import Postlink from '../../components/postLink/Postlink'
+import Postlink from '../../components/postLink/PostStatus'
 import Post from '../../components/post/Post'
 import {FaEnvelope} from 'react-icons/fa'
 

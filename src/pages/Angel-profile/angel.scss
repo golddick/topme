@@ -56,6 +56,11 @@
                 flex-direction: column;
                 height: 100%;
                 width: 100%;
+                
+            }
+
+            .mobileCont{
+                display: none;
             }
             .notificationContainer{
                 display: flex;
@@ -107,22 +112,22 @@
     
             .Profile_ContainerBody{
                 display: flex;
-                //display: none;
+                padding: 20px;
                 width: 100%;
-                height: 100%;
-                // grid-template-columns: 3fr 2fr;
-                // grid-template-rows: 100%; 
-                background-color: #FFF;
-                //overflow-y: auto;
-                //     height: calc(100vh - 60px);
+                height: 100%; 
     
                 .postContainer{
                     flex: 2;
-                    display: flex;
+                    display: none;
                     background-color: #FFF;
                     flex-direction: column;
                     height: 100%;
                     width: 100%;
+                }
+
+                .mobileCont{
+                    display: block;
+                    padding-bottom: 30px;
                 }
                 .notificationContainer{
                     display: none;
