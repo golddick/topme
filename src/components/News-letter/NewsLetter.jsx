@@ -14,7 +14,7 @@ function NewsLetter({ handleClosePopup }) {
 
   return (
     <div className="popupContent">
-    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+    <h3>SUBSCRIBE TO OUR NEWSLETTERS</h3>
  <div className="contentCenter">
  <p>Please insert your Email address</p>
     <input type="email" name="email" id="" placeholder='input email' />
