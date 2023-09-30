@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './newsLetter.scss'
+import './newsLetter.scss';
 
 function NewsLetter({ handleClosePopup }) {
     // const [isOpen, setIsOpen] = useState(false);
