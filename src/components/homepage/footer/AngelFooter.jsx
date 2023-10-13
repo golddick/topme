@@ -128,6 +128,8 @@ function AngelFooter() {
         <NavLink to='/HowitWorks' className='navLink'> <span onClick={scrollToTop}>How it Works</span></NavLink>
         <NavLink to='/pricing' className='navLink'><span  onClick={scrollToTop}>Pricing and Fees</span></NavLink>
         <NavLink to='/guarantee' className='navLink'> <span onClick={scrollToTop}>Guarantee Page</span></NavLink>
+        <NavLink to='/profile' className='navLink'><span  onClick={scrollToTop}>profile</span></NavLink>
+        <NavLink to='/addProfile' className='navLink'> <span onClick={scrollToTop}>addprofile</span></NavLink>
 
         </div>
 

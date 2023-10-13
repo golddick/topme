@@ -73,9 +73,12 @@ function Leftbar() {
 
 
   const [isHovered, setIsHovered] = useState(false);
-
+  const [btnisHovered, setBtnIsHovered] = useState(false);
   const handleHover = () => {
     setIsHovered(!isHovered);
+  };
+  const handlebtnHover = () => {
+    setBtnIsHovered(!btnisHovered);
   };
   const [activeLink, setActiveLink] = useState('');
 
@@ -89,37 +92,11 @@ function Leftbar() {
   };
 
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleIconClick = () => {
-    setIsOpen(!isOpen);
-  }; 
-
-
-  const handleOutsideClick = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
-      closePopup();
-    }
-  };
 
   return (
     <div className='Leftbar' >
       <img src={Logo} alt="" className='logoImage'/>
        <div className="top">
-        {/* <div className="Eprofile" >
-        <NavLink to='/updateprofile' className='navLink' >
-        <BiChevronDown className='editProfile' />
-        </NavLink>
-        <BiChevronDown className='editProfile' onClick={handleIconClick}/>
-        {isOpen && (
-        <div className='editform' >
-         <Editprofile />
-        </div>
-      )}
-        </div> */}
-        {/* <NavLink to='/updateprofile' className='navLink' >
-        <BiChevronDown className='editProfile' />
-        </NavLink> */}
       
         <div className='editProfile' >
         <NavLink to='/updateprofile' className='navLink' >
@@ -163,8 +140,11 @@ function Leftbar() {
                         <p>CAMPAIGNS</p>
                     </div>
                 </div>
-
-                <div className='CASbtn'>CREATE ANGEL SUPPORT</div>
+                <NavLink to='/CreateSupport' className='navLink'>
+                <div onMouseEnter={handlebtnHover} onMouseLeave={handlebtnHover} className='CASbtn' >
+                {btnisHovered && <FiGift className="icon" />}CREATE ANGEL SUPPORT
+                </div>
+                </NavLink>
                 
        </div>
        {/* <div className="horizontal-line"></div> */}
@@ -196,12 +176,9 @@ function Leftbar() {
         <span>Email</span>
         </div>
           <NavLink to='/CreatePost' className='navLink' >
-          {/* <div    className={`clicked ${isCurrentPage('/CreatePost') ? 'active' : ''}`}
-          onClick={() => handleLinkClick('/CreatePost')}> */}
         <button onMouseEnter={handleHover} onMouseLeave={handleHover} >
         {isHovered && <FiGift className="icon" />}Create a CAUSE
         </button>
-        {/* </div> */}
         </NavLink>
         </div>
         

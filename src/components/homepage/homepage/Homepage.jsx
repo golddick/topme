@@ -26,7 +26,7 @@ function Homepage() {
         <div className="homeleft">
           <img src={Female} alt="" />
         </div>
-        <div className="homecenter">
+        <div className="homecenter"> 
           <span>quote</span>
           <h4>Be the Change</h4>
           <h1 style={{ color: isBackgroundWhite ? '#000000' : '#ffffff' }}>Become an Angel &amp; <br />Empower Lives</h1>

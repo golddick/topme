@@ -9,6 +9,9 @@ import Comment from '../CommentTab/Comment';
 import TruncateBio from '../../pages/campaignDetails/TruncateBio/TruncateBio';
 
 function CampaignBox() {
+
+
+
   const campaignImg = [
     {
       impactImg:

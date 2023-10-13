@@ -1,17 +1,21 @@
 .Impactpage{
     margin-top: 100px;
+    width: 100%;
+    height: auto;
+   // background-color: brown;
 
 
     .impactWrapper{
 
         overflow-y: auto;
-        height: calc(100vh - 60px); 
-    }
+        // height: calc(100vh - 60px); 
+        // background-color: blueviolet;
+    
 
     .navTop{
         display: flex;
         width: 100%;
-        height: 101px;
+        height: 100px;
         padding: 16px 70px;
         align-items: center;
         gap: 44px;
@@ -100,6 +104,106 @@
                 }
             }
         }
+    }
+
+    .openCat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+       //padding: 20px;
+        background-color: #000;
+
+        .categoryContainer{
+            width: 1200px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            background: #000;
+            color: #FFF;
+            padding: 20px;
+        }
+
+        h3{
+            color: #FFF;
+            text-align: right;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+        }
+        .categoryBox{
+            display: flex;
+            //flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+            align-items: flex-start;
+            gap: 24px;
+            background-color: rgb(1, 1, 1);
+
+        
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+              
+                .checkbox-label {
+                  display: inline-block;
+                  position: relative;
+                  padding-left: 30px;
+                  cursor: pointer;
+                }
+              
+                .checkbox-label:before {
+                  content: "";
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  background-color: white;
+                  border-radius: 4px;
+                  position: absolute;
+                  left: 0;
+                  top: -10px;
+                }
+              
+                .checkbox-input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+              
+                .checkbox-label:hover:before {
+                  border: 2px solid #43C4B2;
+                }
+              
+                .checkbox-input:checked + .checkbox-label:before {
+                  background-color: #43C4B2;
+                  border: 2px solid #43C4B2;
+                }
+              
+                .checkbox-input:checked + .checkbox-label + span {
+                  color: #43C4B2; /* Change the text color when checked */
+                }
+              
+                span {
+                  color: #FFF;
+                  font-family: Poppins;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.175px;
+                  text-transform: uppercase;
+                }
+              }
+              
+        }
+
     }
 
     .mobileFilterBar{
@@ -265,7 +369,7 @@
                 align-items: center;
                 justify-content: center;
 
-                color: #68EDCB;
+                color: #43C4B2;
                 font-family: Poppins;
                 font-size: 14px;
                 font-style: normal;
@@ -277,7 +381,7 @@
 
             .btn:hover{
                 color: white;
-                background-color: #68EDCB;
+                background-color: #43C4B2;
             }
     
 
@@ -318,12 +422,14 @@
         /* Add more styling if needed */
       }
       .custom-paging:hover{
-        background-color: #68EDCB;
+        background-color: #43C4B2;
       }
 
     .navlink{
         text-decoration: none;
        }
+
+    }
 }
 
 
@@ -445,6 +551,10 @@
                         }
                     }
                 }
+            }
+
+            .openCat{
+                display: none;
             }
 
            .mobileFilterBar{

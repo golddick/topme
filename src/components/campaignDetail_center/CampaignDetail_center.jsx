@@ -1,10 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {BiGift} from 'react-icons/bi'
 import {BsFillPatchCheckFill} from 'react-icons/bs'
 import {AiOutlineUsergroupAdd} from 'react-icons/ai'
+import CampaignDonation from '../campaignDonation/CampaignDonation'
+import CampaignTopDonation from '../campaignDonation/CampaignTopDonation'
 import './campaignDetail_center.scss'
 
 function CampaignDetail_center() {
+
+    const [openDono, setOpenDono] = useState()
+    const [openTopDono, setOpenTopDono] = useState()
+
+    const openTopdonationtab = () => {
+        setOpenTopDono(true)
+    }
+
+    const closeTopDonoTab = () => {
+        setOpenTopDono(false);
+    }
+
+    const opendonationtab = () => {
+        setOpenDono(true)
+    }
+
+    const closeDonoTab = () => {
+        setOpenDono(false);
+    }
+
   return (
     <div className="detailsCenter">
     <div className="justTop">
@@ -38,10 +60,20 @@ function CampaignDetail_center() {
 
     <div className="donationBtn">
 
-        <div className="seemore">see more</div>
-        <div className="seeTopDon">see top donation</div>
+        <div className="seemore"  onClick={opendonationtab}>see more</div>
+        <div className="seeTopDon" onClick={openTopdonationtab}>see top donation</div>
 
     </div>
+    {openDono && (
+       
+            <CampaignDonation closeDonoTab ={closeDonoTab}/>
+       
+    )}
+    {openTopDono && (
+       
+            <CampaignTopDonation closeDonoTab ={closeTopDonoTab}/>
+       
+    )}
 </div>
   )
 }

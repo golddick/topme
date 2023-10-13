@@ -10,15 +10,6 @@
     //padding-top: 10px;
     background-color: #FFF;
    
-    ::-webkit-scrollbar {
-        width: 5px;
-      }
-      ::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: rgb(179, 179, 179);
-      }
 
       .logoImage{
         display: flex;
@@ -212,6 +203,7 @@
             }
 
             .CASbtn{
+                cursor: pointer;
                 display: flex;
                 height: 48px;
                 padding: 12px 32px;
@@ -233,17 +225,13 @@
                 letter-spacing: 0.175px;
                 text-transform: uppercase;
             }
-
-            .mailIcon{
-                display: flex;
-                width: 52px;
-                height: 45px;
-                padding: 1px 0.4px 0px 1px;
-                justify-content: center;
-                align-items: center;
-                flex-shrink: 0;
-                color: #43C4B2;
+            .CASbtn:hover{
+                opacity:9;
+                color: #EBFFFA;
+                background-color: #43C4B2;
             }
+
+
         }
        
     
@@ -251,9 +239,6 @@
             .center{
                 display: flex;
                 flex-direction: column;
-               // gap: 20px;
-                //background-color: chartreuse;
-                //margin-top: 70px;
                
                 .nav{
                     display: flex;
@@ -302,12 +287,9 @@
                 }
                 .nav:hover{
                    color: #43C4B2;
-                    border: 2px dotted  #43C4B2;
                     
                 }
-            //    .nav.clicked {
-            //     color: #68EDCB;
-            //    }
+
                 button{
                     margin-top: 10px;
                     background-color: #EBFFFA;
@@ -333,6 +315,7 @@
                     color: #EBFFFA;
                     background-color: #43C4B2;
                 }
+                
     
             //    .active{
             //         color: #cf9135;

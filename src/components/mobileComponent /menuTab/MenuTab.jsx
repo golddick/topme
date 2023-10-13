@@ -48,7 +48,8 @@ useEffect(() => {
 
         <div className="menuTop">
         <img src={BlackLogo} alt=""  className='menuLogo'/>
-        <AiOutlineCloseCircle className='closeTab' onClick={closeMobilemenu}/>
+        k
+        <AiOutlineCloseCircle className='closeTab' onClick={closeMobilemenu} />
         </div>
         <div className="menuCenter">
           <NavLink to="/about" className='navLink'>

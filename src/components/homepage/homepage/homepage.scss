@@ -1,6 +1,6 @@
 .Homepage{
     top: 0;
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100%;
     color: white;
    padding-top: 50px;
@@ -10,12 +10,16 @@
         
         .homeleft{
             flex: 3;
+            width: 300px;
+            height: 500px;
+            margin-top: 100px;
+            //background-color: chocolate;
            
             img{
-                width: 384px;
-                height: 593px;
+                width: 100%;
+                height: 100%;
                 flex-shrink: 0;
-                object-fit: cover ;
+                object-fit: contain ;
                 // margin-left: 100px;
             }
 
@@ -23,9 +27,10 @@
 
         .homecenter{
             flex: 5;
-           // margin-top: 100px;
-            //margin-left: 200px;
-
+            //background-color: crimson;
+            width: 300px;
+            height: 500px;
+            margin-top: 100px;
             span{
                 width: 50px;
                 height: 23px;
@@ -61,7 +66,7 @@
             h1{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 60px;
+                font-size: 40px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 100%;
@@ -95,6 +100,8 @@
         }
 
         .homeright{
+            margin-right: 100px;
+            height: 100%;
             
             img{
             width: 212px;

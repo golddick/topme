@@ -213,30 +213,9 @@
                  }
              }
  
-             button{
-                 display: flex;
-                 height: 48px;
-                 padding: 12px 32px;
-                 justify-content: center;
-                 align-items: center;
-                 gap: 10px;
-                 align-self: stretch;
-                 border-radius: 8px;
-                 background: #E7FFFC;
- 
-                 color: #43C4B2;
- 
-                 /* Button/button 1 */
-                 font-family: Poppins;
-                 font-size: 14px;
-                 font-style: normal;
-                 font-weight: 500;
-                 line-height: normal;
-                 letter-spacing: 0.175px;
-                 text-transform: uppercase;
-             }
  
              .mailIcon{
+                cursor: pointer;
                  display: flex;
                  width: 52px;
                  height: 45px;

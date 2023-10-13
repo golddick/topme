@@ -1,15 +1,44 @@
-import React from 'react';
+import React,{useState , useEffect, useRef  } from 'react';
 import { BsGift } from 'react-icons/bs';
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
 import { FaShare } from 'react-icons/fa';
 import {BsHeart} from 'react-icons/bs'
+import ShareContainer from '../../ShareContainer/ShareContainer';
 //import VerticalProgressbar from '../../components/Progressbar/Progressbar';
 import './mobilePost.scss'
 
 
 function MobilePost() {
+
+  const [showShare, setShowShare] = useState(false);
+  const popupRef = useRef(null);
+  const handleClick = () => setShowShare(true)
+
+  const closePopup = () => {
+    setShowShare(false);
+  };
+ // Add an event listener to the document to handle clicks outside the popup
+ useEffect(() => {
+  function handleClickOutside(event) {
+    if (popupRef.current && !popupRef.current.contains(event.target)) {
+      closePopup();
+    }
+  }
+
+  if (showShare) {
+    document.addEventListener('mousedown', handleClickOutside);
+  } else {
+    document.removeEventListener('mousedown', handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, [showShare]);
+
+
   const posts = [
     {
       featuredpost: 'featured post',
@@ -65,8 +94,11 @@ function MobilePost() {
               </div>
             </div>
             
-            <div className="statleft">
-              <BsThreeDotsVertical className='dotIcon' />
+            <div className="statleft" >
+            {
+                showShare &&(<ShareContainer closeshareConterner ={popupRef}/>)
+              }
+              <BsThreeDotsVertical className='dotIcon'  onClick={handleClick}/>
             </div>
           </div>
 

@@ -1,23 +1,14 @@
 import './upprofile.scss'
 import ProfileUpdate from '../../components/profileUpdate/ProfileUpdate'
-import Topbar from '../../components/Topbar/Topbar'
+import BlackLogo from '../../assets/blacklogo.svg'
 
 function Updateprofile() {
   return (
     <div className='Updateprofile'> 
-    <div className="homtop">
-    <Topbar />
-    </div>
-     
-   <div className="updateprofileContainer">
-   {/* <div className="updateprofileContainerLeft">
-          <Leftbar/>
-    </div> */}
-
-    <div className="updateprofileContainercenter">
-    <ProfileUpdate/>
-    </div>
+   <div className="homTop">
+    <img src={BlackLogo} alt="" />
    </div>
+   <ProfileUpdate/>
     </div>
   )
 }

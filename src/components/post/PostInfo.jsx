@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect, useRef  } from 'react';
 import YoutubeTab from '../YoutubeTab/YoutubeTab';
 import TruncateBio from '../../pages/campaignDetails/TruncateBio/TruncateBio';
 import { BsThreeDotsVertical } from 'react-icons/bs';
@@ -6,12 +6,42 @@ import { CiLocationOn } from 'react-icons/ci';
 import ReceivingOrganization from '../../pages/campaignDetails/ReceivingOrganization';
 import {BsHeart, BsChevronDown} from 'react-icons/bs'
 import Comment from '../CommentTab/Comment';
+import ShareContainer from '../ShareContainer/ShareContainer';
 import VerticalProgressbar from '../../components/Progressbar/Progressbar';
 import './post.scss'
 import './postInfo.scss'
 
 
 function CampaignInfo() {
+
+  const [showShare, setShowShare] = useState(false);
+  const popupRef = useRef(null);
+  const handleClick = () => setShowShare(true)
+
+
+  const closePopup = () => {
+    setShowShare(false);
+  };
+ // Add an event listener to the document to handle clicks outside the popup
+ useEffect(() => {
+  function handleClickOutside(event) {
+    if (popupRef.current && !popupRef.current.contains(event.target)) {
+      closePopup();
+    }
+  }
+
+  if (showShare) {
+    document.addEventListener('mousedown', handleClickOutside);
+  } else {
+    document.removeEventListener('mousedown', handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, [showShare]);
+
+
   const posts = [
     {
       featuredpost: 'featured post',
@@ -87,12 +117,16 @@ function CampaignInfo() {
                 </span>
               </div>
             </div>
+            {
+                showShare &&(<ShareContainer closeshareConterner ={popupRef}/>)
+              }
             
-            <div className="statleft">
+            <div className="statleft" onClick={handleClick}>
               <BsThreeDotsVertical className='dotIcon' />
             </div>
+           
           </div>
-
+          
           <div className="postStory">
           
               <p>{post.postheader}</p>

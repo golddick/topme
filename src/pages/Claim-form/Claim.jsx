@@ -4,7 +4,7 @@ import {BiChevronDown} from 'react-icons/bi'
 import RadioButtons from '../../components/radionBtn/Radiobtn'
 import AngleFooter from '../../components/homepage/footer/AngelFooter'
 
-function Claim() {
+function Claim() { 
   return (
     <div className='Claim'>
         <HomeTop/>
@@ -25,7 +25,7 @@ function Claim() {
                 <div className="inputRoll">
                     <div className="nation">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/1200px-Flag_of_Nigeria.svg.png" alt="" />
-                    <input type="text"  />
+                    <input type="text"  placeholder='Country' /> 
                     <BiChevronDown className='dropdownIcon'/>
                     </div>
                    

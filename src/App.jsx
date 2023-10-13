@@ -23,7 +23,10 @@ import Pricing from './pages/pricing/Pricing';
 import Forgetpasswoord from './pages/forgetPassword/Forgetpasswoord';
 import ResetPassword from './pages/forgetPassword/ResetPassword'
 import SuccessPage from './pages/forgetPassword/SuccessPage';
+import SuccessBox from './pages/PaymentPAge/successBox';
 import CampaignDetails from './pages/campaignDetails/CampaignDeatail';
+import PaymentPage from './pages/PaymentPAge/PaymentPage';
+import CreateSupport from './pages/CreateSupport/CreateSupport';
 import {
   BrowserRouter ,
   Routes,
@@ -66,6 +69,9 @@ function App() {
             <Route path='/ResetPassword' element={<ResetPassword/>}/>
             <Route path='/SuccessPage' element={<SuccessPage/>}/>
             <Route path='/postDetails' element={<PostDetails/>}/>
+            <Route path='/Payment' element={<PaymentPage/>}/>
+            <Route path='/paymentSuccessful' element={<SuccessBox/>}/>
+            <Route path='/CreateSupport' element={<CreateSupport/>}/>
             
           </Routes>
         </BrowserRouter>

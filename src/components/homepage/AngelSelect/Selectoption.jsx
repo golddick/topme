@@ -15,8 +15,8 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
     <div className='select'>
     <div className="selectBody">
         <div className="selecttext">
-      <h2>Unleash your inner Angel and make a difference today!</h2>
-      <h4>Sign up to become an Angel</h4>
+      <h2>Unleash your inner Angel and make a <br/> difference today!</h2>
+      {/* <h4>Sign up to become an Angel</h4> */}
       </div>
     <Option/>
     </div>

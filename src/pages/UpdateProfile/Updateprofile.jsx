@@ -7,7 +7,7 @@ function Updateprofile() {
   return (
     <div className='Updateprofile'> 
     <div className="homtop">
-    <Topbar />
+    {/* <Topbar /> */}
     </div>
      
    <div className="updateContainer">

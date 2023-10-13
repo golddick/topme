@@ -11,7 +11,7 @@ import {  NavLink } from 'react-router-dom';
 export default class LazyLoad extends Component {
 
   state = {
-    loading: true,
+    loading: true, 
     ImpactDetails: [],
   };
 

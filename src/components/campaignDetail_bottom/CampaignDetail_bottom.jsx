@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './campaignDetail_bottom.scss'
 import {AiOutlineUsergroupAdd} from 'react-icons/ai'
+import CampaignAdoption from '../campaignDonation/CampaignAdoption'
 
 function CampaignDetail_bottom() {
+    const [openAdoption, setOpenAdoption] = useState()
+
+    const OpenAdoption = () => {
+        setOpenAdoption(!openAdoption)
+    }
+    const CloseAdoption = () => {
+        setOpenAdoption(false)
+    }
+
   return (
     <div className="detailsBottom">
                 <div className="adopted">
@@ -24,7 +34,12 @@ function CampaignDetail_bottom() {
                     </div>
                 </div>
 
-                <div className="adoptBtn">see adoption</div>
+                <div className="adoptBtn" onClick={OpenAdoption}>see adoption</div>
+                {
+                    openAdoption && (
+                        <CampaignAdoption CloseAdoption = {CloseAdoption}/>
+                    )
+                }
             </div>
   )
 }

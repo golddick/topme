@@ -1,7 +1,7 @@
 .Claim{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: flex-start;
     justify-content: center;
     width: 100%;
     height: auto;
@@ -10,13 +10,12 @@
     // margin-top: 100px;
 
     .claimCont{
-       
-         display: flex;
+       margin-top: 100px;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 774px;
-        background: #FFF;
+        width: 100%;
         color: #000;
         padding: 20px;
         // margin-top: 100px;
@@ -54,7 +53,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 40px;
-            width: 100%;
+            width: 774px;
             margin: 20px;
            background-color: #FFF;
 
@@ -156,7 +155,7 @@
                     display: flex;
                     align-items: center;
                     width: 774px;
-                    height: 69px;
+                    height: auto;
                     padding: 24px;
                     align-items: center;
                     gap: 10px;
@@ -171,7 +170,7 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 4px;
-                background: #68EDCB;
+                background: #43C4B2;
                 color: #FFF;
                 font-family: Poppins;
                 font-size: 14px;
@@ -197,3 +196,207 @@
         
     }
 }
+
+
+@media  screen and (max-width: 600px) {
+    .Claim{
+        display: flex;
+        flex-direction: column;
+        //align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        color: #000;
+        // margin-top: 100px;
+    
+        .claimCont{
+           margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: #000;
+            padding: 20px;
+            // margin-top: 100px;
+    
+            .submitHeader{
+                display: none;
+            }
+    
+            .claimForm{
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 40px;
+                width: 100%;
+                margin: 20px;
+               background-color: #FFF;
+    
+                input{
+                    display: flex;
+                    width: 336px;
+                    height: 47px;
+                    padding: 16px 12px;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    background: #F6F6F6;
+                }
+                input::placeholder{
+                    color: #808080;
+
+                    /* Overline/overline 1 */
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.15px;
+                    text-transform: uppercase;
+                }
+    
+                .inputRoll{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    //background-color: #cf0f62dc;
+                    // align-items: flex-start;
+                    // gap: 40px;
+    
+                    input{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                       // width: 336px;
+                        height: 20px;
+                        padding: 16px 12px;
+                        align-items: center;
+                        gap: 10px;
+                        //background: #c0e507;
+                      
+                    }
+                    .nation{
+                        display: flex;
+                        width: 336px;
+                        height: 47px;
+                        padding: 16px 12px;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 8px;
+                        background: #F6F6F6;
+                        
+                        input{
+                            border: none;
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                        // width: 336px;
+                            height: 20px;
+                            padding: 16px 12px;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                        .dropdownIcon{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        
+                        img{
+                            height: 28px;
+                            width: 28px;
+                            border-radius: 100%;
+                            object-fit: cover;
+                            flex: 1 0 0;
+                        }
+                    }
+    
+                }
+    
+                .bollen{ 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 24px;
+                    align-self: stretch;
+    
+                    h5{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.15px;
+                        text-transform: uppercase;
+                    }
+                 }
+    
+                 .uploadFile{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+    
+                    h4{
+                        color: #808080;
+                        font-family: Poppins;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.15px;
+                        text-transform: uppercase;
+                    }
+    
+                    input{
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        padding: 24px;
+                        align-items: center;
+                        gap: 10px;
+                        align-self: stretch;
+                        border-radius: 8px;
+                        border: 1.5px solid #000;
+                        background: #FFF;
+                    }
+                 }
+    
+                 button{
+                    display: flex;
+                    height: 45px;
+                    padding: 12px 44px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                    background: #43C4B2;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                 }
+                 
+           
+            }
+            p{
+                display: none;
+                color: #808080;
+                width: 100%;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.03px;
+             }
+            
+        }
+    }
+  }

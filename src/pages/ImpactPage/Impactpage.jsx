@@ -12,11 +12,13 @@ import Hometop from '../../components/homepage/HomeTop/Hometop';
 import Option from '../../components/Option/Option'
 import Angelfooter from '../../components/homepage/footer/AngelFooter'
 import FilterBar from '../../components/mobileComponent /FilterBar';
-
+//import BackComponent from '../../components/BackComponent/BackComponent';
 export default class LazyLoad extends Component {
   state = {
     loading: true,
     ImpactDetails: [],
+    openCategory: false,
+    selectedCheckboxes: [],
   };
  
   componentDidMount() {
@@ -190,9 +192,29 @@ export default class LazyLoad extends Component {
       this.setState({ ImpactDetails, loading: false });
     }, 2000);
   }
+  handleOpenCategory = () => {
+    this.setState((prevState) => ({ openCategory: !prevState.openCategory }));
+  };
+
+  // handleCheckboxChange = (event) => {
+  //   const checkboxId = event.target.id;
+  //   this.setState((prevState) => {
+  //     const selectedCheckboxes = [...prevState.selectedCheckboxes];
+  //     if (event.target.checked) {
+  //       selectedCheckboxes.push(checkboxId);
+  //     } else {
+  //       const index = selectedCheckboxes.indexOf(checkboxId);
+  //       if (index !== -1) {
+  //         selectedCheckboxes.splice(index, 1);
+  //       }
+  //     }
+  //     return { selectedCheckboxes };
+  //   });
+  //   console.log(`Checkbox ${checkboxId} changed to ${event.target.checked}`);
+  // };
 
   render() {
-    const { loading, ImpactDetails } = this.state;
+    const { loading, ImpactDetails, openCategory } = this.state;
 
 
     const settings = {
@@ -202,6 +224,7 @@ export default class LazyLoad extends Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       initalSlide: 10,
+      arrows: false,
       responsive: [
         {
           breakpoint: 1024,
@@ -209,7 +232,8 @@ export default class LazyLoad extends Component {
             slidesToShow: 3,
             slidesToScroll: 3, 
             infinite: true,
-            dots: true
+            dots: true,
+            arrows: false,
           }
         },
         {
@@ -251,7 +275,8 @@ export default class LazyLoad extends Component {
       )
     };
 
-  
+    
+   
    
     return (
       <div className="Impactpage">
@@ -270,16 +295,41 @@ export default class LazyLoad extends Component {
               <BiSearchAlt className="searchIcon" />
               <input type="text" placeholder="filter angels by keyword" />
             </div>
-            <div className="text">
-              <span>category</span>
-              <BiChevronDown className="textIcon" />
-            </div>
-            <div className="text">
-              <span>view by target</span>
+            <div className="text" onClick={this.handleOpenCategory}>
+              <span>cities</span>
               <BiChevronDown className="textIcon" />
             </div>
           </div>
+          
         </div>
+        {openCategory && <div className="openCat">
+          
+         <div className="categoryContainer">
+
+         <h3>filter by</h3>
+          <div className="categoryBox">
+              <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-input" id="Checkbox1"   />
+              <label htmlFor="Checkbox1" className="checkbox-label"></label>
+              <span>Lagos (44)</span>
+            </div>
+
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-input" id="Checkbox2"/>
+              {/* <input type="checkbox" className="checkbox-input" id="Checkbox2" onClick={this.handleCheckboxChange}/> */}
+              <label htmlFor="Checkbox2" className="checkbox-label"></label>
+              <span>abuja (20)</span>
+            </div>
+
+            <div className="checkbox-container">
+              <input type="checkbox" className="checkbox-input" id="Checkbox3"/>
+              <label htmlFor="Checkbox3" className="checkbox-label"></label>
+              <span className='catText'> asaba (29)</span>
+            </div>
+          </div>
+         </div>
+        </div>}
+
         <div className="mobileFilterBar">
          <FilterBar/>
         </div>
@@ -320,7 +370,7 @@ export default class LazyLoad extends Component {
                 </NavLink>
               </div>
             </div>
-          ))}
+          ))} 
           </Slider>
           )}
         </div>
