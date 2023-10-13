@@ -6,20 +6,16 @@ import Topbar from '../../components/Topbar/Topbar'
 function Updateprofile() {
   return (
     <div className='Updateprofile'> 
-    <div className="homtop">
-    {/* <Topbar /> */}
-    </div>
-     
-   <div className="updateContainer">
+
    <div className="updateContainerLeft">
           <Leftbar/>
     </div>
 
-    <div className="updateContainercenter">
+    <div className="updateContainercenter ">
     <ProfileUpdate/>
     </div>
    </div>
-    </div>
+
   )
 }
 

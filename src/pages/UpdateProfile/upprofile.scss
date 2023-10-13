@@ -4,6 +4,13 @@ body {
     
   
 .Updateprofile{
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+    //margin-top: -100px;
+    display:grid ;
+    grid-template-columns: 1fr 5fr ; 
+    grid-template-rows: 100vh; 
 
     .homTop{
         display: flex;
@@ -14,23 +21,31 @@ body {
         align-items: center;
         flex-shrink: 0;
     }
-    
-    .updateContainer{
-        display: flex;
+
 
         .updateContainerLeft{
-            flex: 2;
+            flex: 1;
+            //display: none;
+            display: flex;
+            background-color: #FFF;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            position: static;
         }
  
 
         .updateContainercenter{
-        overflow-y: auto;
-        height: calc(1000px - 60px);
-        flex: 5;
-        width: 100%;
+            display: flex;
+            flex: 5;
+            background-color: #FFF;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
         
         }
-    }
+    
 }
 }
 

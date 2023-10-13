@@ -1,5 +1,4 @@
 import './profileupdate.scss';
-import Calender from '../calender/Calender';
 import { RiAddBoxLine } from 'react-icons/ri';
 import {CiCalendar} from 'react-icons/ci'
 import { BiPencil, BiSolidChevronDown, BiCamera } from 'react-icons/bi';
@@ -406,6 +405,7 @@ function ProfileUpdate() {
                 <span>date of birth</span>
                 <div className="dateBox">
                 <input type="date"  value={date} onChange={handleDateChange}  
+                className='boxInput'
             />
                     {/* <CiCalendar className='editIcon'/> */}
                    

@@ -15,8 +15,9 @@ background-color:#ebeaea;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 100%;
     gap: 20px;
+    //background-color: #43C4B2;
 
 .upload{
 
@@ -27,6 +28,37 @@ background-color:#ebeaea;
         object-fit: cover;
         border-radius: 200px;
     }
+    .addprofile{
+        position: relative;
+        
+           width: 200px;
+           height: 200px;
+           flex-shrink: 0;
+           // border-radius: 200px;
+           .addimage{
+               width: 200px;
+               height: 200px;
+               border-radius: 100%;
+               background-color: #ababab1d;
+               position: absolute;
+               top: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+       
+               .uploadIcon{
+                   color: #43C4B2;
+                   font-family: Poppins;
+                   font-size: 30px;
+                   font-style: normal;
+                   font-weight: 400;
+                   line-height: normal;
+                   letter-spacing: 0.048px;
+                   text-transform: uppercase;
+               }
+           }
+          
+       }
 
 }
   
@@ -34,15 +66,17 @@ background-color:#ebeaea;
     .updateContainer{
         width: 750px;
         background-color: transparent;
-        height: 1200px;
+        height: auto;
+        gap: 20px;
         margin: 20px;
+
 
         form{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-             gap: 40px;
+            gap: 40px;
              height: auto;
             width: 100%;
             background-color: transparent;
@@ -194,6 +228,7 @@ background-color:#ebeaea;
                                 border: none;
                                 outline: none;
                             }
+                          
                         }
                        
     
@@ -396,6 +431,7 @@ background-color:#ebeaea;
                 height: 45px;
                 display: flex;
                 padding: 12px 60px;
+                margin-top: -50px;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
@@ -428,43 +464,24 @@ color: #43C4B2;
     display: flex;
     justify-content: space-between;
 }
-.addprofile{
- position: relative;
- margin-bottom: 50px;
- 
-    width: 200px;
-    height: 200px;
-    flex-shrink: 0;
-    // border-radius: 200px;
-    img{
 
-    }
-    .addimage{
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        background-color: #ababab1d;
-        position: absolute;
-        top: 0;
+
+.dateBox{
+    display: flex;
+    padding: 16px 12px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    width: 300px;
+    height:48px ;
+    justify-content: space-between;
+
+    .boxInput{
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .uploadIcon{
-            // position: absolute;
-            // right: 20px;
-            // top:150px;
-            color: #43C4B2;
-            font-family: Poppins;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.048px;
-            text-transform: uppercase;
-        }
+        justify-content: space-between;
     }
-   
 }
 }
 
@@ -605,7 +622,7 @@ color: #43C4B2;
                                     align-self: stretch;
                                     border-radius: 8px;
                                     border: 1px solid #808080;
-                                    width: 100%;
+                                    width: 150px;
                                     height:48px ;
                                     justify-content: space-between ;
             
@@ -826,7 +843,8 @@ color: #43C4B2;
         
                             .socialLink{
                                 display: flex;
-                                flex-direction: row;
+                                flex-direction: column;
+                                gap: 10px;
                                 width: 100%;
                                 justify-content: space-between;
                                
@@ -855,7 +873,7 @@ color: #43C4B2;
                                         align-self: stretch;
                                         border-radius: 8px;
                                         border: 1px solid #808080;
-                                        width: 150px;
+                                        width: 100%;
                                         height:48px ;
                                         justify-content: space-between ;
         
