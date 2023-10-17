@@ -17,9 +17,9 @@ import Logo from '../../assets/blacklogo.svg'
 
 
 
-function Leftbar() {
+function Leftbar( {closePopup}) {
 
-
+ 
 
   const [profilePhoto, setProfilePhoto] = useState ('')
   const [firstname, setFirstName] = useState('');
@@ -94,7 +94,7 @@ function Leftbar() {
 
 
   return (
-    <div className='Leftbar' >
+    <div className='Leftbar' ref={closePopup}>
       <img src={Logo} alt="" className='logoImage'/>
        <div className="top">
       
@@ -140,10 +140,10 @@ function Leftbar() {
                         <p>CAMPAIGNS</p>
                     </div>
                 </div>
-                <NavLink to='/CreateSupport' className='navLink'>
-                <div onMouseEnter={handlebtnHover} onMouseLeave={handlebtnHover} className='CASbtn' >
+                <NavLink to='/CreateSupport' className='navLink' style={{width:'100%'}}>
+                <button onMouseEnter={handlebtnHover} onMouseLeave={handlebtnHover} className='CASbtn' >
                 {btnisHovered && <FiGift className="icon" />}CREATE ANGEL SUPPORT
-                </div>
+                </button>
                 </NavLink>
                 
        </div>

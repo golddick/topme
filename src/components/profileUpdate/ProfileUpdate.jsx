@@ -244,7 +244,7 @@ function ProfileUpdate() {
   return (
     <div className='ProfileUpdate'>
         <div className="ProfileUpdateContainer">
-        <div className="upload">
+        {/* <div className="upload">
                 <input
                   style={{ display: 'none' }}
                   type="file"
@@ -265,7 +265,40 @@ function ProfileUpdate() {
           </div> 
                 </label>
           
+              </div> */}
+              <div className="upload">
+                <input
+                  style={{ display: 'none' }}
+                  type="file"
+                  id="file"
+                  accept="image/*" 
+                  onChange={(e) => {
+                    const selectedFile = e.target.files[0]; // Get the selected file
+                    if (selectedFile) {
+                      const objectURL = URL.createObjectURL(selectedFile); // Create an object URL
+                      setProfilePhoto(objectURL); // Set the object URL as profilePhoto
+                    }
+                  }}
+                />
+                <label htmlFor="file" className="addprofile">
+                  {profilePhoto ? (
+                    <img src={profilePhoto} alt="Profile" /> 
+                  ) : (
+                    <div className="addimage" style={{backgroundColor:' #43C4B2'}}>
+                      <BiCamera className='uploadIcon' />
+                    </div>
+                  )}
+                  <div className="addimage" >
+                    <BiCamera className='uploadIcon' />
+                  </div>
+                </label>
               </div>
+
+
+
+
+
+
        
 
              <div className="updateContainer">
@@ -479,8 +512,8 @@ function ProfileUpdate() {
                   accept="multiple"  // Allow multiple file selection
                   onChange={handleValidDocChange}
                 />
-                 <label htmlFor="file" className="file">
-                  {validIdDocument? validIdDocument : 'Upload Valid Doc'}
+                 <label htmlFor="file" className="file" style={{ overflow:'scroll'}}>
+                  {validIdDocument? validIdDocument : 'Upload Document'}
                   <RiAddBoxLine className='editIcon'/>
                  </label>
                 
@@ -491,7 +524,7 @@ function ProfileUpdate() {
               </div>
 
               
-                    <button  onClick={handleUpdate} disabled={isLoading}>request update </button>
+                    <button  onClick={handleUpdate} disabled={isLoading} className='RequestBtn'>request update </button>
                     
             </form>
              </div>

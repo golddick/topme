@@ -7,10 +7,12 @@ body {
     background-color: #FFF;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     //margin-top: -100px;
-    display:grid ;
-    grid-template-columns: 1fr 5fr ; 
-    grid-template-rows: 100vh; 
+    // display:grid ;
+    // grid-template-columns: 1fr 5fr ; 
+    // grid-template-rows: 100vh; 
 
     .homTop{
         display: flex;
@@ -49,11 +51,108 @@ body {
 }
 }
 
-@media  screen and (max-width: 1024px) {
-
+@media  screen and (max-width: 1000px) {
+    body {
+        background: #ffffff;
+        position: relative;
+        
+      
+    .Updateprofile{
+        background-color: #FFF;
+        width: 100%;
+        height: 100vh;
+        //margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+    
+        .homTop{
+            display: flex;
+            width: 100%;
+            height: 84px;
+            padding: 18px 0px 17.285px 0px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    
+    
+            .updateContainerLeft{
+                flex: 1;
+                //display: none;
+                display: flex;
+                background-color: #FFF;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                position: static;
+            }
+     
+    
+            .updateContainercenter{
+                display: flex;
+                flex: 5;
+                background-color: #FFF;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                overflow-y: scroll;
+            
+            }
+        
+    }
+    }
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {
-   
+    body {
+        background: #ffffff;
+        position: relative;
+        
+      
+    .Updateprofile{
+        background-color: #FFF;
+        width: 100%;
+        height: 100vh;
+        //margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+    
+        .homTop{
+            display: flex;
+            width: 100%;
+            height: 84px;
+            padding: 18px 0px 17.285px 0px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    
+    
+            .updateContainerLeft{
+                flex: 1;
+                //display: none;
+                display: flex;
+                background-color: #FFF;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                position: static;
+            }
+     
+    
+            .updateContainercenter{
+                display: flex;
+                flex: 5;
+                background-color: #FFF;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                overflow-y: scroll;
+            
+            }
+        
+    }
+    }
+    
   }

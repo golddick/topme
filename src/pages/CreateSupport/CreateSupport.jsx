@@ -1,11 +1,13 @@
 import React from 'react'
 import './createSupport.scss'
 import SendIcon from '../../assets/send.png'
+import Topbar from '../../components/Topbar/Topbar'
 import Leftbar from '../../components/leftbar/Leftbar'
 import Widget from '../../components/widgets/Widget'
 import Stats from '../../components/stats/Stats'
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import {BsChevronDown} from 'react-icons/bs'
+import {BiArrowBack} from 'react-icons/bi'
 
 function CreateSupport() {
   return (
@@ -14,15 +16,27 @@ function CreateSupport() {
           <Leftbar />
         </div>
         <div className="CreateSupport-Center">
-          
+
+          <div className="supportTop">
           <Widget />
           <Stats />
+          </div>
+          
+          
 
           <div className="CreateSupport-post" >
             <div className="header">
               <h3>CREATE ANGEL SUPPORT</h3>
               <AiOutlineCloseCircle className="icon" />
             </div>
+            <div className="mobileSupport">
+              <Topbar/>
+              <div className="mobileHeader">
+              <BiArrowBack className='mobileIcon'/>
+              <h3 className='mobiletext'>create angel support</h3>
+            </div>
+            </div>
+           
               
 
             <div className="horizontal" ></div>
@@ -45,7 +59,7 @@ function CreateSupport() {
                 <button>  <img src={SendIcon} alt="" />post</button>
 
             
-            </div>
+            </div> 
           </div>
      
           
