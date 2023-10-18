@@ -26,6 +26,7 @@ function Hometop() {
 
   const closeSearchTab = () => {
     setSearch(false)
+    
   }
 
   const handlePopupOpen = () => {
@@ -73,7 +74,6 @@ useEffect(() => {
 }, [extraopen, howitworks]);
 
 
-
   return (
     <div className="tophome">
        
@@ -88,7 +88,7 @@ useEffect(() => {
           <span onClick={openExtra}>extras <BiChevronDown/></span>
           {
             extraopen && (
-             <div ref={popupRef}  className="extraPopup">
+             <div ref={popupRef} style={{marginLeft:'150px'}}  className="extraPopup">
               <NavLink to='/contact' className='navlink'>
                <div className="contact">
                 <div className="span">Contact</div>
@@ -107,7 +107,7 @@ useEffect(() => {
           <span onClick={openHow}>how it works  <BiChevronDown/></span>
           {
             howitworks && (
-             <div ref={popupRef} style={{marginLeft:'400px'}} className="extraPopup">
+             <div ref={popupRef} style={{marginLeft:'300px'}} className="extraPopup">
                <NavLink to='/HowitWorks' className='navlink'>
                <div   className="contact">
                 <div className="span">how</div>
@@ -135,7 +135,7 @@ useEffect(() => {
         <NavLink to='/' className='navlink'>
         <div className="topcenter">
           {/* <img src={Logo} alt="" /> */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="174" height="49" viewBox="0 0 174 49" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="174" height="35" viewBox="0 0 174 49" fill="none">
                 <path d="M40.4396 48.7149C31.1212 48.7149 23.5474 41.1139 23.5474 31.7783C23.5474 22.4427 31.1284 14.8418 40.4396 14.8418C49.7508 14.8418 57.3318 22.4427 57.3318 31.7783C57.3318 41.1139 49.7508 48.7149 40.4396 48.7149ZM40.4396 21.0607C34.5456 21.0607 29.75 25.8689 29.75 31.7783C29.75 37.6878 34.5456 42.4959 40.4396 42.4959C46.3336 42.4959 51.1292 37.6878 51.1292 31.7783C51.1292 25.8689 46.3336 21.0607 40.4396 21.0607Z" fill="white"/>
                 <path d="M82.5875 33.8731C73.2692 33.8731 65.6953 26.2721 65.6953 16.9365C65.6953 7.60093 73.2764 0 82.5875 0C91.8987 0 99.4798 7.60093 99.4798 16.9365C99.4798 26.2721 91.8987 33.8731 82.5875 33.8731ZM82.5875 6.21894C76.6936 6.21894 71.898 11.0271 71.898 16.9365C71.898 22.846 76.6936 27.6541 82.5875 27.6541C88.4815 27.6541 93.2771 22.846 93.2771 16.9365C93.2771 11.0271 88.4815 6.21894 82.5875 6.21894Z" fill="white"/>
                 <path d="M71.898 17.6201H65.6953V48.7148H71.898V17.6201Z" fill="white"/>
@@ -168,7 +168,9 @@ useEffect(() => {
 
         {isOpen && ( 
         
-            <Search closePopup={closePopup} />
+           <div className="opensearch" >
+             <Search closePopup={closePopup} isOpen={isOpen}/>
+           </div>
        
         )}
 
@@ -188,11 +190,17 @@ useEffect(() => {
           </div>
 
           {menuTab &&(
-            <MenuTab closeMobilemenu={closeMobilemenu}/>
+           <div className="menushow">
+             <MenuTab closeMobilemenu={closeMobilemenu}/>
+             
+           </div>
           )}
           {openSearch &&(
+            <div className="menushow">
             <Search closeSearchTab= {closeSearchTab}/>
+            </div>
           )}
+         
       </div>
          
       </div>

@@ -1,13 +1,4 @@
 .tophome{
-    // display: flex;
-    // align-items: center;
-    // top: 0;
-    // justify-content: space-between;
-    // width: 100%;
-    // height: 100px;
-    //position: fixed;
-    // z-index: 100;
-   
 
 
     .largeTopbar{
@@ -23,19 +14,19 @@
         background-color: #000;
 
     .topLeft{
-        display: flex;
+        // display: flex;
         width: 500px;
         height: 60px;
         display: flex;
         padding: 12px 24px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 24px;
 
         span{
-            color: #FFF;
+        color: #FFF;
         font-family: Poppins;
-        font-size: 16px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -103,15 +94,6 @@
                 text-transform: uppercase;
                }
         }
-    
-    
-
-//    .contact:hover{
-
-
-//     }
-
-
 
 .contact:hover .span,
 .blog:hover .span {
@@ -148,6 +130,7 @@
 
         .Search{
             display: flex;
+            align-items: center;
             width: auto;
             border-radius: 5px;
             color: #FFF;
@@ -157,7 +140,7 @@
             span{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 16px;
+                font-size: 13px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -169,7 +152,7 @@
             color: #FFF;
             text-transform: uppercase;
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 13px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -194,9 +177,15 @@
         text-decoration: none;
     }
  
-
 }
-
+.opensearch{
+    // position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.472);
+    //margin-top: 100px;
+}
     .mobileTopbar{
         display: none;
         width: 100vw;
@@ -215,6 +204,12 @@
             justify-content: space-between;
             gap: 10px;
             flex: 1 0 0;
+        }
+        .menushow{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: #000000a4;
         }
     }
 

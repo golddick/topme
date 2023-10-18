@@ -7,8 +7,8 @@ import {  NavLink } from 'react-router-dom';
 
 function MenuTab({closeMobilemenu}) {
 
-  const [extraopen, setExtraopen] = useState(false);
-  const [howitworks, setHowitworks] = useState(false)
+  const [extraopen, setExtraopen] = useState();
+  const [howitworks, setHowitworks] = useState()
   const popupRef = useRef(null);
   
     const openHow =() =>{
@@ -48,7 +48,6 @@ useEffect(() => {
 
         <div className="menuTop">
         <img src={BlackLogo} alt=""  className='menuLogo'/>
-        k
         <AiOutlineCloseCircle className='closeTab' onClick={closeMobilemenu} />
         </div>
         <div className="menuCenter">

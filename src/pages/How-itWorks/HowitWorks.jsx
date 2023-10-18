@@ -24,7 +24,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
     const youtubeLinkUrl = 'https://www.youtube.com/watch?v=MhBYWBu9-9Q';
     const videoId = getVideoIdFromUrl(youtubeLinkUrl);
 
-  const opts = {
+  const opts = { 
     playerVars: {
     controls: 1,
     autoplay: 0,
@@ -52,7 +52,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
             works</h4>
             <div className="mobileHeader">
               <h3>how</h3>
-              <img src={mobileLogo} alt="" />
+              <img src={mobileLogo} alt="" /> 
               <h3>works</h3>
             </div>
           </div>

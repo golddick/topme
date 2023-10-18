@@ -17,6 +17,10 @@ function Optiontab() {
       <NavLink to='/signup' className='navlink'> 
      
          <div className="innerbox"   >
+         <div className="topcorners">
+            <div className="cornerLeft"></div>
+            <div className="cornerRight"></div>
+          </div>
          <div className="svgImgleft" >
          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="200" viewBox="0 0 210 179" fill="url(#myGradient)">
          <linearGradient id="myGradient" gradientTransform="rotate(90)">
@@ -49,6 +53,10 @@ function Optiontab() {
        <div className="selectTab">
          <span>2</span>
          <div className="innerbox" >
+          <div className="topcorners">
+            <div className="cornerLeft"></div>
+            <div className="cornerRight"></div>
+          </div>
          <img src={Frame2}alt="" />
          </div>
          <h3>CREATE AN IMPACT STORY</h3>
@@ -64,6 +72,10 @@ function Optiontab() {
        <div className="selectTab">
          <span>3</span>
          <div className="innerbox" >
+         <div className="topcorners">
+            <div className="cornerLeft"></div>
+            <div className="cornerRight"></div>
+          </div>
           <img src={Frame} alt="" />
          </div>
          <h3>SHARE WITH FRIENDS & FAMILY</h3>
