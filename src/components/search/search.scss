@@ -438,23 +438,23 @@
 }
 
 
-@media  screen and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1100px) {
     // .container.testimonials_container {
     //     width: 60%;
     // }
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     .search{
-       // position: fixed;
-        //top: 40px;
+    //    position: fixed;
+    //     top: 40px;
         left: 0;
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         background-color: rgba(0, 0, 0, 0.666);
         color: #FFF; 
         z-index: 99999;
@@ -464,12 +464,15 @@
         }
         
             .searchContainer{
+                position: absolute;
                 background: transparent;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
                 color: #000;
+                margin: 0;
+                padding: 0;
         
                 .topContainer{
                     display: none;
@@ -490,6 +493,7 @@
                     }
                     .center{
                         //display: none;
+                        margin: 0;
                         display: flex;
                         padding: 0px 24px;
                         flex-direction: column;
@@ -498,7 +502,7 @@
                         gap: 20px;
                         height:100vh;
                         width: 100%;
-                        margin-top: 60px;
+                        margin-top: 100px;
                         padding-bottom: 150px;
                         background-color: #FFF;
                         overflow: scroll;
@@ -634,119 +638,147 @@
                            gap: 20px;
                            //background-color: #7a2828;
 
-                            .impactBox{
-                                display: flex;
-                                width: 100%;
-                                height: 334px;
-                                margin: 0;
-                               padding: 12px 12px 16.692px 12px;
-                                justify-content: center;
-                                //align-items: center;
-                                border-radius: 8px;
-                                background: #FFF;
-                                box-shadow: 4px 4px 12px 0px rgba(67, 196, 178, 0.12), -4px -4px 12px 0px rgba(67, 196, 178, 0.12);
-                    
-                            
+                           .impactBox{
+                            display: flex;
+                            width: 100%;
+                            height: 350px;
+                            padding: 12px 0px 3.692px 0px;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center; 
+                            border-radius: 8px;
+                            background: #FFF;
+                            box-shadow: 4px 4px 12px 0px rgba(67, 196, 178, 0.12), -4px -4px 12px 0px rgba(67, 196, 178, 0.12);
+                                                        
+                            .impactImg{
+                                width: 90%;
+                                height: 165px;
+                                overflow: hidden;
+                                border-radius: 4px;
+    
                                 img{
-                                    width: 312px;
-                                    height: 165px;
+                                
+                                    width: 100%;
+                                    height: 100%;
                                     flex-shrink: 0;
-                                   // margin: 12px;
                                     border-radius: 4px;
                                     object-fit: cover;
                                     transition: transform 0.3s ease;
+                                    overflow: hidden;
                                     
                                 }
-                    
-                                .profileImg:hover{
-                                    transform: scale(1.2);
-                                }
-                    
-                    
-                    
-                                .impactBody{
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: start;
-                                        margin: 10px;
-                                        height: auto;
-                                        
-                                    
-                    
-                                    .name{
-                                        display: flex;
-                                        gap: 10px;
-                                       // background-color: #7a2828;
-                                    
-                                    
-                    
-                                        .Uname{
-                                            color: #000;
-                                            font-family: Poppins;
-                                            font-size: 12px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: normal;
-                                            letter-spacing: 0.048px;
-                                        }
-                    
-                                        .nameIcon{
-                                            display: flex;
-                                            width: 18px;
-                                            height: 17.308px;
-                                            padding-bottom: 0px;
-                                            justify-content: center;
-                                            align-items: center;
-                                            color: #43C4B2;
-                                        }
-                    
-                                    }
-                    
-                                    .address{
-                                        display: flex;
-                                        gap: 10px;
-                                        align-items: center;
-                                        //margin-left: 10px;
-                                        .Icon{
-                                            width: 15px;
-                                            height: 15px;
-                                            color: #808080;
-                                        }
-                                        
-                                        span{
-                                            color: #808080;
-                                            font-family: Poppins;
-                                            font-size: 10px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: normal;
-                                            letter-spacing: 0.15px;
-                                            text-transform: uppercase;
-                    
-                                        }
-                                    }
-                    
-                    
-                                    p{
-                                        overflow: hidden;
+        
+                                // .profileImg:hover{
+                                //     transform: scale(1.2);
+                                //     border-radius: 4px;
+                                // }
+                            }
+    
+                            .impactBody{
+                                display: flex;
+                                padding: 12px;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                               // height: 126px;
+                                gap: 4px;
+                                
+                                
+                                
+    
+                                .name{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                
+                                
+    
+                                    .Uname{
                                         color: #000;
-                                        text-overflow: ellipsis;
-                                        whitespace: nowrap;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        letter-spacing: 0.014px;
+                                    }
+    
+                                }
+    
+                                .address{
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    margin-left: 10px;
+                                    .Icon{
+                                        width: 15px;
+                                        height: 15px;
+                                        color: #808080;
+                                    }
+                                    
+                                    .location{
+                                        background: #FFF;
+                                        color: #808080;
                                         font-family: Poppins;
                                         font-size: 10px;
                                         font-style: normal;
                                         font-weight: 400;
                                         line-height: normal;
-                                        letter-spacing: 0.04px;
-                                        height: 36px;
-                                        flex: 1 0 0;
+                                        letter-spacing: 0.15px;
+                                        text-transform: uppercase;
+    
                                     }
-                    
-                                    
-                    
                                 }
+    
+    
+                                p{
+                                    color: #000;
+                                    font-family: Poppins;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 0.048px;
+                                }
+    
+                                
+    
                             }
-
+    
+                            .boxBtn{
+                                align-self: start;
+                                display: flex;
+                                padding: 8px 12px;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 12px;
+                                margin: 0;
+                                padding: 0;
+                                width: 210px;
+                                height: 35px;
+    
+                                color: #43C4B2;
+                                font-family: Poppins;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.175px;
+                                text-transform: uppercase;
+                                
+                            }
+                            .boxBtn:hover {
+                                color: #FFF;
+                                display: inline-flex;
+                                padding: 8px 12px;
+                                align-items: center;
+                                gap: 12px;
+                                border-radius: 100px;
+                               background: #22bda9;
+                            
+                            }
+                           
+                        }
                          
         
         

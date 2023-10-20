@@ -237,7 +237,7 @@
     }
   }
 
-@media  screen and (max-width: 1000px) {
+  @media (min-width: 900px) and (max-width: 1200px) {
     .Homepage{
         top: 0;
         height: calc(100vh - 100px);
@@ -446,7 +446,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     .Homepage{
         display: flex;
         align-items: center;
@@ -461,31 +461,35 @@
             width: 250px;
             flex-direction: column;
             align-items: flex-start;
-            padding-top: 20px;
+            padding-top: 80px;
             margin: 0;
             
-            //gap: 32px;
+            .textCenter{
 
-            h1{
-                color: #FFF;
-                align-self: stretch;
-                font-family: Poppins;
-                font-size: 34px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.085px;
+                h1{
+                    text-align: justify;
+                    color: #FFF;
+                    align-self: stretch;
+                    font-family: Poppins;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.01px;
+                }
+    
+                button{
+                    display: flex;
+                    padding: 10px 12px 10px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 16px;
+                    align-self: stretch;
+                    background: #43C4B2;
+                }
             }
 
-            button{
-                display: flex;
-                padding: 10px 12px 10px 24px;
-                justify-content: center;
-                align-items: center;
-                gap: 16px;
-                align-self: stretch;
-                background: #43C4B2;
-            }
+        
         }
 
         .homeleft{
