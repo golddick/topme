@@ -8,7 +8,7 @@ function Join() {
     <div className='Join'>
         <div className="joinWrapper">
         <div className="left">
-            <img src={Male} alt="" />
+            <img src={Male} alt=""  className='leftmale'/> 
         </div>
         <div className="center">
             <h1>Ready to get started? Join hundreds of other Angels today.</h1>
@@ -21,7 +21,7 @@ function Join() {
             </div>
         </div>
         <div className="right">
-        <img src={Female} alt="" />
+        <img src={Female} alt="" className='rightFemale' />
         </div>
         </div>
         </div>

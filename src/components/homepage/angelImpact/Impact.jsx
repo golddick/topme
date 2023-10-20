@@ -23,7 +23,7 @@ export default class LazyLoad extends Component {
   state = {
     loading: true,
     ImpactDetails: [],
-    visibleImpact: 10,
+    visibleImpact: 10, 
     showLessImpact: false,
     gridRows: 2, // Added gridRows state
   };
