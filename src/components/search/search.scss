@@ -3,7 +3,8 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    margin-top: -100px;
+    position: absolute;
+    //margin-top: -100px;
 // position: fixed;
 // top: 40px;
 // left: 0;
@@ -199,9 +200,9 @@
                     height: auto;
                     margin-bottom: 0;
                     width: 100%;
-                    background-color:transparent;
+                   // background-color:red;
                     //overflow-y: scroll;
-                    scrollbar-width: none;
+                    // scrollbar-width: none;
                 
 
                     span{
@@ -244,6 +245,7 @@
                 .near{
                     display: flex;
                     width: 100%;
+                    gap: 25px;
                     //overflow: visible;
                     // background-color: #7a2828;
                  
@@ -252,70 +254,67 @@
                         
                     .impactBox{
                         display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                        width: 220px;
-                        //height: 35\0px;
-                        flex-shrink: 0;
-                        margin: 10px;
-
-                        border-radius: 8px;
-                        //background: #a15151;
-                        overflow: hidden;
-
-                    
-                        img{
+                        width: 246px;
+                        height: 350px;
+                        padding: 12px 0px 3.692px 0px;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: center; 
+                        
+                        .impactImg{
                             width: 222px;
                             height: 141px;
-                            flex-shrink: 0;
-                            margin: 12px;
+                            overflow: hidden;
                             border-radius: 4px;
-                            object-fit: cover;
-                            transition: transform 0.3s ease;
-                            
-                        }
 
-                        .profileImg:hover{
-                            transform: scale(1.2);
+                            img{
+                            
+                                width: 100%;
+                                height: 100%;
+                                flex-shrink: 0;
+                                border-radius: 4px;
+                                object-fit: cover;
+                                transition: transform 0.3s ease;
+                                overflow: hidden;
+                                
+                            }
+    
+                            // .profileImg:hover{
+                            //     transform: scale(1.2);
+                            //     border-radius: 4px;
+                            // }
                         }
+                        
 
 
 
                         .impactBody{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: start;
-                                margin: 10px;
-                                height: auto;
-                                
+                            display: flex;
+                            padding: 12px;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                           // height: 126px;
+                            gap: 4px;
+                            
+                            
                             
 
                             .name{
                                 display: flex;
+                                align-items: center;
                                 gap: 10px;
                             
                             
 
                                 .Uname{
                                     color: #000;
-                                    background: #FFF;
                                     font-family: Poppins;
                                     font-size: 14px;
                                     font-style: normal;
                                     font-weight: 500;
                                     line-height: normal;
                                     letter-spacing: 0.014px;
-                                }
-
-                                .nameIcon{
-                                    display: flex;
-                                    width: 18px;
-                                    height: 17.308px;
-                                    padding-bottom: 0px;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: #68EDCB;
                                 }
 
                             }
@@ -331,7 +330,7 @@
                                     color: #808080;
                                 }
                                 
-                                span{
+                                .location{
                                     background: #FFF;
                                     color: #808080;
                                     font-family: Poppins;
@@ -359,22 +358,43 @@
                             
 
                         }
+
+                        .boxBtn{
+                            display: flex;
+                            padding: 8px 12px;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 12px;
+                            margin: 0;
+                            padding: 0;
+                            width: 210px;
+                            height: 35px;
+
+                            color: #43C4B2;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.175px;
+                            text-transform: uppercase;
+                            
+                        }
+                        .boxBtn:hover {
+                            color: #FFF;
+                            display: inline-flex;
+                            padding: 8px 12px;
+                            align-items: center;
+                            gap: 12px;
+                            border-radius: 100px;
+                           background: #22bda9;
+                        
+                        }
+                       
                     }
                 }
             }
-            // .button{
-            //     //background: #7a2828;
-            //     border-radius: 10px;
-            //     color: #faf3f3;
-            //     font-family: Poppins;
-            //     font-size: 12px;
-            //     font-style: normal;
-            //     font-weight: 400;
-            //     line-height: normal;
-            //     letter-spacing: 0.048px;
-            //     border: none;
-            //     margin: 10px;
-            // }
+           
             .right{
                 width: 400px;
                 background: transparent;
@@ -383,32 +403,37 @@
             }
         }
     }
-
-    .impactBox:hover{
-        border: 2px solid #43C4B2;
+    .impactBox:hover .profileImg {
+        transform: scale(1.2);
+        border-radius: 4px;
+       
     }
 
+    // .impactBox:hover .boxBtn {
+    //     color: #FFF;
+    //     display: inline-flex;
+    //     padding: 8px 12px;
+    //     align-items: center;
+    //     gap: 12px;
+    //     border-radius: 100px;
+    //    background: #43C4B2;
+    
+    // }
+   
+
+    
+    .impactBox:hover  {
+        border: 2px solid #43C4B2;
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+    
+
     .navlink{
-
-        .btn{
-            color: #43C4B2;
-
-            /* Button/button 1 */
-            font-family: Poppins;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.175px;
-            text-transform: uppercase;
-        }
-        button:hover{
-            color: white;
-            background-color: #43C4B2;
-            height: 100%;
-            width: 100%;
-           
-        }
+        text-decoration: none;
+        color: inherit;
     }
 }
 

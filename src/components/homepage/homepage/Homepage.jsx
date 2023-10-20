@@ -34,15 +34,17 @@ function Homepage() {
         </div>
         <div className="homecenter"> 
         
-          <span>quote</span>
+         <div className="textCenter">
+         <span>quote</span>
           <h4>Be the Change</h4>
           <h1 style={{ color: isBackgroundWhite ? '#000000' : '#ffffff' }}>Become an Angel &amp; <br />Empower Lives</h1>
           <NavLink to='/signup' className='navLink'>
             <button>Become an Angel <AiFillCaretRight /> </button>
           </NavLink>
+         </div>
         </div>
         <div className="homeright">
-        <div className="wingbody">
+        <div className="wingbody"> 
           <img src={Male} alt=""  className='male'/>
           <img src={Wing} alt=""  className='wing Wing1' />
           <img src={Wing2} alt=""  className='wing Wing2'/>

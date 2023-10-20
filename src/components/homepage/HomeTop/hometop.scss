@@ -14,16 +14,17 @@
         background-color: #000;
 
     .topLeft{
-        // display: flex;
-        width: 500px;
-        height: 60px;
-        display: flex;
+         width: 500px;
+         height: 60px;
         padding: 12px 24px;
-        justify-content: space-between;
+         justify-content: space-between;
+        display:flex;
         align-items: center;
-        gap: 24px;
 
         span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #FFF;
         font-family: Poppins;
         font-size: 13px;
@@ -33,9 +34,9 @@
         letter-spacing: 0.024px;
         text-transform: uppercase;
         cursor: pointer;
-        gap: 20px;
+         gap: 20px;
         }
-.extraPopup{
+.extraPopup, .howPopUp{
     z-index: 1000; 
     display: flex;
     flex-direction: column;
@@ -48,6 +49,7 @@
     height: auto;
     background-color: black;
     gap: 10px;
+    margin-left: 150px;
 
 
         .contact{
@@ -107,6 +109,9 @@
 }
 
 }
+.howPopUp{
+    margin-left: 300px;
+}
         
     }
 
@@ -131,32 +136,46 @@
         .Search{
             display: flex;
             align-items: center;
+            justify-content: center;
             width: auto;
             border-radius: 5px;
             color: #FFF;
             gap: 10px;
-            padding: 5px;
+            font-size: 13px;
+            margin-top: 2px;
+            margin-right: 50px;
+            // padding: 5px;
 
             span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: #FFF;
                 font-family: Poppins;
                 font-size: 13px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                letter-spacing: 0.024px;                    
+                letter-spacing: 0.048px; 
+                text-transform: uppercase;                  
             }
         }
 
         span{
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
             color: #FFF;
-            text-transform: uppercase;
             font-family: Poppins;
-            font-size: 13px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            letter-spacing: 0.024px;
+            letter-spacing: 0.048px;
+            text-transform: uppercase;
             cursor: pointer;
             
         }
@@ -179,48 +198,248 @@
  
 }
 .opensearch{
-    // position: fixed;
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.472);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.211);
     //margin-top: 100px;
 }
     .mobileTopbar{
         display: none;
-        width: 100vw;
-        height: 100px;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        .innerbar{
-            display: flex;
-            width: 100%;
-            height: 100%;
-            padding: 20px 24px;
+  
+    }
+
+ }
+
+
+
+@media  screen and (max-width: 1000px) {
+    .tophome{
+
+
+        .largeTopbar{
+            display: grid;
+            grid-template-columns: 1fr 0.2fr 1fr;
             align-items: center;
-            background: #fff;
-            box-shadow: 0px 6px 12px 0px rgba(67, 196, 178, 0.08);
+            top: 0;
             justify-content: space-between;
-            gap: 10px;
-            flex: 1 0 0;
-        }
-        .menushow{
-            display: flex;
             width: 100%;
-            height: 100vh;
-            background-color: #000000a4;
+            height: 100px;
+            position: fixed;
+            z-index: 100;
+            background-color: #000;
+    
+        .topLeft{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+             height: 60px;
+            padding: 12px 24px;
+    
+            span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.024px;
+            text-transform: uppercase;
+            cursor: pointer;
+             gap: 20px;
+            }
+            .extraPopup,.howPopUp{
+                z-index: 1000; 
+                display: flex;
+                flex-direction: column;
+                padding: 10px ;
+                align-items: self-start;
+                // justify-content: center;
+                position: absolute;
+                top: 100px;
+                width: 150px;
+                height: auto;
+                background-color: #000;
+                gap: 10px;
+                margin-left: 100px;
+       
+    
+    
+            .contact{
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+               .span{
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                letter-spacing: 0.024px;
+                text-transform: uppercase;
+               }
+                img{
+                    width: 25px;
+                    height: 15px;
+                    object-fit: contain;
+                }
+            }
+        
+            .blog{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 100%;
+                height: 40px;
+                .span{
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                    text-transform: uppercase;
+                   }
+            }
+    
+    .contact:hover .span,
+    .blog:hover .span {
+        color: black;
+    }
+    
+    .contact:hover,
+    .blog:hover {
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    }
+    .howPopUp{
+        margin-left: 200px;
+    }
+            
         }
+    
+        .topcenter{
+            flex: 1;
+            display: flex;
+    
+            img{
+                object-fit: cover;
+                width: 100;
+                height: 45px;
+                flex-shrink: 0;
+                cursor: pointer;
+            }
+        }
+    
+        .topRight{
+            display: flex;
+            flex: 1;
+            padding: 0;
+            gap: 5px;
+            margin: 0;
+            align-items: center;
+            // justify-content: space-between;
+            width: 100%;
+    
+            .Search{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                border-radius: 5px;
+                color: #FFF;
+                gap: 5px;
+                font-size: 12px;
+                margin-top: 2px;
+                margin-right: 0;
+                // padding: 5px;
+    
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px; 
+                    text-transform: uppercase;                  
+                }
+            }
+    
+            span{
+                display: flex;
+                //padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+    
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.048px;
+                text-transform: uppercase;
+                cursor: pointer;
+                
+            }
+    
+            .sign-up{
+                border-radius: 100px;
+                background: #43C4B2;
+                width: auto;
+                height: 45px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+            }
+        }
+    
+        .navlink{
+            text-decoration: none;
+        }
+     
     }
-
+    .opensearch{
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.211);
+        //margin-top: 100px;
     }
-
-
-
-@media  screen and (max-width: 1024px) {
-    // .container.testimonials_container {
-    //     width: 60%;
-    // }
+        .mobileTopbar{
+            display: none;
+      
+        }
+    
+     }
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
@@ -233,8 +452,32 @@
           }
         
           .mobileTopbar {
-           
-            display: block; /* Show the mobile top bar */
+            
+                display: flex;
+                width: 100vw;
+                height: 100px;
+                position: fixed;
+                z-index: 100;
+                top: 0;
+                .innerbar{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px 24px;
+                    align-items: center;
+                    background: #fff;
+                    box-shadow: 0px 6px 12px 0px rgba(67, 196, 178, 0.08);
+                    justify-content: space-between;
+                    gap: 10px;
+                    flex: 1 0 0;
+                }
+                .menushow{
+                    display: flex;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: #000000a4;
+                }
+            
           }
     }
  

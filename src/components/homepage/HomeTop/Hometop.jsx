@@ -1,6 +1,5 @@
 import './hometop.scss'
-import SearchIcon from '@mui/icons-material/Search';
-import {BiChevronDown} from 'react-icons/bi'
+import {BiChevronDown, BiSearchAlt} from 'react-icons/bi'
 import {  NavLink } from 'react-router-dom';
 import React, { useState ,useEffect, useRef } from 'react';
 import Search from '../../search/Search';
@@ -21,7 +20,7 @@ function Hometop() {
 
 
   const openSearchTab = () => {
-    setSearch(!openSearch)
+    setSearch(!openSearch) 
   }
 
   const closeSearchTab = () => {
@@ -88,7 +87,7 @@ useEffect(() => {
           <span onClick={openExtra}>extras <BiChevronDown/></span>
           {
             extraopen && (
-             <div ref={popupRef} style={{marginLeft:'150px'}}  className="extraPopup">
+             <div ref={popupRef}  className="extraPopup">
               <NavLink to='/contact' className='navlink'>
                <div className="contact">
                 <div className="span">Contact</div>
@@ -107,7 +106,7 @@ useEffect(() => {
           <span onClick={openHow}>how it works  <BiChevronDown/></span>
           {
             howitworks && (
-             <div ref={popupRef} style={{marginLeft:'300px'}} className="extraPopup">
+             <div ref={popupRef} className="howPopUp">
                <NavLink to='/HowitWorks' className='navlink'>
                <div   className="contact">
                 <div className="span">how</div>
@@ -152,11 +151,11 @@ useEffect(() => {
         <div className="topRight">
     
         <div className="Search" onClick={handlePopupOpen}>
-        <SearchIcon className='searchicon'/>
+        <BiSearchAlt className='searchicon'/>
           <span>search</span>
         </div>
         <NavLink to='/login' className='navlink'>
-          <span>Login</span>
+          <span>USER LOGIN</span>
           </NavLink>
           <NavLink to='/signup' className='navlink'>
           <span className='sign-up' > angle sign up</span>
@@ -164,7 +163,7 @@ useEffect(() => {
         </div>
       </div>
          
-
+ 
 
         {isOpen && ( 
         

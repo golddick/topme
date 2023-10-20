@@ -366,11 +366,10 @@
 }
 
 
-@media  screen and (max-width: 1024px) {
-    // .container.testimonials_container {
-    //     width: 60%;
-    // }
+@media (min-width: 992px) and (max-width: 1200px)  {
+  
   }
+  
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
   @media screen and  (max-width: 600px) {

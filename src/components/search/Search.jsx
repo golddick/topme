@@ -36,7 +36,7 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
 
     setItems(fetchedItems);
   }, []);
-
+ 
   const handleButtonClick = (itemId) => {
     // Set the visibility of the clicked item to false
     setItems((prevItems) =>
@@ -184,7 +184,7 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
             ))}
           </div>
           {visibleCategories < allCategories.length && (
-             <span onClick={handleShowMore} style={{marginBottom:'200px'}} className="show-more"  >
+             <span onClick={handleShowMore}className="show-more"  >
              {showAll ? 'Show less' : 'Show '}
            </span>
           )}
@@ -198,11 +198,13 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
                 impactDetails.map((item, index) => (
                   <div className="slide" key={index}>
                     <div className="impactBox">
-                      <img
+                     <div className="impactImg">
+                     <img
                         src={item.impactImg}
                         alt=""
                         className="profileImg"
                       />
+                     </div>
                        <div className="impactBody">
                     <div className="name">
                       <div className='Uname'>{item.impactName}</div>
@@ -215,12 +217,12 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
                       <div className='location'>Lagos, Nigeria</div>
                     </div>
                     <div>{item.impactBio}</div>
+                    
                   </div>
-                      <NavLink to="/donor" className="navlink">
-                        <div className="btn">
-                          view impact story <BiChevronRight />
-                        </div>
-                      </NavLink>
+                    
+                  {/* <NavLink to="/donor" className="navlink"> */}
+                        <div className="boxBtn">  view impact story <BiChevronRight /></div>
+                        {/* </NavLink> */}
                     </div>
                   </div>
                 ))
