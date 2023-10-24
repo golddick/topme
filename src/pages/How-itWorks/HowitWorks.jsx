@@ -56,7 +56,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
               <h3>works</h3>
             </div>
           </div>
-
+ 
           <div className="howbody">
             
           <p>TOPMe Angels, the modern-day Good Samaritans, 
@@ -72,9 +72,11 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
           <div className="textHeader">
             <h3>Unleash your inner Angel & make a difference today!</h3>
           </div>
+          <div className="_option">
           <Optiontab/>
-
+          </div>
           <div className="support">
+            <div className="_supportBody">
             <div className="supportLeft">
               <h3>Support Angels: Unleash Impact</h3>
               <p>Our angels drive change by identifying causes, 
@@ -82,7 +84,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
                 on the TOPME platform. While donations directly 
                 aid those in need, angels often face personal expenses. 
                 Your support fuels their dedication, covering costs and 
-                ensuring their focus remains on making a difference..</p>
+                ensuring their focus remains on making a difference.</p>
             </div>
             <div className="supportRight">
             <div className="supLeft">
@@ -104,6 +106,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
             </div>
        
             
+            </div>
             </div>
           </div>
 

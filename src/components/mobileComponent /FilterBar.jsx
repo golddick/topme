@@ -30,7 +30,7 @@ function FilterBar() {
     //     document.removeEventListener('click', closeFilterPopup);
     //   };
     // }, []);
-
+ 
   return (
     <div className="mobileFilterBar">
     <div className="filterBar" onClick={toggleFilterPopup} >
@@ -40,16 +40,15 @@ function FilterBar() {
      </svg>
     </div>
     {isFilterPopupOpen && (
-        <div className="filterPopup" >
-         
-        
+       <div className="popupBody">
 
+         <div className="filterPopup"  ref={filterPopupRef}>
           <input type="text" placeholder='search for an angel' />
-          <div className="closeBtn" > 
+          {/* <div className="closeBtn" > 
           <button className="closePopupButton" onClick={handleClosePopup}>
             Close
           </button>
-          </div>
+          </div> */}
           
           <div className="filterBody">
           <div className="filterCities">
@@ -113,6 +112,7 @@ function FilterBar() {
 
           <button>search</button>
         </div>
+       </div>
       )}
    </div>
   )

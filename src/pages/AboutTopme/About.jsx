@@ -26,7 +26,7 @@ function About() {
         <path d="M7.25051 6.54883H1.44727V9.10202H7.25051V6.54883Z" fill="black"/>
         <path d="M48.7731 9.14956C46.5406 9.14956 44.7227 7.33514 44.7227 5.107C44.7227 2.87887 46.5406 1.06445 48.7731 1.06445C51.0056 1.06445 52.8235 2.87887 52.8235 5.107C52.8235 7.33514 51.0056 9.14956 48.7731 9.14956ZM48.7731 1.48999C46.7745 1.48999 45.149 3.11232 45.149 5.107C45.149 7.10169 46.7745 8.72402 48.7731 8.72402C50.7716 8.72402 52.3971 7.10169 52.3971 5.107C52.3971 3.11232 50.7716 1.48999 48.7731 1.48999Z" fill="#43C4B2"/>
         <path d="M52.6109 5.74506C52.2586 5.74506 51.9714 5.45841 51.9714 5.10676C51.9714 3.34553 50.5383 1.91527 48.7737 1.91527C47.009 1.91527 45.576 3.34553 45.576 5.10676C45.576 5.45841 45.2888 5.74506 44.9364 5.74506C44.5841 5.74506 44.2969 5.45841 44.2969 5.10676C44.2969 2.64222 46.3043 0.638672 48.7737 0.638672C51.243 0.638672 53.2504 2.64222 53.2504 5.10676C53.2504 5.45841 52.9632 5.74506 52.6109 5.74506Z" fill="#43C4B2"/>
-        <path d="M71.4008 12.2696C70.9863 9.06625 68.2327 6.58398 64.9106 6.58398C61.3014 6.58398 58.3672 9.51543 58.3672 13.1147C58.3672 16.714 61.3014 19.6455 64.9106 19.6455C66.4976 19.6455 68.0284 19.0722 69.2216 18.029L68.1498 16.8086C67.2527 17.5917 66.1039 18.0231 64.9106 18.0231C62.465 18.0231 60.4309 16.2323 60.0549 13.8949H71.4067C71.4393 13.6378 71.4541 13.3777 71.4541 13.1177C71.4541 12.831 71.4363 12.5503 71.3978 12.2725L71.4008 12.2696ZM60.0697 12.2696C60.4723 9.9646 62.4916 8.20928 64.9136 8.20928C67.3356 8.20928 69.3549 9.96755 69.7575 12.2696H60.0697Z" fill="black" stroke="black" stroke-miterlimit="10"/>
+        <path d="M71.4008 12.2696C70.9863 9.06625 68.2327 6.58398 64.9106 6.58398C61.3014 6.58398 58.3672 9.51543 58.3672 13.1147C58.3672 16.714 61.3014 19.6455 64.9106 19.6455C66.4976 19.6455 68.0284 19.0722 69.2216 18.029L68.1498 16.8086C67.2527 17.5917 66.1039 18.0231 64.9106 18.0231C62.465 18.0231 60.4309 16.2323 60.0549 13.8949H71.4067C71.4393 13.6378 71.4541 13.3777 71.4541 13.1177C71.4541 12.831 71.4363 12.5503 71.3978 12.2725L71.4008 12.2696ZM60.0697 12.2696C60.4723 9.9646 62.4916 8.20928 64.9136 8.20928C67.3356 8.20928 69.3549 9.96755 69.7575 12.2696H60.0697Z" fill="black" stroke="black" strokeMiterlimit="10"/>
         </svg>
     </div>
     <h4> TopMe is that one place to amplify one’s need for help.</h4>
@@ -54,9 +54,9 @@ function About() {
         <div className="toptext">
         <span>raised by our community</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M1.69922 7.91953C1.69922 4.83953 3.45922 3.51953 6.09922 3.51953H14.8892C17.1292 3.51953 18.7392 4.46953 19.1692 6.63953C19.2492 7.02953 19.2892 7.44953 19.2892 7.91953V13.0695C19.2892 16.1495 17.5292 17.4695 14.8892 17.4695H6.09922C5.64922 17.4695 5.21922 17.4295 4.81922 17.3395C4.56922 17.2995 4.32922 17.2295 4.10922 17.1495C2.60922 16.5895 1.69922 15.2895 1.69922 13.0695V11.9995" stroke="#808080" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M22.2981 15.0096V16.0696C22.2981 19.1496 20.5381 20.4696 17.8981 20.4696H9.10812C8.36812 20.4696 7.69812 20.3696 7.11812 20.1496C5.92812 19.7096 5.11812 18.7996 4.82812 17.3396C5.22813 17.4296 5.65812 17.4696 6.10812 17.4696H14.8981C17.5381 17.4696 19.2981 16.1496 19.2981 13.0696V7.91965C19.2981 7.44965 19.2581 7.02965 19.1781 6.63965C21.0881 7.02965 22.2981 8.36965 22.2981 10.9196" stroke="#808080" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13.1403 10.5004C13.1403 9.04035 11.9603 7.86035 10.5003 7.86035C9.04034 7.86035 7.86034 9.04035 7.86034 10.5004C7.86034 11.9604 9.04034 13.1404 10.5003 13.1404M4.77734 8.30035V12.7004M16.2193 8.30035V12.7004" stroke="#808080" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.69922 7.91953C1.69922 4.83953 3.45922 3.51953 6.09922 3.51953H14.8892C17.1292 3.51953 18.7392 4.46953 19.1692 6.63953C19.2492 7.02953 19.2892 7.44953 19.2892 7.91953V13.0695C19.2892 16.1495 17.5292 17.4695 14.8892 17.4695H6.09922C5.64922 17.4695 5.21922 17.4295 4.81922 17.3395C4.56922 17.2995 4.32922 17.2295 4.10922 17.1495C2.60922 16.5895 1.69922 15.2895 1.69922 13.0695V11.9995" stroke="#808080" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M22.2981 15.0096V16.0696C22.2981 19.1496 20.5381 20.4696 17.8981 20.4696H9.10812C8.36812 20.4696 7.69812 20.3696 7.11812 20.1496C5.92812 19.7096 5.11812 18.7996 4.82812 17.3396C5.22813 17.4296 5.65812 17.4696 6.10812 17.4696H14.8981C17.5381 17.4696 19.2981 16.1496 19.2981 13.0696V7.91965C19.2981 7.44965 19.2581 7.02965 19.1781 6.63965C21.0881 7.02965 22.2981 8.36965 22.2981 10.9196" stroke="#808080" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M13.1403 10.5004C13.1403 9.04035 11.9603 7.86035 10.5003 7.86035C9.04034 7.86035 7.86034 9.04035 7.86034 10.5004C7.86034 11.9604 9.04034 13.1404 10.5003 13.1404M4.77734 8.30035V12.7004M16.2193 8.30035V12.7004" stroke="#808080" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
         </div>
         <h4>$100 Thousand</h4>
@@ -66,8 +66,8 @@ function About() {
     <div className="toptext">
             <span>donations given on TopMe</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M10.4319 2.42C11.4019 1.86 12.6019 1.86 13.5819 2.42L19.5219 5.85C20.4919 6.41 21.0919 7.45 21.0919 8.58V15.42C21.0919 16.54 20.4919 17.58 19.5219 18.15L13.5819 21.58C12.6119 22.14 11.4119 22.14 10.4319 21.58L4.49188 18.15C4.01365 17.8727 3.61681 17.4745 3.34123 16.9953C3.06564 16.5161 2.92102 15.9728 2.92188 15.42V8.58C2.92188 7.46 3.52188 6.42 4.49188 5.85L6.39188 4.75" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16 16.6578C16 14.8578 14.21 13.3978 12 13.3978C9.79 13.3978 8 14.8578 8 16.6578M12.002 10.9998C12.62 10.9998 13.2126 10.7544 13.6496 10.3174C14.0865 9.88044 14.332 9.2878 14.332 8.66984C14.332 8.05189 14.0865 7.45924 13.6496 7.02228C13.2126 6.58533 12.62 6.33984 12.002 6.33984C11.384 6.33984 10.7914 6.58533 10.3544 7.02228C9.91748 7.45924 9.672 8.05189 9.672 8.66984C9.672 9.2878 9.91748 9.88044 10.3544 10.3174C10.7914 10.7544 11.384 10.9998 12.002 10.9998Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.4319 2.42C11.4019 1.86 12.6019 1.86 13.5819 2.42L19.5219 5.85C20.4919 6.41 21.0919 7.45 21.0919 8.58V15.42C21.0919 16.54 20.4919 17.58 19.5219 18.15L13.5819 21.58C12.6119 22.14 11.4119 22.14 10.4319 21.58L4.49188 18.15C4.01365 17.8727 3.61681 17.4745 3.34123 16.9953C3.06564 16.5161 2.92102 15.9728 2.92188 15.42V8.58C2.92188 7.46 3.52188 6.42 4.49188 5.85L6.39188 4.75" stroke="#808080" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M16 16.6578C16 14.8578 14.21 13.3978 12 13.3978C9.79 13.3978 8 14.8578 8 16.6578M12.002 10.9998C12.62 10.9998 13.2126 10.7544 13.6496 10.3174C14.0865 9.88044 14.332 9.2878 14.332 8.66984C14.332 8.05189 14.0865 7.45924 13.6496 7.02228C13.2126 6.58533 12.62 6.33984 12.002 6.33984C11.384 6.33984 10.7914 6.58533 10.3544 7.02228C9.91748 7.45924 9.672 8.05189 9.672 8.66984C9.672 9.2878 9.91748 9.88044 10.3544 10.3174C10.7914 10.7544 11.384 10.9998 12.002 10.9998Z" stroke="#808080" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         </div>
         <h4>+10M</h4>
@@ -88,7 +88,7 @@ function About() {
     <h3>Meet Our Team</h3>
     <div className="teamCard">
         <div className="teamBox">
-            <img src="https://media.istockphoto.com/id/1347431090/photo/fit-woman-standing-outdoors-after-a-late-afternoon-trail-run.jpg?s=170667a&w=0&k=20&c=qNDDxX9Pv-1NTWKkez2AnNP-vXTSwvAc9po8sn7Qq9M=" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQa7RRyTNTV7_QeWnZBMW_IbQzz8V3cFEGQ&usqp=CAU" alt="" />
             <div className="teamName">
                 <span>Mmema Ekukiam</span>
                 <h5>Managing Editor</h5>
@@ -101,7 +101,7 @@ function About() {
             </div>
         </div>
         <div className="teamBox">
-            <img src="https://media.istockphoto.com/id/1347431090/photo/fit-woman-standing-outdoors-after-a-late-afternoon-trail-run.jpg?s=170667a&w=0&k=20&c=qNDDxX9Pv-1NTWKkez2AnNP-vXTSwvAc9po8sn7Qq9M=" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQa7RRyTNTV7_QeWnZBMW_IbQzz8V3cFEGQ&usqp=CAU" alt="" />
             <div className="teamName">
                 <span>Mmema Ekukiam</span>
                 <h5>Managing Editor</h5>
@@ -114,7 +114,7 @@ function About() {
             </div>
         </div>
         <div className="teamBox">
-            <img src="https://media.istockphoto.com/id/1347431090/photo/fit-woman-standing-outdoors-after-a-late-afternoon-trail-run.jpg?s=170667a&w=0&k=20&c=qNDDxX9Pv-1NTWKkez2AnNP-vXTSwvAc9po8sn7Qq9M=" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQa7RRyTNTV7_QeWnZBMW_IbQzz8V3cFEGQ&usqp=CAU" alt="" />
             <div className="teamName">
                 <span>Mmema Ekukiam</span>
                 <h5>Managing Editor</h5>
@@ -127,7 +127,7 @@ function About() {
             </div>
         </div>
         <div className="teamBox">
-            <img src="https://media.istockphoto.com/id/1347431090/photo/fit-woman-standing-outdoors-after-a-late-afternoon-trail-run.jpg?s=170667a&w=0&k=20&c=qNDDxX9Pv-1NTWKkez2AnNP-vXTSwvAc9po8sn7Qq9M=" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQa7RRyTNTV7_QeWnZBMW_IbQzz8V3cFEGQ&usqp=CAU" alt="" />
             <div className="teamName">
                 <span>Mmema Ekukiam</span>
                 <h5>Managing Editor</h5>
@@ -144,7 +144,9 @@ function About() {
 </div>
        </div>
         <AngelImpact/>
+        <div className="optionn" >
         <Optiontab/>
+        </div>
         <AngelFooter/>
         </div>
   )

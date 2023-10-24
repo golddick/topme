@@ -206,7 +206,7 @@ export default class LazyLoad extends Component {
 
             )}
           </div>
-          <div className="showmore" onClick={this.handleShowMore}>
+          <div className="showmore" onClick={this.handleShowMore} style={{color:'#fff'}}>
                     <span >{showLessImpact ? 'Show Less' : 'Show More'}</span>
                     <BiChevronRight />
                   </div>

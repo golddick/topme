@@ -18,7 +18,7 @@ function AngelFooter() {
   const handlePopupClose = () => {
     setIsOpen(false);
   }; 
-
+ 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
