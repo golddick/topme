@@ -10,7 +10,7 @@ function Homepage() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
   const colors = ['#ffffff', '#000000']; // White and black colors
 
-  useEffect(() => {
+  useEffect(() => { 
     const intervalId = setInterval(() => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 10000);
