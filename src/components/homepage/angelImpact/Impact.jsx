@@ -215,7 +215,7 @@ export default class LazyLoad extends Component {
             <span>view all angels</span>
           </div>
           </NavLink>
-        </div>
+        </div> 
       </div>
     );
   }

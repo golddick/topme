@@ -21,7 +21,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/pagination'; 
 import "swiper/css/effect-fade";
 import 'swiper/css/navigation'
 import 'swiper/css/grid';
@@ -625,12 +625,12 @@ function Impactpage() {
     setOpenCategory(!openCategory)
   };
     // const { loading, ImpactDetails, openCategory } = this.state;
-    const pagination = {
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      },
-    };
+    // const pagination = {
+    //   clickable: true,
+    //   renderBullet: function (index, className) {
+    //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+    //   },
+    // };
 
 
 
@@ -701,14 +701,14 @@ function Impactpage() {
        <Swiper
        slidesPerView={4}
        // onSwiper={(swiper) => setSwiper(swiper)}
-       pagination={{
-        //  clickable: true,
-        //  renderBullet: function (index, className) {
-        //    return '<span class="' + className + '">' + (index) + '</span>';
-        //  },
-         el: ".nav-Btn",
-         clickable: true,
-       }}
+      //  pagination={{
+      //   //  clickable: true,
+      //   //  renderBullet: function (index, className) {
+      //   //    return '<span class="' + className + '">' + (index) + '</span>';
+      //   //  },
+      //    el: ".nav-Btn",
+      //    clickable: true,
+      //  }}
       
        spaceBetween={30}
        grid={{
