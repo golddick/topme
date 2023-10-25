@@ -141,9 +141,9 @@ function Leftbar( {closePopup}) {
                     </div>
                 </div>
                 <NavLink to='/CreateSupport' className='navLink' style={{width:'100%'}}>
-                <button onMouseEnter={handlebtnHover} onMouseLeave={handlebtnHover} className='CASbtn' >
+                <div onMouseEnter={handlebtnHover} onMouseLeave={handlebtnHover} className='CASbtn' >
                 {btnisHovered && <FiGift className="icon" />}CREATE ANGEL SUPPORT
-                </button>
+                </div>
                 </NavLink>
                 
        </div>
@@ -171,7 +171,7 @@ function Leftbar( {closePopup}) {
         <span>Message</span>
               <div className="messageNot">6</div>
         </div>
-        <div className="nav">
+        <div className="nav"> 
         <SendOutlinedIcon className='icon'/>
         <span>Email</span>
         </div>

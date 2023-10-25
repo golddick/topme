@@ -458,28 +458,27 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: calc(100vh - 100px);
+        height: 700px;
         width: 100%;
-        position: relative;
-        padding: 20px;
+       // position: relative;
+        padding-bottom: 100px;
         
 
         .homecenter{
             display: flex;
             width: 100%;
+            height: 1000px;
             flex-direction: column;
             align-items: center;
-            height: auto;
             padding: 0;
-            justify-content: center;
-            overflow: scroll;
+           // overflow: scroll;
             gap: 20px;
             margin: 0;
             
             .textCenter{ 
                width: 250px;
                padding-top: 50px;
-
+              
                 
             
                 h1{
@@ -511,104 +510,121 @@
                 align-items: center;
                 justify-content: center;
                // margin-top: 300px;
-                position: relative;
+                // position: relative;
+                // bottom: 0;
                 width: 100%;
                 height: 100%;
 
 
-                .mobilehomeleft{
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: 150px;
-                    height: 100%;
-                    padding: 0;
-        
-                    .wingbody{
-                    width: 150px;
-                    height: 150px; 
-        
-                    .female{
-                        width: 100%;
-                        height: 100%;
-                        flex-shrink: 0;
-                        object-fit: contain ;
-                        z-index: 3;
-                        position: relative;
-                    }
-        
-        
-                    .wing{
+                .mobImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               // margin-top: 300px;
+                position: relative;
+                // bottom: 0;
+                width: 100%;
+                height: auto;
+
+
+
+                    .mobilehomeleft{
                         position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        transition: transform 0.5s;
-                    }
-                     .Wing1 {
-                            top: 10px;
-                            left: 30px;
-                            z-index: 1;
-                            object-fit: contain;
-                            animation: flapWing1 1s infinite alternate ease-in-out;
-                        }
-                        .Wing2 {
-                            top: 10px;
-                            right: 30px;
-                            object-fit: contain;
-                            z-index: 1;
-                            transform: rotate(90deg);
-                            animation: flapWing2 1s infinite alternate ease-in-out;
-                        }
-        
-                    }
-                  
-                    // flex-shrink: 0;
-                }
-                .mobilehomeright{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 150px;
-                    height: 100%;
-        
-                    .wingbody{
-                    width: 150px;
-                    height: 150px; 
-        
-                    .male{
-                        width: 100%;
+                        bottom: 60px;
+                        right: 0;
+                        width: 150px;
                         height: 100%;
-                        flex-shrink: 0;
-                        object-fit: contain ;
+                        padding: 0;
+            
+                        .wingbody{
+                        width: 150px;
+                        height: 150px; 
+            
+                        .female{
+                            width: 100%;
+                            height: 100%;
+                            flex-shrink: 0;
+                            object-fit: contain ;
+                            z-index: 3;
+                            position: relative;
+                        }
+            
+            
+                        .wing{
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            transition: transform 0.5s;
+                        }
+                         .Wing1 {
+                                top: 10px;
+                                left: 30px;
+                                z-index: 1;
+                                object-fit: contain;
+                                animation: flapWing1 1s infinite alternate ease-in-out;
+                            }
+                            .Wing2 {
+                                top: 10px;
+                                right: 30px;
+                                object-fit: contain;
+                                z-index: 1;
+                                transform: rotate(90deg);
+                                animation: flapWing2 1s infinite alternate ease-in-out;
+                            }
+            
+                        }
+                      
+                        // flex-shrink: 0;
                     }
-        
-        
-                    .wing{
+                    .mobilehomeright{
                         position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        transition: transform 0.5s;
-                    }
-                     .Wing1 {
-                            top: 10px;
-                            left: 35px;
-                            z-index: 1;
-                            object-fit: contain;
-                            animation: flapWing1 1s infinite alternate ease-in-out;
+                        bottom: 60px;
+                        left: 0;
+                       // margin-left: -100px;
+                        width: 150px;
+                        height: 100%;
+                      
+            
+                        .wingbody{
+                        width: 150px;
+                        height: 150px; 
+            
+                        .male{
+                            width: 100%;
+                            height: 100%;
+                            flex-shrink: 0;
+                            object-fit: contain ;
                         }
-                        .Wing2 {
-                            top: 10px;
-                            right: 35px;
-                            object-fit: contain;
-                            z-index: 1;
-                            transform: rotate(90deg);
-                            animation: flapWing2 1s infinite alternate ease-in-out;
+            
+            
+                        .wing{
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            transition: transform 0.5s;
                         }
-        
+                         .Wing1 {
+                                top: 10px;
+                                left: 35px;
+                                z-index: 1;
+                                object-fit: contain;
+                                animation: flapWing1 1s infinite alternate ease-in-out;
+                            }
+                            .Wing2 {
+                                top: 10px;
+                                right: 35px;
+                                object-fit: contain;
+                                z-index: 1;
+                                transform: rotate(90deg);
+                                animation: flapWing2 1s infinite alternate ease-in-out;
+                            }
+            
+                        }
+                      
+                        // flex-shrink: 0;
                     }
-                  
-                    // flex-shrink: 0;
                 }
+             
 
             }
         }

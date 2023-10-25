@@ -15,7 +15,7 @@ function Homepage() {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 10000);
   
-    return () => {
+    return () => { 
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
   }, []);   
@@ -44,8 +44,8 @@ function Homepage() {
          </div>
 
          <div className="mobileImg">
-
-         <div className="mobilehomeleft ">
+            <div className="mobImg">
+            <div className="mobilehomeleft ">
           <div className="wingbody">
           <img src={Wing} alt=""  className='wing Wing1' />
           <img src={Wing2} alt=""  className='wing Wing2'/>
@@ -61,6 +61,7 @@ function Homepage() {
           </div>
         </div>
 
+            </div>
          </div>
 
         </div>

@@ -105,7 +105,7 @@
             .cardBody{
                 display: inline-flex;
                 align-items: center;
-                justify-content: center;
+               // justify-content: center;
                 gap: 30px;
                 width: 100%;
                  height: 300px;
@@ -115,9 +115,11 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    justify-content: center;
                     gap: 15px;
                     align-self: stretch;
                     // width: 363px;
+              
 
                     h4{
                         color: #FFF;
@@ -154,50 +156,11 @@
                 
                 }
 
-                // .bodyright{
-                //     // width: 431px;
-                //     display: flex;
-                //     flex-direction: column;
-                //     align-items: flex-start;
-                //     gap: 32px;
-                //     align-self: stretch;
-
-                //     h4{
-                //         color: #FFF;
-                //         font-family: Poppins;
-                //         font-size: 20px;
-                //         font-style: normal;
-                //         font-weight: 500;
-                //         line-height: normal;
-                //         letter-spacing: 0.03px;
-                //         text-transform: uppercase;
-                //     }
-
-                //     p{
-                //         color: #68EDCB;
-                //         font-family: Poppins;
-                //         font-size: 96px;
-                //         font-style: normal;
-                //         font-weight: 600;
-                //         line-height: normal;
-                //         letter-spacing: -1.44px;
-                //     }
-
-                //     h6{
-                //         color: #FFF;
-                //         align-self: stretch;
-                //         font-family: Poppins;
-                //         font-size: 14px;
-                //         font-style: normal;
-                //         font-weight: 400;
-                //         line-height: normal;
-                //         letter-spacing: 0.035px;
-                //     }
-                // }
+           
 
                 .horzontalLine{
                     width: 1px;
-                    height: 239px;
+                    height: 200px;
                     background: #808080;
                 }
             }
