@@ -21,7 +21,7 @@
 //   const navigate = useNavigate();
 //   const [userType, setUserType] = useState(null);
 
-//   const [isLoading, setIsLoading] = useState(false);
+//   const [isLoading, setIsLoading] = useState(false); 
 //   const [backgroundColor, setBackgroundColor] = useState(''); 
 
 //   const [email, setEmail] = useState('');
@@ -482,7 +482,7 @@ function Login() {
   };
 
   return (
-    <div className="wrapper">
+    <div className="loginwrapper" >
       <div className="header">
         <HeaderLogin />
       </div>

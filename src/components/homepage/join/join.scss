@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 243.5px 138px 243.5px;
+    padding: 138px 250px 138px 250px;
     width: 100%;
     height: auto;
     background: #FFF;
@@ -22,7 +22,7 @@
  
         .left{
             margin-top: -150px;
-            width: 200px;
+            width: 150px;
             height: 200px;
             flex-shrink: 0;
 
@@ -38,13 +38,13 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
-            width: 500px;
+            width: 350px;
             height: auto;
 
             h1{
                 color: #000; 
                 font-family: Poppins;
-                font-size: 40px;
+                font-size: 25px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -56,22 +56,23 @@
                 align-items: center;
                 width: 100%;
                 height: 40px;
-                gap: 50px;
+                gap: 30px;
 
                 .signupBtn{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding: 16px 32px;
-                    gap: 16px;
-                    width: 360px;
+                    //padding: 16px 32px;
+                   //padding: 12px;
+                    gap: 10px;
+                    width: 500px;
                     height: 100%;
                     border-radius: 100px;
                     background: #43C4B2;
 
                     color: #FFF;
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -81,11 +82,11 @@
 
                 .howBtn{
                     display: flex;
-                     width: 254px;
+                     width: 500px;
                      height: 100%;
                      margin: 0;
                      padding: 0;
-                    padding: 16px 44px;
+                   // padding: 16px 44px;
                     justify-content: center;
                     align-items: center;
                     background-color: transparent;
@@ -99,7 +100,7 @@
 
                     /* Button/button 1 */
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -109,19 +110,51 @@
             }
         }
         .right{
-            width: 250px;
+            width: 200px;
             height:400px;
             flex-shrink: 0;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
 
-            .rightFemale{
-                margin-left: -50px;
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
+            .wingbody{
+                position: relative;
+                width: 200px;
+                height:400px;
+
+
+                .rightFemale{
+                    width: 100%;
+                    height: 100%;
+                    flex-shrink: 0;
+                    object-fit: contain ;
+                    z-index: 3;
+                    position: relative;
+                }
+    
+                .wing{
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    transition: transform 0.5s;
+                }
+                 .Wing1 {
+                        top: 50px;
+                        left: 10px;
+                        z-index: 1;
+                        object-fit: contain;
+                        animation: flapWing1 2s infinite alternate ease-in-out;
+                    }
+                    .Wing2 {
+                        right: 10px;
+                        object-fit: contain;
+                        top: 50px;
+                        z-index: 1;
+                        transform: rotate(90deg);
+                        animation: flapWing2 2s infinite alternate ease-in-out;
+                    }
             }
+           
         }
     }
 }
@@ -132,7 +165,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px;
+        padding: 150px 40px 150px 40px;
         width: 100%;
         height: auto;
         background: #FFF;
@@ -170,15 +203,15 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 20px;
-                width: 500px;
+                width: 300px;
                 height: auto;
     
                 h1{
                     color: #000; 
                     font-family: Poppins;
-                    font-size: 40px;
+                    font-size: 20px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 500;
                     line-height: normal;
                     letter-spacing: -0.3px;
                 }
@@ -188,22 +221,22 @@
                     align-items: center;
                     width: 100%;
                     height: 40px;
-                    gap: 50px;
+                    gap: 20px;
     
                     .signupBtn{
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        padding: 16px 32px;
+                        //padding: 16px 32px;
                         gap: 16px;
-                        width: 360px;
+                        width: 400px;
                         height: 100%;
                         border-radius: 100px;
                         background: #43C4B2;
     
                         color: #FFF;
                         font-family: Poppins;
-                        font-size: 14px;
+                        font-size: 10px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
@@ -213,11 +246,11 @@
     
                     .howBtn{
                         display: flex;
-                         width: 254px;
+                         width: 400px;
                          height: 100%;
                          margin: 0;
                          padding: 0;
-                        padding: 16px 44px;
+                       // padding: 16px 44px;
                         justify-content: center;
                         align-items: center;
                         background-color: transparent;
@@ -231,7 +264,7 @@
     
                         /* Button/button 1 */
                         font-family: Poppins;
-                        font-size: 14px;
+                        font-size: 10px;
                         font-style: normal;
                         font-weight: 300;
                         line-height: normal;
@@ -242,18 +275,50 @@
             }
             .right{
                 width: 200px;
-                height:300px;
+                height:400px;
                 flex-shrink: 0;
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
     
-                .rightFemale{
-                    margin-left: -50px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
+                .wingbody{
+                    position: relative;
+                    width: 200px;
+                    height:400px;
+    
+    
+                    .rightFemale{
+                        width: 100%;
+                        height: 100%;
+                        flex-shrink: 0;
+                        object-fit: contain ;
+                        z-index: 3;
+                        position: relative;
+                    }
+        
+                    .wing{
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        transition: transform 0.5s;
+                    }
+                     .Wing1 {
+                            top: 50px;
+                            left: 10px;
+                            z-index: 1;
+                            object-fit: contain;
+                            animation: flapWing1 2s infinite alternate ease-in-out;
+                        }
+                        .Wing2 {
+                            right: 10px;
+                            object-fit: contain;
+                            top: 50px;
+                            z-index: 1;
+                            transform: rotate(90deg);
+                            animation: flapWing2 2s infinite alternate ease-in-out;
+                        }
                 }
+               
             }
         }
     }

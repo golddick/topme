@@ -2,6 +2,8 @@ import './join.scss'
 import Male from '../../../assets/male.png'
 import Female from '../../../assets/Female.png'
 import {BiCaretRight} from 'react-icons/bi'
+import Wing from '../../../assets/TopWing.png'
+import Wing2 from '../../../assets/Topwing2.png'
 
 function Join() {
   return (
@@ -15,13 +17,18 @@ function Join() {
             <div className="btnWrapper">
                 <div className="signupBtn">
                     <span>become an angel</span>
-                        <BiCaretRight/>
+                        <BiCaretRight/> 
                 </div>
                 <button className='howBtn'>how it works </button>
             </div>
         </div>
         <div className="right">
-        <img src={Female} alt="" className='rightFemale' />
+        <div className="wingbody">
+          <img src={Wing} alt=""  className='wing Wing1' />
+          <img src={Wing2} alt=""  className='wing Wing2'/>
+          <img src={Female} alt=""  className='rightFemale'/>
+          </div>
+        {/* <img src={Female} alt="" className='rightFemale' /> */}
         </div>
         </div>
         </div>

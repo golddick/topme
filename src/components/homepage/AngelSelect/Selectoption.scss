@@ -32,7 +32,7 @@
                 text-align: start;
                 color: #000;
                 font-family: Poppins;
-                font-size: 40px;
+                font-size: 35px;
                 font-style: normal;
                 font-weight: bold;
                 line-height: normal;
@@ -61,7 +61,7 @@
 }
 
 
-@media (min-width: 992px) and (max-width: 1200px)  {
+@media (min-width: 800px) and (max-width: 1200px)  {
     .select{
         width: 100%;
         display: inline-flex;
@@ -126,7 +126,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 600px){
     .select{
         width: 100%;
         display: flex;

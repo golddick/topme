@@ -1,9 +1,6 @@
-
-
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
 import './impactpage.scss'
 import { NavLink } from 'react-router-dom';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -31,301 +28,7 @@ function Impactpage() {
   const [ImpactDetails, setImpactDetails] = useState([]);
   const [openCategory, setOpenCategory] = useState(false);
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
- 
-  //  const componentDidMount =() => {
-  //   // Simulating an API call to fetch impact details
-  //   setTimeout(() => {
-  //     const ImpactDetails = [
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-        
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-        
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },    {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },    {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },    {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },    {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://www.happierhuman.com/wp-content/uploads/2022/07/glass-half-full-type-persons-lessons-learned.jpg',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //       {
-  //         impactImg:
-  //           'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
-  //         impactName: 'Theresa Ubong',
-  //         impactBio:
-  //           'Life is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
-  //       },
-  //     ];
-
-  //     this.setState({ ImpactDetails, loading: false });
-  //   }, 2000);
-  // }
+  const popupRef = useRef(null);
  useEffect(() => {
     // Simulating an API call to fetch impact details
     setTimeout(() => {
@@ -632,7 +335,23 @@ function Impactpage() {
     //   },
     // };
 
-
+    // const handleDocumentClick = (event) => {
+    //   if (popupRef.current && !popupRef.current.contains(event.target)) {
+    //     // Clicked outside the popup, so close it
+    //     setOpenCategory(false);
+    //   }
+    // };
+  
+    // useEffect(() => {
+    //   // Add an event listener to the document when the component mounts
+    //   document.addEventListener('click', handleDocumentClick);
+  
+    //   // Clean up the event listener when the component unmounts
+    //   return () => {
+    //     document.removeEventListener('click', handleDocumentClick);
+    //   };
+    // }, []);  
+  
 
   return (
     <div className="Impactpage">
@@ -660,7 +379,7 @@ function Impactpage() {
    </div>
    {openCategory && <div className="openCat">
      
-    <div className="categoryContainer">
+    <div className="categoryContainer" >
 
     <h3>filter by</h3>
      <div className="categoryBox">
@@ -687,7 +406,7 @@ function Impactpage() {
    </div>}
 
    <div className="mobileFilterBar">
-    <FilterBar/>
+    <FilterBar />
    </div>
    {/* <div className="containerText">
      <h5>Angels Near You</h5>

@@ -27,7 +27,7 @@
 //   const [errors, setErrors] = useState({
 //     firstname: '',
 //     lastname: '',
-//     email: '',
+//     email: '', 
 //     password: '',
 //     confirmpassword: '',
 //     errorMessage: '',
@@ -406,7 +406,7 @@ function Signup() {
   };
 
   return (
-    <div className="signup">
+    <div className="signup-wrapper">
       <img src={BlackLogo} alt="" className="mobileLogo" />
       <div className="formContainer">
         <h1>

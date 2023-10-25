@@ -11,7 +11,7 @@ function NewsLetter({ handleClosePopup }) {
     // const handlePopupOpen = () => {
     //     setIsOpen(true);
     // };
-
+ 
   return (
     <div className="popupContent">
     <h3>SUBSCRIBE TO OUR NEWSLETTERS</h3>

@@ -84,7 +84,7 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
                 on the TOPME platform. While donations directly 
                 aid those in need, angels often face personal expenses. 
                 Your support fuels their dedication, covering costs and 
-                ensuring their focus remains on making a difference.</p>
+                ensuring their focus remains on making a difference.</p> 
             </div>
             <div className="supportRight">
             <div className="supLeft">

@@ -10,7 +10,7 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
   const svgColor = selectTabColor === 'red' ? 'white' : 'blue';
 
  
-  
+   
   return (
     <div className='select'>
     <div className="selectBody">

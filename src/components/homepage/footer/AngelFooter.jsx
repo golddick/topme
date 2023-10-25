@@ -1,5 +1,5 @@
 import './footerangel.scss'
-import Logo from '../../../assets/Logo.png'
+import WLogo from '../../../assets/Logo.png'
 import DarkLogo from '../../../assets/blacklogo.svg'
 import {BsYoutube , BsInstagram , BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
@@ -25,10 +25,10 @@ function AngelFooter() {
 
   return (
     <div className='AngelFooter'>
-      <div className="footerWrapper">
+      <div className="footerWrapper">  
         <div className="left">
-          <img src={Logo} alt="" />
-      <div className="fIcons">
+          <img src={WLogo} alt="" />
+      <div className="fIcons"> 
       <div className="footerIcons">
           <BsYoutube className='icons'/>
           </div>

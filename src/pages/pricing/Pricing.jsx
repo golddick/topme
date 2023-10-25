@@ -27,7 +27,7 @@ function Pricing() {
 
                 <h3>As we embark on this journey together, transparency and honesty are at the heart of our mission.</h3>
             </div>
-
+  
            
             <div className="pricingCard">
                 <div className="cardTop"></div>
@@ -68,9 +68,8 @@ function Pricing() {
                     donation, covering transaction expenses from payment processors like Paystack, with the remaining 
                     amount contributing to server maintenance for seamless operations.
                     </h5>
-            </div>
 
-            <div className="paystackLogo">
+                    <div className="paystackLogo">
             <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24" viewBox="0 0 146 24" fill="none">
                     <g clipPath="url(#clip0_1701_10458)">
                         <path d="M20.3633 0.0488281H0.708635C0.0485893 0.0488281 -0.513672 0.612087 -0.513672 1.2978V3.52637C-0.513672 4.21209 0.0485893 4.77536 0.708635 4.77536H20.3633C21.0478 4.77536 21.5856 4.21209 21.6101 3.52637V1.32229C21.6101 0.612089 21.0478 0.0488281 20.3633 0.0488281ZM20.3633 12.4162H0.708635C0.390835 12.4162 0.0730355 12.5386 -0.14698 12.7835C-0.391441 13.0284 -0.513672 13.3223 -0.513672 13.6651V15.8937C-0.513672 16.5794 0.0485893 17.1427 0.708635 17.1427H20.3633C21.0478 17.1427 21.5856 16.6039 21.6101 15.8937V13.6651C21.5856 12.9549 21.0478 12.4162 20.3633 12.4162ZM11.7827 18.5876H0.708635C0.390835 18.5876 0.0730355 18.71 -0.14698 18.9549C-0.366995 19.1998 -0.513672 19.4937 -0.513672 19.8366V22.0652C-0.513672 22.7509 0.0485893 23.3141 0.708635 23.3141H11.7583C12.4428 23.3141 12.9806 22.7509 12.9806 22.0896V19.8611C13.005 19.1264 12.4672 18.5876 11.7827 18.5876ZM21.6101 6.22025H0.708635C0.390835 6.22025 0.0730355 6.3427 -0.14698 6.5876C-0.366995 6.8325 -0.513672 7.12638 -0.513672 7.46923V9.69781C-0.513672 10.3835 0.0485893 10.9468 0.708635 10.9468H21.5856C22.2701 10.9468 22.8079 10.3835 22.8079 9.69781V7.46923C22.8324 6.80801 22.2701 6.24474 21.6101 6.22025Z" fill="#2DBDEF"/>
@@ -83,6 +82,9 @@ function Pricing() {
                     </defs>
                     </svg>
             </div> 
+            </div>
+
+       
             </div>
             <div className="mobilePaymentTrans" >
             <div className="topTrans">
@@ -123,8 +125,11 @@ function Pricing() {
           <div className="optionHeader">
             <h3>Unleash your inner Angel & make a difference today!</h3>
           </div>
+          <div className="option_tab">
+          <Optiontab/>
+          </div>
            </div>
-           <Optiontab/>
+       
         </div>
         
             <AngelFooter/>

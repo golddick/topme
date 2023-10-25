@@ -12,8 +12,8 @@ function HeaderLogin() {
         </div>
         <div className="right">
             <span className="txt">Not an Angel?</span>
-            <NavLink to='/signup' className='navLink' >
-            <button>Sign up</button>
+            <NavLink to='/signup' className='sign_up' >
+            <div >Sign up</div>
             </NavLink>
         </div>
     </div>

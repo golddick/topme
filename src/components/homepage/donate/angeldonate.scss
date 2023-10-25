@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 40px 243.5px 138px 243.5px;
+    padding: 138px 243.5px 150px 243.5px;
     background: #FFF;
     color: black;
 
@@ -41,10 +41,10 @@
             .typeContent{
               // position: relative;
               display: flex;
-              padding: 5px;
+              padding: 10px;
               height:40px;
               gap: 10px;
-              border-radius: 8px;
+              border-radius: 5px;
               align-items: center;
               background-color: #000;
               color: white;
@@ -87,8 +87,8 @@
         }
 
         .type:hover {
-          border-radius: 10px;
-            border: 3px solid #43C4B2;
+          border-radius: 5px;
+            border: 2px solid #43C4B2;
           }
           .type:hover span {
             color:#43C4B2;
@@ -108,8 +108,7 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 40px;
-    background: #FFF;
+    padding: 150px 40px 150px 40px;
     color: black;
 
     .donateInfo{
@@ -146,10 +145,10 @@
             .typeContent{
               // position: relative;
               display: flex;
-              padding: 5px;
+              padding: 10px;
               height:40px;
               gap: 10px;
-              border-radius: 8px;
+              border-radius: 5px;
               align-items: center;
               background-color: #000;
               color: white;
@@ -192,8 +191,8 @@
         }
 
         .type:hover {
-          border-radius: 10px;
-            border: 3px solid #43C4B2;
+          border-radius: 5px;
+            border: 2px solid #43C4B2;
           }
           .type:hover span {
             color:#43C4B2;

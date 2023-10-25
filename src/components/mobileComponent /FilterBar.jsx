@@ -1,7 +1,7 @@
 import React, {useState,  useEffect, useRef} from 'react'
 import './filterTab.scss'
 
-function FilterBar() {
+function FilterBar({closePopup}) {
   
     const [isFilterPopupOpen, setIsFilterPopupOpen] = useState(false);
     const filterPopupRef = useRef(null);
@@ -10,26 +10,28 @@ function FilterBar() {
       setIsFilterPopupOpen(!isFilterPopupOpen);
     };
 
-    const handleClosePopup = () => {
+  
+      const handleClosePopup = () => {
         setIsFilterPopupOpen(false);
       };
-  
-    // const closeFilterPopup = (e) => {
-    //   // Check if the click target is outside the popup
-    //   if (filterPopupRef.current && !filterPopupRef.current.contains(e.target)) {
-    //     setIsFilterPopupOpen(false);
-    //   }
-    // };
-  
-    // useEffect(() => {
-    //   // Add a click event listener to the entire document
-    //   document.addEventListener('click', closeFilterPopup);
-  
-    //   return () => {
-    //     // Remove the click event listener when the component unmounts
-    //     document.removeEventListener('click', closeFilterPopup);
-    //   };
-    // }, []);
+    
+      // Handle document click to close the filter popup if clicked outside
+      const handleDocumentClick = (event) => {
+        if (filterPopupRef.current && !filterPopupRef.current.contains(event.target)) {
+          // Clicked outside the popup, so close it
+          setIsFilterPopupOpen(false);
+        }
+      };
+    
+      useEffect(() => {
+        // Add an event listener to the document when the component mounts
+        document.addEventListener('click', handleDocumentClick);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          document.removeEventListener('click', handleDocumentClick);
+        };
+      }, []);
  
   return (
     <div className="mobileFilterBar">
@@ -40,9 +42,9 @@ function FilterBar() {
      </svg>
     </div>
     {isFilterPopupOpen && (
-       <div className="popupBody">
+       <div className="popupBody" ref={filterPopupRef} >
 
-         <div className="filterPopup"  ref={filterPopupRef}>
+         <div className="filterPopup" >
           <input type="text" placeholder='search for an angel' />
           {/* <div className="closeBtn" > 
           <button className="closePopupButton" onClick={handleClosePopup}>

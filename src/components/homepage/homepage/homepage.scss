@@ -13,9 +13,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 80px;
             flex: 2;
             width: 100%;
             height: 100%;
+        //    background-color: red;
            
 
             .wingbody{
@@ -25,8 +27,9 @@
 
 
                 .female{
+                    // background-color: gold;
                     width: 300px;
-                    height: 500px;
+                    height: 400px;
                     flex-shrink: 0;
                     object-fit: contain ;
                     z-index: 3;
@@ -40,7 +43,7 @@
                     transition: transform 0.5s;
                 }
                  .Wing1 {
-                        top: 60px;
+                        top: 30px;
                         left: 60px;
                         z-index: 1;
                         object-fit: contain;
@@ -49,7 +52,7 @@
                     .Wing2 {
                         right: 0;
                         object-fit: contain;
-                        top: 60px;
+                        top: 30px;
                         z-index: 1;
                         transform: rotate(90deg);
                         animation: flapWing2 2s infinite alternate ease-in-out;
@@ -153,7 +156,7 @@
 
             .wingbody{
                 width: 200px;
-                height: 300px;
+                height: 250px;
                 position: relative;
 
                 .male{
@@ -237,7 +240,7 @@
     }
   }
 
-  @media (min-width: 900px) and (max-width: 1200px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     .Homepage{
         top: 0;
         height: calc(100vh - 100px);
@@ -262,11 +265,12 @@
                     position: relative;
                     width: 250px;
                     height: 400px;
+                    margin-left: -50px;
     
     
                     .female{
                         width: 300px;
-                        height: 500px;
+                        height: 400px;
                         flex-shrink: 0;
                         object-fit: contain ;
                         z-index: 3;
@@ -280,7 +284,7 @@
                         transition: transform 0.5s;
                     }
                      .Wing1 {
-                            top: 60px;
+                            top: 30px;
                             left: 60px;
                             z-index: 1;
                             object-fit: contain;
@@ -289,7 +293,7 @@
                         .Wing2 {
                             right: 0;
                             object-fit: contain;
-                            top: 60px;
+                            top: 30px;
                             z-index: 1;
                             transform: rotate(90deg);
                             animation: flapWing2 2s infinite alternate ease-in-out;
@@ -305,6 +309,7 @@
                 width: 100%;
                 align-items: center;
                 display: flex;
+                margin-left: -50px;
                // height: 500px;
                 //margin-top: 200px;
     
@@ -351,7 +356,7 @@
                         display: flex;
                         color: #FFF;
                         font-family: Poppins;
-                        font-size: 40px;
+                        font-size: 30px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 100%;
@@ -391,6 +396,7 @@
                 height: 100%;
                 display: flex;
                 margin-top: 80px;
+                margin-left: -50px;
     
                 .wingbody{
                     width: 200px;
@@ -455,14 +461,16 @@
         height: calc(100vh - 100px);
         width: 100%;
         position: relative;
+        padding: 40px;
 
         .homecenter{
             display: flex;
             width: 250px;
             flex-direction: column;
             align-items: flex-start;
-            // justify-content: center;
-            padding-top: 40px;
+            height: auto;
+            //justify-content: center;
+        
             margin: 0;
             // background-color: brown;
             
@@ -475,9 +483,9 @@
                     font-family: Poppins;
                     font-size: 40px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: normal;
-                    letter-spacing: 0.01px;
+                    letter-spacing: 1px;
                 }
     
                 button{
@@ -496,14 +504,15 @@
 
         .homeleft{
             position: absolute;
-            bottom: 0;
+            bottom: 50px;
             right: 0;
             width: 150px;
-            height: 237px;
+            height: 200px;
+            padding: 0;
 
             .wingbody{
             width: 150px;
-            height: 237px; 
+            height: 200px; 
 
             .female{
                 width: 100%;
@@ -522,14 +531,14 @@
                 transition: transform 0.5s;
             }
              .Wing1 {
-                    top: 25px;
+                    top: 15px;
                     left: 25px;
                     z-index: 1;
                     object-fit: contain;
                     animation: flapWing1 1s infinite alternate ease-in-out;
                 }
                 .Wing2 {
-                    top: 25px;
+                    top: 15px;
                     right: 25px;
                     object-fit: contain;
                     z-index: 1;
@@ -543,14 +552,14 @@
         }
         .homeright{
             position: absolute;
-            bottom: 0;
+            bottom: 50px;
             left: 0;
             width: 150px;
-            height: 237px;
+            height: 200px;
 
             .wingbody{
             width: 150px;
-            height: 237px; 
+            height: 200px; 
 
             .male{
                 width: 100%;
@@ -567,14 +576,14 @@
                 transition: transform 0.5s;
             }
              .Wing1 {
-                    top: 25px;
+                    top: 15px;
                     left: 30px;
                     z-index: 1;
                     object-fit: contain;
                     animation: flapWing1 1s infinite alternate ease-in-out;
                 }
                 .Wing2 {
-                    top: 25px;
+                    top: 15px;
                     right: 30px;
                     object-fit: contain;
                     z-index: 1;

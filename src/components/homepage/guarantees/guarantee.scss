@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     background: #43C4B2;
-    padding: 40px 243.5px 138px 243.5px;
+    padding: 150px 243.5px 150px 243.5px;
     gap: 10px;
 
     .GuaranteeContent{
@@ -44,7 +44,7 @@
         h4{
             color: #FFF;
             font-family: Poppins;
-            font-size: 30px;
+            font-size: 25px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -54,7 +54,7 @@
         p{
             color: #FFF;
             font-family: Poppins;
-            font-size: 30px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 250;
             line-height: normal;
@@ -95,9 +95,99 @@
 
 
 @media (min-width: 800px) and (max-width: 1200px) {
-    // .container.testimonials_container {
-    //     width: 60%;
-    // } 
+    .Guarantee{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #43C4B2;
+        padding: 150px 40px 150px 40px;
+        gap: 10px;
+    
+        .GuaranteeContent{
+            //position: relative;
+            // z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            height: auto;
+            width: 100%;
+            background-color: transparent;
+    
+            .topLeft{
+                top: 0;
+                left: 0;
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                border-radius: 4px;
+                background: #FFF;
+    
+                span{
+                    color: #43C4B2;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+                }
+            }
+    
+            h4{
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.085px;
+            }
+    
+            p{
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 250;
+                line-height: normal;
+                letter-spacing: 0.085px;
+            }
+    
+            .Guaranteebuttom{
+                display: flex;
+                padding: 0px 24px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 10px;
+                align-self: stretch;
+    
+                span{
+                    color: #FFF;
+                    text-align: right;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+    
+            
+        }
+    
+        
+    }
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
@@ -149,7 +239,7 @@
             h4{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 34px;
+                font-size: 30px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 113.5%; /* 38.59px */

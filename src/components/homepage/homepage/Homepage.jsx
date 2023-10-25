@@ -14,11 +14,11 @@ function Homepage() {
     const intervalId = setInterval(() => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 10000);
-
+ 
     return () => {
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
-  }, []); 
+  }, []);   
  
 
   const isBackgroundWhite = colors[currentColorIndex] === '#ffffff';
@@ -43,7 +43,7 @@ function Homepage() {
           </NavLink>
          </div>
         </div>
-        <div className="homeright">
+        <div className="homeright"> 
         <div className="wingbody"> 
           <img src={Male} alt=""  className='male'/>
           <img src={Wing} alt=""  className='wing Wing1' />

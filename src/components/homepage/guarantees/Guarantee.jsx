@@ -17,7 +17,7 @@ function Guarantee() {
             <div className="Guaranteebuttom">
               <NavLink to='/guarantee' style={{textDecoration:'none'}}>
             <span>EXPLORE OUR GUARANTEE PAGE <BiChevronRight className='icon'/> </span>
-            </NavLink>
+            </NavLink> 
         </div>
       
         </div>
