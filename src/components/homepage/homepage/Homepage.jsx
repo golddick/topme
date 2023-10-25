@@ -14,7 +14,7 @@ function Homepage() {
     const intervalId = setInterval(() => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 10000);
- 
+  
     return () => {
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
