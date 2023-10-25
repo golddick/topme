@@ -13,7 +13,7 @@ function Guarantee() {
                 <span>OUR GUARANTEE</span>
             </div>
             <h4>Everything is guaranteed </h4>
-            <p>Our utmost priority is to ensure that generous contributions make the intended meaningful impact on the supported causes.</p>
+             <p>Our utmost priority is to ensure that generous contributions make the intended meaningful impact on the supported causes.</p>
             <div className="Guaranteebuttom">
               <NavLink to='/guarantee' style={{textDecoration:'none'}}>
             <span>EXPLORE OUR GUARANTEE PAGE <BiChevronRight className='icon'/> </span>

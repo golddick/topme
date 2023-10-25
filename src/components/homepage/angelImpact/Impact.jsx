@@ -27,7 +27,7 @@ export default class LazyLoad extends Component {
     showLessImpact: false,
     gridRows: 2, // Added gridRows state
   };
-
+ 
  
   componentDidMount() {
     // Simulating an API call to fetch impact details

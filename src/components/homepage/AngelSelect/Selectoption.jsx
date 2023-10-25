@@ -9,8 +9,8 @@ import Option from '../../Option/Option'
 function Selectoption(  { selectTabColor, innerBoxColor }) {
   const svgColor = selectTabColor === 'red' ? 'white' : 'blue';
 
- 
-   
+  
+    
   return (
     <div className='select'>
     <div className="selectBody">
@@ -19,6 +19,9 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
       {/* <h4>Sign up to become an Angel</h4> */}
       </div>
     <Option/>
+    <div className="sign_IN">
+      <button>Become an Angel</button>
+    </div>
     </div>
     </div>
   )

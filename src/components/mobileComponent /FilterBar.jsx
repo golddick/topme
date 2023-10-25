@@ -1,5 +1,6 @@
 import React, {useState,  useEffect, useRef} from 'react'
 import './filterTab.scss'
+import {AiOutlineClose} from 'react-icons/ai'
 
 function FilterBar({closePopup}) {
   
@@ -7,8 +8,8 @@ function FilterBar({closePopup}) {
     const filterPopupRef = useRef(null);
   
     const toggleFilterPopup = () => {
-      setIsFilterPopupOpen(!isFilterPopupOpen);
-    };
+      setIsFilterPopupOpen(true);
+    }; 
 
   
       const handleClosePopup = () => {
@@ -42,15 +43,13 @@ function FilterBar({closePopup}) {
      </svg>
     </div>
     {isFilterPopupOpen && (
-       <div className="popupBody" ref={filterPopupRef} >
+       <div className="popupBody" >
 
-         <div className="filterPopup" >
-          <input type="text" placeholder='search for an angel' />
-          {/* <div className="closeBtn" > 
-          <button className="closePopupButton" onClick={handleClosePopup}>
-            Close
-          </button>
-          </div> */}
+         <div className="filterPopup"  >
+        <div className="filter-Top">
+        <input type="text" placeholder='search for an angel'  />
+        <AiOutlineClose  onClick={handleClosePopup}/>
+        </div>
           
           <div className="filterBody">
           <div className="filterCities">
@@ -115,6 +114,7 @@ function FilterBar({closePopup}) {
           <button>search</button>
         </div>
        </div>
+      // <div className="popupBody" style={{background:'red'}}>ll</div>
       )}
    </div>
   )

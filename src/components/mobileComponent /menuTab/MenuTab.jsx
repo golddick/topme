@@ -25,7 +25,7 @@ const handleOutsideClick = (event) => {
     setExtraopen(false);
     setHowitworks(false);
   }
-};
+}; 
 
 useEffect(() => {
   if (extraopen || howitworks) {
