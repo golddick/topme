@@ -42,6 +42,27 @@ function Homepage() {
             <button>Become an Angel <AiFillCaretRight /> </button>
           </NavLink>
          </div>
+
+         <div className="mobileImg">
+
+         <div className="mobilehomeleft ">
+          <div className="wingbody">
+          <img src={Wing} alt=""  className='wing Wing1' />
+          <img src={Wing2} alt=""  className='wing Wing2'/>
+          <img src={Female} alt=""  className='female'/>
+          </div>
+        </div>
+
+        <div className="mobilehomeright"> 
+        <div className="wingbody"> 
+          <img src={Male} alt=""  className='male'/>
+          <img src={Wing} alt=""  className='wing Wing1' />
+          <img src={Wing2} alt=""  className='wing Wing2'/>
+          </div>
+        </div>
+
+         </div>
+
         </div>
         <div className="homeright"> 
         <div className="wingbody"> 
