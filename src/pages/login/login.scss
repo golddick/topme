@@ -175,7 +175,7 @@
                 
   
                   .error{
-                      border: 2px solid red;
+                      border: 1px solid red;
                    
                     }
   
@@ -326,15 +326,10 @@
     letter-spacing: 0em;
   }
   }
-// .loginwrapper{
-//   display: flex;
-//   background-color: red;
-// }
-
 
 /* MEDIA QUERIES (SMALL DEVICES) */
-@media screen and (max-width: 600px) {
-    .wrapper {
+@media (min-width: 300px) and (max-width: 600px) {
+    .loginwrapper {
       background: #FFFFFF;
       // margin-top: -100px;
        height: 100vh;
@@ -373,8 +368,8 @@
            img{
             display: flex;
             object-fit: contain;
-            width: 82.915px;
-            height: 202.37px;
+            width: 80px;
+            height: 200px;
             flex-shrink: 0;
            }
         }
@@ -407,9 +402,10 @@
             display: flex;
             flex-direction: column;
             background-color: #FFF;
+            position: relative;
             
             .formContainer{
-              background: #FFF;
+              background: #fff;
               //display: none;
               display: flex;
               flex-direction: column;
@@ -420,7 +416,7 @@
               justify-content: center;
               //align-items: center;
               margin: 0;
-              padding: 0;
+              padding: 20px;
                 h1{
                   color: #000;
                   text-align: center;
@@ -443,7 +439,7 @@
                     height: auto;
                     overflow: visible;
                     //margin: 10px;
-                    padding: 10px;
+                    //padding: 10px;
                     // position: relative;
 
                     .Auth{
@@ -466,9 +462,9 @@
                       .setLogin{
                         display: flex;
                         flex-direction: row;
-                        font-size: 12px;
+                        font-size: 11px;
                         font-family: Poppins;
-                        font-weight: 400;
+                        font-weight: 300;
                         gap: 40px;
                         margin: 0;
                         padding: 0;
@@ -477,24 +473,24 @@
                         .fmp {
                           color: #43C4B2;
                           font-family: Poppins;
-                          font-size: 12px;
+                          font-size: 11px;
                           font-style: normal;
-                          font-weight: 400;
+                          font-weight: 300;
                           line-height: normal;
                           letter-spacing: 0.048px;
                           }
                       }
                       .bottomText{
                         display: flex;
-                        margin-top: 100px;
-                        margin-bottom: -50px;
+                        // margin-top: 100px;
+                        // margin-bottom: -50px;
                 
-                        h3{
+                        h5{
                             color: #000;
                 
                             /* Overline/overline 1 */
                             font-family: Poppins;
-                            font-size: 10px;
+                            font-size: 12px;
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
@@ -521,6 +517,8 @@
                         line-height: normal;
                         letter-spacing: 0.175px;
                         text-transform: uppercase;
+                        position: absolute;
+                        bottom: 0;
                       }
 
                       .loginIcons{

@@ -1,10 +1,8 @@
 import './Selectoption.scss'
-import Frame from '../../../assets/Frame.svg'
-import Frame2 from '../../../assets/Frame.png'
 import {  NavLink } from 'react-router-dom';
 import Option from '../../Option/Option'
 
-
+ 
 
 function Selectoption(  { selectTabColor, innerBoxColor }) {
   const svgColor = selectTabColor === 'red' ? 'white' : 'blue';

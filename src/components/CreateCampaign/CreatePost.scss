@@ -366,13 +366,13 @@
 }
 
 
-@media (min-width: 992px) and (max-width: 1200px)  {
+@media (min-width: 800px) and (max-width: 1200px)  {
   
   }
   
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     //  .container.testimonials_container {
     //      width: var(--container-width-sm);
     //  }

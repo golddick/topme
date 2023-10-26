@@ -21,7 +21,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     .landing{
 
         .landingbody{

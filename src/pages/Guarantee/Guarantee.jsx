@@ -40,7 +40,8 @@ function Guarantee() {
                      reach the intended beneficiaries promptly and efficiently.</span>
             </div>
             </div>
-            <div className="issue">
+           <div className="issuesTab">
+           <div className="issue">
                 <h3>GOT AN ISSUE</h3>
                 <h6>Here’s how it works:</h6>
 
@@ -74,6 +75,7 @@ function Guarantee() {
                 
                 </div> 
             </div>
+           </div>
 
             <div className="concern">
                 <h4>HAVE ANY CONCERNS?</h4>
@@ -83,7 +85,7 @@ function Guarantee() {
                 <path d="M14.93 5.92969L21 11.9997L14.93 18.0697M4 11.9997H20.83" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 </div>
-            </div>
+            </div> 
              
         </div>
         <Footer/>

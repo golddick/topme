@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #FFF;
+    //background-color: gold;
     // padding-bottom: 50px;
    
     .option{
@@ -13,14 +13,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         //justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         width: 100%;
         height: auto;
         
         
         
         .selectTab{
-            width:300px;
+            width:290px;
             height: 100%;
             display: flex;
             align-items: center;
