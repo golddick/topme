@@ -19,7 +19,7 @@ function Homepage() {
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
   }, []);   
- 
+  
 
   const isBackgroundWhite = colors[currentColorIndex] === '#ffffff';
 
