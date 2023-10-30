@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #a32121;
    // height: 100%;
    // background-color: yellow;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
    
 
     ._optionBox{
-        background-color: #ffffff;
+        background-color: #7dc019;
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
             .selectTab{
                // width:290px;
                width: 100%;
-               background-color: #FFF;
+               background-color: #680f97;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -451,243 +451,243 @@
 
 //   }
   
-  /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media  (max-width: 640px){
+//   /* MEDIA QUERIES (SMALL DEVICES)*/
+//   @media  (max-width: 640px){
 
-    .optionWrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        //background-color: #cb3636;
-        position: relative;
-         //padding-bottom: 100px;
+//     .optionWrapper{
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         width: 100%;
+//         height: auto;
+//         //background-color: #cb3636;
+//         position: relative;
+//          //padding-bottom: 100px;
 
-         ._optionBox{
-            padding-top: 50px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+//          ._optionBox{
+//             padding-top: 50px;
+//             width: 90%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
 
-            .option{
-                // display: grid;
-                // grid-template-columns: 1fr 1fr 1fr;
-                //justify-content: space-between;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                width: 100%;
-                height: auto;
-                //background-color: red;
+//             .option{
+//                 // display: grid;
+//                 // grid-template-columns: 1fr 1fr 1fr;
+//                 //justify-content: space-between;
+//                 padding: 0;
+//                 margin: 0;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 gap: 20px;
+//                 width: 100%;
+//                 height: auto;
+//                 //background-color: red;
                 
                 
-                .selectTab{
-                    width: 90%;
-                    height: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    cursor: pointer;
-                    gap: 10px;
-                    //background-color: red;
+//                 .selectTab{
+//                     width: 90%;
+//                     height: auto;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     flex-direction: column;
+//                     cursor: pointer;
+//                     gap: 10px;
+//                     //background-color: red;
                    
                 
                 
-                    h3{
-                        color: #000;
-                        text-align: center;
-                        font-family: Poppins;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                        letter-spacing: 0.014px;
-                    }
-                    span{
-                        display: flex;
-                        width: 44px;
-                        height: 44px;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        flex-shrink: 0;
-                        border-radius: 100px;
-                        background: #43C4B2;
-                        color: #FFF;
-                        text-align: center;
-                        font-family: Poppins;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 800;
-                        line-height: normal;
-                        letter-spacing: 0.03px;
+//                     h3{
+//                         color: #000;
+//                         text-align: center;
+//                         font-family: Poppins;
+//                         font-size: 14px;
+//                         font-style: normal;
+//                         font-weight: 500;
+//                         line-height: normal;
+//                         letter-spacing: 0.014px;
+//                     }
+//                     span{
+//                         display: flex;
+//                         width: 44px;
+//                         height: 44px;
+//                         flex-direction: column;
+//                         justify-content: center;
+//                         align-items: center;
+//                         gap: 10px;
+//                         flex-shrink: 0;
+//                         border-radius: 100px;
+//                         background: #43C4B2;
+//                         color: #FFF;
+//                         text-align: center;
+//                         font-family: Poppins;
+//                         font-size: 20px;
+//                         font-style: normal;
+//                         font-weight: 800;
+//                         line-height: normal;
+//                         letter-spacing: 0.03px;
                        
-                    }
-                    .innerbox,.wing-innerbox{
-                        background-color: #43C4B2;
-                        width: 95%;
-                        height: 130px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        position: relative;
-                        border-radius: 8px 8px 0 0;
+//                     }
+//                     .innerbox,.wing-innerbox{
+//                         background-color: #43C4B2;
+//                         width: 95%;
+//                         height: 130px;
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         position: relative;
+//                         border-radius: 8px 8px 0 0;
         
-                        .svgWings{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                           // background-color: gray;
-                            height: 100%;
-                            width: 100%;
-                            margin-top: -50px;
-                            gap: 0;
+//                         .svgWings{
+//                             display: flex;
+//                             align-items: center;
+//                             justify-content: center;
+//                            // background-color: gray;
+//                             height: 100%;
+//                             width: 100%;
+//                             margin-top: -50px;
+//                             gap: 0;
         
-                            .svgImgleft{ 
-                              height: 100%;
-                              width: 100%;
-                                //background-color: gray; 
-                                .svgLeft{
-                                    height: 100%;
-                                    width: 100%;
-                                    object-fit: contain;
+//                             .svgImgleft{ 
+//                               height: 100%;
+//                               width: 100%;
+//                                 //background-color: gray; 
+//                                 .svgLeft{
+//                                     height: 100%;
+//                                     width: 100%;
+//                                     object-fit: contain;
                               
-                                }
-                            }
-                            .svgImgright{
-                                height: 100%;
-                                width: 100%;
-                                .svgRight{
-                                    height: 100%;
-                                    width: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-                        }
+//                                 }
+//                             }
+//                             .svgImgright{
+//                                 height: 100%;
+//                                 width: 100%;
+//                                 .svgRight{
+//                                     height: 100%;
+//                                     width: 100%;
+//                                     object-fit: contain;
+//                                 }
+//                             }
+//                         }
                     
-                       .humanIcon{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        //background-color: bisque;
-                        height: 100%;
-                        width: 100%;
-                        gap: 5px;
+//                        .humanIcon{
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: center;
+//                         //background-color: bisque;
+//                         height: 100%;
+//                         width: 100%;
+//                         gap: 5px;
                         
                         
         
-                        img{
-                            width: 100%;
-                           height: 100%;
-                           object-fit: contain;
-                          margin-bottom: 20px;
-                        }
-                       }
+//                         img{
+//                             width: 100%;
+//                            height: 100%;
+//                            object-fit: contain;
+//                           margin-bottom: 20px;
+//                         }
+//                        }
                 
                      
                 
-                        .topcorners{
-                            position: absolute;
-                            top: 0;
-                            display: flex;
-                            width: 102%;
-                            height: 20px;
-                            background-color: transparent;
-                            justify-content: space-between;
+//                         .topcorners{
+//                             position: absolute;
+//                             top: 0;
+//                             display: flex;
+//                             width: 102%;
+//                             height: 20px;
+//                             background-color: transparent;
+//                             justify-content: space-between;
         
-                            .cornerLeft, .cornerRight{
-                                height: 20px;
-                                width: 20px;
-                                border-radius: 100%;
-                                background-color: #ffffff;
-                            }
-                        }
+//                             .cornerLeft, .cornerRight{
+//                                 height: 20px;
+//                                 width: 20px;
+//                                 border-radius: 100%;
+//                                 background-color: #ffffff;
+//                             }
+//                         }
                  
-                    }
+//                     }
         
                     
-                    .wing-innerbox{
-                        width: 90%;
-                    }
+//                     .wing-innerbox{
+//                         width: 90%;
+//                     }
         
             
-                    .downtext{
-                        display: flex;
-                        align-items: flex-start;
-                        flex-direction: column; 
-                        width: 90%;
-                        height: auto;
+//                     .downtext{
+//                         display: flex;
+//                         align-items: flex-start;
+//                         flex-direction: column; 
+//                         width: 90%;
+//                         height: auto;
                         
-                        .textIcon{
-                            // font-size: 20px !important;
-                            color: #43C4B2;
-                            font-size: 20px;
-                            vertical-align: middle;
+//                         .textIcon{
+//                             // font-size: 20px !important;
+//                             color: #43C4B2;
+//                             font-size: 20px;
+//                             vertical-align: middle;
         
-                        }
-                        p{
-                            display: grid;
-                            grid-template-columns: 0.4fr 5fr;
-                            align-items: center;
-                            justify-content: center;
-                            width: auto;
-                            gap: 10px;
-                            color: #808080;
-                            font-family: Poppins;
-                            font-size: 10px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-                            letter-spacing: 0.024px;
+//                         }
+//                         p{
+//                             display: grid;
+//                             grid-template-columns: 0.4fr 5fr;
+//                             align-items: center;
+//                             justify-content: center;
+//                             width: auto;
+//                             gap: 10px;
+//                             color: #808080;
+//                             font-family: Poppins;
+//                             font-size: 10px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: normal;
+//                             letter-spacing: 0.024px;
                           
-                        }
-                    }
-                }  
-                }
+//                         }
+//                     }
+//                 }  
+//                 }
         
             
-                .logBtn{
-                    // position: absolute;
-                    // bottom: 0;
-                    left: 60px;
-                    align-self: center;
-                    display: flex;
-                    width: 250px;
-                    padding: 16px 44px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 16px;
-                    border-radius: 100px;
-                    background: #43C4B2;
-                    border: none;
-                    color: #FFF;
-                    font-family: Poppins;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    letter-spacing: 0.175px;
-                    text-transform: uppercase;
-                }
+//                 .logBtn{
+//                     // position: absolute;
+//                     // bottom: 0;
+//                     left: 60px;
+//                     align-self: center;
+//                     display: flex;
+//                     width: 250px;
+//                     padding: 16px 44px;
+//                     justify-content: center;
+//                     align-items: center;
+//                     gap: 16px;
+//                     border-radius: 100px;
+//                     background: #43C4B2;
+//                     border: none;
+//                     color: #FFF;
+//                     font-family: Poppins;
+//                     font-size: 14px;
+//                     font-style: normal;
+//                     font-weight: 500;
+//                     line-height: normal;
+//                     letter-spacing: 0.175px;
+//                     text-transform: uppercase;
+//                 }
 
-         }
+//          }
        
        
     
-            .navlink{
-                text-decoration: none;
-            }
+//             .navlink{
+//                 text-decoration: none;
+//             }
     
-    }
-  }
+//     }
+//   }
 
 
