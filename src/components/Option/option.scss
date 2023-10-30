@@ -48,7 +48,7 @@
                 flex-direction: column;
                 cursor: pointer;
                 gap: 10px;
-                overflow: hidden;
+                overflow: visible;
     
             
                 h3{
@@ -81,26 +81,34 @@
                     align-items: center;
                     position: relative;
                     border-radius: 8px 8px 0 0;
+                    overflow: visible;
     
                     .svgWings{
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         //background-color: bisque;
+                        overflow: visible;
                         height: 100%;
                         width: 100%;
-                        margin-top: -60px;
-                        gap: 5px;
+                        margin-top: -20%;
+                        gap: 10px;
     
                         .svgImgleft{ 
-                          
-                           // background-color: gray; 
+                            overflow: visible;
+                            width: 130%;
+                            //background-color: gray; 
                             .svgLeft{
                                 width: 100%;
+                                object-fit: contain;
                           
                             }
                         }
                         .svgImgright{
+                            overflow: visible;
+                            //background-color: brown;
+                            width: 130%;
+                            //margin-right: -40px;
                             .svgRight{
                                 width: 100%;
                                 object-fit: contain;
@@ -156,10 +164,10 @@
                     align-items: flex-start;
                     flex-direction: column; 
                     width: 100%;
-                    height: 250px;
+                    height: 160px;
                     overflow: scroll;
                     // // margin: 20px;
-                    // background-color: #FFF;
+                    // background-color: red;
                     //flex-wrap: wrap;
                     
                     .textIcon{
@@ -192,7 +200,7 @@
         
             .logBtn{
                 display: flex;
-                width: 250px;
+                width: 260px;
                 padding: 16px 44px;
                 justify-content: center;
                 align-items: center;
@@ -220,7 +228,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .optionWrapper{
         display: flex;
         align-items: center;
