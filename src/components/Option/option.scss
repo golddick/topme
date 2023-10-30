@@ -226,9 +226,241 @@
         }
 
 }
+@media   (max-width: 1200px) {
+    .optionWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+       // height: 100%;
+        background-color: #FFF;
+        // padding-bottom: 50px;
+       
+        ._optionBox{
+            width: 100%;
+            //height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            //background-color: red;
 
 
-@media (max-width: 1200px) {
+            .option{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                //justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                width: 80%;
+                //height: 100%;
+                //background-color: chartreuse;
+                overflow: hidden;
+                margin: auto;
+                
+                
+                
+                .selectTab{
+                   // width:290px;
+
+                   width: 100%;
+                    height: auto;
+                  // background-color: rgb(189, 30, 210);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                    gap: 10px;
+        
+                
+                    h3{
+                        color: #000;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.014px;
+    
+                        // white-space: nowrap;     
+                        // overflow: hidden;    
+                        // text-overflow: ellipsis; 
+                        // width: 100%;
+                    }
+                    span{
+                        color: #43C4B2;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -0.32px;
+                       
+                    }
+                    .innerbox,.wing-innerbox{
+                        background-color: #43C4B2;
+                        width: 100%;
+                        height: 130px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        border-radius: 8px 8px 0 0;
+        
+                        .svgWings{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            //background-color: bisque;
+                            height: 100%;
+                            width: 100%;
+                            margin-top: -20%;
+                            gap: 5px;
+        
+                            .svgImgleft{ 
+                                height: 100%;
+                                width: 100%;
+                                  //background-color: gray; 
+                                  .svgLeft{
+                                      height: 100%;
+                                      width: 100%;
+                                      object-fit: contain;
+                                
+                                  }
+                              }
+                            .svgImgright{
+                                height: 100%;
+                                width: 100%;
+                                .svgRight{
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    
+                       .humanIcon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        //background-color: bisque;
+                        height: 100%;
+                        width: 100%;
+                        gap: 5px;
+                        
+                        
+        
+                        img{
+                            width: 100%;
+                           height: 100%;
+                           object-fit: contain;
+                          margin-bottom: 20px;
+                        }
+                       }
+                
+                     
+                
+                        .topcorners{
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            width: 102%;
+                            height: 20px;
+                            background-color: transparent;
+                            justify-content: space-between;
+        
+                            .cornerLeft, .cornerRight{
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 100%;
+                                background-color: #ffffff;
+                            }
+                        }
+                 
+                    }
+        
+    
+            
+                    .downtext{
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column; 
+                        width: 100%;
+                        height: 250px;
+                        //background-color: gold;
+                        //background: olive;
+                        //height: 250px;
+                        //overflow: scroll;
+                        // // margin: 20px;
+                        // background-color: #FFF;
+                        //flex-wrap: wrap;
+                        
+                        .textIcon{
+                            // font-size: 20px !important;
+                            color: #43C4B2;
+                            font-size: 20px;
+                            vertical-align: middle;
+        
+                        }
+                        p{
+                            display: grid;
+                            grid-template-columns: 0.4fr 5fr;
+                            align-items: center;
+                            justify-content: center;
+                            width: auto;
+                            gap: 10px;
+                            color: #808080;
+                            font-family: Poppins;
+                            font-size: 11px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.024px;
+                          
+                        }
+                    }
+                }  
+                }
+            
+                .logBtn{
+                    display: flex;
+                    width: 150px;
+                    padding: 10px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 100px;
+                    background: #43C4B2;
+                    border: none;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                    white-space: nowrap;     
+                    overflow: hidden;    
+                    text-overflow: ellipsis;
+                    margin-top: -20px;
+                }
+        }
+
+      
+    
+            .navlink{
+                text-decoration: none;
+            }
+    
+    }
+}
+@media (max-width: 1000px) {
     .optionWrapper{
         display: flex;
         align-items: center;
@@ -324,9 +556,9 @@
                             margin-top: -40%;
                             gap: 5px;
 
-                            @media screen and (max-width: 1200px) {
-                                //margin-top: -20px;
-                            }
+                            // @media screen and (max-width: 1200px) {
+                            //     margin-top: -20px;
+                            // }
         
                             .svgImgleft{ 
                                 height: 100%;
