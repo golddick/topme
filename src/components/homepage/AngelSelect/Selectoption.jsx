@@ -17,7 +17,7 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
   
       </div>
    
-      <Option/> 
+      {/* <Option/>  */}
     </div>
     {/* <Option/> */}
     </div>
