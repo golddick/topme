@@ -242,7 +242,7 @@
                 gap: 30px;
                 width: 100%;
                 height: 100%;
-                background-color: chartreuse;
+                //background-color: chartreuse;
                 overflow: hidden;
                 
                 
@@ -251,7 +251,7 @@
                    // width:290px;
                    width: 100%;
                     height: 100%;
-                    background-color: chocolate;
+                    //sbackground-color: chocolate;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -303,7 +303,7 @@
                             //background-color: bisque;
                             height: 100%;
                             width: 100%;
-                            margin-top: -90px;
+                            margin-bottom: 30px;
                             gap: 5px;
         
                             .svgImgleft{ 
@@ -483,7 +483,7 @@
                     flex-direction: column;
                     cursor: pointer;
                     gap: 10px;
-                    background-color: red;
+                    //background-color: red;
                    
                 
                 
@@ -532,22 +532,28 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            //background-color: bisque;
+                           // background-color: gray;
                             height: 100%;
                             width: 100%;
-                            margin-top: -40px;
-                            gap: 5px;
+                            margin-top: -20px;
+                            gap: 0;
         
                             .svgImgleft{ 
-                              
-                               // background-color: gray; 
+                              height: 100%;
+                              width: 100%;
+                                //background-color: gray; 
                                 .svgLeft{
+                                    height: 100%;
                                     width: 100%;
+                                    object-fit: contain;
                               
                                 }
                             }
                             .svgImgright{
+                                height: 100%;
+                                width: 100%;
                                 .svgRight{
+                                    height: 100%;
                                     width: 100%;
                                     object-fit: contain;
                                 }
