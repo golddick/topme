@@ -573,7 +573,7 @@ function Impactpage() {
 
 {/* <div className="optionCard">
 <div className="optionBox"> */}
-   <Option/>
+   {/* <Option/> */}
    {/* </div>
 </div> */}
 
