@@ -530,7 +530,7 @@
                     width: 100%;
                     height: 100%;
                     gap: 20px;
-                    background-color: blueviolet;
+                    //background-color: blueviolet;
                     // justify-content: space-between;
             
                     .footerLinks{
@@ -566,13 +566,13 @@
                 }
             
                 .right{
-                    display: none;
-                    padding: 24px;
+                    display: flex;
+                    padding: 10px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 12px;
                     width: 100%;
-                    height: 100%;
+                    height: 200px;
                     border-radius: 16px;
                     background: #FFF;
                     color: #000;
