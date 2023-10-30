@@ -20,7 +20,7 @@ function LandingPage() {
     <Homepage/>
     <Selectoption/>
     <Optiontab/>
-    {/* <Impact/> */}
+    <Impact/>
     <AngelDonate/>
      <Guarantee/>
     <Join/>
