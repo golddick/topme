@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    //height: 100%;
     flex-wrap: wrap;
     //background-color: gold;
     // padding-bottom: 50px;
@@ -15,7 +15,7 @@
         padding-top: 20px;
         padding-bottom: 50px;
         width: 100%;
-        height: 100%;
+        //height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,7 +29,7 @@
             align-items: center;
             gap: 30px;
             width: 100%;
-            height: 100%;
+            //height: 100%;
             overflow: hidden;
             //padding-top: 50px;
             //background-color: red;
@@ -226,13 +226,13 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 100%;
+       // height: 100%;
         background-color: #FFF;
         // padding-bottom: 50px;
        
         ._optionBox{
             width: 100%;
-            height: 100%;
+            //height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -248,7 +248,7 @@
                 align-items: center;
                 gap: 30px;
                 width: 100%;
-                height: 100%;
+                //height: 100%;
                 background-color: chartreuse;
                 overflow: hidden;
                 margin: auto;
@@ -260,7 +260,7 @@
 
                    width: 100%;
                     height: auto;
-                   // background-color: chocolate;
+                   background-color: rgb(189, 30, 210);
                     display: flex;
                     align-items: center;
                     justify-content: center;
