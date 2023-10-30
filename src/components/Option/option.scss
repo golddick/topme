@@ -27,7 +27,7 @@
             //justify-content: space-between;
             align-items: center;
             gap: 30px;
-            width: 70%;
+            width: 100%;
             height: 100%;
             overflow: hidden;
             //padding-top: 50px;
@@ -225,12 +225,13 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        //height: auto;
+        height: 100%;
         background-color: #FFF;
         // padding-bottom: 50px;
        
         ._optionBox{
             width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -247,7 +248,7 @@
                 gap: 30px;
                 width: 100%;
                 height: 100%;
-                //background-color: chartreuse;
+                background-color: chartreuse;
                 overflow: hidden;
                 margin: auto;
                 
