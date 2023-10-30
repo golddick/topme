@@ -16,11 +16,12 @@ function Selectoption(  { selectTabColor, innerBoxColor }) {
       <h2>Unleash your inner Angel and make a  difference today!</h2>
   
       </div>
-    <Option/>
-    <div className="sign_IN">
+   
+    {/* <div className="sign_IN">
       <button>Become an Angel</button>
+    </div> */}
     </div>
-    </div>
+    <Option/>
     </div>
   )
 }

@@ -503,7 +503,7 @@ function Impactpage() {
            spaceBetween: 20,
            grid: {
              rows: 4,
-             fill: "row",
+             fill: "row", 
            },
          },
          600: {
@@ -571,11 +571,11 @@ function Impactpage() {
 
 
 
-<div className="optionCard">
-<div className="optionBox">
+{/* <div className="optionCard">
+<div className="optionBox"> */}
    <Option/>
-   </div>
-</div>
+   {/* </div>
+</div> */}
 
   
    <Angelfooter/>

@@ -34,7 +34,7 @@ function Homepage() {
     };
   }, []);   
    
-
+ 
   const isBackgroundWhite = colors[currentColorIndex] === '#ffffff';
 
   return (
