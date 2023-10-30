@@ -49,16 +49,16 @@ function Atable() {
   return (
     <table className="table table-striped">
       <thead>
-        <tr>
+        <tr> 
           <th scope="col"></th>
-          <th scope="col">title</th>
-          <th scope="col">status</th>
-          <th scope="col">date created</th>
-          <th scope="col">due date</th>
-          <th scope="col">location</th>
-          <th scope="col">donation expected</th>
-          <th scope="col">donation received</th>
-          <th scope="col">receiving organisation</th>
+          <th scope="col" className='TableHeaderText'>title</th>
+          <th scope="col" className='TableHeaderText'>status</th>
+          <th scope="col" className='TableHeaderText'>date created</th>
+          <th scope="col" className='TableHeaderText'>due date</th>
+          <th scope="col" className='TableHeaderText'>location</th>
+          <th scope="col" className='TableHeaderText'>donation expected</th>
+          <th scope="col" className='TableHeaderText'>donation received</th>
+          <th scope="col" className='TableHeaderText'>receiving organisation</th>
           <th scope="col"></th> 
         </tr>
       </thead>

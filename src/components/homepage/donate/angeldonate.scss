@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: auto;
-    padding: 138px 243.5px 150px 243.5px;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   // padding: 138px 243.5px 150px 243.5px;
     background: #FFF;
     color: black;
 
@@ -13,7 +15,9 @@
         flex-direction: column;
         align-items: end;
         gap: 20px;
-        width: 100%;
+        width: 70%;
+        margin: auto;
+       // background-color: brown;
        
 
         h3{
@@ -88,7 +92,7 @@
 
         .type:hover {
           border-radius: 5px;
-            border: 2px solid #43C4B2;
+            border: 1px solid #43C4B2;
           }
           .type:hover span {
             color:#43C4B2;
@@ -102,13 +106,16 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (max-width: 1000px) {
   .AngelDonate{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: auto;
-    padding: 150px 40px 150px 40px;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   // padding: 138px 243.5px 150px 243.5px;
+    background: #FFF;
     color: black;
 
     .donateInfo{
@@ -117,7 +124,9 @@
         flex-direction: column;
         align-items: end;
         gap: 20px;
-        width: 100%;
+        width: 70%;
+        margin: auto;
+       // background-color: brown;
        
 
         h3{
@@ -192,13 +201,14 @@
 
         .type:hover {
           border-radius: 5px;
-            border: 2px solid #43C4B2;
+            border: 1px solid #43C4B2;
           }
           .type:hover span {
             color:#43C4B2;
           }
           
           .type:hover p {
+            display: flex;
             color: #43C4B2
           }
     }
@@ -206,7 +216,7 @@
 }
 
 /* MEDIA QUERIES (SMALL DEVICES)*/
-@media (min-width: 300px) and (max-width: 600px) {
+@media (max-width: 600px) {
 
   .AngelDonate{
     display: inline-flex;

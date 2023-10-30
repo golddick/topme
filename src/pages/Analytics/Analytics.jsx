@@ -8,7 +8,7 @@ import Atable from '../../components/analytic-Table/Atable'
 
 
 
-function Analytics() {
+function Analytics() { 
   return (
 
     <div className='Analytics_profile'> 

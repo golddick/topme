@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     background: #43C4B2;
-    padding: 150px 243.5px 150px 243.5px;
+    padding: 150px 0px 150px 0px;
     gap: 10px;
 
     .GuaranteeContent{
@@ -16,7 +16,7 @@
         align-items: flex-start;
         gap: 12px;
         height: auto;
-        width: 100%;
+        width: 70%;
         background-color: transparent;
 
         .topLeft{
@@ -94,7 +94,7 @@
 
 
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media  (max-width: 1000px) {
     .Guarantee{
         width: 100%;
         height: auto;
@@ -102,7 +102,7 @@
         align-items: center;
         justify-content: center;
         background: #43C4B2;
-        padding: 150px 40px 150px 40px;
+        padding: 150px 0px 150px 0px;
         gap: 10px;
     
         .GuaranteeContent{
@@ -113,7 +113,7 @@
             align-items: flex-start;
             gap: 12px;
             height: auto;
-            width: 100%;
+            width: 70%;
             background-color: transparent;
     
             .topLeft{
@@ -188,10 +188,11 @@
     
         
     }
+    
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
+  @media (max-width: 600px) {
  
     .Guarantee{
         display: flex;

@@ -455,7 +455,7 @@ function Impactpage() {
        </div>
 
 
-    
+     
      </div>
 
      
@@ -509,6 +509,10 @@ function Impactpage() {
          600: {
            slidesPerView: 2,
            spaceBetween: 20,
+           grid: {
+            rows: 4,
+            fill: "row",
+          },
          },
          1000: {
            slidesPerView: 4,
@@ -567,9 +571,13 @@ function Impactpage() {
 
 
 
-   <div className="optionBox">
+<div className="optionCard">
+<div className="optionBox">
    <Option/>
    </div>
+</div>
+
+  
    <Angelfooter/>
    </div>
 

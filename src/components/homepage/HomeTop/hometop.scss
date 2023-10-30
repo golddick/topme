@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        max-width: 1500px;
         top: 0;
         justify-content: space-between;
         width: 100%;
@@ -131,7 +132,10 @@
         display: flex;
         padding: 0px 48px;
         align-items: center;
-        gap: 24px;
+        width: 600px;
+        justify-content: space-between;
+        //gap: 24px;
+       // background-color: blueviolet;
 
         .Search{
             display: flex;
@@ -142,8 +146,9 @@
             color: #FFF;
             gap: 10px;
             font-size: 13px;
-            margin-top: 2px;
-            margin-right: 50px;
+            // margin-top: 2px;
+            // margin-right: 50px;
+            
             // padding: 5px;
 
             span{
@@ -161,35 +166,41 @@
             }
         }
 
-        span{
+        .authBTN{
             display: flex;
-            padding: 12px 24px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-            color: #FFF;
-            font-family: Poppins;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.048px;
-            text-transform: uppercase;
-            cursor: pointer;
-            
+            gap: 30px;
+           // background-color: coral;
+            span{
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+    
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.048px;
+                text-transform: uppercase;
+                cursor: pointer;
+                
+            }
+    
+            .sign-up{
+                border-radius: 100px;
+                background: #43C4B2;
+                width: 150px;
+                height: 45px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+            }
         }
-
-        .sign-up{
-            border-radius: 100px;
-            background: #43C4B2;
-            width: 164px;
-            height: 45px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          
-        }
+    
     }
 
     .navlink{
@@ -216,14 +227,15 @@
 
 
 
- @media (min-width: 800px) and (max-width: 1200px) {
+ @media  (max-width: 1000px) {
     .tophome{
 
 
         .largeTopbar{
-            display: grid;
-            grid-template-columns: 1fr 0.2fr 1fr;
+            display: flex;
+            flex-direction: row;
             align-items: center;
+            max-width: 1200px;
             top: 0;
             justify-content: space-between;
             width: 100%;
@@ -231,15 +243,16 @@
             position: fixed;
             z-index: 100;
             background-color: #000;
+            overflow: scroll;
     
         .topLeft{
-            flex: 1;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: space-between;
+             width: 400px;
              height: 60px;
             padding: 12px 24px;
+            gap: 10px;
+             //justify-content: space-between;
+            display:flex;
+            align-items: center;
     
             span{
             display: flex;
@@ -255,26 +268,31 @@
             text-transform: uppercase;
             cursor: pointer;
              gap: 20px;
+
+             white-space: nowrap;     
+             overflow: hidden;    
+             text-overflow: ellipsis; 
+            //  /* Optionally, you can set a fixed width or max-width to the container */
+            //  max-width: 200px; 
             }
-            .extraPopup,.howPopUp{
-                z-index: 1000; 
-                display: flex;
-                flex-direction: column;
-                padding: 10px ;
-                align-items: self-start;
-                // justify-content: center;
-                position: absolute;
-                top: 100px;
-                width: 150px;
-                height: auto;
-                background-color: #000;
-                gap: 10px;
-                margin-left: 100px;
-       
+    .extraPopup, .howPopUp{
+        z-index: 1000; 
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        width: 200px;
+        height: auto;
+        background-color: black;
+        gap: 10px;
+       margin-left: 50px;
     
     
             .contact{
-                width: 100%;
+                width: 180px;
                 height: 40px;
                 display: flex;
                 align-items: center;
@@ -285,7 +303,7 @@
                .span{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 10px;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 200;
                 line-height: normal;
@@ -293,9 +311,8 @@
                 text-transform: uppercase;
                }
                 img{
-                    width: 25px;
+                    width: 50px;
                     height: 15px;
-                    object-fit: contain;
                 }
             }
         
@@ -305,12 +322,12 @@
                 align-items: center;
                 cursor: pointer;
                 transition: background-color 0.3s;
-                width: 100%;
+                width: 160px;
                 height: 40px;
                 .span{
                     color: #FFF;
                     font-family: Poppins;
-                    font-size: 12px;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 200;
                     line-height: normal;
@@ -332,35 +349,33 @@
     
     }
     .howPopUp{
-        margin-left: 200px;
+        margin-left: 150px;
+        //background-color: red;
     }
             
         }
     
         .topcenter{
-            flex: 1;
             display: flex;
-            width: 100px;
-            margin-right: 10px;
     
-            img{
+            .Logo_img{
                 object-fit: cover;
-                width: 50px;
-                height: 45px;
+                width: 80px;
+                height: 30px;
                 flex-shrink: 0;
                 cursor: pointer;
+                //display: none;
             }
         }
     
         .topRight{
             display: flex;
-            flex: 1;
-            padding: 0;
-            gap: 5px;
-            margin: 0;
+            padding: 0px 30px;
             align-items: center;
-            // justify-content: space-between;
-            width: 100%;
+            width: 400px;
+            justify-content: space-between;
+            //gap: 24px;
+           //background-color: blueviolet;
     
             .Search{
                 display: flex;
@@ -369,10 +384,11 @@
                 width: auto;
                 border-radius: 5px;
                 color: #FFF;
-                gap: 0;
+                gap: 10px;
                 font-size: 10px;
-                margin-top: 2px;
-                margin-right: 0;
+                // margin-top: 2px;
+                // margin-right: 50px;
+                
                 // padding: 5px;
     
                 span{
@@ -383,42 +399,55 @@
                     font-family: Poppins;
                     font-size: 10px;
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: 400;
                     line-height: normal;
                     letter-spacing: 0.048px; 
-                    text-transform: uppercase;                  
+                    text-transform: uppercase;  
+                    
+                    
                 }
             }
     
-            span{
+            .authBTN{
                 display: flex;
-                //padding: 12px 24px;
-                justify-content: center;
                 align-items: center;
-               // gap: 5px;
-    
-                color: #FFF;
-                font-family: Poppins;
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.048px;
-                text-transform: uppercase;
-                cursor: pointer;
-                
+                justify-content: space-between;
+               // background-color: coral;
+                span{
+                    display: flex;
+                    padding: 12px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+        
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    white-space: nowrap;     
+                    overflow: hidden;    
+                    text-overflow: ellipsis; 
+                    
+                }
+        
+                .sign-up{
+                    border-radius: 100px;
+                    background: #43C4B2;
+                    width: 100px;
+                    height: 40px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+                }
             }
-    
-            .sign-up{
-                border-radius: 100px;
-                background: #43C4B2;
-                width: auto;
-                height: 45px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              
-            }
+        
         }
     
         .navlink{
@@ -445,7 +474,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px){
+  @media (max-width: 650px){
 
     .tophome{
 

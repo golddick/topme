@@ -22,10 +22,11 @@ function AngelFooter() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
+ 
   return (
     <div className='AngelFooter'>
-      <div className="footerWrapper">  
+     <div className="footer_wrapper">
+     <div className="footerWrapper">  
         <div className="left">
           <img src={WLogo} alt="" />
       <div className="fIcons"> 
@@ -42,7 +43,7 @@ function AngelFooter() {
           <BsTwitter className='icons'/>
           </div>
       </div>
-
+      <div className="conEmail"><span>contact@topmeangel.com</span></div>
         </div>
         <div className="center">
           <div className="footerLinks">
@@ -91,6 +92,14 @@ function AngelFooter() {
        
       </div>
 
+      <div className="vertical"></div>
+
+      <div className="bottom-footer"> 
+      <span> &copy; TopMe, 2023</span> <span>privacy Policy</span>  
+      <span>Cookies policy </span> <span>Terms & condition</span> <span>Legal</span>
+      </div>
+
+     </div>
 
       {isOpen && (
         <div className="popup">
@@ -161,13 +170,7 @@ function AngelFooter() {
         </div>
 
 
-      <div className="vertical"></div>
-
-      <div className="bottomfooter">
-     <span> &copy; TopMe, 2023</span> <span>privacy Policy</span>  
-     <span>Cookies policy </span> <span>Terms & condition</span> <span>Legal</span>
-      </div>
-
+   
       </div>
       
   )

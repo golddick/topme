@@ -13,7 +13,7 @@ function AngelProfile() {
   return (
     <div className='profile'> 
         <div className="mobileHeader"> 
-          < Topbar/>
+          < Topbar/> 
         </div>
         
         <div className="profile_Containerleft">

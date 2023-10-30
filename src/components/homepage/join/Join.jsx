@@ -4,12 +4,13 @@ import Female from '../../../assets/Female.png'
 import {BiCaretRight} from 'react-icons/bi'
 import Wing from '../../../assets/TopWing.png'
 import Wing2 from '../../../assets/Topwing2.png'
-
+ 
 function Join() {
   return (
     <div className='Join'>
         <div className="joinWrapper">
-        <div className="left">
+    <div className="wrapper_join">
+    <div className="left">
             <img src={Male} alt=""  className='leftmale'/> 
         </div>
         <div className="center">
@@ -20,7 +21,7 @@ function Join() {
                         <BiCaretRight/> 
                 </div>
                 <button className='howBtn'>how it works </button>
-            </div>
+            </div> 
         </div>
         <div className="right">
         <div className="wingbody">
@@ -30,6 +31,7 @@ function Join() {
           </div>
         {/* <img src={Female} alt="" className='rightFemale' /> */}
         </div>
+    </div>
         </div>
         </div>
   ) 

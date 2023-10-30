@@ -21,7 +21,7 @@ function Guarantee() {
         </div>
       
         </div>
-        </div>
+        </div> 
   ) 
 }
 

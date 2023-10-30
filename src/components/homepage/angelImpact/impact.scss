@@ -1,11 +1,19 @@
 .Impact{
     display: flex;
-    padding:138px 243.5px 138px 243.5px;
-    flex-direction: column;
     align-items: center;
-    //gap: 44px;
+    justify-content: center;
+    //gap: 100px;
     height: auto;
     background: #000;
+   // position: relative;
+
+   .impact_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    gap: 60px;
 
     .angelImpact{
         display: flex;
@@ -16,6 +24,8 @@
         height: auto;
         gap: 20px;
         overflow: visible;
+        padding-top: 50px;
+        padding-bottom: 50px;
         // margin-left: 100px; 
 
 
@@ -59,139 +69,7 @@
              height: 100%;
  
               padding: 10px;
-               
-                //  .campaignImpact{
-                //     display: flex;
-                //     flex-direction: row;
-                //     align-items: center;
-                //     width: 100%;
-                //     //flex-direction: column;
-                //     gap: 30px;
-                //     margin: 0;
-                //     padding: 10px;
-                //     background-color: darkmagenta;
 
-                //     .impactBox{
-                //         position: relative;
-                //         display: flex;
-                //         align-items: center;
-                //         justify-content: center;
-                //        flex-direction: column;
-                //        width: 250px;
-                //        height: auto;
-                //        margin: 0;
-                //        padding: 10px;
-                //        flex-shrink: 0;
-                //         border-radius: 8px;
-                //         background: #df1010;
-                //         overflow: hidden;
-        
-                      
-                //        .impactboxImg{
-                //         display: flex;
-                //         align-items: center;
-                //         justify-content: center;
-                //         width: 240px;
-                //         height: 150px;
-                //        // padding: 5px;
-                //         margin: 0;
-                //         overflow: hidden;
-                //          .profileImg{
-                //             padding: 0;
-                //             margin: 0;
-                //             width: 100%;
-                //             height: 100%;
-                //             flex-shrink: 0;
-                //             border-radius: 4px;
-                //             object-fit: cover;
-                //             transition: transform 0.3s ease;
-                            
-                //         }
-        
-                //        }
-                //         // .profileImg:hover{
-                //         //     transform: scale(1.1);
-                //         // }
-        
-        
-        
-                //         .impactBody{
-                //                 display: none;
-                //                 flex-direction: column;
-                //                 align-items: start;
-                //                 margin: 10px;
-                                
-                               
-        
-                //             .name{
-                //                 display: flex;
-                //                 gap: 10px;
-                               
-                               
-        
-                //                 span{
-                //                     color: #000;
-                //                     font-family: Poppins;
-                //                     font-size: 14px;
-                //                     font-style: normal;
-                //                     font-weight: 500;
-                //                     line-height: normal;
-                //                     letter-spacing: 0.014px;
-                //                 }
-        
-                //                 .nameIcon{
-                //                     display: flex;
-                //                     width: 18px;
-                //                     height: 17.308px;
-                //                     padding-bottom: 0px;
-                //                     justify-content: center;
-                //                     align-items: center;
-                //                     color: #43C4B2;
-                //                 }
-        
-                //             }
-        
-                //             .address{
-                //                 display: flex;
-                //                 gap: 10px;
-                //                 align-items: center;
-                //                 margin-left: 10px;
-                //                 .Icon{
-                //                     width: 15px;
-                //                     height: 15px;
-                //                     color: #808080;
-                //                 }
-                                
-                //                 span{
-                //                     color: #808080;
-                //                     /* Overline/overline 1 */
-                //                     font-family: Poppins;
-                //                     font-size: 10px;
-                //                     font-style: normal;
-                //                     font-weight: 400;
-                //                     line-height: normal;
-                //                     letter-spacing: 0.15px;
-                //                     text-transform: uppercase;
-        
-                //                 }
-                //             }
-        
-        
-                //             p{
-                //                 margin-top: 10px;
-                //                 color: #000;
-                //                 flex-wrap: wrap;
-                //                 font-family: Poppins;
-                //                 font-size: 12px;
-                //                 font-style: normal;
-                //                 font-weight: 400;
-                //                 line-height: normal;
-                //                 letter-spacing: 0.048px;
-                //             }
-        
-                //         }
-                //     }
-                //  }
 
                 .impactBox{
                     position: relative;
@@ -331,6 +209,21 @@
                     letter-spacing: 0.175px;
                     text-transform: uppercase;
                 }
+
+                .impactBox:hover .profileImg{
+                    transform: scale(1.2);
+                   overflow: hidden;
+                }
+
+                .impactBox:hover .btn{
+                    color: white;
+                    background-color: #43C4B2;
+           
+            }
+        
+            .btn:hover{
+                border-radius: 100px;
+            }
         }
  
         
@@ -340,11 +233,21 @@
         gap: 10px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        
+        color: #FFF;
+
+        /* Body/Body 2 */
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.035px;
        }
 
         .viewAll{
             display: flex;
-            padding: 12px 24px;
+            padding: 10px 20px;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -353,7 +256,7 @@
 
             color: #000;
             font-family: Poppins;
-            font-size: 14px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -362,21 +265,15 @@
         }
     }
 
- 
+    .navArrow{
+        font-size: 12px;
+        color: #FFF;
+        top: 100px;
+        z-index: 99;
+    }
+   }
 
-    .impactBox:hover .profileImg{
-        transform: scale(1.2);
-       overflow: hidden;
-    }
-    .impactBox:hover .btn{
-            color: white;
-            background-color: #43C4B2;
-   
-    }
 
-    .btn:hover{
-        border-radius: 100px;
-    }
 
    .navlink{
     text-decoration: none;
@@ -390,14 +287,22 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1200px)  {
+@media (max-width: 1000px)  {
     .Impact{
         display: flex;
-        padding: 40px ;
-        flex-direction: column;
         align-items: center;
-        //gap: 44px;
+        justify-content: center;
+        //gap: 100px;
         height: auto;
+        background: #000;
+       // position: relative;
+    
+       .impact_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        gap: 0;
     
         .angelImpact{
             display: flex;
@@ -408,9 +313,11 @@
             height: auto;
             gap: 20px;
             overflow: visible;
+            padding-top: 50px;
+            padding-bottom: 50px;
             // margin-left: 100px; 
     
-     
+    
             .impactText{
                 display: flex;
                 flex-direction: column;
@@ -443,11 +350,15 @@
     
             .impact-Post{
                 display: flex;
+                // position: relative;
+                // justify-content: center;
                 align-items: center;
                 justify-content: center;
                  width: 100%;
-                 height: 100%;   
+                 height: 100%;
+     
                   padding: 10px;
+    
     
                     .impactBox{
                         position: relative;
@@ -587,6 +498,21 @@
                         letter-spacing: 0.175px;
                         text-transform: uppercase;
                     }
+    
+                    .impactBox:hover .profileImg{
+                        transform: scale(1.2);
+                       overflow: hidden;
+                    }
+    
+                    .impactBox:hover .btn{
+                        color: white;
+                        background-color: #43C4B2;
+               
+                }
+            
+                .btn:hover{
+                    border-radius: 100px;
+                }
             }
      
             
@@ -596,11 +522,21 @@
             gap: 10px;
             text-transform: uppercase;
             margin-bottom: 20px;
+            
+            color: #FFF;
+    
+            /* Body/Body 2 */
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.035px;
            }
     
             .viewAll{
                 display: flex;
-                padding: 12px 24px;
+                padding: 10px 20px;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
@@ -609,7 +545,7 @@
     
                 color: #000;
                 font-family: Poppins;
-                font-size: 14px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -618,21 +554,16 @@
             }
         }
     
-     
+        .navArrow{
+            display: none;
+            font-size: 12px;
+            color: #FFF;
+            top: 100px;
+            z-index: 99;
+        }
+       }
     
-        .impactBox:hover .profileImg{
-            transform: scale(1.2);
-           overflow: hidden;
-        }
-        .impactBox:hover .btn{
-                color: white;
-                background-color: #43C4B2;
-       
-        }
     
-        .btn:hover{
-            border-radius: 100px;
-        }
     
        .navlink{
         text-decoration: none;
@@ -647,7 +578,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
+  @media (max-width: 600px) {
     .Impact{
         display: flex;
         padding: 30px;

@@ -1,18 +1,27 @@
 .select{
     width: 100%;
-    display: inline-flex;
-    padding: 40px 243.5px 138px 243.5px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #FFF;
+    //padding: 40px 243.5px 138px 243.5px;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+   // background-color: #dc0d0d;
+  
 
     .selectBody{
 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
         gap: 44px;
-        width: 100%;
+        width: 70%;
+        height: 70%;
+        margin: auto;
+        padding-top: 20px;
+        //background-color: bisque;
     
 
         .selecttext{
@@ -25,6 +34,7 @@
             width: 95%;
             padding: 0;
             margin: 0;
+            //background-color: blue;
 
          
             h2{
@@ -54,6 +64,7 @@
         }
     }
 
+   
 
 .navlink{
     text-decoration: none;
@@ -64,22 +75,31 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1200px)  {
+@media (max-width: 1200px)   {
     .select{
         width: 100%;
-        display: inline-flex;
-        padding: 40px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        background-color: #FFF;
+        //padding: 40px 243.5px 138px 243.5px;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
+       // background-color: #dc0d0d;
+      
     
         .selectBody{
     
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            justify-content: center;
             gap: 44px;
-            width: 100%;
+            width: 70%;
+            height: 70%;
+            margin: auto;
+            padding-top: 20px;
+            //background-color: bisque;
         
     
             .selecttext{
@@ -99,7 +119,7 @@
                     text-align: start;
                     color: #000;
                     font-family: Poppins;
-                    font-size: 40px;
+                    font-size: 25px;
                     font-style: normal;
                     font-weight: bold;
                     line-height: normal;
@@ -121,15 +141,19 @@
             }
         }
     
+       
     
     .navlink{
         text-decoration: none;
     }
+    .sign_IN{
+        display: none;
     }
-  }
+    }
+  } 
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px){
+  @media (max-width: 600px){
     .select{
         width: 100%;
         display: flex;

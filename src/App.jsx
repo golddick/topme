@@ -68,7 +68,7 @@ function App() {
             <Route path='/RequestLink' element={<Forgetpasswoord/>}/>
             <Route path='/ResetPassword' element={<ResetPassword/>}/>
             <Route path='/SuccessPage' element={<SuccessPage/>}/>
-            <Route path='/postDetails' element={<PostDetails/>}/>
+            {/* <Route path='/postDetails' element={<PostDetails/>}/> */}
             <Route path='/Payment' element={<PaymentPage/>}/>
             {/* <Route path='/paymentSuccessful' element={<SuccessBox/>}/> */}
             <Route path='/CreateSupport' element={<CreateSupport/>}/>

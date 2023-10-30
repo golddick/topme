@@ -1,6 +1,7 @@
 import './impact.scss';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiChevronRight } from 'react-icons/bi';
+import {MdArrowForwardIos} from 'react-icons/md'
 import React, { Component ,useState, useEffect} from 'react';
 // import Slider from 'react-slick';
 import Loader from '../../loader/Loader';
@@ -27,7 +28,7 @@ export default class LazyLoad extends Component {
     showLessImpact: false,
     gridRows: 2, // Added gridRows state
   };
- 
+  
  
   componentDidMount() {
     // Simulating an API call to fetch impact details
@@ -110,6 +111,7 @@ export default class LazyLoad extends Component {
 
     return (
       <div className="Impact">
+        <div className="impact_wrapper">
         <div className="angelImpact">
           <div className="impactText">
             <h1>Where your Impact is needed...</h1>
@@ -206,7 +208,7 @@ export default class LazyLoad extends Component {
 
             )}
           </div>
-          <div className="showmore" onClick={this.handleShowMore} style={{color:'#fff'}}>
+          <div className="showmore" onClick={this.handleShowMore}>
                     <span >{showLessImpact ? 'Show Less' : 'Show More'}</span>
                     <BiChevronRight />
                   </div>
@@ -216,7 +218,12 @@ export default class LazyLoad extends Component {
           </div>
           </NavLink>
         </div> 
+        <div >
+          <MdArrowForwardIos className="navArrow"/>
+        </div>
+        </div>
+       
       </div>
-    );
+    ); 
   }
 }

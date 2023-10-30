@@ -162,7 +162,7 @@ function CreatePost() {
           <Leftbar />
         </div>
         <div className="Center">
-          
+           
           <Widget />
           <Stats />
 
@@ -171,6 +171,7 @@ function CreatePost() {
               <h3>create campaign</h3>
               <AiOutlineCloseCircle className="icon" />
             </div>
+            <div className="create_campaign">
             <div className="postCauseTop">
               <div className="title">
                 <span>title:</span>
@@ -208,7 +209,7 @@ function CreatePost() {
                 />
                 <label htmlFor="file" className="imgfile">
                   <CameraAltOutlinedIcon className="icon" />
-                  <span>gallery images</span>
+                  <span  className='uploadText'>gallery images</span>
                 </label>
           
               </div>
@@ -221,15 +222,15 @@ function CreatePost() {
                 />
                 <label htmlFor="file" className="file">
                   <CameraAltOutlinedIcon className="icon" />
-                  <span>feature image</span>
+                  <span className='uploadText'> feature image</span>
                 </label>
           
               </div>
                
-                {/* <button  onClick={handleUpdate} disabled={isLoading}>  <img src={SendIcon} alt="" />post</button> */}
                 <button>  <img src={SendIcon} alt="" />post</button>
 
             
+            </div>
             </div>
           </div>
           {/* {errorMessage && <p>{errorMessage}</p>}

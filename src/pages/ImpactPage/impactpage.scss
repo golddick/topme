@@ -10,12 +10,9 @@
     .impactWrapper{
 
         overflow-y: auto;
-       
         display: flex;
         flex-direction: column;
-        // height: calc(100vh - 60px); 
-        // background-color: blueviolet;
-    
+        gap: 20px;
 
     .navTop{
         display: flex;
@@ -124,11 +121,11 @@
         background-color: #000000;
 
         .categoryContainer{
-            width: 1200px;
+            width: 90%;
             display: flex;
             align-items: start;
             flex-direction: column;
-            // background: #a01d1d;
+             //background: #a01d1d;
             color: #FFF;
             padding: 20px;
         }
@@ -211,10 +208,11 @@
         // justify-content: center;
         align-items: center;
         justify-content: center;
-         width: 100%;
+        margin: auto;
+         width: 90%;
          height: 100%;
         
-          padding: 30px;
+          
 
           .mySwiper{
             //background-color: yellow;
@@ -377,10 +375,21 @@
         text-decoration: none;
        }
 
-       .optionBox{
+       .optionCard{
+        width: 100%;
         background-color: #FFF;
-        padding: 40px 243.5px 138px 243.5px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .optionBox{
+            background-color: #FFF;
+            display: flex;
+            margin: auto;
+            width: 70%;
+           }
        }
+
+   
        .nav-Btn{
         padding-top: 20px;
         background-color: #000;

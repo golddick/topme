@@ -1,6 +1,8 @@
 .table{
     width: 100%;
     height: auto;
+    // display: flex;
+    // flex-direction: column;
     //background: lightblue;
 
     thead{
@@ -22,7 +24,7 @@
 
     tbody{
         font-family: 'Poppins';
-        width: 100px;
+        width: 80px;
         height: 30px;
         font-style: normal;
         font-weight: 400;
@@ -32,13 +34,15 @@
         color: #000000;
 
         td{
-            width: 100%;
+            width: 50%;
             height: 100%;
             color: #000000;
-            max-width: 250px; 
+            max-width: 200px; 
             overflow: hidden; 
             text-overflow: ellipsis; 
             white-space: nowrap; 
+           // background-color: #FF6B6B;
+           
 
             .btn{ 
                 display: flex;
@@ -48,7 +52,7 @@
                 //padding: 4px 8px;
                 padding: 0;
                 margin-top: 0;
-                width: 96px;
+                width: 90px;
                 height: 23px;
                 background: rgba(51, 127, 255, 0.15);
                 border-radius: 8px;
@@ -140,6 +144,17 @@
         display: inline-block;
         //padding: 5px;
         border-radius: 5px;
+      }
+
+      .TableHeaderText{
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.014px;
       }
 
 }
