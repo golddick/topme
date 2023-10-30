@@ -19,12 +19,11 @@ function LandingPage() {
     <div className="landingbody">
     <Homepage/>
     <Selectoption/>
-    <Optiontab/>
+    {/* <Optiontab/> */}
     <Impact/>
     <AngelDonate/>
      <Guarantee/>
     <Join/>
-    <Optiontab/>
     <div className="newLetter">
     <div className="content">
      <NewsLetter/>
