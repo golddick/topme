@@ -1,5 +1,6 @@
 import './hometop.scss'
 import {BiChevronDown, BiSearchAlt} from 'react-icons/bi'
+import {MdKeyboardArrowUp, MdKeyboardArrowDown} from 'react-icons/md'
 import {  NavLink } from 'react-router-dom';
 import React, { useState ,useEffect, useRef } from 'react';
 import Search from '../../search/Search';
@@ -53,24 +54,24 @@ function Hometop() {
       setMenuTab(false);
     }
 
-const handleOutsideClick = (event) => {
-  if (popupRef.current && !popupRef.current.contains(event.target)) {
-    setExtraopen(false);
-    setHowitworks(false);
-  }
-};
+// const handleOutsideClick = (event) => {
+//   if (popupRef.current && !popupRef.current.contains(event.target)) {
+//     setExtraopen(false);
+//     setHowitworks(false);
+//   }
+// };
 
-useEffect(() => {
-  if (extraopen || howitworks) {
-    document.addEventListener('mousedown', handleOutsideClick);
-  } else {
-    document.removeEventListener('mousedown', handleOutsideClick);
-  }
+// useEffect(() => {
+//   if (extraopen || howitworks) {
+//     document.addEventListener('mousedown', handleOutsideClick);
+//   } else {
+//     document.removeEventListener('mousedown', handleOutsideClick);
+//   }
 
-  return () => {
-    document.removeEventListener('mousedown', handleOutsideClick);
-  };
-}, [extraopen, howitworks]);
+//   return () => {
+//     document.removeEventListener('mousedown', handleOutsideClick);
+//   };
+// }, [extraopen, howitworks]);
 
 
   return (
@@ -84,7 +85,9 @@ useEffect(() => {
           <NavLink to='/impact' className='navlink'>
           <span>angels</span>
           </NavLink>
-          <span onClick={openExtra}>extras <BiChevronDown/></span>
+          <span onClick={openExtra}>extras
+          {extraopen ? <MdKeyboardArrowUp className='arrow' /> : <MdKeyboardArrowDown className='arrow' />}
+          </span>
           {
             extraopen && (
              <div ref={popupRef}  className="extraPopup">
@@ -103,7 +106,9 @@ useEffect(() => {
             )
           }
          
-          <span onClick={openHow}>how it works  <BiChevronDown/></span>
+          <span onClick={openHow}>how it works
+          {howitworks ? <MdKeyboardArrowUp className='arrow' /> : <MdKeyboardArrowDown className='arrow' />}
+          </span>
           {
             howitworks && (
              <div ref={popupRef} className="howPopUp">

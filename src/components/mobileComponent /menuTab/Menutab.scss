@@ -3,8 +3,9 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: auto;
-    padding: 44px 0px 200px 0px;
+    // height: 70%;
+    // padding-top: 40px;
+    padding: 44px 0px 150px 0px;
     flex-direction: column;
     align-items: flex-start;
     gap: 44px;
@@ -61,13 +62,27 @@
             width: 100%;
             align-items: center;
             justify-content: space-between;
+            color: #000;
+
+            .arrow{
+               width: 20px;
+               height: 20px;
+               font-weight: 400;
+               transition: transform 0.3s; 
+            }
         }
 
         .extraPopup{
             display: flex;
             flex-direction: column;
             gap: 10px;
+            padding-left: 10px;
 
+            transition: opacity 0.3s, transform 0.3s; 
+            transform-origin: top;
+            opacity: 1;
+
+      
             .contact{
                 display: flex;
                 align-items: center;
@@ -77,7 +92,7 @@
                 .span{
                     color: #000;
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -85,8 +100,8 @@
                     text-transform: uppercase;
                 }
                 img{
-                    width: 50px;
-                    height: 15px;
+                    width: 80px;
+                    height: 30px;
                 }
 
             }
@@ -100,7 +115,7 @@
                 .span{
                     color: #030202;
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -108,6 +123,7 @@
                     text-transform: uppercase;
                    }
             }
+          
         }
     }
 
@@ -129,6 +145,7 @@
             align-self: stretch;
             border-radius: 100px;
             background: #43C4B2;
+            text-decoration: none;
 
 
             color: #FFF;
@@ -150,6 +167,7 @@
             align-self: stretch;
             border-radius: 100px;
             border: 1px solid #000;
+            text-decoration: none;
 
             color: #000;
 

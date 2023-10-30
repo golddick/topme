@@ -2,12 +2,12 @@ import React, { useState ,useEffect, useRef } from 'react';
 import './Menutab.scss'
 import BlackLogo from '../../../assets/blacklogo.svg'
 import {AiOutlineCloseCircle}  from 'react-icons/ai'
-import {BsChevronDown} from 'react-icons/bs'
+import {MdKeyboardArrowDown , MdKeyboardArrowUp} from 'react-icons/md'
 import {  NavLink } from 'react-router-dom';
 
 function MenuTab({closeMobilemenu}) {
 
-  const [extraopen, setExtraopen] = useState();
+  const [extraopen, setExtraopen] = useState(false);
   const [howitworks, setHowitworks] = useState()
   const popupRef = useRef(null);
   
@@ -20,24 +20,28 @@ function MenuTab({closeMobilemenu}) {
     }
 
 
-const handleOutsideClick = (event) => {
-  if (popupRef.current && !popupRef.current.contains(event.target)) {
-    setExtraopen(false);
-    setHowitworks(false);
-  }
-}; 
 
-useEffect(() => {
-  if (extraopen || howitworks) {
-    document.addEventListener('mousedown', handleOutsideClick);
-  } else {
-    document.removeEventListener('mousedown', handleOutsideClick);
-  }
 
-  return () => {
-    document.removeEventListener('mousedown', handleOutsideClick);
-  };
-}, [extraopen, howitworks]);
+
+
+// const handleOutsideClick = (event) => {
+//   if (popupRef.current && !popupRef.current.contains(event.target)) {
+//     setExtraopen(false);
+//     setHowitworks(false);
+//   }
+// }; 
+
+// useEffect(() => {
+//   if (extraopen || howitworks) {
+//     document.addEventListener('mousedown', handleOutsideClick);
+//   } else {
+//     document.removeEventListener('mousedown', handleOutsideClick);
+//   }
+
+//   return () => {
+//     document.removeEventListener('mousedown', handleOutsideClick);
+//   };
+// }, [extraopen, howitworks]);
 
 
 
@@ -60,11 +64,13 @@ useEffect(() => {
         </NavLink>
         <div className="menuText" onClick={openExtra}>
           <span>extras</span>
-          <BsChevronDown/>
+          {/* {extraopen && <MdKeyboardArrowDown className='arrow'/> || <MdKeyboardArrowUp className='arrow'/>} */}
+          {extraopen ? <MdKeyboardArrowUp className='arrow' /> : <MdKeyboardArrowDown className='arrow' />}
           </div>
           {
             extraopen && (
-             <div ref={popupRef}  className="extraPopup">
+             <div  className="extraPopup">
+             {/* <div ref={popupRef}  className="extraPopup"> */}
               <NavLink to='/contact' className='navlink'>
                <div className="contact">
                 <div className="span">Contact</div>
@@ -82,7 +88,7 @@ useEffect(() => {
 
           <div className="menuText" onClick={openHow}>
           <span>how it works</span>
-          <BsChevronDown/>
+          {howitworks ? <MdKeyboardArrowUp className='arrow' /> : <MdKeyboardArrowDown className='arrow' />}
           </div>
           {
             howitworks && (
@@ -109,8 +115,12 @@ useEffect(() => {
           }
         </div>
         <div className="menuBottom">
-              <div className="regBtn">become an angel</div>
-              <div className="loginBtn">user login </div>
+          <NavLink to='/signup' className='regBtn'>
+              <div >become an angel</div>
+              </NavLink>
+              <NavLink to='/login' className='loginBtn'>
+              <div >user login </div>
+              </NavLink>
         </div>
     </div>
   )
