@@ -24,6 +24,7 @@ function LandingPage() {
     <AngelDonate/>
      <Guarantee/>
     <Join/>
+    <Optiontab/>
     <div className="newLetter">
     <div className="content">
      <NewsLetter/>
