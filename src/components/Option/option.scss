@@ -19,6 +19,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 10px;
 
         .option{
             display: grid;
@@ -472,7 +473,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            //background-color: red;
+            gap: 10px;
+            //background-color: rgb(177, 223, 10);
 
             .option{
                 // display: grid;
@@ -497,12 +499,13 @@
                     justify-content: center;
                     flex-direction: column;
                     cursor: pointer;
-                    gap: 10px;
+                    gap: 20px;
                     //background-color: red;
                    
                 
                 
                     h3{
+                        margin-top: -10px;
                         color: #000;
                         text-align: center;
                         font-family: Poppins;
@@ -511,6 +514,7 @@
                         font-weight: 500;
                         line-height: normal;
                         letter-spacing: 0.014px;
+                        //background-color: blue;
                     }
                     span{
                         display: flex;
@@ -551,7 +555,8 @@
                             height: 100%;
                             width: 100%;
                             margin-top: -50px;
-                            gap: 0;
+                            gap: 20px;
+                           // background-color: darkorange;
         
                             .svgImgleft{ 
                               height: 100%;
@@ -627,6 +632,7 @@
                         flex-direction: column; 
                         width: 85%;
                         height: auto;
+                        margin-top: -10px;
                         
                         .textIcon{
                             // font-size: 20px !important;
