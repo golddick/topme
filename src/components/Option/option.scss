@@ -228,7 +228,7 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .optionWrapper{
         display: flex;
         align-items: center;
@@ -323,6 +323,10 @@
                             width: 100%;
                             margin-top: -40%;
                             gap: 5px;
+
+                            @media screen and (max-width: 1200px) {
+                                //margin-top: -20px;
+                            }
         
                             .svgImgleft{ 
                                 height: 100%;
