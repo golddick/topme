@@ -581,306 +581,293 @@
   @media (max-width: 600px) {
     .Impact{
         display: flex;
-        padding: 30px;
+        width: 100%;
+        //padding: 30px;
         padding-bottom: 100px;
         flex-direction: column;
         align-items: center;
         //gap: 44px;
         height: auto;
-        background: #000;
-    
-        .angelImpact{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width:100%;
-            height: auto;
-            gap: 20px;
-            overflow: visible;
-            // margin-left: 100px; 
-    
-    
-            .impactText{
-                display: none;
-                flex-direction: column;
-                text-align: end;
-                gap: 10px;
-                width: 100%;
-                justify-content: flex-end;
-    
-                h1{
-                    color: #FFF;
-                    text-align: right;
-                    font-family: Poppins;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    letter-spacing: -0.3px;
-                }
-    
-                span{
-                    color: #FFF;
-                    text-align: right;
-                    font-family: Poppins;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-            }
 
-            .mobileImpactText{
+        .impact_wrapper{
+            width: 90%;
+
+            .angelImpact{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-                gap: 10px;
-
-                h1{
-                    color: #FFF;
-                    font-family: Poppins;
-                    font-size: 34px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 115%; /* 39.1px */
-                    letter-spacing: 0.085px;
-                    align-self: stretch;
-                }
-
-                .sideText{
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                height: auto;
+                gap: 20px;
+                overflow: visible;
+                // margin-left: 100px; 
+        
+        
+                .impactText{
+                    display: none;
+                    flex-direction: column;
+                    text-align: end;
+                    gap: 10px;
                     width: 100%;
-                    align-items: flex-end;
-                    justify-content: end;
-                    h3{
+                    justify-content: flex-end;
+        
+                    h1{
                         color: #FFF;
                         text-align: right;
-                        align-self: stretch;
                         font-family: Poppins;
-                        font-size: 10px;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -0.3px;
+                    }
+        
+                    span{
+                        color: #FFF;
+                        text-align: right;
+                        font-family: Poppins;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
-                        letter-spacing: 0.15px;
-                        text-transform: uppercase;
                     }
-
                 }
-                h4{
-                    margin-top: 50px;
-                    color: #FFF;
-                    text-align: right;
-                    font-family: Poppins;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.035px;
-                }
-               }
     
-            .impact-Post{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                 width: 100%;
-                 height: 100%;
-                 padding: 10px;
-
-                    .impactBox{
-                        position: relative;
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                       flex-direction: column;
-                       width: 200px;
-                       height: auto;
-                       margin: 0;
-                       padding: 10px;
-                       flex-shrink: 0;
-                        border-radius: 8px;
-                        background: #FFF;
-                        overflow: hidden;
-                        gap: 10px;
-                
-                      
-                       .impactboxImg{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                .mobileImpactText{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 10px;
+    
+                    h1{
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 34px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 115%; /* 39.1px */
+                        letter-spacing: 0.085px;
+                        align-self: stretch;
+                    }
+    
+                    .sideText{
                         width: 100%;
-                        height: 150px;
-                       // padding: 5px;
-                        margin: 0;
-                        overflow: hidden;
-                         .profileImg{
-                            padding: 0;
-                            margin: 0;
-                            width: 100%;
-                            height: 100%;
-                            flex-shrink: 0;
-                            border-radius: 4px;
-                            object-fit: cover;
-                            transition: transform 0.3s ease;
-                            
+                        align-items: flex-end;
+                        justify-content: end;
+                        h3{
+                            color: #FFF;
+                            text-align: right;
+                            align-self: stretch;
+                            font-family: Poppins;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.15px;
+                            text-transform: uppercase;
                         }
-                
-                       }
-                        // .profileImg:hover{
-                        //     transform: scale(1.1);
-                        // }
-                
-                
-                
-                        .impactBody{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: start;
-                                //margin: 10px;
-                                
-                               
-                
-                            .name{
-                                display: flex;
-                                gap: 10px;
-                               
-                               
-                
-                                span{
-                                    color: #000;
-                                    font-family: Poppins;
-                                    font-size: 14px;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    line-height: normal;
-                                    letter-spacing: 0.014px;
-                                }
-                
-                                .nameIcon{
-                                    display: flex;
-                                    width: 18px;
-                                    height: 17.308px;
-                                    padding-bottom: 0px;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: #43C4B2;
-                                }
-                
-                            }
-                
-                            .address{
-                                display: flex;
-                                gap: 10px;
-                                align-items: center;
-                                margin-left: 10px;
-                                .Icon{
-                                    width: 15px;
-                                    height: 15px;
-                                    color: #808080;
-                                }
-                                
-                                span{
-                                    color: #808080;
-                                    /* Overline/overline 1 */
-                                    font-family: Poppins;
-                                    font-size: 10px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: normal;
-                                    letter-spacing: 0.15px;
-                                    text-transform: uppercase;
-                
-                                }
-                            }
-                
-                
-                            p{
-                                margin-top: 10px;
-                                color: #000;
-                                flex-wrap: wrap;
-                                font-family: Poppins;
-                                font-size: 12px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                                letter-spacing: 0.048px;
-                            }
-                
-                        }
-                    }
-                  
-                    .btn{
-                        display: flex;
-                        gap: 10px;
-                        width: 200px;
-                        height: 37px;
     
-                        color: #43C4B2;
+                    }
+                    h4{
+                        margin-top: 50px;
+                        color: #FFF;
+                        text-align: right;
                         font-family: Poppins;
                         font-size: 14px;
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 400;
                         line-height: normal;
-                        letter-spacing: 0.175px;
-                        text-transform: uppercase;
+                        letter-spacing: 0.035px;
                     }
-            }
-     
-            
-           .showmore{
-            display: none;
-            align-items: center;
-            width: 140px;
-            height: 48px;
-            padding: 12px 10px;
-            align-items: center;
-            gap: 10px;
-            flex-shrink: 0;
-            color: #FFFFFF;
-           }
+                   }
+        
+                .impact-Post{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                     width: 100%;
+                     height: 100%;
+                     padding: 10px;
     
-            .viewAll{
-                display: flex;
-                padding: 12px 24px;
-                justify-content: center;
+                        .impactBox{
+                            position: relative;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                           flex-direction: column;
+                           width: 200px;
+                           height: auto;
+                           margin: 0;
+                           padding: 10px;
+                           flex-shrink: 0;
+                            border-radius: 8px;
+                            background: #FFF;
+                            overflow: hidden;
+                            gap: 10px;
+                    
+                          
+                           .impactboxImg{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 150px;
+                           // padding: 5px;
+                            margin: 0;
+                            overflow: hidden;
+                             .profileImg{
+                                padding: 0;
+                                margin: 0;
+                                width: 100%;
+                                height: 100%;
+                                flex-shrink: 0;
+                                border-radius: 4px;
+                                object-fit: cover;
+                                transition: transform 0.3s ease;
+                                
+                            }
+                    
+                           }
+                            // .profileImg:hover{
+                            //     transform: scale(1.1);
+                            // }
+                    
+                    
+                    
+                            .impactBody{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: start;
+                                    //margin: 10px;
+                                    
+                                   
+                    
+                                .name{
+                                    display: flex;
+                                    gap: 10px;
+                                   
+                                   
+                    
+                                    span{
+                                        color: #000;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        letter-spacing: 0.014px;
+                                    }
+                    
+                                    .nameIcon{
+                                        display: flex;
+                                        width: 18px;
+                                        height: 17.308px;
+                                        padding-bottom: 0px;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: #43C4B2;
+                                    }
+                    
+                                }
+                    
+                                .address{
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    margin-left: 10px;
+                                    .Icon{
+                                        width: 15px;
+                                        height: 15px;
+                                        color: #808080;
+                                    }
+                                    
+                                    span{
+                                        color: #808080;
+                                        /* Overline/overline 1 */
+                                        font-family: Poppins;
+                                        font-size: 10px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        letter-spacing: 0.15px;
+                                        text-transform: uppercase;
+                    
+                                    }
+                                }
+                    
+                    
+                                p{
+                                    margin-top: 10px;
+                                    color: #000;
+                                    flex-wrap: wrap;
+                                    font-family: Poppins;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 0.048px;
+                                }
+                    
+                            }
+                        }
+                      
+                        .btn{
+                            display: flex;
+                            gap: 10px;
+                            width: 200px;
+                            height: 37px;
+        
+                            color: #43C4B2;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.175px;
+                            text-transform: uppercase;
+                        }
+                }
+         
+                
+               .showmore{
+                display: none;
+                align-items: center;
+                width: 140px;
+                height: 48px;
+                padding: 12px 10px;
                 align-items: center;
                 gap: 10px;
-                border-radius: 100px;
-                background: #FFF;
-    
-                color: #000;
-                font-family: Poppins;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 0.175px;
-                text-transform: uppercase;
+                flex-shrink: 0;
+                color: #FFFFFF;
+               }
+        
+                .viewAll{
+                    display: flex;
+                    padding: 12px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 100px;
+                    background: #FFF;
+        
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                }
             }
+        
         }
     
+      
      
     
-        .impactBox:hover .profileImg{
-            transform: scale(1.2);
-        }
-        .impactBox:hover .btn{
-                color: white;
-                background-color: #43C4B2;
-       
-        }
-    
-        .btn:hover{
-            border-radius: 100px;
-        }
-    
-       .navlink{
-        text-decoration: none;
-       }
-      
-    //    .custom-next{
-    //     background-color: #df1010;
-    //    }
+  
     }
   }

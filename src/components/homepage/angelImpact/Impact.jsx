@@ -21,7 +21,7 @@ import { green } from '@mui/material/colors';
 
 export default class LazyLoad extends Component {
 
-  state = {
+  state = { 
     loading: true,
     ImpactDetails: [],
     visibleImpact: 10,  

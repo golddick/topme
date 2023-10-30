@@ -20,7 +20,7 @@ function LandingPage() {
     <Selectoption/>
     <Impact/>
     <AngelDonate/>
-    <Guarantee/>
+     
     <Join/>
     <div className="newLetter">
     <div className="content">

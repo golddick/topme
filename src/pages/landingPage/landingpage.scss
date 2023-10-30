@@ -21,9 +21,9 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
+  @media  (max-width: 600px) {
     .landing{
-
+height: auto;
         .landingbody{
 
             .newLetter{
@@ -34,17 +34,17 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 0px 40px 150px 40px;
+                padding: 0px 0px 138px 0px;
                 
                 .content{
                 display: flex;
-                width: 336px;
-                height: 323px;
+                width: 90%;
+                height: 90%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 gap: 17px;
-                margin: 10px;
+                // margin: 10px;
                 flex-shrink: 0;
                 border-radius: 16px;
                 background: #FFF;

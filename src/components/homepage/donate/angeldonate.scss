@@ -221,7 +221,7 @@
   .AngelDonate{
     display: inline-flex;
     height: auto;
-    padding: 150px 40px 150px 40px;
+    //padding: 150px 40px 150px 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -230,7 +230,7 @@
     flex-shrink: 0;
 
     .donateInfo{
-      width: 100%;
+      width: 90%;
     
       display: flex;
      // align-items: start;
