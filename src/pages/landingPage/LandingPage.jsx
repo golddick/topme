@@ -8,6 +8,7 @@ import Hometop from '../../components/homepage/HomeTop/Hometop'
 import Guarantee from '../../components/homepage/guarantees/Guarantee'
 import Join from '../../components/homepage/join/Join'
 import NewsLetter from '../../components/News-letter/NewsLetter'
+import Optiontab from '../../components/Option/Option'
 
 function LandingPage() {
   return (
@@ -18,9 +19,10 @@ function LandingPage() {
     <div className="landingbody">
     <Homepage/>
     <Selectoption/>
+    <Optiontab/>
     <Impact/>
     <AngelDonate/>
-     
+     <Guarantee/>
     <Join/>
     <div className="newLetter">
     <div className="content">
