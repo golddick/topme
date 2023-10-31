@@ -1,6 +1,6 @@
 import './footerangel.scss'
 // import WLogo from '../../../assets/Logo.png'
-import Wlogo  from '../../../assets/whitelogo.png'
+import Wlogo  from '../../../assets/LogoWW.svg'
 import DarkLogo from '../../../assets/blacklogo.svg'
 import {BsYoutube , BsInstagram , BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
