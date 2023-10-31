@@ -36,5 +36,5 @@ function Join() {
         </div>
   ) 
 }
-
+ 
 export default Join

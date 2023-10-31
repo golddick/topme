@@ -487,7 +487,10 @@ function Login() {
         <HeaderLogin />
       </div>
       <img src={BlackLogo} alt="" className="mobileLogo" />
+      <div className="top-img">
       <img src={body1} alt="" className="GroundImgtop" />
+      </div>
+      
       <div className="login">
         <div className="formContainer">
           <h1>
@@ -549,7 +552,9 @@ function Login() {
 
             {error && <p className="error-message">{error}</p>}
             <div className="bottomText">
+              <div className="innerButtomtext">
               <h5>By continuing, you agree to the terms of service and privacy notice</h5>
+              </div>
             </div>
             <button
               onClick={handleLogin}
@@ -572,7 +577,10 @@ function Login() {
           </div>
         </div>
       </div>
+      <div className="bottom_img">
       <img src={body2} alt="" className="GroundImgbuttom" />
+      </div>
+    
     </div>
   );
 }
