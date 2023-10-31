@@ -18,10 +18,6 @@ function NewsLetter({ handleClosePopup }) {
  <div className="contentCenter">
  <p>Please insert your Email address</p>
    <div className="emailInput"> <input type="email" name="email" id="" placeholder='input email' /></div>
-   <div className="newsInput">
-   <input type="email" name="email" id="" placeholder='input email' />
-   <div className='sub-Btn'>subscribe</div>
-   </div>
    <div className="subscribedAngels">
    <div className="subscribers">
       <img src="https://truthshare.com.ng/wp-content/uploads/2020/06/people-1492052_1280-1024x681.jpg" alt="" className='image1' />
@@ -33,7 +29,13 @@ function NewsLetter({ handleClosePopup }) {
       <span>subscribers. </span>
    </div>
     </div>
-
+ <div className="mobile_center">
+  <p>GET UP-TO-DATE INFORMATION ABOUT TOPME AND ITS SERVICES.</p>
+ <div className="newsInput">
+   <input type="email" name="email" id="" placeholder='input email' />
+   <div className='sub-Btn'>subscribe</div>
+   </div>
+ </div>
    <div className="newBtn">
     <button className='subBtn'>subscribe</button>
    <button onClick={handleClosePopup} className='canBtn'>cancel</button>

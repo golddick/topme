@@ -44,7 +44,7 @@
         h4{
             color: #FFF;
             font-family: Poppins;
-            font-size: 25px;
+            font-size: 34px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -54,21 +54,25 @@
         p{
             color: #FFF;
             font-family: Poppins;
-            font-size: 20px;
+            font-size: 30px;
             font-style: normal;
-            font-weight: 250;
+            font-weight: 275;
             line-height: normal;
             letter-spacing: 0.085px;
         }
 
+       
+
         .Guaranteebuttom{
             display: flex;
             padding: 0px 24px;
-            flex-direction: column;
-            justify-content: center;
+            //flex-direction: column;
+            justify-content: flex-end;
             align-items: flex-end;
             gap: 10px;
             align-self: stretch;
+            //background-color: red;
+            
 
             span{
                 color: #FFF;
@@ -83,18 +87,37 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                gap: 10px;
+
+                display: flex;
+               // background-color: red;
+
+               
+            }
+
+            .icon{
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                color: #FFF;
+            }
+
+            .mobile-Icon{
+                display: none;
             }
         }
 
         
     }
 
-    
+    .mobile_p{
+        display: none;
+    }
 }
 
 
 
-@media  (max-width: 1200px) {
+@media  (max-width: 1000px) {
     .Guarantee{
         width: 100%;
         height: auto;
@@ -161,11 +184,12 @@
             .Guaranteebuttom{
                 display: flex;
                 padding: 0px 24px;
-                flex-direction: column;
-                justify-content: center;
+                //flex-direction: column;
+                justify-content: flex-end;
                 align-items: flex-end;
                 gap: 10px;
                 align-self: stretch;
+                //background-color: red;
     
                 span{
                     color: #FFF;
@@ -192,12 +216,12 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
  
     .Guarantee{
         display: flex;
         width: 100%;
-        height: auto;
+        height: 100vh;
         // padding: 150px 40px 150px 40px;
         flex-direction: column;
         justify-content: center;
@@ -233,6 +257,7 @@
                     font-weight: 400;
                     line-height: normal;
                     letter-spacing: 0.024px;
+                    gap: 10px;
                 }
 
             }
@@ -240,7 +265,7 @@
             h4{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 35px;
+                font-size: 34px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 113.5%; /* 38.59px */
@@ -259,16 +284,31 @@
                 line-height: normal;
                 letter-spacing: 0.024px;
             }
+            .pc_p{
+                display: none;
+            }
+
+            .mobile_p{
+                display: block;
+                p{
+                    color: #FFF;
+                    align-self: stretch;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                }
+            }
             .Guaranteebuttom{
                 display: flex;
                 padding: 8px 24px;
-                height: 40px;
-                width: 238px;
                 align-items: center;
                 gap: 10px;
                 border-radius: 100px;
                 background: #FFF;
-                color: #43C4B2;
+                width: 250px;
                 
                 
 
@@ -281,14 +321,33 @@
                     line-height: normal;
                     letter-spacing: 0.15px;
                     text-transform: uppercase;
+                    white-space: nowrap;     
+                    overflow: hidden;    
+                    text-overflow: ellipsis; 
 
                     .icon{
                         font-size:20px ;
                     }
+
+                  
                 }
+                .mobile-Icon{
+                    margin-left: 10px;
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    color: #43C4B2;
+                }
+
             }
            
         }
+    }
+
+    .icon{
+        display: none;
     }
 
   }

@@ -1,5 +1,6 @@
 import './footerangel.scss'
-import WLogo from '../../../assets/Logo.png'
+// import WLogo from '../../../assets/Logo.png'
+import Wlogo  from '../../../assets/whitelogo.png'
 import DarkLogo from '../../../assets/blacklogo.svg'
 import {BsYoutube , BsInstagram , BsTwitter} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
@@ -28,7 +29,7 @@ function AngelFooter() {
      <div className="footer_wrapper">
      <div className="footerWrapper">  
         <div className="left">
-          <img src={WLogo} alt="" />
+          <img src={Wlogo} alt="" />
       <div className="fIcons"> 
       <div className="footerIcons">
           <BsYoutube className='icons'/>
@@ -80,7 +81,6 @@ function AngelFooter() {
           </div>
 
         </div>
-
         <div className="right">
           <div className="newsletter">
             <h4>subscribe to our newsletter</h4>
@@ -137,8 +137,8 @@ function AngelFooter() {
         <NavLink to='/HowitWorks' className='navLink'> <span onClick={scrollToTop}>How it Works</span></NavLink>
         <NavLink to='/pricing' className='navLink'><span  onClick={scrollToTop}>Pricing and Fees</span></NavLink>
         <NavLink to='/guarantee' className='navLink'> <span onClick={scrollToTop}>Guarantee Page</span></NavLink>
-        <NavLink to='/profile' className='navLink'><span  onClick={scrollToTop}>profile</span></NavLink>
-        <NavLink to='/addProfile' className='navLink'> <span onClick={scrollToTop}>addprofile</span></NavLink>
+        {/* <NavLink to='/profile' className='navLink'><span  onClick={scrollToTop}>profile</span></NavLink>
+        <NavLink to='/addProfile' className='navLink'> <span onClick={scrollToTop}>addprofile</span></NavLink> */}
 
         </div>
 

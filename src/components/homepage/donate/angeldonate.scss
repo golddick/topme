@@ -58,10 +58,11 @@
               gap: 10px;
               width: 100%;
               border-radius: 4px;
+              border: 2px solid  #000;
               align-items: center;
               background-color: #000;
               color: white;
-              
+    
       
               span {
                 color: #fff;
@@ -94,6 +95,32 @@
                height: 20px;
                width: 20px;
               }
+
+              // &:hover { /* Apply styles when .typeContent is hovered */
+              //   border: 2px solid #0B6623;
+            
+              //   span {
+              //     color: #0B6623; /* Change span color to green on hover */
+              //   }
+              //   p{
+              //     background-color: #0B6623;
+              //   }
+              // }
+            
+
+              @media screen and (min-width: 640px) and (max-width: 1508px) {
+                &:hover { /* Apply styles when .typeContent is hovered */
+                  border: 2px solid #0B6623;
+              
+                  span {
+                    color: #0B6623; /* Change span color to green on hover */
+                  }
+                  p{
+                    background-color: #0B6623;
+                  }
+                }
+                
+              }
             }
           // }
 
@@ -104,19 +131,19 @@
               
         }
 
-        .type:hover {
-          border-radius: 6px;
-            border: 2px solid #0B6623;
-            height: 40px;
-          }
-          .type:hover span {
-            color:#0B6623;
-          }
+        // .type:hover {
+        //   border-radius: 6px;
+        //     border: 2px solid #0B6623;
+        //     height: 40px;
+        //   }
+        //   .type:hover span {
+        //     color:#0B6623;
+        //   }
           
-          .type:hover p {
-            display: flex;
-            background-color: #0B6623;
-          }
+        //   .type:hover p {
+        //     display: flex;
+        //     background-color: #0B6623;
+        //   }
     }
 }
 
@@ -214,18 +241,18 @@
               
         }
 
-        .type:hover {
-          border-radius: 4px;
-            border: 4px solid #0B6623;
-          }
-          .type:hover span {
-            color:#43C4B2;
-          }
+        // .type:hover {
+        //   border-radius: 4px;
+        //     border: 4px solid #0B6623;
+        //   }
+        //   .type:hover span {
+        //     color:#43C4B2;
+        //   }
           
-          .type:hover p {
-            display: flex;
-            background-color: #0B6623;
-          }
+        //   .type:hover p {
+        //     display: flex;
+        //     background-color: #0B6623;
+        //   }
     }
 }
 }

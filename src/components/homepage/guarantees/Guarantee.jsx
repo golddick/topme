@@ -1,5 +1,6 @@
 import './guarantee.scss'
 import  {BiChevronRight} from 'react-icons/bi'
+import {BsArrowRight} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
 
 function Guarantee() { 
@@ -13,15 +14,23 @@ function Guarantee() {
                 <span>OUR GUARANTEE</span>
             </div>
             <h4>Everything is guaranteed </h4>
+             <div className="pc_p">
              <p>Our utmost priority is to ensure that generous contributions make the intended meaningful impact on the supported causes.</p>
-            <div className="Guaranteebuttom">
-              <NavLink to='/guarantee' style={{textDecoration:'none'}}>
-            <span>EXPLORE OUR GUARANTEE PAGE <BiChevronRight className='icon'/> </span>
+             </div>
+             <div className="mobile_p">
+              <p>Our priority is that contributions get to the intended beneficiaries.</p>
+             </div>
+           
+              <NavLink to='/guarantee' style={{textDecoration:'none'}} className='Guaranteebuttom'>
+            <span>EXPLORE OUR GUARANTEE PAGE  </span>
+               <BiChevronRight className='icon'/>
+               <BsArrowRight className='mobile-Icon'/>
+               
             </NavLink> 
-        </div>
+     
       
         </div>
-        </div> 
+        </div>  
   ) 
 }
 

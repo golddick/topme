@@ -46,6 +46,9 @@
             border: 1.5px solid #000;
             background: #FFF;
             outline: none;
+            input{
+                width: 100%;
+            }
 
             &::placeholder{
                 color: rgba(0, 0, 0, 0.50);
@@ -57,6 +60,8 @@
                 letter-spacing: 0.15px;
                 text-transform: uppercase;
             }
+
+
         }
 
         .subscribedAngels{
@@ -132,6 +137,10 @@
       
     }
 
+    .mobile_center{
+        display: none;
+    }
+
 
     .newBtn{
         display: flex;
@@ -180,9 +189,7 @@
         }
     }
 
-    .newsInput{
-        display: none;
-    }
+  
   
 
 }
@@ -201,34 +208,38 @@
         // //background: #eb8282;
 
 
-                display: flex;
+        display: flex;
         width: 100%;
-        height: 323px;
+        height: 300px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 17px;
+        gap: 10px;
         flex-shrink: 0;
         padding: 10px;
     
         h3{
             color: #000;
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 13px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             line-height: normal;
-            letter-spacing: 0.024px;
+            letter-spacing: 0.175px;
+            text-transform: uppercase;
+            margin-left: -10px;
         }
         .contentCenter{
-            display: flex;
+            display: none;
             flex-direction: column;
-            align-items: start;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             //margin: 10px;
             //background-color: chartreuse;
     
             p{
+                display: flex;
                 color: #000;
                 font-family: Poppins;
                 font-size: 14px;
@@ -243,12 +254,41 @@
                
             }
 
+           
+    
+            .subscribedAngels{
+                display: none;
+            }
+    
+         
+          
+        }
+    
+        .mobile_center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: black;
+
+            p{
+                color: #000;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.15px;
+                max-width: 225px;
+            }
+
             .newsInput{
                 display: grid;
                 display: flex;
                 align-items: center;
                 grid-template-columns: 1.5fr 1fr;
-                 width: 100%;
+                 width: 95%;
                  height: 45px;
                 //display: inline-flex;
                 //padding: 15px 10px;
@@ -307,15 +347,7 @@
                 
 
             }
-    
-            .subscribedAngels{
-                display: none;
-            }
-    
-    
-          
         }
-    
     
         .newBtn{
             display: none;
