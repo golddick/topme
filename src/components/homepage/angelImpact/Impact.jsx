@@ -1,6 +1,7 @@
 import './impact.scss';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiChevronRight } from 'react-icons/bi';
+import {FiArrowRight} from 'react-icons/fi'
 import {MdArrowForwardIos} from 'react-icons/md'
 import React, { Component ,useState, useEffect} from 'react';
 // import Slider from 'react-slick';
@@ -28,7 +29,7 @@ export default class LazyLoad extends Component {
     showLessImpact: false,
     gridRows: 2, // Added gridRows state
   };
-  
+   
  
   componentDidMount() {
     // Simulating an API call to fetch impact details
@@ -192,8 +193,10 @@ export default class LazyLoad extends Component {
                       <NavLink to='/donor' className='navlink'>
                       <div className="btn">
                         <span>
-                          view impact story <BiChevronRight />
+                          view impact story <BiChevronRight  className='pc-arrow'/>
+                        
                         </span>
+                        <FiArrowRight className='mobile-arrow'/>
                       </div>
                       </NavLink>
                     </SwiperSlide>

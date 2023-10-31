@@ -14,7 +14,7 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
   // function handleClosePopup() {
   //   closePopup();
   // }
- 
+  
   const initialVisibleCategories = 10; // Number of categories to initially show
   const [visibleCategories, setVisibleCategories] = useState(initialVisibleCategories);
   const [showLessActive, setShowLessActive] = useState(false); 
@@ -185,9 +185,11 @@ function Search({ closePopup, closeSearchTab, isOpen }) {
           </div>
           {visibleCategories < allCategories.length && (
              <span onClick={handleShowMore}className="show-more"  >
-             {showAll ? 'Show less' : 'Show '}
+             {showAll ? 'Show less' : 'Show More'}
            </span>
           )}
+
+          <div className="vertical"></div>
             <h4 className="nearAngels">Angels Near You</h4>
             <div className="near">
               {loader ? (

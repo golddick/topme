@@ -56,12 +56,12 @@ function AngelDonate() {
         </div>
           </div>
 
-          <div className="type">
+          {/* <div className="type">
         <div className="typeContent">
         <span>pluto</span>
             <p>95</p>
         </div>
-          </div>
+          </div> */}
           <div className="type">
         <div className="typeContent">
         <span>ikoyi</span>
@@ -89,12 +89,12 @@ function AngelDonate() {
         </div>
           </div>
 
-          <div className="type">
+          {/* <div className="type">
         <div className="typeContent">
         <span>pluto</span>
             <p>95</p>
         </div>
-          </div>
+          </div> */}
           <div className="type">
         <div className="typeContent">
         <span>ikoyi</span>
@@ -117,11 +117,11 @@ function AngelDonate() {
           </div>
          
         </div>
- 
+  
         
       </div>
       </div> 
-  )
+  ) 
 }
 
 export default AngelDonate 

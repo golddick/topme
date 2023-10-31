@@ -143,11 +143,12 @@
                 flex-direction: column;
                 align-items: flex-start;
                 border-radius: 0 0 10px 10px;
-                gap: 10px;
-                height:600px;
+                gap: 20px;
+                height:650px;
                 width: 1000px;
                 background-color: #FFF;
                 overflow: scroll;
+                padding-bottom: 20px;
 
                 .causeSearch{
                     display: none;
@@ -240,6 +241,14 @@
                     line-height: normal;
                     letter-spacing: 0.15px;
                     text-transform: uppercase;              
+                }
+
+                .vertical{
+                    display: none;
+                    border: 1px solid #43C4B2;
+                    width: 100%;
+                    margin-top: 20px;
+                   // color: #43C4B2;
                 }
 
                 .near{
@@ -442,10 +451,10 @@
     // .container.testimonials_container {
     //     width: 60%;
     // }
-  }
+  } 
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
+  @media (max-width: 600px) {
     .search{
     //    position: fixed;
     //     top: 40px;
@@ -625,6 +634,11 @@
                             display: none;
              
                         }
+
+
+                         .vertical{
+                            display: block;
+                         }
 
                         .nearAngels{
                             display: none;

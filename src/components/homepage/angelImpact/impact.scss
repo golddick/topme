@@ -5,7 +5,7 @@
     //gap: 100px;
     height: auto;
     background: #000;
-   // position: relative;
+    padding-bottom: 50px;
 
    .impact_wrapper{
     display: flex;
@@ -13,7 +13,9 @@
     justify-content: center;
     margin: auto;
     width: 70%;
-    gap: 60px;
+    position: relative;
+    //height: 100%;
+    gap: 80px;
 
     .angelImpact{
         display: flex;
@@ -94,10 +96,12 @@
                     align-items: center;
                     justify-content: center;
                     width: 100%;
-                    height: 150px;
+                    height: 217px;
                    // padding: 5px;
                     margin: 0;
                     overflow: hidden;
+                    border-radius: 4px;
+                    //background-color: brown;
                      .profileImg{
                         padding: 0;
                         margin: 0;
@@ -107,6 +111,7 @@
                         border-radius: 4px;
                         object-fit: cover;
                         transition: transform 0.3s ease;
+                        overflow: hidden;
                         
                     }
             
@@ -208,10 +213,21 @@
                     line-height: normal;
                     letter-spacing: 0.175px;
                     text-transform: uppercase;
+
+                    .mobile-arrow{
+                       display: none;
+                    }
                 }
 
                 .impactBox:hover .profileImg{
                     transform: scale(1.2);
+                    border-radius: 5px;
+                   overflow: hidden;
+                }
+                .impactBox:hover .impactboxImg {
+                    //transform: scale(1.2);
+                    border-radius: 5px;
+                    //background-color: red;
                    overflow: hidden;
                 }
 
@@ -267,9 +283,16 @@
 
     .navArrow{
         font-size: 12px;
-        color: #FFF;
+        //color: #c71414;
+        //background-color: yellow;
         top: 100px;
-        z-index: 99;
+        //z-index: 99;
+        position: absolute;
+        top: 580px;
+        bottom: 0;
+        // text-align: center;
+        // align-self: center;
+        // margin: auto;
     }
    }
 
@@ -713,7 +736,7 @@
                             align-items: center;
                             justify-content: center;
                             width: 100%;
-                            height: 150px;
+                            height: 165px;
                            // padding: 5px;
                             margin: 0;
                             overflow: hidden;
@@ -740,6 +763,8 @@
                                     display: flex;
                                     flex-direction: column;
                                     align-items: start;
+                                    gap: 10px;
+                                    //background-color: blueviolet;
                                     //margin: 10px;
                                     
                                    
@@ -753,7 +778,7 @@
                                     span{
                                         color: #000;
                                         font-family: Poppins;
-                                        font-size: 14px;
+                                        font-size: 12px;
                                         font-style: normal;
                                         font-weight: 500;
                                         line-height: normal;
@@ -799,11 +824,11 @@
                     
                     
                                 p{
-                                    margin-top: 10px;
+                                    margin-top: 0;
                                     color: #000;
                                     flex-wrap: wrap;
                                     font-family: Poppins;
-                                    font-size: 12px;
+                                    font-size: 10px;
                                     font-style: normal;
                                     font-weight: 400;
                                     line-height: normal;
@@ -815,21 +840,47 @@
                       
                         .btn{
                             display: flex;
+                            text-align: start;
+                            align-items: center;
+                            justify-content: start;
+                            padding: 0;
                             gap: 10px;
                             width: 200px;
                             height: 37px;
         
                             color: #43C4B2;
                             font-family: Poppins;
-                            font-size: 14px;
+                            font-size: 10px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
                             letter-spacing: 0.175px;
                             text-transform: uppercase;
+                            //background-color: blue;
+
+                            .pc-arrow{
+                                display: none;
+                            }
+
+                            .mobile-arrow{
+                                display: flex;
+                                width: 20px;
+                                height: 20px;
+                            }
                         }
+
+                        .impactBox:hover .profileImg{
+                            transform: none;
+                           overflow: hidden;
+                        }
+        
+                        .impactBox:hover .btn{
+                            color: #43C4B2  ;
+                            background-color: transparent;
+                   
+                    }
                 }
-         
+          
                 
                .showmore{
                 display: none;
@@ -854,7 +905,7 @@
         
                     color: #000;
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 10px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
