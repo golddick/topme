@@ -122,14 +122,15 @@ function Pricing() {
                 </div>
             </div>
             </div>
+            
           <div className="optionHeader">
             <h3>Unleash your inner Angel & make a difference today!</h3>
           </div>
-          <div className="option_tab">
-          <Optiontab/>
-          </div>
+          {/* <div className="option_tab"> */}
+         
+          {/* </div> */}
            </div>
-       
+           <Optiontab/>
         </div>
         
             <AngelFooter/>

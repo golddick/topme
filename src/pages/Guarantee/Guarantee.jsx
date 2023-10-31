@@ -89,7 +89,7 @@ function Guarantee() {
              
         </div>
         <Footer/>
-        </div>
+        </div> 
   )
 }
 

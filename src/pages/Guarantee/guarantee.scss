@@ -23,9 +23,10 @@
 
         .GuaranteetopText{
             display: flex;
-            width: 700px;
+            width: 70%;
             flex-direction: column;
             align-items: flex-start;
+            //background-color: #43C4B2;
             
 
             h2{
@@ -39,9 +40,10 @@
             }
             p{
                 color: #808080;
-                align-self: stretch;
+
+                /* Headers/H6 */
                 font-family: Poppins;
-                font-size: 15px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -105,8 +107,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            padding: 40px 243.5px 40px 243.5px;
+            width: 70%;
+            //padding: 40px 0px 40px 0px;
+            margin: auto;
+            //background-color: blue;
 
             .issue{
                 display: flex;
@@ -151,7 +155,7 @@
                         display: flex;
                         align-items: center;
                         flex-direction: column;
-                        width: 250px;
+                        width: 300px;
                         height: 200px;
                         align-self: stretch;
                         border-radius: 8px;
@@ -236,8 +240,9 @@
  
         .concern{
             display: flex;
-            width: 100%;
-            padding: 40px 243.5px 40px 243.5px;
+            width: 70%;
+            margin: auto;
+            //padding: 40px 0px 40px 0px;
             flex-direction: column;
             align-items: flex-start;
             gap: 24px;

@@ -72,11 +72,11 @@ function HowitWorks( { selectTabColor, innerBoxColor }) {
           <div className="textHeader">
             <h3>Unleash your inner Angel & make a difference today!</h3>
           </div>
-          <div className="_option">
+          {/* <div className="_option"> */}
           <Optiontab/>
-          </div>
+          {/* </div> */}
           <div className="support">
-            <div className="_supportBody">
+            <div className="_supportBody"> 
             <div className="supportLeft">
               <h3>Support Angels: Unleash Impact</h3>
               <p>Our angels drive change by identifying causes, 
