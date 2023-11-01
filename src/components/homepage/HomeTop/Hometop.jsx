@@ -21,7 +21,7 @@ function Hometop() {
 
  
   const openSearchTab = () => {
-    setSearch(!openSearch) 
+    setSearch(!openSearch)  
   }
  
   const closeSearchTab = () => {
@@ -79,10 +79,10 @@ function Hometop() {
        
       <div className="largeTopbar">
       <div className="topLeft">
-          <NavLink to='/about' className='navlink'>
+          <NavLink to='/About' className='navlink'>
           <span>about</span>
           </NavLink>
-          <NavLink to='/impact' className='navlink'>
+          <NavLink to='/Angels' className='navlink'>
           <span>angels</span>
           </NavLink>
           <span onClick={openExtra}>extras
@@ -91,13 +91,13 @@ function Hometop() {
           {
             extraopen && (
              <div ref={popupRef}  className="extraPopup">
-              <NavLink to='/contact' className='navlink'>
+              <NavLink to='/Contact' className='navlink'>
                <div className="contact">
                 <div className="span">Contact</div>
                 <img src={Logo} alt="" />
               </div>
               </NavLink>
-              <NavLink to='/blog' className='navLink'>
+              <NavLink to='/Blog' className='navLink'>
               <div className="blog">
               <div className="span">Blog</div>
               </div>
@@ -112,19 +112,19 @@ function Hometop() {
           {
             howitworks && (
              <div ref={popupRef} className="howPopUp">
-               <NavLink to='/HowitWorks' className='navlink'>
+               <NavLink to='/How-it-Works' className='navlink'>
                <div   className="contact">
                 <div className="span">how</div>
                 <img src={Logo} alt="" />
                 <div className="span">works</div>
               </div>
               </NavLink>
-              <NavLink to='/pricing' className='navlink'>
+              <NavLink to='/Pricing' className='navlink'>
               <div className="blog">
               <div className="span">pricing and fees</div>
               </div>
               </NavLink>
-              <NavLink to='/guarantee' className='navlink'>
+              <NavLink to='/Guarantee' className='navlink'>
               <div className="blog">
               <div className="span">guarantees page</div>
               </div>
@@ -132,7 +132,7 @@ function Hometop() {
              </div>
             )
           }
-     
+      
         
         </div>
 

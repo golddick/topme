@@ -8,11 +8,13 @@
    
     .campPageBody{
         background-color: #FFF;
-        width: 100%;
-        height: 100vh;
+        width: 90%;
+        //height: 100vh;
+        margin: auto;
        // margin-top: -100px;
         display:grid ;
         grid-template-columns: 2fr 3fr 2fr ; 
+
         //grid-template-rows: 100vh; 
         
         
@@ -20,15 +22,25 @@
         .PageContainerleft{
             flex: 2;
             display: flex;
-            background-color: #FFF;
+            //background-color: #3d0742;
             justify-content: space-between;
-            padding: 10px;
+            //spadding: 20px;
+            padding-top: 20px;
+           gap: 50px;
             //margin-right: 50px;
             // flex-direction: column;
-            height: 600px;
+            //height: 600px;
             width: 100%;
+             //position: fixed;
+            
+
+            .back{
+                width: 40px;
+                height: 40px;
+                
+            }
     
-            position:fixed
+            // position:fixed
     
             .return{
       
@@ -44,10 +56,10 @@
             flex: 3;
             background-color: #FFF;
             flex-direction: column;
-            height: 100%;
+            //height: 100%;
             width: 100%;
             overflow-y: auto;
-            padding: 20px;
+            //padding: 20px;
 
             .mobileView{
                 display: none;

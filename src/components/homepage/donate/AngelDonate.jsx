@@ -13,7 +13,7 @@ function AngelDonate() {
             <p>54</p>
         </div>
         </div>
-
+ 
           <div className="type">
         <div className="typeContent">
         <span>lagos</span>

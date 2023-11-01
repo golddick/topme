@@ -32,7 +32,7 @@ function NewsLetter({ handleClosePopup }) {
  <div className="mobile_center">
   <p>GET UP-TO-DATE INFORMATION ABOUT TOPME AND ITS SERVICES.</p>
  <div className="newsInput">
-   <input type="email" name="email" id="" placeholder='input email' />
+   <input type="email" name="email" id="" placeholder='Your email' />
    <div className='sub-Btn'>subscribe</div>
    </div>
  </div>

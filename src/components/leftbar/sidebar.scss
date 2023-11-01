@@ -1,26 +1,27 @@
 .Sidebar{
     display: flex;
     width: 291px;
-    height: 509px;
-    padding: 1.5px 20px 12.5px 21px;
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 1.5px solid #43C4B2;
-    background: #FFF;
-    overflow: hidden;
+    // //height: 509px;
+    // padding: 1.5px 20px 12.5px 21px;
     
-     ::-webkit-scrollbar {
-         width: 5px;
-       }
-       ::-webkit-scrollbar-track {
-         background-color: #f1f1f1;
-       }
-       ::-webkit-scrollbar-thumb {
-         background-color: rgb(179, 179, 179);
-       }
+    // align-items: center;
+    // gap: 12px;
+    // flex-shrink: 0;
+    // border-radius: 16px;
+    
+    // background: #de2e2e;
+    // //overflow: hidden;
+    
+    //  ::-webkit-scrollbar {
+    //      width: 5px;
+    //    }
+    //    ::-webkit-scrollbar-track {
+    //      background-color: #f1f1f1;
+    //    }
+    //    ::-webkit-scrollbar-thumb {
+    //      background-color: rgb(179, 179, 179);
+    //    }
  
        .logoImage{
          display: flex;
@@ -40,12 +41,16 @@
          
          .Sidebar_top{
              width: 270px;
-             margin-top: -35px;
+             //margin-top: -35px;
              display: inline-flex;
              flex-direction: column;
              align-items: center;
              gap: 12px;
              background-color: #FFF;
+             border: 1.5px solid #43C4B2;
+             border-radius: 16px;
+             padding-top: 20px;
+             //position: fixed;
  
             .profileInfo{
      
@@ -56,51 +61,47 @@
                  object-fit: cover;
               // margin-left: 60px;
                align-items: center; 
-                margin-top: -20px;
+                //margin-top: -20px;
                  border: 5px solid white;
                  
              }
  
             }
- 
-            .editProfile{
-             //padding-top: 100px;
-            //margin-left:50px ;
-           // padding-left: 20px;
-             display: flex;
-             align-items: center;
-             justify-content: flex-end;
-             padding-right: 20px;
-             width: 100%;
-             height: 24px;
-             background-color: #FFF;
-             
- 
-             span{
-                 
-                 font-family: 'Poppins';
-                 font-style: normal;
-                 font-weight: 300;
-                 font-size: 15px;
-                 line-height: 30px;
-                 text-align: center;
-                 color: #000;  
-                 
-             }
-         }
-     
-           
      
              .name{
-                 font-family: 'Poppins';
-                 font-style: normal;
-                 font-weight: 500;
-                 font-size: 16px;
-                 line-height: 24px;
-                 letter-spacing: 0.005em;
-                 display: flex;
-                 align-items: center;
+                 //padding: 20px;
+                //  display: flex;
+                //  align-items: center;
+                display: flex;
+                width: 90%;
                  flex-direction: column;
+                //background: blueviolet;
+                  gap: 10px;
+
+              .user_name{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                //background-color: burlywood;
+
+                
+
+                span{
+                    color: #000;
+                    text-align: center;
+                    
+                    /* Headers/H6 */
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+                }
+                //background-color: burlywood;
+              }
      
                  p{
                      color: #000;
@@ -110,37 +111,46 @@
                      font-weight: 400;
                      line-height: normal;
                      letter-spacing: 0.03px;
-                     width: 270px;
+                     width: 100%;
+                     margin: 0;
+                     padding: 0;
                  }
      
                  .info{
-                     display: flex;
+                     display: grid;
+                     grid-template-columns: 2fr 2fr;
                      align-items: center;
-                     width: 100%;
-                     justify-content: space-between;
-                     //gap: 24px;
-                     padding: 5px;
-                     background-color: transparent;
+                     width: 90%;
+                     //justify-content: space-between;
+                     //gap: 5px;
+                     //padding: 5px;
+                     //background-color: red;
      
-                     
-                     span{
-                         color: rgba(0, 0, 0, 0.50);
-                         font-family: Poppins;
-                         font-size: 10px;
-                         font-style: normal;
-                         font-weight: 500;
-                         line-height: normal;
-                         letter-spacing: 0.125px;
-                         text-transform: uppercase;
+                     .infoAddLeft, .infoDateRight{
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        //background: burlywood;
+                        span{
+                            color: rgba(0, 0, 0, 0.50);
+                            font-family: Poppins;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.125px;
+                            text-transform: uppercase;
+
+                            white-space: nowrap;     
+                            overflow: hidden;    
+                            text-overflow: ellipsis; 
+                        }
+                        .Icon{
+                            font-size: 15px;
+                            color: rgba(0, 0, 0, 0.50);
+                        }
                      }
-                     .Icon{
-                         font-size: 20px;
-                         color: rgba(0, 0, 0, 0.50);
-                     }
-     
-                     .address{
-                         margin-right: 20px;
-                     }
+                    
      
                  }
      
@@ -148,7 +158,8 @@
                      display: flex;
                      justify-content: center;
                      align-items: center;
-                     gap: 44px;
+                     width: 90%;
+                     gap: 30px;
  
                      .ICON{
                          width: 22.8px;
@@ -161,13 +172,14 @@
              .engagements{
                  display: flex;
                  flex-direction: row;
-                 width: 200px;
+                 width: 90%;
                  //margin-left: 40px;
-                 justify-content: space-between;
+                 justify-content: center;
                  align-items: center;
                  background-color: black;
+                 overflow: hidden;
                  border-radius: 5px;
-                 height: 72px;
+                 height: 70px;
      
                  .vertical-line {
                      width: 2px;
@@ -179,7 +191,12 @@
                      flex-direction: column;
                      padding: 10px;
                      align-items: center;
-                     
+                     justify-content: center;
+                    //background-color: blueviolet;
+                    padding-top: 20px;
+                     //width: 80%;
+                     margin: auto;
+                     height: 100%;
                      
                      
      
@@ -201,7 +218,7 @@
      
                      font-family: 'Poppins';
                      font-style: normal;
-                     font-weight: 500;
+                     font-weight: 400;
                      font-size: 12px;
                      line-height: 18px;
                      text-align: center;

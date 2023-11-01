@@ -53,7 +53,7 @@ function Guarantee() {
                     <h5>Submit a claim</h5>
                     </div>
                     <NavLink to='/claim-form ' className='navlink'>
-                    <button className='button'>SUBMIT A CLAIM</button>
+                    <button className='button'>SUBMIT A Report</button>
                     </NavLink>
                 </div>
 

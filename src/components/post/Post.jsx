@@ -182,6 +182,7 @@ import VerticalProgressbar from '../../components/Progressbar/Progressbar';
 import PostStatus from '../postLink/PostStatus';
 import ShareContainer from '../ShareContainer/ShareContainer';
 import './post.scss'
+import { NavLink } from 'react-router-dom';
 
 function Post() {
   const posts = [
@@ -297,7 +298,7 @@ function Post() {
                 <div className="postStoryTop">
                   <div className="topStory">
                     <span>
-                      <BsGift className="storyicon" style={{ fontSize: '20px' }} /> donation so far: <b>$10,000</b>
+                      <BsGift className="storyicon" /> donation so far: <b>$10,000</b>
                     </span>
                     <span>
                       <BsGift className="storyicon" /> donation Target: <b>$21,000</b>
@@ -310,7 +311,10 @@ function Post() {
                 </div>
 
                 <div className="storyCenter">
+                  <NavLink to="/Payment" className='navlink'>
                   <button>Top Me</button>
+                  </NavLink>
+               
                   <div className="likeBtn">
                     <BsHeart className='LikeIcon' />
                     <span>12 Likes</span>

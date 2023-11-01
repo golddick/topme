@@ -7,13 +7,13 @@ import Option from '../../Option/Option'
 function Selectoption(  { selectTabColor, innerBoxColor }) {
   const svgColor = selectTabColor === 'red' ? 'white' : 'blue';
 
-  
+   
     
   return (
     <div className='select'>
     <div className="selectBody">
         <div className="selecttext">
-      <h2>Unleash your inner Angel and make a  difference today!</h2>
+      <h2>Unleash your inner Angel & make a  difference today!</h2>
    
       </div>
    

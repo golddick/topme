@@ -64,7 +64,7 @@ function AngelFooter() {
             <span>BIGWIN</span>
             <span>oneID</span>
             <span> Digital community </span>
-            <span>Technology Advisors </span>
+            <span>Johnson & Wilner</span>
           </div>
 
           <div className="footerLinks">
@@ -129,7 +129,7 @@ function AngelFooter() {
           <span>Abuja Diplomat</span>
           <span>BIGWIG</span>
           <span>oneID</span>
-          <span>Technology Advisors</span>
+          <span>Johnson & Wilner</span>
         </div>
 
         <div className="FooterContent">
@@ -167,6 +167,7 @@ function AngelFooter() {
           <BsTwitter className='icons'/>
           </div>
       </div>
+      <div className="con-Email"><span>contact@topmeangel.com</span></div>
         </div>
 
 

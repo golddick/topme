@@ -21,9 +21,9 @@ function Donor() {
         <div className="postStatus"> <PostStatus/></div>
         <div className="PageContainerleft">
 
-        <div className="back">
+        <div >
         <NavLink to='/' className='navLink'>
-        <IoIosArrowDropleftCircle />
+        <IoIosArrowDropleftCircle className='back'/>
         </NavLink>
         </div>
           <Sidebar/>

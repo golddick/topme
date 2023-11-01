@@ -20,7 +20,7 @@ function Guarantee() {
              <div className="mobile_p">
               <p>Our priority is that contributions get to the intended beneficiaries.</p>
              </div>
-           
+            
               <NavLink to='/guarantee' style={{textDecoration:'none'}} className='Guaranteebuttom'>
             <span>EXPLORE OUR GUARANTEE PAGE  </span>
                <BiChevronRight className='icon'/>

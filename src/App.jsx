@@ -45,26 +45,26 @@ function App() {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path='/signup' element={<Signup/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/profile' element={<AngelProfile/>}/>
+            <Route path='/Sign-up' element={<Signup/>}/>
+            <Route path='/Login' element={<Login/>}/>
+            <Route path='/Profile' element={<AngelProfile/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
-            <Route path='/donor' element={<Donor/>}/>
+            <Route path='/Single' element={<Donor/>}/>
             <Route path='/Completed' element={<Completed/>}/>
             <Route path='/Ongoing' element={<Ongoing/>}/>
             <Route path='/CampaignDetails' element={<CampaignDetails/>}/>
             <Route path='/CreatePost' element={<CreatePost/>}/>
             <Route path='/' element={<LandingPage/>}/>
-            <Route path='/impact' element={<Impactpage/>}/>
-            <Route path='/HowitWorks' element={<HowitWorks/>}/>
+            <Route path='/Angels' element={<Impactpage/>}/>
+            <Route path='/How-it-Works' element={<HowitWorks/>}/>
             <Route path='/updateProfile' element={<Updateprofile/>}/>
             <Route path='/addProfile' element={<Addprofile/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/blog' element={<Blog/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/guarantee' element={<Guarantee/>}/>
+            <Route path='/About' element={<About/>}/>
+            <Route path='/Blog' element={<Blog/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/Guarantee' element={<Guarantee/>}/>
             <Route path='/Claim-form' element={<Claim/>}/>
-            <Route path='/pricing' element={<Pricing/>}/>
+            <Route path='/Pricing' element={<Pricing/>}/>
             <Route path='/RequestLink' element={<Forgetpasswoord/>}/>
             <Route path='/ResetPassword' element={<ResetPassword/>}/>
             <Route path='/SuccessPage' element={<SuccessPage/>}/>

@@ -29,25 +29,67 @@
             // background-color: chocolate;
 
             .left{
-                // margin-top: -150px;
-                 width: 100%;
+                width: 100%;
                  height: 200px;
                  flex-shrink: 0;
-                 display: flex;
-                 align-items: flex-end;
-                 justify-content: flex-end;
-                //   background-color: blue;
-                  overflow: hidden;
-                  //margin: auto;
+                 //background-color: red;
+                 //display: none;
+
+
+                .wing-body{
+                    position: relative;
+                    width: 100%;
+                    height: 200px;
+                    flex-shrink: 0;
+                    //background-color: gold;
+                    //display: none;
+    
+    
+                    .leftmale{
+                        width: 100%;
+                        height: 100%;
+                        flex-shrink: 0;
+                        object-fit: contain ;
+                        //z-index: 3;
+                        position: relative;
+                        //background-color: green;
+                        //display: none;
+                    }
+        
+                    .wing{
+                        position: absolute;
+                        width: 80px;
+                        height: 100px;
+                        transition: transform 0.5s;
+                        //background-color: antiquewhite;
+                    }
+                     .Wing1 {
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            object-fit: contain;
+                            animation: flapWing1 2s infinite alternate ease-in-out;
+                        }
+                        .Wing2 {
+                            right: 10px;
+                            object-fit: contain;
+                            top: 0;
+                            z-index: 1;
+                            transform: rotate(90deg);
+                            animation: flapWing2 2s infinite alternate ease-in-out;
+                        }
+                }
+                // // margin-top: -150px;
+                //  width: 100%;
+                //  height: 200px;
+                //  flex-shrink: 0;
+                // //  background-color: blue;
      
-                 .leftmale{
-                     width: 100%;
-                     height: 100%;
-                     object-fit: contain;
-                    //margin-right: -60px;
-                    //  background-color: red;
-                     
-                 }
+                //  .leftmale{
+                //      width: 100%;
+                //      height: 100%;
+                //      object-fit: contain;
+                //  }
              }
      
              .center{
@@ -215,17 +257,66 @@
                 //background-color: chocolate;
     
                 .left{
-                    // margin-top: -150px;
-                     width: 100%;
+                    width: 100%;
                      height: 200px;
                      flex-shrink: 0;
-                    //  background-color: blue;
+                     background-color: red;
+                     display: none;
+
+
+                    .wing-body{
+                        position: relative;
+                        width: 100%;
+                        height: 200px;
+                        flex-shrink: 0;
+                        background-color: gold;
+                        display: none;
+        
+        
+                        .leftmale{
+                            width: 100%;
+                            height: 100%;
+                            flex-shrink: 0;
+                            object-fit: contain ;
+                            z-index: 3;
+                            position: relative;
+                            background-color: green;
+                            display: none;
+                        }
+            
+                        .wing{
+                            position: absolute;
+                            width: 80px;
+                            height: 100px;
+                            transition: transform 0.5s;
+                        }
+                         .Wing1 {
+                                top: 70px;
+                                left: 10px;
+                                z-index: 1;
+                                object-fit: contain;
+                                animation: flapWing1 2s infinite alternate ease-in-out;
+                            }
+                            .Wing2 {
+                                right: 10px;
+                                object-fit: contain;
+                                top: 70px;
+                                z-index: 1;
+                                transform: rotate(90deg);
+                                animation: flapWing2 2s infinite alternate ease-in-out;
+                            }
+                    }
+                    // // margin-top: -150px;
+                    //  width: 100%;
+                    //  height: 200px;
+                    //  flex-shrink: 0;
+                    // //  background-color: blue;
          
-                     .leftmale{
-                         width: 100%;
-                         height: 100%;
-                         object-fit: contain;
-                     }
+                    //  .leftmale{
+                    //      width: 100%;
+                    //      height: 100%;
+                    //      object-fit: contain;
+                    //  }
                  }
          
                  .center{

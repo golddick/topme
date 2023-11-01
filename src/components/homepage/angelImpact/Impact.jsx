@@ -2,7 +2,7 @@ import './impact.scss';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiChevronRight } from 'react-icons/bi';
 import {FiArrowRight} from 'react-icons/fi'
-import {MdArrowForwardIos} from 'react-icons/md'
+import {MdArrowForwardIos, MdArrowBackIos} from 'react-icons/md'
 import React, { Component ,useState, useEffect} from 'react';
 // import Slider from 'react-slick';
 import Loader from '../../loader/Loader';
@@ -34,8 +34,68 @@ export default class LazyLoad extends Component {
   componentDidMount() {
     // Simulating an API call to fetch impact details
     setTimeout(() => {
-
+ 
       const ImpactDetails = [
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+  
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+  
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+  
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
+  
+        {
+          impactImg:
+            'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
+          impactName: 'Theresa Ubong',
+          impactBio:
+            'Live is to be lived now; not yesterday, not tomorrow but today! Let’s help others make this a reality, please',
+        },
         {
           impactImg:
             'https://media.istockphoto.com/id/1040308104/photo/mature-handsome-business-man.jpg?s=612x612&w=0&k=20&c=QbyH3XFmLOoy8NESjLQC8PYsm6g3UBL6COFaF-Qnnbk=',
@@ -100,19 +160,28 @@ export default class LazyLoad extends Component {
     this.setState((prevState) => {
       const showAll = prevState.visibleImpact === prevState.ImpactDetails.length;
       const newVisibleImpact = showAll ? 10 : prevState.ImpactDetails.length;
-      const gridRows = showAll ? 2 : 4; // Set gridRows to 4 when "View All" is clicked
+      const gridRows = showAll ? 2 : 4; 
 
       return { visibleImpact: newVisibleImpact, showLessImpact: !showAll, gridRows };
     });
   };
 
+
+
+
+  
+
   render() {
     const { loading, ImpactDetails, visibleImpact, showLessImpact, gridRows } = this.state;
+    const showMoreButton = ImpactDetails.length > 6;
 
 
     return (
       <div className="Impact">
         <div className="impact_wrapper">
+        <div >
+          <MdArrowBackIos className="swiper-button-prev"/>
+        </div>
         <div className="angelImpact">
           <div className="impactText">
             <h1>Where your Impact is needed...</h1>
@@ -134,17 +203,18 @@ export default class LazyLoad extends Component {
 
               <>
           <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         pagination={false}
         spaceBetween={30}
         grid={{
           rows: gridRows,
           fill: "row",
         }}
-        navigation={{
-          nextEl: null, 
-          prevEl: null, 
-        }}
+      navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }}
+      
         breakpoints={{
           300: {
             slidesPerView: 1,
@@ -152,10 +222,18 @@ export default class LazyLoad extends Component {
             grid: {
               rows: 4,
             },
+            navigation: {
+              prevEl: null, 
+              nextEl: null, 
+            },
           },
           600: {
             slidesPerView: 2,
             spaceBetween: 20,
+            navigation: {
+              prevEl: null, 
+              nextEl: null, 
+            },
           },
           1000: {
             slidesPerView: 3, 
@@ -190,7 +268,7 @@ export default class LazyLoad extends Component {
                         <p>{item.impactBio}</p>
                       </div>
                   
-                      <NavLink to='/donor' className='navlink'>
+                      <NavLink to='/Single' className='navlink'>
                       <div className="btn">
                         <span>
                           view impact story <BiChevronRight  className='pc-arrow'/>
@@ -211,18 +289,23 @@ export default class LazyLoad extends Component {
 
             )}
           </div>
-          <div className="showmore" onClick={this.handleShowMore}>
-                    <span >{showLessImpact ? 'Show Less' : 'Show More'}</span>
-                    <BiChevronRight />
-                  </div>
-          <NavLink to='/impact' className='navlink'>
+          {
+            showMoreButton && (
+              <div className="showmore" onClick={this.handleShowMore}>
+              <span >{showLessImpact ? 'Show Less' : 'Show More'}</span>
+              <BiChevronRight />
+              </div>
+            )
+          }
+         
+          <NavLink to='/Angels' className='navlink'>
           <div className="viewAll">
             <span>view all angels</span>
           </div>
           </NavLink>
         </div> 
         <div >
-          <MdArrowForwardIos className="navArrow"/>
+          <MdArrowForwardIos className="swiper-button-next"/>
         </div>
         </div>
        

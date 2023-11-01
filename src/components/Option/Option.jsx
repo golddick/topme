@@ -60,7 +60,7 @@ function Optiontab() {
         
         </div>
      
-   
+    
    
         <div className="selectTab">
           <span>2</span>
@@ -70,7 +70,7 @@ function Optiontab() {
              <div className="cornerRight"></div>
            </div>
            <div className="humanIcon">
-           <img src={Frame2}alt="" />
+           <img src={Frame2}alt="" /> 
            </div>
           </div>
           <h3>CREATE AN IMPACT STORY</h3>
@@ -111,7 +111,7 @@ function Optiontab() {
  
  
  
-       <NavLink to='/signup' className='navLink'>
+       <NavLink to='/Sign-up' className='navLink'>
              <button className='logBtn'>Become an Angel <AiFillCaretRight /> </button>
            </NavLink>
     </div>
