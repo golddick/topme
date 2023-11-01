@@ -292,8 +292,9 @@ function Post() {
             <p>{post.postheader}</p>
 
             <div className="center">
+              <NavLink to='' className='navlink'>
               <img src={post.postimg} alt="" />
-
+              </NavLink>
               <div className="storyTop">
                 <div className="postStoryTop">
                   <div className="topStory">

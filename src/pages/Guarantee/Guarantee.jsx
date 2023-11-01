@@ -73,7 +73,7 @@ function Guarantee() {
                     {/* <button>SUBMIT A CLAIM</button> */}
                 </div>
                 
-                </div> 
+                </div>  
             </div>
            </div>
 
