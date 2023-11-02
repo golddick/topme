@@ -27,7 +27,7 @@ function Hometop() {
   const closeSearchTab = () => {
     setSearch(false)
     
-  }
+  } 
 
   const handlePopupOpen = () => {
     setIsOpen(true);

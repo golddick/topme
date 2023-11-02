@@ -29,7 +29,7 @@ function Join() {
                 <NavLink to='/How-it-Works' className='howBtn navlink'>
                 <button className='howBtn'>how it works </button>
                 </NavLink>
-                
+                 
             </div> 
         </div>
         <div className="right">
