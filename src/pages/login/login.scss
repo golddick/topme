@@ -9,12 +9,14 @@
    flex-direction: column;
   
     .top-img{
-    
+    //background-color: #43C4B2;
+  
       .GroundImgtop {
         height: 100px;
         width: 200px;
         top: 0;
-        position: absolute;
+       // position: absolute;
+        //background-color: #b410ab;
   
       }
     }
@@ -37,7 +39,7 @@
           justify-content: flex-end;
           height: 100%;
           width: 300px;
-          object-fit: cover;
+          //object-fit: cover;
       //margin-bottom: 40px;
       //margin-left: 86%;
       //transform: rotate(5deg);
@@ -52,8 +54,9 @@
     display: none;
   }
     .loginHeader {
-    //position: absolute;
-      background-color: #fff;
+    position: absolute;
+    top: 0;
+      //background-color: #b61717;
       width: 100%;
       height: 40px;
       display: flex;
@@ -64,11 +67,14 @@
       align-items: center;
       padding-left: 50px;
       padding-right: 50px;
+     
   
       .left {
         width: 20px;
         height: 20px;
         margin-left: -30px;
+       
+        //background: red;
       }
   
       .right {
@@ -136,16 +142,17 @@
        //margin-top: -150px;
         flex-shrink: 0;
         padding: 10px;
-        //background-color: #0b5382;
+        //border: 2px solid black;
+        //background-color: #3d820b;
         display: flex;
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        justify-content: center;
+        //justify-content: center;
         margin: auto;
         h1 {
           font-family: Poppins;
-          font-size: 40px;
+          font-size: 30px;
           font-weight: 300;
           line-height: 90px;
           letter-spacing: -0.005em;
@@ -172,75 +179,113 @@
            justify-content: center;
            //align-items: flex-start;
            gap: 10px;
-           //background-color: goldenrod;
-           width: 100%;
+           //background-color: brown;
+           width: 95%;
           height: auto;
            padding: 10px;
 
 
-  
-          .Auth{
-              display: flex;
-              flex-direction: column;
+
+          .form_Box{
+            //background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+
+            .form__group {
+              position: relative;
+              padding: 10px 0 0;
               width: 100%;
-              gap: 20px;
-              align-items: flex-start;
+              display: flex;
+              // background-color: #cfd3d6;
+              // height: 45px;
+              //max-width: 180px;
+            }
             
-             
-             
-  
-              .password ,.email{
-               
-                  display: flex;
-                  align-items: center;
-                  gap: 10px;
-                  width: 100%;
-                  height: 35px;
-                
-                
-                
-  
-                  .error{
-                      border: 1px solid red;
-                   
-                    }
-  
-                  input{
-                      cursor: pointer;
-                      border: none;
-                      outline: none;
-                     display: flex;
-                     width: 100%;
-                     height: 47px;
-                     padding: 16px 12px;
-                     align-items: center;
-                     gap: 10px;
-                     border-radius: 0;
-                     background: transparent;
-                     border-bottom: 1.5px solid #000;
-                      input:focus {
-                          background-color: rgb(253, 253, 253);
-                        }
-                        
-                      &::placeholder{
-                          color: rgb(9, 7, 7);
-                          //styleName: Headers/H5;
-                          font-family: Poppins;
-                          font-size: 15px;
-                          font-weight: 400;
-                          line-height: 36px;
-                          letter-spacing: 0em;
-                          text-align: left;
-                      }
-                  }
-                  .viewPassword{
-                      color: #43C4B2;
-                      margin-left: -30px;
-                  }
-  
-              }
-             
+            .form__field {
+              font-family: inherit;
+              width: 100%;
+              border: none;
+              border-bottom: 2px solid #000;
+              outline: 0;
+              font-size: 13px;
+              color: #0d0b0b;
+              padding: 10px 0;
+              background: transparent;
+              transition: border-color 0.2s;
+            }
+            
+            .form__field::placeholder {
+              color: transparent;
+              
+            }
+            
+            .form__field:placeholder-shown ~ .form__label {
+              font-size: 12px;
+              cursor: text;
+              top: 20px;
+              color: #000;
+              padding-left: 10px;
+            }
+            
+            .form__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 17px;
+              color: transparent;
+              pointer-events: none;
+              
+            }
+           
+            
+            .form__field:focus {
+              padding-bottom: 6px;
+              font-weight: 300;
+              border-width: 2px;
+              border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+              border-image-slice: 1;
+            }
+            
+            .form__field:focus ~ .form__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 12px;
+              color: #43C4B2;
+              font-weight: 700;
+            }
+            
+            /* reset input */
+            .form__field:required, .form__field:invalid {
+              box-shadow: none;
+            }
+            .viewPassword{
+              color: black;
+              margin-left: -5%;
+              margin-top: 2%;
+            }
+            .active{
+              color: #43C4B2;
+            }
+
+            .error{
+              border-bottom:2px solid red;
+              
+            }
+
+            .ErrorIcon{
+              color: red;
+              margin-left: -5%;
+            }
+
           }
+         
          
         .error-message{
           color: red;
@@ -313,6 +358,7 @@
         align-self: center;
         //margin-top: 10px;
         background-color: #FFF;
+        margin-top: -20px;
       }
       
 
@@ -324,10 +370,8 @@
         align-self: center;
 
         .loginIcon{
-          margin-top: 20px;
-          margin-bottom: 20px;
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           color: #000;
         }
       }
@@ -353,6 +397,9 @@
     line-height: 36px;
     letter-spacing: 0em;
   }
+
+
+
   }
 
   @media (max-width: 1000px) {
@@ -367,12 +414,14 @@
      flex-direction: column;
     
       .top-img{
-      
+      //background-color: #43C4B2;
+    
         .GroundImgtop {
           height: 100px;
           width: 200px;
           top: 0;
-          position: absolute;
+         // position: absolute;
+          //background-color: #b410ab;
     
         }
       }
@@ -395,7 +444,7 @@
             justify-content: flex-end;
             height: 100%;
             width: 300px;
-            object-fit: cover;
+            ///object-fit: cover;
         //margin-bottom: 40px;
         //margin-left: 86%;
         //transform: rotate(5deg);
@@ -410,8 +459,9 @@
       display: none;
     }
       .loginHeader {
-      //position: absolute;
-        background-color: #fff;
+      position: absolute;
+      top: 0;
+        //background-color: #b61717;
         width: 100%;
         height: 40px;
         display: flex;
@@ -422,11 +472,14 @@
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
+       
     
         .left {
           width: 20px;
           height: 20px;
           margin-left: -30px;
+         
+          //background: red;
         }
     
         .right {
@@ -486,7 +539,7 @@
       //   overflow: hidden;
     
         .formContainer {
-          width: 40%;
+          width: 60%;
           height: 100%;
           margin: 0;
           position: relative;
@@ -494,16 +547,17 @@
          //margin-top: -150px;
           flex-shrink: 0;
           padding: 10px;
-          //background-color: #0b5382;
+          //border: 2px solid black;
+          //background-color: #3d820b;
           display: flex;
           flex-direction: column;
           gap: 10px;
           align-items: center;
-          justify-content: center;
+          //justify-content: center;
           margin: auto;
           h1 {
             font-family: Poppins;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 300;
             line-height: 90px;
             letter-spacing: -0.005em;
@@ -530,75 +584,113 @@
              justify-content: center;
              //align-items: flex-start;
              gap: 10px;
-             //background-color: goldenrod;
-             width: 100%;
+             //background-color: brown;
+             width: 95%;
             height: auto;
              padding: 10px;
   
   
-    
-            .Auth{
-                display: flex;
-                flex-direction: column;
+  
+            .form_Box{
+              //background-color: red;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+  
+  
+              .form__group {
+                position: relative;
+                padding: 10px 0 0;
                 width: 100%;
-                gap: 20px;
-                align-items: flex-start;
+                display: flex;
+                // background-color: #cfd3d6;
+                // height: 45px;
+                //max-width: 180px;
+              }
               
-               
-               
-    
-                .password ,.email{
-                 
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    width: 100%;
-                    height: 35px;
-                  
-                  
-                  
-    
-                    .error{
-                        border: 1px solid red;
-                     
-                      }
-    
-                    input{
-                        cursor: pointer;
-                        border: none;
-                        outline: none;
-                       display: flex;
-                       width: 100%;
-                       height: 47px;
-                       padding: 16px 12px;
-                       align-items: center;
-                       gap: 10px;
-                       border-radius: 0;
-                       background: transparent;
-                       border-bottom: 1.5px solid #000;
-                        input:focus {
-                            background-color: rgb(253, 253, 253);
-                          }
-                          
-                        &::placeholder{
-                            color: rgb(9, 7, 7);
-                            //styleName: Headers/H5;
-                            font-family: Poppins;
-                            font-size: 15px;
-                            font-weight: 400;
-                            line-height: 36px;
-                            letter-spacing: 0em;
-                            text-align: left;
-                        }
-                    }
-                    .viewPassword{
-                        color: #43C4B2;
-                        margin-left: -30px;
-                    }
-    
-                }
-               
+              .form__field {
+                font-family: inherit;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid #000;
+                outline: 0;
+                font-size: 13px;
+                color: #0d0b0b;
+                padding: 10px 0;
+                background: transparent;
+                transition: border-color 0.2s;
+              }
+              
+              .form__field::placeholder {
+                color: transparent;
+                
+              }
+              
+              .form__field:placeholder-shown ~ .form__label {
+                font-size: 12px;
+                cursor: text;
+                top: 20px;
+                color: #000;
+                padding-left: 10px;
+              }
+              
+              .form__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 17px;
+                color: transparent;
+                pointer-events: none;
+                
+              }
+             
+              
+              .form__field:focus {
+                padding-bottom: 6px;
+                font-weight: 300;
+                border-width: 2px;
+                border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                border-image-slice: 1;
+              }
+              
+              .form__field:focus ~ .form__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 12px;
+                color: #43C4B2;
+                font-weight: 700;
+              }
+              
+              /* reset input */
+              .form__field:required, .form__field:invalid {
+                box-shadow: none;
+              }
+              .viewPassword{
+                color: black;
+                margin-left: -5%;
+                margin-top: 2%;
+              }
+              .active{
+                color: #43C4B2;
+              }
+  
+              .error{
+                border-bottom:2px solid red;
+                
+              }
+  
+              .ErrorIcon{
+                color: red;
+                margin-left: -5%;
+              }
+  
             }
+           
            
           .error-message{
             color: red;
@@ -616,8 +708,6 @@
         .setLogin{
           display: flex;
           align-items: center;
-          flex-direction: column;
-          gap: 10px;
           justify-content: space-between;
           width: 100%;
   
@@ -664,7 +754,7 @@
           border: 2px solid #43C4B2;
           color: #43C4B2;
           font-family: Poppins;
-          font-size: 10px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -673,6 +763,7 @@
           align-self: center;
           //margin-top: 10px;
           background-color: #FFF;
+          margin-top: -20px;
         }
         
   
@@ -684,8 +775,6 @@
           align-self: center;
   
           .loginIcon{
-            margin-top: 20px;
-            margin-bottom: 20px;
             width: 20px;
             height: 20px;
             color: #000;
@@ -713,6 +802,9 @@
       line-height: 36px;
       letter-spacing: 0em;
     }
+  
+  
+  
     }
   }
 
@@ -721,9 +813,9 @@
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media (max-width: 640px) {
     .loginwrapper {
-      background: #FFFFFF;
+      //background: #932d2d;
       // margin-top: -100px;
-       height: 100vh;
+       height:800px;
        width: 100%;
        display: flex;
        flex-direction: column; 
@@ -751,11 +843,14 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: 100%;
+        width: 90%;
         height: 100px;
-       // background-color: red;
+        //background-color: red;
+        padding: 0;
+        margin: 0;
         position: absolute;
         bottom: 0;
+        right: 0;
         overflow: visible;
         
           .GroundImgbuttom {
@@ -764,8 +859,8 @@
             align-items: center;
             justify-content: flex-end;
             height: 100%;
-            width: 300px;
-            object-fit: cover;
+            width: 200px;
+            object-fit: contain;
         //margin-bottom: 40px;
         //margin-left: 86%;
         //transform: rotate(5deg);
@@ -775,32 +870,6 @@
       }
       }
 
-        // .GroundImgbuttom {
-        //   height: 10%;
-        //   width: 20%;
-        //   margin-left: 86%;
-        //   transform: rotate(5deg);
-        //   bottom: 0;
-        //   background-color: #43C4B2;
-        //   position: absolute;
-        //   overflow: scroll;
-        //   object-fit: cover;
-       
-        // }
-        // .GroundImgtop{
-        //   display: flex;
-        //   width: 150px;
-        //   height: 100px;
-        //   z-index: 999;
-          
-        //    img{
-        //     display: flex;
-        //     object-fit: contain;
-        //     width: 80px;
-        //     height: 200px;
-        //     flex-shrink: 0;
-        //    }
-        // }
 
         .loginHeader{
          display: none;
@@ -828,19 +897,19 @@
       }
         .login {
             width: 100%;
-            height: 100%;
+            //height: 100%;
             display: flex;
             flex-direction: column;
-            background-color: #FFF;
+            //background-color: #de4a4a;
             position: relative;
             
             .formContainer{
-              //background: #763333;
+             // background: #763333;
               //display: none;
               display: flex;
               flex-direction: column;
               width: 100%;
-              height: 95%;
+              //height: 95%;
               gap: 10px;
               //align-self: stretch;
               justify-content: center;
@@ -873,55 +942,129 @@
                     //padding: 10px;
                     // position: relative;
 
-                    .Auth{
-                      width: 100%;
-                      //background-color: gold;
-                      padding:0 ;
-                      margin: 0;
-                      display: inline-flex;
+                    .form_Box{
+                      //background-color: red;
+                      display: flex;
                       flex-direction: column;
-                      align-items: flex-start;
-                      gap: 24px;
-
-                      .email, .password{
-                        // border: none;
-                        // margin: 0;
-                        display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 10px;
+          
+                      .groupedform{
+                        border-radius: 8px;
+                        width: 100%;
+                        //border: 2px solid red;
+                        background-color: #F6F6F6;
+                      }
+          
+                      // .form__group {
+                      //   position: relative;
+                      //   padding: 10px 0 0;
+                      //   width: 100%;
+                      //   display: flex;
+                      //    //background-color: #cfd3d6;
+                      //   //  border-radius: 2px solid red;
+                      //   // height: 45px;
+                      //   //max-width: 180px;
+                      // }
+                      
+                      .form__field {
+                        font-family: inherit;
+                        width: 100%;
+                        height: 50px;
+                        // padding-top: 20px;
+                        border: none;
+                       // border:  2px solid #000 !important;
+                        //border-bottom: 2px solid #000;
+                        outline: 0;
+                        font-size: 13px;
+                        color: #0d0b0b;
+                        padding: 10px;
                         border-radius: 8px;
                         background: #F6F6F6;
-                        height: 45px;
-
-                        input{
-                          background: #000;
-                          cursor: pointer;
-                          border: none;
-                          outline: none;
-                         display: flex;
-                         width: 100%;
-                         height: 100%;
-                         padding: 16px 12px;
-                         align-items: center;
-                         gap: 10px;
-                         border-radius: 0;
-                         background: transparent;
-                         border-bottom: none;
-                          input:focus {
-                              background-color: rgb(253, 253, 253);
-                            }
-                            
-                          &::placeholder{
-                              color: rgb(9, 7, 7);
-                              //styleName: Headers/H5;
-                              font-family: Poppins;
-                              font-size: 15px;
-                              font-weight: 400;
-                              line-height: 36px;
-                              letter-spacing: 0em;
-                              text-align: left;
-                          }
-                      }
+                        //padding-left: 10px;
+                        transition: border-color 0.2s;
 
                       }
+                      
+                      .form__field::placeholder {
+                        color: transparent;
+                        padding: 10px;
+                        //background-color: brown;
+                        //height: 100%;
+                      }
+                      
+                      .form__field:placeholder-shown ~ .form__label {
+                        font-size: 10px;
+                        cursor: text;
+                        top: 30px;
+                        color: #808080;
+                        padding-left: 10px;
+                        //padding-top: 10px;
+                      }
+                      
+                      .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 17px;
+                        color: transparent;
+                        pointer-events: none;
+                        
+                      }
+                     
+                      
+                      .form__field:focus {
+                        padding-bottom: 6px;
+                        font-weight: 300;
+                        border-width: 2px;
+                        border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                        border-image-slice: 1;
+                        //border-radius: 118px !important;
+                     border: 2px solid #43C4B2;
+                        
+                      }
+                      
+                      .form__field:focus ~ .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 12px;
+                        color: #43C4B2;
+                        font-weight: 700;
+                        padding-top: 15px;
+                        //background-color: blue;
+                      }
+                      
+                      /* reset input */
+                      .form__field:required, .form__field:invalid {
+                        box-shadow: none;
+
+                      }
+                      .viewPassword{
+                        color: black;
+                        margin-left: -10%;
+                        margin-top: 6%;
+                        font-size: 20px;
+                      }
+                      .active{
+                        color: #43C4B2;
+                      }
+          
+                      .error{
+                        border:2px solid red;
+                        
+                        
+                      }
+          
+                      .ErrorIcon{
+                        color: red;
+                        margin-left: -10%;
+                        margin-top: 5%;
+                      }
+          
                     }
 
                     
@@ -949,10 +1092,11 @@
                       .bottomText{
                         
                         display: flex;
-                        position: absolute;
-                        bottom: 100px;
-                        left: 0;
-                        //background: goldenrod;
+                        // position: absolute;
+                        // bottom: 100px;
+                        // left: 0;
+                        padding-top: 90%;
+                        // background: goldenrod;
                          align-self: center;
                          justify-content: center;
                         // width: 100%;
@@ -960,7 +1104,7 @@
                         // // margin-bottom: -50px;
 
                         .innerButtomtext{
-                          width: 70%;
+                          width: 100%;
                           margin: auto;
  
                           h5{
@@ -1000,8 +1144,9 @@
                         line-height: normal;
                         letter-spacing: 0.175px;
                         text-transform: uppercase;
-                        position: absolute;
-                        bottom: 0;
+                        margin-top: -40%;
+                        // position: absolute;
+                        // bottom: 0;
                       }
 
                       .loginIcons{
