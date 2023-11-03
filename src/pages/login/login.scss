@@ -210,6 +210,7 @@
               width: 100%;
               border: none;
               border-bottom: 2px solid #000;
+              border-radius: 0;
               outline: 0;
               font-size: 13px;
               color: #0d0b0b;
@@ -240,7 +241,7 @@
               color: transparent;
               pointer-events: none;
               
-            }
+            } 
            
             
             .form__field:focus {
@@ -815,7 +816,8 @@
     .loginwrapper {
       //background: #932d2d;
       // margin-top: -100px;
-      // / height:800px;
+      // height:100vh;
+       height: 900px;
        width: 100%;
        display: flex;
        flex-direction: column; 
@@ -854,7 +856,7 @@
         overflow: visible;
         
           .GroundImgbuttom {
-           // background-color: green;
+          //   background-color: green;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -956,17 +958,6 @@
                         //border: 2px solid red;
                         background-color: #F6F6F6;
                       }
-          
-                      // .form__group {
-                      //   position: relative;
-                      //   padding: 10px 0 0;
-                      //   width: 100%;
-                      //   display: flex;
-                      //    //background-color: #cfd3d6;
-                      //   //  border-radius: 2px solid red;
-                      //   // height: 45px;
-                      //   //max-width: 180px;
-                      // }
                       
                       .form__field {
                         font-family: inherit;

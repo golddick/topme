@@ -1,43 +1,54 @@
-.signup-wrapper{
-    background-color:#FFFFFF;
-    //margin-top: -100px;
-    height: 100vh;
-    width: 100%;
+
+.Register{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: absolute;
-    
-.mobileLogo{
-    display: none;
-}
-     
+    width: 100%;
+    background-color: #fff;
+    padding-top: 50px;
 
-    .formContainer{
-        width: 500px;
-        height: 100%;
-        flex-shrink: 0;
-        position: relative;
+    .arrow_top{
+        width: 90%;
+        background-color: transparent;
+        .arrowIcon{
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+    .mobileLogo{
+        display: none;
+    }
+
+    ._formBox{
+        width: 60%;
+        margin: auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        // align-items: start; 
-        // position: absolute;
-       
+        //background-color: aquamarine;
+        margin-top: 5%;
+        gap: 50px;
 
-        h1{
-            display: inline-flex;
-            padding: 10px 4px;
+        .formHeader{
+            display: flex;
             align-items: center;
-            gap: 16px;
-            height: 40px;
+            justify-content: center;
+            width: 70%;
+            //gap: 10px;
+            //background-color: coral;
+
+            h2{
+            display:flex;
+            //padding: 10px 4px;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             color: #000;
             font-family: Poppins;
-            font-size: 30px;
+            font-size: 40px;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
@@ -45,478 +56,767 @@
             text-align: center;
             cursor: pointer;
             width: 100%;
-
-            img{
-                width: 150px;
-                height: 40px;
-                object-fit: contain;
-            }
-
+            text-transform: uppercase;
+            //background-color: red;
             .dot{
-           
                 color: #43C4B2;
-                background-color: #FFFFFF;
-                //font-size: 60px;
             }
-         
-        }
+            }
 
+            .formHeaderLogo{
+                width: 150px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //margin-top: -20px;
+                //background-color: yellow;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
        
 
-
-        h2{
-            text-align: start;
-            align-self: flex-start;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 10px;
-            font-size: 11px;
-            line-height: 30px;
-            letter-spacing: 0.0015em;
-            color: #AAAAAA;
-            text-align: start;
-            margin-bottom: 20px;
-
-        }
-
-        form{
-            background-color: #FFFFFF;
-            width:100%;
-            height: auto;
+        .formBody{
+            //background-color: burlywood;
             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-            gap: 15px;
-            //overflow: hidden;
-            
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
 
-
-            .Names{
+            .loginText{
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
+                align-items: center;
+                gap: 10px;
                 
-                
-               
-                .fName, .lName{
-                    flex-basis: 40%;
-                    border-bottom: 1px solid #000000;
-                    width: 50px;
-                    
-                  }
-
-                  .error{
-                    border-bottom: 1px solid red;
-                  }
-
-                  input{
-                    cursor: pointer;
-                    border: none;
-                    outline: none;
-                    width: 100%;
-                    height: 35px;
-                    padding: 10px;
-                    input:focus {
-                        background-color: rgb(253, 253, 253);
-                      }
-                      
-                    &::placeholder{
-                        color: rgb(9, 7, 7);
-                        //styleName: Headers/H5;
-                        font-family: Poppins;
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 36px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                    }
+    
+                h5{
+                    color: #AAA;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+                  
                 }
-
-                        
+             
             }
 
-            .Auth{
+            .form{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-                align-items: flex-start;
-                gap: 10px;
-               
-               
+              
 
-                .password ,.email{
-                    //background: olivedrab;
+                .NameForm{
+                    display: grid;
+                    grid-template-columns: 2fr 2fr;
+                    align-items: center;
+                    gap: 20px;
+                   // background-color: brown;
+
+                    .form__group {
+                        position: relative;
+                        padding: 10px 0 0;
+                        width: 100%;
+                        display: flex;
+                        // background-color: #cfd3d6;
+                        // height: 45px;
+                        //max-width: 180px;
+                      }
+                      
+                      .form__field {
+                        font-family: inherit;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid #000;
+                        border-radius: 0;
+                        outline: 0;
+                        font-size: 13px;
+                        color: #0d0b0b;
+                        padding: 10px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+                      }
+                      
+                      .form__field::placeholder {
+                        color: transparent;
+                        
+                      }
+                      
+                      .form__field:placeholder-shown ~ .form__label {
+                        font-size: 12px;
+                        cursor: text;
+                        top: 20px;
+                        color: #000;
+                        padding-left: 10px;
+                      }
+                      
+                      .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 17px;
+                        color: transparent;
+                        pointer-events: none;
+                        
+                      }
+                     
+                      
+                      .form__field:focus {
+                        padding-bottom: 6px;
+                        font-weight: 300;
+                        border-width: 2px;
+                        border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                        border-image-slice: 1;
+                      }
+                      
+                      .form__field:focus ~ .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 12px;
+                        color: #43C4B2;
+                        font-weight: 400;
+                      }
+                      
+                      /* reset input */
+                      .form__field:required, .form__field:invalid {
+                        box-shadow: none;
+                      }
+                      .viewPassword{
+                        color: black;
+                        margin-left: -5%;
+                        margin-top: 2%;
+                      }
+                      .active{
+                        color: #43C4B2;
+                      }
+          
+                      .error{
+                        border-bottom:2px solid red;
+                        
+                      }
+          
+                      .ErrorIcon{
+                        color: red;
+                        margin-left: -5%;
+                      }
+          
+                }
+
+                .detailsForm{
+                    .form__group {
+                        position: relative;
+                        padding: 10px 0 0;
+                        width: 100%;
+                        display: flex;
+                        // background-color: #cfd3d6;
+                        // height: 45px;
+                        //max-width: 180px;
+                      }
+                      
+                      .form__field {
+                        font-family: inherit;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid #000;
+                        border-radius: 0;
+                        outline: 0;
+                        font-size: 13px;
+                        color: #0d0b0b;
+                        padding: 10px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+                        margin-top: 2%;
+                        //background-color: red;
+                      }
+                      
+                      .form__field::placeholder {
+                        color: transparent;
+                        
+                      }
+                      
+                      .form__field:placeholder-shown ~ .form__label {
+                        font-size: 12px;
+                        cursor: text;
+                        top: 20px;
+                        color: #000;
+                        padding-left: 10px;
+                      }
+                      
+                      .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 17px;
+                        color: transparent;
+                        pointer-events: none;
+                        
+                      }
+                     
+                      
+                      .form__field:focus {
+                        padding-bottom: 6px;
+                        font-weight: 300;
+                        border-width: 2px;
+                        border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                        border-image-slice: 1;
+                      }
+                      
+                      .form__field:focus ~ .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 12px;
+                        color: #43C4B2;
+                        font-weight: 400;
+                      }
+                      
+                      /* reset input */
+                      .form__field:required, .form__field:invalid {
+                        box-shadow: none;
+                      }
+                      .viewPassword{
+                        color: black;
+                        margin-left: -5%;
+                        margin-top: 2%;
+                      }
+                      .active{
+                        color: #43C4B2;
+                      }
+          
+                      .error{
+                        border-bottom:2px solid red;
+                        
+                      }
+          
+                      .ErrorIcon{
+                        color: red;
+                        margin-left: -5%;
+                        margin-top: 5%;
+                      }
+                }
+
+                .Sign-button{
                     display: flex;
+                    width: 364px;
+                    padding: 12px 24px;
+                    justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    width: 100%;
-                    height: 40px;
-                  
-                    //border-bottom: 2px solid #000000;
-    
-                    .error{
-                        border-bottom: 1px solid red;
-                     
-                      }
-
-                    input{
-                        cursor: pointer;
-                        border: none;
-                        outline: none;
-                       // background-color: olivedrab;
-                        width: 100%;
-                        height: 30px;
-                        padding: 10px;
-                        border-bottom: 1px solid #000000;
-                        input:focus {
-                            background-color: rgb(253, 253, 253);
-                          }
-                          
-                        &::placeholder{
-                            color: rgb(9, 7, 7);
-                            //styleName: Headers/H5;
-                            font-family: Poppins;
-                            font-size: 12px;
-                            font-weight: 400;
-                            line-height: 36px;
-                            letter-spacing: 0em;
-                            text-align: left;
-                        }
-                    }
-                    .viewPassword{
-                        color: #43C4B2;
-                        margin-left: -30px;
-                    }
-    
+                    border-radius: 8px;
+                    border: 2px solid #43C4B2;
+                    background-color: transparent;
+                    color: #43C4B2;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                    margin-top: 20%;
                 }
-               
+
+                .footer_{
+                    margin-top: 10%;
+                }
             }
-           
-          .error-message{
-            color: red;
-            font-family: Poppins;
-            font-size: 12px;
-            font-weight: 200;
-            line-height: 36px;
-            letter-spacing: 0em;
-          }
-
-          .bottomText{
-            display: none;
-          }
-        
-        button{
-           background: #fafafa;
-           color: #43C4B2;
-           font-family: Poppins;
-           font-size: 14px;
-           font-style: normal;
-           font-weight: 500;
-           line-height: normal;
-           letter-spacing: 0.175px;
-           text-transform: uppercase;
-           display: flex;
-            width: 364px;
-            padding: 12px 24px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 8px;
-            border: 2px solid #43C4B2;
-        }
-           
-        .progressStyle {
-            background-color: red;
-            /* Add any other styles you want for the progress state */
-          }
         }
 
-        .footer{
-            position: absolute;
-            bottom: 0;
-            //margin-top: 200px;
-        }
+      
     }
-   
-    .navLink{
+
+    .bottomText{
+        display: none;
+    }
+    .Link{
         text-decoration: none;
-        color: #43C4B2;
-    }
-
-
-}
-
-
-@media (min-width: 800px) and (max-width: 1200px) {
-   
-  }
-  
-  /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
-    .signup-wrapper{
-    background: #FFFFFF;
-   // margin-top: -100px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: static;
-    padding: 0;
-
-    .mobileLogo{
-        display: flex;
-        width: 84.703px;
-        height: 24px;
-        flex-shrink: 0;
-        margin-top : 20px;
-    }
-    .formContainer{
-       background: #FFF;
-       //display: none;
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       gap: 10px;
-       height: calc(100vh - 24px);
-       //align-self: stretch;
-       justify-content: center;
-       align-items: center;
-       margin: 0;
-       padding: 20px;
-       padding-top: 50px;
-
-
-       h1{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        margin-top: 10px;
-        color: #000;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 275;
-        line-height: normal;
-        width: 100%;
- 
-
-        img{
-            width: 100px;
-            height: 24px;
-            object-fit: contain;
-        }
-
-        .dot{
-           
-            color: #43C4B2;
-            background-color: #FFFFFF;
-            font-size: 40px;
-        }
-       }
-       
        h2{
-        color: #808080;
+        color: #43C4B2;
+
+        /* Caption/caption 1 */
         font-family: Poppins;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.048px;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 0;
-        margin: 0;
-        //justify-content: center;
-         margin-left: 0;
-         position: relative;
        }
+    }
+}
 
-       form{
-        //display: none;
-         display: inline-flex;
-         flex-direction: column;
-         align-items: flex-start;
-         justify-content: center;
-         gap: 20px;
-         width: 100%;
-        height: auto;
-        //position: relative;
-        padding: 0;
-        margin: 0;
+@media  (max-width: 1200px) {
+    .Register{
+       .arrow_top{
 
-        
+       }
+       ._formBox{
+        //background-color: chocolate;
 
-
-        .Names{
+        .formHeader{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100%;
-            gap: 20px;
-            
-            
-           
-            .fName, .lName{
-                display: flex;
-                width: 100%;
-                height: 47px;
-                padding: 16px 12px;
-                align-items: center;
-                gap: 10px;
-                border-radius: 8px;
-                background: #F6F6F6;
-                border: none;
-                
-              }
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            gap: 10px;
+            //background-color: coral;
 
-              .error{
-                border: 1px solid red;
-              }
-
-              input{
-                cursor: pointer;
-                border: none;
-                outline: none;
-                width: 100%;
-                height: 35px;
-                padding: 10px;
-                input:focus {
-                    background-color: rgb(253, 253, 253);
-                  }
-                  
-                &::placeholder{
-                    color: rgb(9, 7, 7);
-                    //styleName: Headers/H5;
-                    font-family: Poppins;
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 36px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                }
-            }
-
-                    
-        }
-
-        .Auth{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 20px;
-            align-items: flex-start;
-           
-           
-
-            .password ,.email{
-             
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                width: 100%;
-                height: 45px;
-              
-              
-
-                .error{
-                    border: 1px solid red;
-                 
-                  }
-
-                input{
-                    cursor: pointer;
-                    border: none;
-                    outline: none;
-                   display: flex;
-                   width: 100%;
-                   height: 47px;
-                   padding: 16px 12px;
-                   align-items: center;
-                   gap: 10px;
-                   border-radius: 8px;
-                   background: #F6F6F6;
-                    input:focus {
-                        background-color: rgb(253, 253, 253);
-                      }
-                      
-                    &::placeholder{
-                        color: rgb(9, 7, 7);
-                        //styleName: Headers/H5;
-                        font-family: Poppins;
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 36px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                    }
-                }
-                .viewPassword{
-                    color: #43C4B2;
-                    margin-left: -30px;
-                }
-
-            }
-           
-        }
-       
-      .error-message{
-        color: red;
-        font-family: Poppins;
-        font-size: 15px;
-        font-weight: 200;
-        line-height: 36px;
-        letter-spacing: 0em;
-      }
-    .bottomText{
-        display: flex;
-
-
-        h5{
+            h2{
+            display:flex;
+            //padding: 10px 4px;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             color: #000;
-
-            /* Overline/overline 1 */
             font-family: Poppins;
-            font-size: 12px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
-            letter-spacing: 0.15px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
             text-transform: uppercase;
-        }
-    }
+            gap: 10px;
+            //background-color: red;
+            .dot{
+                color: #43C4B2;
+            }
+            }
 
-    button{
-        display: flex;
-        width: 312px;
-        padding: 12px 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 100px;
-        background: #43C4B2;
-        align-self: center;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.175px;
-        text-transform: uppercase;
-        position: absolute;
-        bottom: 0;
-    }
-    }
-    }
-    .footer{ 
-       display: none;
+            .formHeaderLogo{
+                width: 80px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //margin-top: -20px;
+                //background-color: yellow;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .mobileLogo{
+            display: none;
+        }
+
+        .formBody{
+
+            .form{
+
+                .Sign-button{
+                    display: flex;
+                    width: 200px;
+                    padding: 12px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    border: 2px solid #43C4B2;
+                    background-color: transparent;
+                    color: #43C4B2;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
+                    text-transform: uppercase;
+                    margin-top: 20%;
+                }
+            }
+        }
+       }
     }
 }
-  }//
+
+@media (max-width:750px) {
+    
+    .Register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 20px;
+    
+        .arrow_top{
+            display: none;
+            width: 90%;
+            background-color: transparent;
+            .arrowIcon{
+                width: 20px;
+                height: 20px;
+            }
+    
+        }
+        .mobileLogo{
+            display: block;
+            margin-bottom: 10%;
+        }
+    
+        ._formBox{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            //background-color: aquamarine;
+            margin-top: 5%;
+            gap: 20px;
+    
+            .formHeader{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                //gap: 10px;
+                //background-color: coral;
+    
+                h2{
+                display:flex;
+                //padding: 10px 4px;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                color: #000;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: -0.3px;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                text-transform: uppercase;
+                //background-color: red;
+                .dot{
+                    color: #43C4B2;
+                }
+                }
+    
+                .formHeaderLogo{
+                    width: 55px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //margin-top: -20px;
+                    //background-color: yellow;
+    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+           
+    
+            .formBody{
+               // background-color: burlywood;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+    
+                .loginText{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+        
+                    h5{
+                        color: #AAA;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.03px;
+                      
+                    }
+                 
+                }
+    
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                  
+    
+                    .NameForm{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                       // background-color: brown;
+    
+                       .form__field {
+                        font-family: inherit;
+                        width: 100%;
+                        height: 50px;
+                        // padding-top: 20px;
+                        border: none;
+                       // border:  2px solid #000 !important;
+                        //border-bottom: 2px solid #000;
+                        outline: 0;
+                        font-size: 13px;
+                        color: #0d0b0b;
+                        padding: 10px;
+                        border-radius: 8px;
+                        background: #F6F6F6;
+                        //padding-left: 10px;
+                        transition: border-color 0.2s;
+
+                      }
+                      
+                      .form__field::placeholder {
+                        color: transparent;
+                        padding: 10px;
+                        //background-color: brown;
+                        //height: 100%;
+                      }
+                      
+                      .form__field:placeholder-shown ~ .form__label {
+                        font-size: 10px;
+                        cursor: text;
+                        top: 30px;
+                        color: #808080;
+                        padding-left: 10px;
+                        //padding-top: 10px;
+                      }
+                      
+                      .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 17px;
+                        color: transparent;
+                        pointer-events: none;
+                        
+                      }
+                     
+                      
+                      .form__field:focus {
+                        padding-bottom: 6px;
+                        font-weight: 300;
+                        border-width: 2px;
+                        border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                        border-image-slice: 1;
+                        //border-radius: 118px !important;
+                     border: 2px solid #43C4B2;
+                        
+                      }
+                      
+                      .form__field:focus ~ .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 12px;
+                        color: #43C4B2;
+                        font-weight: 700;
+                        padding-top: 15px;
+                        padding-left: 10px;
+                        //background-color: blue;
+                      }
+                      
+                      /* reset input */
+                      .form__field:required, .form__field:invalid {
+                        box-shadow: none;
+
+                      }
+                      .viewPassword{
+                        color: black;
+                        margin-left: -10%;
+                        margin-top: 4%;
+                        font-size: 20px;
+                      }
+                      .active{
+                        color: #43C4B2;
+                      }
+          
+                      .error{
+                        border:2px solid red;
+                        
+                        
+                      }
+          
+                      .ErrorIcon{
+                        color: red;
+                        margin-left: -10%;
+                        margin-top: 5%;
+                      }
+              
+                    }
+    
+                    .detailsForm{
+                        .form__field {
+                            font-family: inherit;
+                            width: 100%;
+                            height: 50px;
+                            // padding-top: 20px;
+                            border: none;
+                           // border:  2px solid #000 !important;
+                            //border-bottom: 2px solid #000;
+                            outline: 0;
+                            font-size: 13px;
+                            color: #0d0b0b;
+                            padding: 10px;
+                            border-radius: 8px;
+                            background: #F6F6F6;
+                            //padding-left: 10px;
+                            transition: border-color 0.2s;
+    
+                          }
+                          
+                          .form__field::placeholder {
+                            color: transparent;
+                            padding: 10px;
+                            //background-color: brown;
+                            //height: 100%;
+                          }
+                          
+                          .form__field:placeholder-shown ~ .form__label {
+                            font-size: 10px;
+                            cursor: text;
+                            top: 30px;
+                            color: #808080;
+                            padding-left: 10px;
+                            //padding-top: 10px;
+                          }
+                          
+                          .form__label {
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            transition: 0.2s;
+                            font-size: 17px;
+                            color: transrparent;
+                            pointer-events: none;
+                            
+                          }
+                         
+                          
+                          .form__field:focus {
+                            padding-bottom: 6px;
+                            font-weight: 300;
+                            border-width: 2px;
+                            border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+                            border-image-slice: 1;
+                            //border-radius: 118px !important;
+                         border: 2px solid #43C4B2;
+                            
+                          }
+                          
+                          .form__field:focus ~ .form__label {
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            transition: 0.2s;
+                            font-size: 12px;
+                            color: #43C4B2;
+                            font-weight: 700;
+                            padding-top: 7%;
+                            padding-left: 10px;
+                            //background-color: blue;
+                          }
+                          
+                          /* reset input */
+                          .form__field:required, .form__field:invalid {
+                            box-shadow: none;
+    
+                          }
+                          .viewPassword{
+                            color: black;
+                            margin-left: -10%;
+                            margin-top: 4%;
+                            font-size: 20px;
+                          }
+                          .active{
+                            color: #43C4B2;
+                          }
+              
+                          .error{
+                            border:2px solid red;
+                            
+                            
+                          }
+              
+                          .ErrorIcon{
+                            color: red;
+                            margin-left: -10%;
+                            margin-top: 5%;
+                          }
+                    }
+    
+                    .Sign-button{
+                        display: flex;
+                        width: 80%;
+                        padding: 12px 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 8px;
+                        border-radius: 100px;
+                        background: #43C4B2;
+                        color: #fff;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.175px;
+                        text-transform: uppercase;
+                        margin-top: 40%;
+                    }
+
+                    .bottomText{
+                        display: flex;
+                        //margin-top: 20%;
+
+                        span{
+                            color: #000;
+
+                            /* Overline/overline 1 */
+                            font-family: Poppins;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.15px;
+                            text-transform: uppercase;
+                        }
+                    }
+    
+                    .footer_{
+                        display: none;
+                        margin-top: 10%;
+                    }
+
+                }
+            }
+    
+          
+        }
+    }
+}

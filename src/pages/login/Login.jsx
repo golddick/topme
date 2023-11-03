@@ -176,7 +176,7 @@ function Login() {
           </h1>
           <h6>
             Don’t have an account? &nbsp;
-            <NavLink to="/signup" className="navLink">
+            <NavLink to="/Sign-up" className="navLink">
               Sign up
             </NavLink>
           </h6>

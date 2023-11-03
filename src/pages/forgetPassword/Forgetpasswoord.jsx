@@ -44,7 +44,7 @@ function Forgetpasswoord() {
           <h6>Get a link to reset password</h6>
           <form>
             <div className="Auth">
-              <div className="email">
+              {/* <div className="email">  
                 <input
                   type="text"
                   placeholder="Email"
@@ -53,7 +53,17 @@ function Forgetpasswoord() {
                   onChange={handleEmailChange}
                   required
                 />
-              </div>
+              </div> */}
+                <div class="form__group field">
+            <input type="input" class='form__field' placeholder="Email" required="" />
+            <label for="name" class="form__label">Email</label>
+         {/* {
+          error && (
+            <MdOutlineErrorOutline className='ErrorIcon'/>
+          )
+         } */}
+  
+            </div>
             </div>
             <br />
 

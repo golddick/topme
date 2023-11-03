@@ -1,5 +1,5 @@
 import './index.scss'
-import Signup from './pages/Registration/Signup'
+import Register from './pages/Registration/Register';
 import Login from './pages/login/Login'
 import AngelProfile from './pages/Angel-profile/Angel';
 // import Angel from './pages/Angel-profile/Angel';
@@ -45,7 +45,8 @@ function App() {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path='/Sign-up' element={<Signup/>}/>
+            <Route path='/Sign-up' element={<Register/>}/>
+            
             <Route path='/Login' element={<Login/>}/>
             <Route path='/Profile' element={<AngelProfile/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
@@ -72,6 +73,7 @@ function App() {
             <Route path='/Payment' element={<PaymentPage/>}/>
             {/* <Route path='/paymentSuccessful' element={<SuccessBox/>}/> */}
             <Route path='/CreateSupport' element={<CreateSupport/>}/>
+            {/* <Route path='/Register' element={<Register/>}/> */}
             
           </Routes>
         </BrowserRouter>

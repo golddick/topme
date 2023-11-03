@@ -42,6 +42,120 @@ body {
     
 }
 
+.form_Box{
+    //background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .groupedform{
+      border-radius: 8px;
+      width: 100%;
+      //border: 2px solid red;
+      background-color: #F6F6F6;
+    }
+    
+    .form__field {
+      font-family: inherit;
+      width: 100%;
+      height: 50px;
+      // padding-top: 20px;
+      border: none;
+     // border:  2px solid #000 !important;
+      //border-bottom: 2px solid #000;
+      outline: 0;
+      font-size: 13px;
+      color: #0d0b0b;
+      padding: 10px;
+      border-radius: 8px;
+      background: #F6F6F6;
+      //padding-left: 10px;
+      transition: border-color 0.2s;
+
+    }
+    
+    .form__field::placeholder {
+      color: transparent;
+      padding: 10px;
+      //background-color: brown;
+      //height: 100%;
+    }
+    
+    .form__field:placeholder-shown ~ .form__label {
+      font-size: 10px;
+      cursor: text;
+      top: 30px;
+      color: #808080;
+      padding-left: 10px;
+      //padding-top: 10px;
+    }
+    
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 17px;
+      color: transparent;
+      pointer-events: none;
+      
+    }
+   
+    
+    .form__field:focus {
+      padding-bottom: 6px;
+      font-weight: 300;
+      border-width: 2px;
+      border-image: linear-gradient(to right, #43C4B2, #43C4B2);
+      border-image-slice: 1;
+      //border-radius: 118px !important;
+   border: 2px solid #43C4B2;
+      
+    }
+    
+    .form__field:focus ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 12px;
+      color: #43C4B2;
+      font-weight: 700;
+      padding-top: 15px;
+      padding-left: 10px;
+      //background-color: blue;
+    }
+    
+    /* reset input */
+    .form__field:required, .form__field:invalid {
+      box-shadow: none;
+
+    }
+    .viewPassword{
+      color: black;
+      margin-left: -10%;
+      margin-top: 4%;
+      font-size: 20px;
+    }
+    .active{
+      color: #43C4B2;
+    }
+
+    .error{
+      border:2px solid red;
+      
+      
+    }
+
+    .ErrorIcon{
+      color: red;
+      margin-left: -10%;
+      margin-top: 5%;
+    }
+
+  }
 
 
  /* MEDIA QUERIES (MEDIDUM DEVICES) */

@@ -8,6 +8,7 @@ import { IoIosArrowDropleftCircle } from 'react-icons/io';
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {MdKeyboardArrowDown, MdKeyboardArrowUp} from 'react-icons/md'
 import { BiChevronDown, BiSearchAlt, BiChevronRight, BiCheck } from 'react-icons/bi';
+import { BsCheckLg} from 'react-icons/bs'
 import Loader from '../../components/loader/Loader';
 import Hometop from '../../components/homepage/HomeTop/Hometop';
 import Option from '../../components/Option/Option'
@@ -35,15 +36,22 @@ function Impactpage() {
   const [loading, setLoading] = useState(true);
   const [ImpactDetails, setImpactDetails] = useState([]);
   const [openCategory, setOpenCategory] = useState(false);
+  const [openSearch, setOpenSearch] = useState (false)
+  const [clickedSearch, setClickedSearch] = useState (false)
   const [isChecked1, setIsChecked1] = useState(true);
   const [isChecked2, setIsChecked2] = useState(true);
   const [isChecked3, setIsChecked3] = useState(true);
   const [isChecked4, setIsChecked4] = useState(true);
 
+
+  const handleSearchBoxClick = () => {
+    setClickedSearch(!clickedSearch);
+  };
+
   // Handle checkbox state changes for each checkbox
   const handleCheckboxChange1 = () => {
     setIsChecked1((prev) => !prev);
-  };
+  };  
 
   const handleCheckboxChange2 = () => {
     setIsChecked2((prev) => !prev);
@@ -56,6 +64,10 @@ function Impactpage() {
   const handleCheckboxChange4 = () => {
     setIsChecked4((prev) => !prev);
   };
+
+  const toggleSearch = () => {
+    setOpenSearch(!openSearch)
+  }
 
   const popupRef = useRef(null);
  useEffect(() => {
@@ -436,9 +448,9 @@ function Impactpage() {
      <NavLink to="/" className="navLink" >
        <IoIosArrowDropleftCircle className="icon" />
        </NavLink>
-       <div className="impactsearch">
-         <BiSearchAlt className="searchIcon" />
-         <input type="text" placeholder="filter angels by keyword" />
+       <div className="impactsearch" onClick={toggleSearch}>
+         <BiSearchAlt className="icon" />
+         <input type="text" placeholder="filter angels by keyword"  className='Input'/>
        </div>
        <div className="text" onClick={handleOpenCategory}>
          {/* <span  className= 'openTextColor' >cities</span> */}
@@ -530,6 +542,35 @@ function Impactpage() {
 
 
    </div>}
+
+    {
+      openSearch && (
+        <div className="openedSearch">
+          <h6>search by</h6>
+          <div className="searchtab">
+            <div className= {`search-box ${clickedSearch ? 'clicked' : ''}`} onClick={handleSearchBoxClick}>
+             {
+              clickedSearch && (
+
+                 <BsCheckLg className='clickedIcon'/>
+              )
+             }
+              <span className={clickedSearch ? 'clicked-span' : ''}>ongoing causes</span>
+            </div>
+            <div className="search-box">
+              <span>ongoing causes</span>
+            </div>
+            <div className="search-box">
+              <span>ongoing causes</span>
+            </div>
+            <div className="search-box">
+              <span>ongoing causes</span>
+            </div>
+          </div>
+        </div>
+      )
+    }
+
 
    <div className="mobileFilterBar">
     <FilterBar />
