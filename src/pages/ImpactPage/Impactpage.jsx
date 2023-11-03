@@ -38,11 +38,24 @@ function Impactpage() {
   const [openCategory, setOpenCategory] = useState(false);
   const [openSearch, setOpenSearch] = useState (false)
   const [clickedSearch, setClickedSearch] = useState (false)
+  const [clickedSearch1, setClickedSearch1] = useState (false)
+  const [clickedSearch2, setClickedSearch2] = useState (false)
+  const [clickedSearch3, setClickedSearch3] = useState (false)
   const [isChecked1, setIsChecked1] = useState(true);
   const [isChecked2, setIsChecked2] = useState(true);
   const [isChecked3, setIsChecked3] = useState(true);
   const [isChecked4, setIsChecked4] = useState(true);
 
+
+  const handleSearchBoxClick3 = () => {
+    setClickedSearch3(!clickedSearch3)
+  }
+  const handleSearchBoxClick2 = () => {
+    setClickedSearch2(!clickedSearch2)
+  }
+  const handleSearchBoxClick1 = () => {
+    setClickedSearch1(!clickedSearch1)
+  }
 
   const handleSearchBoxClick = () => {
     setClickedSearch(!clickedSearch);
@@ -371,67 +384,24 @@ function Impactpage() {
   
 
 
-  // const BpIcon = styled('span')(({ theme }) => ({
-  //   borderRadius: 3,
-  //   width: 20,
-  //   height: 20,
-  //   boxShadow:
-  //     theme.palette.mode === 'dark'
-  //       ? '0 0 0 1px rgb(16 22 26 / 40%)'
-  //       : 'inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1)',
-  //   backgroundColor: theme.palette.mode === 'dark' ? '#394b59' : '#f5f8fa',
-  //   backgroundImage:
-  //     theme.palette.mode === 'dark'
-  //       ? 'linear-gradient(180deg,hsla(0,0%,100%,.05),hsla(0,0%,100%,0))'
-  //       : 'linear-gradient(180deg,hsla(0,0%,100%,.8),hsla(0,0%,100%,0))',
-  //   '.Mui-focusVisible &': {
-  //     outline: '2px auto rgba(19,124,189,.6)',
-  //     outlineOffset: 2,
-  //   },
-  //   'input:hover ~ &': {
-  //     backgroundColor: theme.palette.mode === 'dark' ? '#30404d' : 'red',
-  //   },
-  //   'input:disabled ~ &': {
-  //     boxShadow: 'none',
-  //     background:
-  //       theme.palette.mode === 'dark' ? 'rgba(57,75,89,.5)' : 'rgba(206,217,224,.5)',
-  //   },
-  // }));
+  const handleOutsideClick = (event) => {
+    if (popupRef.current && !popupRef.current.contains(event.target)) {
+      setOpenSearch(false);
+      setOpenCategory(false);
+    }
+  };
   
-  // const BpCheckedIcon = styled(BpIcon)({
-  //   backgroundColor: '#137cbd',
-  //   backgroundImage: 'linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))',
-  //   '&:before': {
-  //     display: 'block',
-  //     width: 16,
-  //     height: 16,
-  //     backgroundImage:
-  //       "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
-  //       " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +
-  //       "1.003 0 00-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0012 5z' fill='%23fff'/%3E%3C/svg%3E\")",
-  //     content: '""',
-  //   },
-  //   'input:hover ~ &': {
-  //     backgroundColor: '#43C4B2',
-  //   },
-  // });
+  useEffect(() => {
+    if (openCategory || openSearch) {
+      document.addEventListener('mousedown', handleOutsideClick);
+    } else {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    }
   
-  // // Inspired by blueprintjs
-  // function BpCheckbox(props) {
-  //   return (
-  //     <Checkbox
-  //       sx={{
-  //         '&:hover': { bgcolor: 'transparent' },
-  //       }}
-  //       disableRipple
-  //       color="default"
-  //       checkedIcon={<BpCheckedIcon />}
-  //       icon={<BpIcon />}
-  //       inputProps={{ 'aria-label': 'Checkbox demo' }}
-  //       {...props}
-  //     />
-  //   );
-  // }
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [openCategory, openSearch]);
   
 
 
@@ -557,14 +527,32 @@ function Impactpage() {
              }
               <span className={clickedSearch ? 'clicked-span' : ''}>ongoing causes</span>
             </div>
-            <div className="search-box">
-              <span>ongoing causes</span>
+            <div className= {`search-box ${clickedSearch1 ? 'clicked' : ''}`} onClick={handleSearchBoxClick1}>
+             {
+              clickedSearch1 && (
+
+                 <BsCheckLg className='clickedIcon'/>
+              )
+             }
+              <span className={clickedSearch1 ? 'clicked-span' : ''}>ongoing causes</span>
             </div>
-            <div className="search-box">
-              <span>ongoing causes</span>
+            <div className= {`search-box ${clickedSearch2 ? 'clicked' : ''}`} onClick={handleSearchBoxClick2}>
+             {
+              clickedSearch2 && (
+
+                 <BsCheckLg className='clickedIcon'/>
+              )
+             }
+              <span className={clickedSearch2 ? 'clicked-span' : ''}>ongoing causes</span>
             </div>
-            <div className="search-box">
-              <span>ongoing causes</span>
+            <div className= {`search-box ${clickedSearch3 ? 'clicked' : ''}`} onClick={handleSearchBoxClick3}>
+             {
+              clickedSearch3 && (
+
+                 <BsCheckLg className='clickedIcon'/>
+              )
+             }
+              <span className={clickedSearch3 ? 'clicked-span' : ''}>ongoing causes</span>
             </div>
           </div>
         </div>
@@ -585,17 +573,7 @@ function Impactpage() {
        </div>
      ) : (
        <Swiper
-       slidesPerView={4}
-       // onSwiper={(swiper) => setSwiper(swiper)}
-      //  pagination={{
-      //   //  clickable: true,
-      //   //  renderBullet: function (index, className) {
-      //   //    return '<span class="' + className + '">' + (index) + '</span>';
-      //   //  },
-      //    el: ".nav-Btn",
-      //    clickable: true,
-      //  }}
-      
+       slidesPerView={4}      
        spaceBetween={30}
        grid={{
          rows: 8,

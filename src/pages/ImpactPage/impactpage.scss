@@ -167,13 +167,13 @@
         background-color: #000000;
 
         .categoryContainer{
-            width: 90%;
+            width: 80%;
             display: flex;
             align-items: start;
             flex-direction: column;
              //background: #a01d1d;
             color: #FFF;
-            padding: 20px;
+            //padding: 20px;
         }
 
         h3{
@@ -195,7 +195,11 @@
             height: auto;
             align-items: flex-start;
             gap: 24px;
-            background-color: rgb(1, 1, 1);
+            background-color: blanchedalmond;
+            padding-left: -50px;
+            //background-color: rgb(1, 1, 1);
+            padding: 0;
+            margin: 0;
 
         
             .checkbox-container {
@@ -222,20 +226,21 @@
     }
 
     .openedSearch{
-        width: 90%;
+        width: 80%;
         display: flex;
         align-items: start;
         flex-direction: column;
-        // background: #a01d1d;
+        background: #a01d1d;
         color: #FFF;
         padding: 20px;
         margin: auto;
+        flex-wrap: wrap;
 
         h6{
             color: #FFF;
             text-align: right;
             font-family: Poppins;
-            font-size: 14px;
+            font-size: 10px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -466,7 +471,9 @@
             background-color: #43C4B2;
    
     }
-
+    .impactBox:hover{
+        border: 2px solid #43C4B2;
+    }
     .btn:hover{
         border-radius: 100px;
     }
@@ -571,19 +578,23 @@
         //color: #FFF;
     }
 
-    .clicked{
+    .clicked, .clicked-span{
         background: #EDFFFC;
         color: #43C4B2 !important;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        
-
      
     }
     .clickedIcon{
         font-size: 20px;
+        margin-left: 10%;
+        padding-left: -10px;
+    }
+    .clicked-span{
+        margin-left: -5%;
+        //background-color: #a01d1d;
     }
 }
 

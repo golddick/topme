@@ -54,24 +54,24 @@ function Hometop() {
       setMenuTab(false);
     }
 
-// const handleOutsideClick = (event) => {
-//   if (popupRef.current && !popupRef.current.contains(event.target)) {
-//     setExtraopen(false);
-//     setHowitworks(false);
-//   }
-// };
+const handleOutsideClick = (event) => {
+  if (popupRef.current && !popupRef.current.contains(event.target)) {
+    setExtraopen(false);
+    setHowitworks(false);
+  }
+};
 
-// useEffect(() => {
-//   if (extraopen || howitworks) {
-//     document.addEventListener('mousedown', handleOutsideClick);
-//   } else {
-//     document.removeEventListener('mousedown', handleOutsideClick);
-//   }
+useEffect(() => {
+  if (extraopen || howitworks) {
+    document.addEventListener('mousedown', handleOutsideClick);
+  } else {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  }
 
-//   return () => {
-//     document.removeEventListener('mousedown', handleOutsideClick);
-//   };
-// }, [extraopen, howitworks]);
+  return () => {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  };
+}, [extraopen, howitworks]);
 
 
   return (
