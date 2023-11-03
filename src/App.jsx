@@ -1,4 +1,5 @@
-import './index.scss'
+import './main.scss'
+import './styles.scss'
 import Register from './pages/Registration/Register';
 import Login from './pages/login/Login'
 import AngelProfile from './pages/Angel-profile/Angel';
@@ -33,6 +34,7 @@ import {
   Route,
   // Link
 } from "react-router-dom";
+import Play from './pages/Play';
 
 
 
@@ -46,7 +48,6 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/Sign-up' element={<Register/>}/>
-            
             <Route path='/Login' element={<Login/>}/>
             <Route path='/Profile' element={<AngelProfile/>}/>
             <Route path='/analytics' element={<Analytics/>}/>
@@ -73,11 +74,13 @@ function App() {
             <Route path='/Payment' element={<PaymentPage/>}/>
             {/* <Route path='/paymentSuccessful' element={<SuccessBox/>}/> */}
             <Route path='/CreateSupport' element={<CreateSupport/>}/>
+            <Route path='/play' element={<Play/>}/>
             {/* <Route path='/Register' element={<Register/>}/> */}
             
           </Routes>
         </BrowserRouter>
       </>
+
       </div>
   )
 }
