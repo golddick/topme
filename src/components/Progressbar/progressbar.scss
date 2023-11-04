@@ -1,67 +1,16 @@
-
-
-.vertical-progressbar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    border: 2px solid #68EDCB;
-    margin-top: -17px;
-    border-top: none;
-    overflow: hidden;
-    margin-top: 5px;
-  }
-  
-  .vertical-progressbar {
-    width: 30px;
-    height: 190px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0px 0px 20px #111;
-    overflow: hidden;
-    
-  }
-
-
-  .rotated-rectangle {
-    width: 0;
-    height: 0;
-    top: 0;
-   border: #68EDCB 20px solid;
-    transform: rotate(225deg);
-    border-style:dotted;
-    //border-width: 20px;
-    margin-top: -20px;
- background: transparent;
-  }
-  
-
-  
-  .vertical-bar {
-   
-    height: 100%;
-    background: #68EDCB;
-    background: linear-gradient(360deg, #68EDCB 0%, 
-    #68EDCB 56.54%, 
-    rgba(104, 237, 203, 0.80) 
-    85.10%, rgba(104, 237, 203, 0.00) 100%);
-
-  }
-  
-  .vertical-progressbar-text-container {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    flex-shrink: 0;
-    border-radius: 100px;
-    border: 4px solid #68EDCB;
-    background: rgba(0, 0, 0, 0.30);
-    margin-bottom: 10px;
-  }
-  
+.containe {
+  display: flex;
+  background-image: url("../../assets/icons/pcon.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 65px;
+  position: relative;
+  align-items: last baseline;
+  padding-bottom: 6px;
+  padding-left: 7px;
+}
+.centered-image {
+  background-image: url("../../assets/icons/pbar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
