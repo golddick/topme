@@ -1,18 +1,27 @@
 .PostStatus{
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
   align-items: center;
-  //background-color: cornflowerblue;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFF;
+  padding-top: 0;
+  padding-bottom: 5px;
+ 
+
   //gap: 10px;
 
   .causes{
       display: flex;
-      height: 48px;
+      flex-direction: column;
+      height: 50px;
       padding: 12px;
+      gap: 40px;
       justify-content: center;
       align-items: flex-start;
-      //gap: 12px;
-      // background-color: #68EDCB;
+       position: relative;
       flex: 1 0 0;
+      //background-color: blue;
       span{
           color: #808080;
           text-align: center;
@@ -22,6 +31,20 @@
           font-weight: 500;
           line-height: normal;
           letter-spacing: 0.014px;
+          white-space: nowrap;     
+          overflow: hidden;    
+          text-overflow: ellipsis; 
+      }
+
+      .activebar{
+        height: 7px;
+        width: 100%;
+        //margin-left: 10px;
+        border-radius: 100px;
+        background: #43C4B2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
       }
   }
 
@@ -36,7 +59,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+  @media screen and  (max-width: 640px) {
     .PostStatus{
           display: flex;
           width: 100%;
@@ -53,14 +76,17 @@
               gap: 10px;
               flex: 1 0 0;
                span{
-                  color: #808080;
-                  font-family: Poppins;
-                  font-size: 10px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                  letter-spacing: 0.15px;
-                  text-transform: uppercase;
+                color: #808080;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.15px;
+                text-transform: uppercase;
+                  white-space: nowrap;     
+                  overflow: hidden;    
+                  text-overflow: ellipsis; 
                }
            }
          

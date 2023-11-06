@@ -136,13 +136,12 @@
 
     .topRight{
        // background-color: yellow;
-        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 2fr ;
         padding: 0px 48px;
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        //gap: 24px;
-       // background-color: blueviolet;
 
         .Search{
             display: flex;
@@ -151,39 +150,41 @@
             width: auto;
             border-radius: 5px;
             color: #FFF;
-            gap: 10px;
-            font-size: 13px;
-            // margin-top: 2px;
-            // margin-right: 50px;
-            
-            // padding: 5px;
-
+            gap: 20px;
+            width: 60%;
+            height: 100%;
+            cursor: pointer;
             span{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 13px;
+                font-size: 12px !important;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
                 letter-spacing: 0.048px; 
-                text-transform: uppercase;                  
+                text-transform: uppercase; 
+                                 
+            }
+
+            .searchicon{
+                font-size: 20px;
             }
         }
 
         .authBTN{
+            width: 110%;
             display: flex;
-            gap: 30px;
-           // background-color: coral;
+            align-items: center;
+            gap: 20px;
             span{
                 display: flex;
                 padding: 12px 24px;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
-    
                 color: #FFF;
                 font-family: Poppins;
                 font-size: 12px;
@@ -193,6 +194,12 @@
                 letter-spacing: 0.048px;
                 text-transform: uppercase;
                 cursor: pointer;
+                white-space: nowrap;     
+                overflow: hidden;    
+                text-overflow: ellipsis;  
+                white-space: nowrap;     
+                overflow: hidden;    
+                text-overflow: ellipsis; 
                 
             }
     
@@ -284,15 +291,15 @@
         justify-content: center;
         position: absolute;
         top: 100px;
-        width: 200px;
+        width: 150px;
         height: auto;
         background-color: black;
         gap: 10px;
-       margin-left: 50px;
+       margin-left: 15%;
     
     
             .contact{
-                width: 180px;
+                width: 140px;
                 height: 40px;
                 display: flex;
                 align-items: center;
@@ -303,7 +310,7 @@
                .span{
                 color: #FFF;
                 font-family: Poppins;
-                font-size: 14px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 200;
                 line-height: normal;
@@ -311,7 +318,7 @@
                 text-transform: uppercase;
                }
                 img{
-                    width: 50px;
+                    width: 35px;
                     height: 15px;
                 }
             }
@@ -322,12 +329,12 @@
                 align-items: center;
                 cursor: pointer;
                 transition: background-color 0.3s;
-                width: 160px;
+                width: 140px;
                 height: 40px;
                 .span{
                     color: #FFF;
                     font-family: Poppins;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 200;
                     line-height: normal;
@@ -349,7 +356,7 @@
     
     }
     .howPopUp{
-        margin-left: 150px;
+        margin-left: 26%;
         //background-color: red;
     }
             
@@ -370,13 +377,14 @@
         }
     
         .topRight{
-            display: flex;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
             padding: 0px 30px;
             align-items: center;
             width: 100%;
             justify-content: space-between;
             //gap: 10px;
-           //background-color: blueviolet;
+          // background-color: blueviolet;
     
             .Search{
                 display: flex;
@@ -411,9 +419,11 @@
             }
     
             .authBTN{
-                display: flex;
+                display: grid;
+                grid-template-columns: 2fr 2fr ;
                 align-items: center;
-                justify-content: space-between;
+                gap: 10px;
+                //justify-content: space-between;
                // background-color: coral;
                 span{
                     display: flex;
@@ -474,9 +484,249 @@
     
      }
   }
+
+  @media (max-width: 800px){
+
+    .tophome{
+
+
+        .largeTopbar{
+            display: grid;
+        grid-template-columns: 2fr 0.5fr 2fr;
+        gap: 10px;
+    
+        .topLeft{
+             width: 100%;
+             height: 60px;
+            padding: 10px;
+            gap: 10px;
+            //background-color: #43C4B2;
+             //justify-content: space-between;
+            display:flex;
+            align-items: center;
+    
+            span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.024px;
+            text-transform: uppercase;
+            cursor: pointer;
+             gap: 10px;
+
+             white-space: nowrap;     
+             overflow: hidden;    
+             text-overflow: ellipsis; 
+            //  /* Optionally, you can set a fixed width or max-width to the container */
+            //  max-width: 200px; 
+            }
+    .extraPopup, .howPopUp{
+        z-index: 1000; 
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        width: 150px;
+        height: auto;
+        background-color: black;
+        gap: 10px;
+       margin-left: 10%;
+    
+    
+            .contact{
+                width: 140px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+               .span{
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                letter-spacing: 0.024px;
+                text-transform: uppercase;
+               }
+                img{
+                    width: 35px;
+                    height: 15px;
+                }
+            }
+        
+            .blog{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 140px;
+                height: 40px;
+                .span{
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.024px;
+                    text-transform: uppercase;
+                   }
+            }
+    
+    .contact:hover .span,
+    .blog:hover .span {
+        color: black;
+    }
+    
+    .contact:hover,
+    .blog:hover {
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    }
+    .howPopUp{
+        margin-left: 20%;
+        //background-color: red;
+    }
+            
+        }
+    
+        .topcenter{
+            display: flex;
+            //background-color: blue;
+    
+            .Logo_img{
+                object-fit: cover;
+                width: 50px;
+                height: 30px;
+                flex-shrink: 0;
+                cursor: pointer;
+                
+            }
+        }
+    
+        .topRight{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            padding: 0 20px;
+            align-items: flex-start;
+            width: 100%;
+            justify-content: flex-start;
+    
+            .Search{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                border-radius: 5px;
+                color: #FFF;
+                gap: 5px;
+                font-size: 10px;
+                width: 100%;
+    
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px; 
+                    text-transform: uppercase;  
+                    
+                    
+                }
+            }
+    
+            .authBTN{
+                display: grid;
+                grid-template-columns: 2fr 2fr ;
+                align-items: center;
+                gap: 5px;
+                //justify-content: space-between;
+               // background-color: coral;
+                span{
+                    display: flex;
+                    padding: 10px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+        
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    white-space: nowrap;     
+                    overflow: hidden;    
+                    text-overflow: ellipsis; 
+                    
+                }
+        
+                .sign-up{
+                    border-radius: 100px;
+                    background: #43C4B2;
+                    width: 100px;
+                    height: 40px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+                }
+            }
+        
+        }
+    
+        .navlink{
+            text-decoration: none;
+        }
+     
+    }
+    .opensearch{
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.211);
+        //margin-top: 100px;
+    }
+        .mobileTopbar{
+            display: none;
+      
+        }
+    
+     }
+ 
+    
+  }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (max-width: 750px){
+  @media (max-width: 640px){
 
     .tophome{
 

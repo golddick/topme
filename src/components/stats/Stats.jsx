@@ -6,17 +6,26 @@ function Stats() {
       <div className="statsWrapper">
       <div className="left">
         <span>Total Expected expenitures</span>
-        <p>$22,000</p>
+        <div className="statsAmount">
+      <p>$</p>
+      <span>20,000</span>
+     </div>
         </div>
         <div className="vertical-line"></div>
       <div className="center">
       <span>Total Expected expenitures</span>
-        <p>$22,000</p>
+     <div className="statsAmount">
+      <p>$</p>
+      <span>22,000</span>
+     </div>
       </div>
       <div className="vertical-line"></div>
       <div className="right">
       <span>Total Expected expenitures</span>
-        <p>$22,000</p>
+      <div className="statsAmount">
+      <p>$</p>
+      <span>12,000</span>
+     </div>
       </div> 
       </div>
     </div>

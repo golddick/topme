@@ -45,8 +45,10 @@ function Impactpage() {
   const [isChecked2, setIsChecked2] = useState(true);
   const [isChecked3, setIsChecked3] = useState(true);
   const [isChecked4, setIsChecked4] = useState(true);
+  const [showPlaceholder, setShowPlaceholder] = useState(true);
+  const [clickedOutside, setClickedOutside] = useState(false);
 
-
+  
   const handleSearchBoxClick3 = () => {
     setClickedSearch3(!clickedSearch3)
   }
@@ -63,8 +65,10 @@ function Impactpage() {
 
   // Handle checkbox state changes for each checkbox
   const handleCheckboxChange1 = () => {
-    setIsChecked1((prev) => !prev);
-  };  
+    const updatedCheckboxState = !isChecked1;
+    setIsChecked1(updatedCheckboxState);
+    localStorage.setItem('checkboxState', updatedCheckboxState.toString());
+  }; 
 
   const handleCheckboxChange2 = () => {
     setIsChecked2((prev) => !prev);
@@ -80,6 +84,7 @@ function Impactpage() {
 
   const toggleSearch = () => {
     setOpenSearch(!openSearch)
+
   }
 
   const popupRef = useRef(null);
@@ -389,10 +394,15 @@ function Impactpage() {
       setOpenSearch(false);
       setOpenCategory(false);
     }
+    setTimeout(() => {
+      setShowPlaceholder(false);
+      setClickedOutside(false);
+    }, 10000);
   };
   
   useEffect(() => {
     if (openCategory || openSearch) {
+      setShowPlaceholder(true);
       document.addEventListener('mousedown', handleOutsideClick);
     } else {
       document.removeEventListener('mousedown', handleOutsideClick);
@@ -403,6 +413,29 @@ function Impactpage() {
     };
   }, [openCategory, openSearch]);
   
+  useEffect(() => {
+
+    const savedState = localStorage.getItem('checkboxState');
+    if (savedState !== null) {
+      setIsChecked1(savedState === 'true');
+      setIsChecked2(savedState === 'true')
+      setIsChecked3(savedState === 'true');
+      setIsChecked4(savedState === 'true')
+    }
+  }, []);
+
+
+  // useEffect(() => {
+  //   if (openSearch) {
+  //     // Set a timer to hide the placeholder after 8 seconds
+  //     const timer = setTimeout(() => {
+  //       setShowPlaceholder(false);
+  //     }, 8000);
+
+  //     // Clean up the timer if the component unmounts or if openSearch changes
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [openSearch]);
 
 
   return (
@@ -418,13 +451,19 @@ function Impactpage() {
      <NavLink to="/" className="navLink" >
        <IoIosArrowDropleftCircle className="icon" />
        </NavLink>
-       <div className="impactsearch" onClick={toggleSearch}>
-         <BiSearchAlt className="icon" />
-         <input type="text" placeholder="filter angels by keyword"  className='Input'/>
+       <div className={`impactsearch ${openSearch? 'clicked' : ''}`} onClick={toggleSearch}>
+         <BiSearchAlt className={`icon ${openSearch ? 'moved' : ''}`} />
+         {openSearch ? (
+                <input type="text" className="Input" />
+              ) : (
+                 (
+                  <input type="text" placeholder="filter angels by keyword" className="Input" />
+                )
+              )}
        </div>
        <div className="text" onClick={handleOpenCategory}>
          {/* <span  className= 'openTextColor' >cities</span> */}
-         <div className={openCategory ? 'openTextColor' : ''}>
+         <div className={openCategory ? 'openTextColor' : ''} style={{display:'flex'}}>
          <span className={openCategory ? 'openText' : ''} >cities</span>
          {openCategory ? <MdKeyboardArrowUp className='open-textIcon' /> : <MdKeyboardArrowDown className='open-textIcon' />}
          </div>
@@ -434,15 +473,15 @@ function Impactpage() {
      </div>
       
    </div>
-   {openCategory && <div className="openCat">
+   {openCategory && <div className="openCat" >
      
-    <div className="categoryContainer" >
+    <div className="categoryContainer"ref={popupRef} >
 
     <h3>filter by</h3>
      <div className="categoryBox">
          <div className="checkbox-container">
          <Checkbox
-        defaultChecked
+        defaultChecked={null}
         checked={isChecked1}
         sx={{
           '& .MuiSvgIcon-root': {
@@ -515,7 +554,7 @@ function Impactpage() {
 
     {
       openSearch && (
-        <div className="openedSearch">
+        <div className="openedSearch" ref={popupRef}>
           <h6>search by</h6>
           <div className="searchtab">
             <div className= {`search-box ${clickedSearch ? 'clicked' : ''}`} onClick={handleSearchBoxClick}>

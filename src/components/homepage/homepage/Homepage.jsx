@@ -22,7 +22,7 @@ function Homepage() {
   //     clearInterval(borderRadius_interval); 
   //   };
   // }, []); 
-
+ 
  
   useEffect(() => { 
     const intervalId = setInterval(() => {

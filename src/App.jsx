@@ -60,7 +60,7 @@ function App() {
             <Route path='/Angels' element={<Impactpage/>}/>
             <Route path='/How-it-Works' element={<HowitWorks/>}/>
             <Route path='/updateProfile' element={<Updateprofile/>}/>
-            <Route path='/addProfile' element={<Addprofile/>}/>
+            <Route path='/Edit-Profile' element={<Addprofile/>}/>
             <Route path='/About' element={<About/>}/>
             <Route path='/Blog' element={<Blog/>}/>
             <Route path='/Contact' element={<Contact/>}/>

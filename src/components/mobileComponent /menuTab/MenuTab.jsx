@@ -55,11 +55,11 @@ function MenuTab({closeMobilemenu}) {
         <AiOutlineCloseCircle className='closeTab' onClick={closeMobilemenu} />
         </div>
         <div className="menuCenter">
-          <NavLink to="/about" className='navLink'>
+          <NavLink to="/About" className='navLink'>
         <span>about</span>
         </NavLink>
 
-        <NavLink to="/impact" className='navLink'>
+        <NavLink to="/Angels" className='navLink'>
         <span>angels</span>
         </NavLink>
         <div className="menuText" onClick={openExtra}>
@@ -71,13 +71,13 @@ function MenuTab({closeMobilemenu}) {
             extraopen && (
              <div  className="extraPopup">
              {/* <div ref={popupRef}  className="extraPopup"> */}
-              <NavLink to='/contact' className='navlink'>
+              <NavLink to='/Contact' className='navlink'>
                <div className="contact">
                 <div className="span">Contact</div>
                 <img src={BlackLogo} alt="" />
               </div>
               </NavLink>
-              <NavLink to='/blog' className='navLink'>
+              <NavLink to='/Blog' className='navLink'>
               <div className="blog">
               <div className="span">Blog</div>
               </div>
@@ -93,19 +93,19 @@ function MenuTab({closeMobilemenu}) {
           {
             howitworks && (
              <div ref={popupRef}  className="extraPopup">
-               <NavLink to='/HowitWorks' className='navlink'>
+               <NavLink to='/How-it-Works' className='navlink'>
                <div   className="contact">
                 <div className="span">how</div>
                 <img src={BlackLogo} alt="" />
                 <div className="span">works</div>
               </div>
               </NavLink>
-              <NavLink to='/pricing' className='navlink'>
+              <NavLink to='/Pricing' className='navlink'>
               <div className="blog">
               <div className="span">pricing and fees</div>
               </div>
               </NavLink>
-              <NavLink to='/guarantee' className='navlink'>
+              <NavLink to='/Guarantee' className='navlink'>
               <div className="blog">
               <div className="span">guarantees page</div>
               </div>
@@ -115,10 +115,10 @@ function MenuTab({closeMobilemenu}) {
           }
         </div>
         <div className="menuBottom">
-          <NavLink to='/signup' className='regBtn'>
+          <NavLink to='/Sign-up' className='regBtn'>
               <div >become an angel</div>
               </NavLink>
-              <NavLink to='/login' className='loginBtn'>
+              <NavLink to='/Login' className='loginBtn'>
               <div >user login </div>
               </NavLink>
         </div>

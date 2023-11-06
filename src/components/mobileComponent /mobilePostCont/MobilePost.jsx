@@ -6,6 +6,7 @@ import { CiLocationOn } from 'react-icons/ci';
 import { FaShare } from 'react-icons/fa';
 import {BsHeart} from 'react-icons/bs'
 import ShareContainer from '../../ShareContainer/ShareContainer';
+import ProgressBar from '../../Progressbar/Progressbar';
 //import VerticalProgressbar from '../../components/Progressbar/Progressbar';
 import './mobilePost.scss'
 
@@ -107,40 +108,25 @@ function MobilePost() {
               <p>{post.postheader}</p>
             
         <div className="center">
-              <img src={post.postimg} alt="" />
+              {/* <img src={post.postimg} alt="" /> */}
 
-              <div className="storyTop" style={{position:'relative'}}>
-              {/* <div className="postStoryTop">
-              <div className="topStory">
-                <span>
-                  <BsGift className="storyicon" style={{fontSize:'20px' }}/> donation so far: <b>$10,000</b>
-                </span>
-                <span>
-                  <BsGift className="storyicon" /> donation Target: <b>$21,000</b>
-                </span>
-              </div>
-
-              <div className="progressbar">
-                  <VerticalProgressbar/>
-                </div>
-              </div> */}
+              <div className="storyTop"style={{ backgroundImage: `url(${post.postimg})` }}  >
               
               <div className="storyCenter">
-                <div className="postReaction" style={{position:"absolute",
-                 bottom:'60px', display:'flex', 
-                 justifyContent:'space-between', width:'100%',
-                 alignItems:'center', marginLeft:'-10px', padding:'0'}}>
+                {/* <div className="postReaction" > */}
 
-                <div className="progressBar">jj</div>
+                <div className="progressBar">
+                  <ProgressBar  percentage ="70" />
+                </div>
                 <div className="likeBtn">
                 <BsHeart className='Like-icon'/>
                 <span className='icon-text'> 12 </span>
               </div>
-                </div>
+                {/* </div> */}
              
 
               </div>
-              <div className="down" style={{position:"absolute", bottom:'0'}}>
+              <div className="down">
                 <p>{post.postbio}</p>
               </div>
             </div>

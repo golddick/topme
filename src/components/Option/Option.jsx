@@ -5,6 +5,9 @@ import Frame2 from '../../assets/Frame.png'
 import React, { useState } from 'react';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import {AiFillCaretRight} from 'react-icons/ai'
+import Wings from '../../assets/wingBox.png'
+import Card2 from '../../assets/card2.png'
+import Card3 from '../../assets/card3.png'
 
 function Optiontab() {
   return (
@@ -17,7 +20,7 @@ function Optiontab() {
        <span>1</span> 
        {/* <NavLink to='/signup' className='navlink'>  */}
        
-          <div className="wing-innerbox"   > 
+          {/* <div className="wing-innerbox"   > 
           <div className="topcorners" >
              <div className="cornerLeft"></div>
              <div className="cornerRight"></div> 
@@ -47,8 +50,11 @@ function Optiontab() {
           </svg>
           </div>
            </div>
-         
-          </div>
+       
+          </div> */}
+            <div className="wingCard">
+          <img src={Wings} alt="" className='wing-car-image' />
+         </div>
           <h3>SIGN UP TO BECOME AN ANGEL</h3>
           {/* </NavLink> */}
           <div className="downtext1">
@@ -64,15 +70,9 @@ function Optiontab() {
    
         <div className="selectTab">
           <span>2</span>
-          <div className="innerbox" >
-           <div className="topcorners">
-             <div className="cornerLeft"></div>
-             <div className="cornerRight"></div>
-           </div>
-           <div className="humanIcon">
-           <img src={Frame2}alt="" /> 
-           </div>
-          </div>
+         <div className="wingCard">
+          <img src={Card2} alt="" className='cardimg'/>
+         </div>
           <h3>CREATE AN IMPACT STORY</h3>
           <div className="downtext">
           <p> <MdOutlineKeyboardArrowRight className='textIcon'/>Identify a cause that requires funding and support</p>
@@ -85,7 +85,7 @@ function Optiontab() {
     
         <div className="selectTab">
           <span>3</span>
-          <div className="innerbox" >
+          {/* <div className="innerbox" >
           <div className="topcorners">
              <div className="cornerLeft"></div>
              <div className="cornerRight"></div>
@@ -94,6 +94,9 @@ function Optiontab() {
            <img src={Frame} alt="" />
            </div>
           
+          </div> */}
+          <div className="wingCard">
+            <img src={Card3} alt="" className='cardimg'/>
           </div>
           <h3>SHARE WITH FRIENDS & FAMILY</h3>
           <div className="downtext">

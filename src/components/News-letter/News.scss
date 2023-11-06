@@ -69,18 +69,21 @@
             align-items: center;
             margin-top: 10px;
             gap: 10px;
-            width: 218px;
+            width: 70%;
             height: 32px;
+ 
 
             .subscribers{
                 display: flex;
                 align-items: center;
                 position: relative;
+                gap: 5;
+              
                 img{
                     width: 32px;
                     height: 32px;
                     object-fit: cover;
-                    border-radius: 50%;
+                   border-radius: 100%;
                 }
 
                 .image1 {

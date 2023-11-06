@@ -1,6 +1,8 @@
 .Leftbar{
-   // position: static;
-    width: 300px;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,20 +10,24 @@
     border-radius: 20px;
     gap: 20px;
     overflow: scroll;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    background: #fff;
+     padding-top: 10px;
+    // padding-bottom: 40px;
+   //border: 2px solid black;
    
 
       .logoImage{
         display: flex;
         width: 150px;
         height: 30px;
-        margin-bottom: 20px;
+       
+
         
         img{
-            width: 150px;
-            height: 30px;
+            width: 100%;
+            height: 100%;
             flex-shrink: 0;
+            object-fit: contain;
            
         }
       }
@@ -29,23 +35,27 @@
 
         
         .top{
-            width: 250px;
-            margin-top: -35px;
+            width: 90%;
+           // margin-top: -35px;
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap:20px;
 
            .profileInfo{
+            display: flex;
+            gap: 50px;
+            width: 100%;
     
             .profileImg{
                 width: 120px;
                 height: 120px;
                 border-radius: 50%;
                 object-fit: cover;
-             // margin-left: 60px;
+                align-self: center;
+                margin-left: 25%;
               align-items: center; 
-               margin-top: -20px;
+              // margin-top: -20px;
                 border: 5px solid white;
                 
             }
@@ -65,15 +75,10 @@
             background-color: #FFF;
             
 
-            span{
+            .editIcon{
                 
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 15px;
-                line-height: 30px;
-                text-align: center;
-                color: #000;  
+                width: 20px;
+                height: 20px;  
                 
             }
         }
@@ -91,6 +96,22 @@
                 align-items: center;
                 flex-direction: column;
                 gap: 10px;
+                width: 100%;
+
+                .userName{
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    text-align: center;
+                    
+                    /* Headers/H6 */
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.03px;
+                }
     
                 p{
                     color: #000;
@@ -100,17 +121,18 @@
                     font-weight: 400;
                     line-height: normal;
                     letter-spacing: 0.03px;
-                    width: 270px;
+                    margin: 0;
                 }
     
                 .info{
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: 2fr 2fr;
                     align-items: center;
                     width: 100%;
+                    height: 100%;
                     justify-content: space-between;
                     //gap: 24px;
                     padding: 5px;
-                    background-color: transparent;
     
                     
                     span{
@@ -124,12 +146,14 @@
                         text-transform: uppercase;
                     }
                     .Icon{
-                        font-size: 20px;
+                        font-size: 15px;
                         color: rgba(0, 0, 0, 0.50);
                     }
     
-                    .address{
-                        margin-right: 20px;
+                    .address, .date{
+                       display: flex;
+                       gap: 5px;
+                       margin: 0;
                     }
     
                 }
@@ -142,7 +166,7 @@
 
                     .ICON{
                         width: 20px;
-                        height: 16px;
+                        height: 20px;
                         color: #000;
                     }
                 }
@@ -157,25 +181,29 @@
                 align-items: center;
                 background-color: black;
                 border-radius: 5px;
-                height: 65px;
+                height: 60px;
     
                 .vertical-line {
                     width: 2px;
-                    height: 20px;
+                    height: 30px;
                     background-color: rgb(248, 245, 245);}
     
                 .engagement{
                     display: flex;
                     flex-direction: column;
                     padding: 10px;
+                    padding-top: 10%;
                     align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
                     
                     
                     
     
                     span{
-                        width: 23px;
-                        height: 30px;
+                        // width: 23px;
+                        // height: 30px;
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
@@ -206,7 +234,7 @@
             .CASbtn{
                 cursor: pointer;
                 display: flex;
-                height: 40px;
+                height: 50px;
                 padding: 12px 32px;
                 justify-content: center;
                 align-items: center;
@@ -219,18 +247,23 @@
 
                 /* Button/button 1 */
                 font-family: Poppins;
-                font-size: 12px;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 letter-spacing: 0.175px;
                 text-transform: uppercase;
+
+                .mobile-icon{
+                    display: none;
+                }
             }
             .CASbtn:hover{
                 opacity:9;
                 color: #EBFFFA;
                 background-color: #43C4B2;
             }
+
 
 
         }
@@ -240,15 +273,22 @@
             .center{
                 display: flex;
                 flex-direction: column;
-                width: 250px;
+                width: 90%;
+               // background-color: blueviolet;
                
                 .nav{
                     display: flex;
-                    padding: 12px 24px;
                     align-items: center;
-                    width: 100%;
-                    gap: 20px;
-                    background-color: transparent;
+                    gap: 10px;
+                    width: 100% ;
+                    height: 40px;
+                    //background-color: #FF6B6B;
+                    // display: flex;
+                    // padding: 12px 24px;
+                    // align-items: center;
+                    // width: 100%;
+                    // gap: 10px;
+                    // background-color: green;
                     position: relative;
     
                     span{
@@ -263,9 +303,17 @@
                         cursor: pointer;
                     }
                     
+                    .activeLine{
+                        height: 100%;
+                        width: 5px;
+                        border-radius: 100px 0px 0px 100px;
+                        background: #43C4B2;
+                        position: absolute;
+                        right: 0;
+                    }
                    
                     .messageNot{
-                        align-self: flex-end;
+                       
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
@@ -277,14 +325,19 @@
                         display: flex;
                         position: absolute;
                         right: 2px;
-                        font-size: 15px;
+                    //     font-size: 15px;
     
                     }
 
-                    .icon{
+                    .NavIcon{
                         width: 20px;
-                        height: 20px;
+                        height: 20px;  
                     }
+
+                    .anaIcon{
+                        border: 1px solid black;
+                    }
+                  
     
                 } 
                 .nav:hover{
@@ -292,7 +345,7 @@
                     
                 }
 
-                button{
+                .CACbtn{
                     margin-top: 10px;
                     background-color: #EBFFFA;
                     color: #43C4B2;
@@ -301,15 +354,19 @@
                     line-height: 21px;
                     font-size: 15px;
                     width: 100%;
-                    height: 35px;
+                    height: 45px;
                     display: flex;
                     border: none;
                     align-items: center;
                     justify-content: center;
                     border-radius: 10px;
                     cursor: pointer;
-                    gap: 5px;
+                    gap: 10px;
                     text-transform: uppercase;
+
+                    .mobile-icon{
+                        display: none;
+                    }
                     
                 }
                 button:hover{
@@ -324,10 +381,12 @@
                 .logout{
                    // padding-top: 10px;
                     // margin-bottom: 10px;
-                    margin-left: -150px;
+                    //margin-left: -150px;
                     cursor: pointer;
                     display: flex;
-                    justify-self: start;
+                    justify-self: flex-start;
+                    align-self: flex-start;
+                    padding-left: 10px;
                     color: #FF6B6B;;
                     .icon{
                     transform: rotate(-180deg);
@@ -343,6 +402,12 @@
                         letter-spacing: 0.0015em;
                     }
                 
+            }
+
+            .CACbtn:hover{
+                opacity:9;
+                color: #EBFFFA;
+                background-color: #43C4B2;
             }
     
             .navLink{
@@ -368,370 +433,400 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (min-width: 300px) and (max-width: 600px) {
-   .Leftbar{
-   // position: static;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    border-radius:0  20px 20px 0;
-    gap: 20px;
-    overflow: scroll;
-    //padding-top: 10px;
-    background-color: #FFF;
-   
+  @media  (max-width: 600px) {
+    .Leftbar{
 
-      .logoImage{
-        display: none;
-        width: 171.93px;
-        height: 35px;
-        margin-bottom: 20px;
-        
-        img{
-            width: 171.93px;
-            height: 35px;
-            flex-shrink: 0;
-           
-        }
-      }
-
-
-        
-        .top{
-            width: 270px;
-            margin-top: 35px;
-            display: inline-flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 12px;
-            background-color: #FFF;
-
-           .profileInfo{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        border-radius: 0px 32px 32px 0px;
+        gap: 20px;
+        overflow: scroll;
+        //background: #ae2222;
+       // margin-left: -20px;
+         padding-top: 10px;
+        // padding-bottom: 40px;
+       //border: 2px solid black;
+       
     
-            .profileImg{
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                object-fit: cover;
-                //margin-left: -130px;
-                align-items: self-start; 
-              //margin-top: -20px;
-                border: 5px solid white;
-                
-            }
-
-           }
-
-           .editProfile{
-            //padding-top: 100px;
-           //margin-left:50px ;
-          // padding-left: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 20px;
-            width: 100%;
-            height: 24px;
-            background-color: #FFF;
+          .logoImage{
+            display: none;
+      
+          }
+    
+    
             
-
-            span{
-                
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 15px;
-                line-height: 30px;
-                text-align: center;
-                color: #fff;  
-                padding: 5px;
-                height: 24px;
-                border-radius: 50px;
-                background-color: #000;
-                
-            }
-        }
-    
-          
-    
-            .name{
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.005em;
-                display: flex;
-                align-items: center;
+            .top{
+                width: 90%;
+                margin-top: 10px;
+                display: inline-flex;
                 flex-direction: column;
+                align-items: center;
+                gap:20px;
     
-                p{
-                    color: #000;
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.03px;
-                    width: 270px;
+               .profileInfo{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;    
+                .profileImg{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    align-self: center;
+                    margin-left: 0;
+                  align-items: flex-start; 
+                  // margin-top: -20px;
+                    border: 5px solid white;
+                    
                 }
     
-                .info{
+               }
+    
+               .editProfile{
+                display: none;
+            }
+        
+              
+        
+                .name{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
                     display: flex;
                     align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
                     width: 100%;
-                    justify-content: space-between;
-                    //gap: 24px;
-                    padding: 5px;
-                    background-color: transparent;
     
-                    
-                    span{
-                        color: rgba(0, 0, 0, 0.50);
+                    .userName{
+                        display: flex;
+                        align-items: flex-start;
+                        color: #000;
+                        text-align: start;
+                        justify-content: flex-start;
+                        width: 100%;
+                        
+                        /* Subtitle/subtitle 1 */
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.024px;
+                    }
+        
+                    p{
+                        color: #000;
                         font-family: Poppins;
                         font-size: 10px;
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 400;
                         line-height: normal;
-                        letter-spacing: 0.125px;
+                        letter-spacing: 0.03px;
+                        margin: 0;
+                    }
+        
+                    .info{
+                        display: grid;
+                        grid-template-columns: 2fr 2fr;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: space-between;
+                        //gap: 24px;
+                        padding: 5px;
+        
+                        
+                        span{
+                            color: rgba(0, 0, 0, 0.50);
+                            font-family: Poppins;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.125px;
+                            text-transform: uppercase;
+                        }
+                        .Icon{
+                            font-size: 15px;
+                            color: rgba(0, 0, 0, 0.50);
+                        }
+        
+                        .address, .date{
+                           display: flex;
+                           gap: 5px;
+                           margin: 0;
+                        }
+        
+                    }
+        
+                    .icons{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+    
+                        .ICON{
+                            width: 20px;
+                            height: 20px;
+                            color: #000;
+                        }
+                    }
+                }
+        
+                .engagements{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    //margin-left: 40px;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: black;
+                    border-radius: 5px;
+                    height: 60px;
+        
+                    .vertical-line {
+                        width: 2px;
+                        height: 30px;
+                        background-color: rgb(248, 245, 245);}
+        
+                    .engagement{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        padding-top: 10%;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        
+                        
+                        
+        
+                        span{
+                            // width: 23px;
+                            // height: 30px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 30px;
+                            text-align: center;
+                            color: white;
+                        }
+        
+                        p{                     
+                            //width: 31px;
+                            //height: 18px;
+        
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 18px;
+                        text-align: center;
+                        letter-spacing: 0.0125em;
                         text-transform: uppercase;
+                        color: #808080;
+                        cursor: pointer;
+                        }
                     }
-                    .Icon{
-                        font-size: 20px;
-                        color: rgba(0, 0, 0, 0.50);
-                    }
-    
-                    .address{
-                        margin-right: 20px;
-                    }
-    
                 }
     
-                .icons{
+                .CASbtn{
+                    cursor: pointer;
                     display: flex;
+                    height: 50px;
+                    padding: 12px 32px;
                     justify-content: center;
                     align-items: center;
-                    gap: 44px;
-
-                    .ICON{
-                        width: 22.8px;
-                        height: 16px;
-                        color: #000;
-                    }
-                }
-            }
+                    gap: 10px;
+                    align-self: stretch;
+                    border-radius: 8px;
+                    background: #43C4B2;
     
-            .engagements{
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                //margin-left: 40px;
-                justify-content: space-between;
-                align-items: center;
-                background-color: black;
-                border-radius: 5px;
-                height: 72px;
+                    color: #FFF;
     
-                .vertical-line {
-                    width: 2px;
-                    height: 20px;
-                    background-color: rgb(248, 245, 245);}
-    
-                .engagement{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px;
-                    align-items: center;
-                    
-                    
-                    
-    
-                    span{
-                        width: 23px;
-                        height: 30px;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 20px;
-                        line-height: 30px;
-                        text-align: center;
-                        color: white;
-                    }
-    
-                    p{                     
-                        //width: 31px;
-                        //height: 18px;
-    
-                    font-family: 'Poppins';
+                    /* Button/button 1 */
+                    font-family: Poppins;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 12px;
-                    line-height: 18px;
-                    text-align: center;
-                    letter-spacing: 0.0125em;
+                    line-height: normal;
+                    letter-spacing: 0.175px;
                     text-transform: uppercase;
-                    color: #808080;
-                    cursor: pointer;
-                    }
-                }
-            }
 
-            .CASbtn{
-                cursor: pointer;
-                display: flex;
-                width: 100%;
-                height: 48px;
-                padding: 12px 32px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                align-self: stretch;
-                border-radius: 8px;
-                background: #E7FFFC;
-
-                color: #43C4B2;
-
-                /* Button/button 1 */
-                font-family: Poppins;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 0.175px;
-                text-transform: uppercase;
-            }
-            .CASbtn:hover{
-                opacity:9;
-                color: #EBFFFA;
-                background-color: #43C4B2;
-            }
-
-
-        }
-       
-    
-    
-            .center{
-                display: flex;
-                flex-direction: column;
-               
-                .nav{
-                    display: flex;
-                    padding: 12px 24px;
-                    align-items: center;
-                    width: 100%;
-                    gap: 20px;
-                    background-color: transparent;
-                    position: relative;
-    
-                    span{
-                        display: flex;
-                        align-items: center;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 24px;
-                        letter-spacing: 0.0015em;
-                        cursor: pointer;
-                    }
-                    
-                   
-                    .messageNot{
-                        align-self: flex-end;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        background-color: #43C4B2;
-                        color: black;
-                        cursor: pointer;
-                       justify-content: center;
-                       align-items: center;
-                        display: flex;
-                        position: absolute;
-                        right: 2px;
-                        font-size: 15px;
-    
-                    }
-
-                    .icon{
+                    .mobile-icon{
+                        display: block;
                         width: 24px;
                         height: 24px;
                     }
-    
                 }
-                .nav:hover{
-                   color: #43C4B2;
-                    
-                }
-
-                button{
-                    margin-top: 10px;
-                    background-color: #EBFFFA;
-                    color: #43C4B2;
-                    font-family: 'Poppins';
-                    font-weight: 500;
-                    line-height: 21px;
-                    font-size: 16px;
-                    width: 256px;
-                    height: 35px;
-                    display: flex;
-                    border: none;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    gap: 5px;
-                    text-transform: uppercase;
-                    
-                }
-                button:hover{
+                .CASbtn:hover{
                     opacity:9;
                     color: #EBFFFA;
                     background-color: #43C4B2;
                 }
-                
-            }
     
-              
-                .logout{
-                   // padding-top: 10px;
-                    // margin-bottom: 10px;
-                    margin-left: -150px;
-                    cursor: pointer;
+    
+    
+            }
+           
+        
+        
+                .center{
                     display: flex;
-                    justify-self: start;
-                    color: #FF6B6B;;
-                    .icon{
-                    transform: rotate(-180deg);
+                    flex-direction: column;
+                    width: 90%;
+                   // background-color: blueviolet;
+                   
+                    .nav{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100% ;
+                        height: 40px;
+                        position: relative;
+        
+                        span{
+                            display: flex;
+                            align-items: center;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            letter-spacing: 0.0015em;
+                            cursor: pointer;
+                        }
+                        
+                        .activeLine{
+                            height: 100%;
+                            width: 5px;
+                            border-radius: 100px 0px 0px 100px;
+                            background: #43C4B2;
+                            position: absolute;
+                            right: 0;
+                        }
+                       
+                        .messageNot{
+                            padding: 4px 12px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 100px;
+                            background-color: #43C4B2;
+                            color: black;
+                            cursor: pointer;
+                           justify-content: center;
+                           align-items: center;
+                            display: flex;
+                            position: absolute;
+                            right: 2px;
+                        //     font-size: 15px;
+        
+                        }
+    
+                        .icon{
+                            width: 20px;
+                            height: 20px;  
+                        }
+    
+                        .anaIcon{
+                            border: 1px solid black;
+                        }
+                      
+        
+                    } 
+                    .nav:hover{
+                       color: #43C4B2;
+                        
                     }
     
-                    span{
+                    .CACbtn{
+                        margin-top: 10px;
+                        background-color: #43C4B2;
+                        color: #FFF;
                         font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 24px;
-                        text-align: center;
-                        letter-spacing: 0.0015em;
-                    }
-                
-            }
-    
-            .navLink{
-                text-decoration: none;
-                color: inherit;
-            }
-            .active{
-                color:  #43C4B2;
-                //opacity: 0;
-                transition: opacity 3.0s ease;
-            }
-      
+                        font-weight: 500;
+                        line-height: 21px;
+                        font-size: 14px;
+                        width: 100%;
+                        height: 45px;
+                        display: flex;
+                        border: none;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        gap: 10px;
+                        text-transform: uppercase;
 
-      
-       
-}
+
+                        .mobile-icon{
+                            display: flex;
+                            width: 24px;
+                            height: 24px;
+                        }
+                        
+                    }
+                    button:hover{
+                        opacity:9;
+                        color: #EBFFFA;
+                        background-color: #43C4B2;
+                    }
+                    
+                }
+        
+                  
+                    .logout{
+                       margin-top: 10%;
+                        cursor: pointer;
+                        display: flex;
+                        justify-self: flex-start;
+                        align-self: flex-start;
+                        padding-left: 10px;
+                        color: #FF6B6B;;
+                        .icon{
+                        transform: rotate(-180deg);
+                        }
+        
+                        span{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: 0.0015em;
+                        }
+                    
+                }
+    
+                .CACbtn:hover{
+                    opacity:9;
+                    color: #EBFFFA;
+                    background-color: #43C4B2;
+                }
+        
+                .navLink{
+                    text-decoration: none;
+                    color: inherit;
+                }
+                .active{
+                    color:  #43C4B2;
+                    //opacity: 0;
+                    transition: opacity 3.0s ease;
+                }
+          
+    
+          
+           
+    }
   }

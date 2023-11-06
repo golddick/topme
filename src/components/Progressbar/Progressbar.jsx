@@ -1,4 +1,4 @@
-//<ProgressBar percentage =50 />
+{/* <ProgressBar percentage =50 /> */}
 import "./progressbar.scss";
 import React from 'react'
 

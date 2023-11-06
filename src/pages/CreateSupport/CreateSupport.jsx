@@ -39,7 +39,6 @@ function CreateSupport() {
            
               
 
-            <div className="horizontal" ></div>
             <div className='form'>
               <span>Description</span>
               <textarea id="description" name="description" rows="100" cols="100" className='input'></textarea>            

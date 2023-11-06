@@ -27,7 +27,7 @@ function Join() {
                         <BiCaretRight/> 
                 </NavLink>
                 <NavLink to='/How-it-Works' className='howBtn navlink'>
-                <button className='howBtn'>how it works </button>
+                <div className='how-Btn'>how it works </div>
                 </NavLink>
                  
             </div> 

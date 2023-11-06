@@ -18,7 +18,7 @@ function Hometop() {
   const [menuTab, setMenuTab] = useState(false)
   const [openSearch, setSearch] = useState(false)
   const popupRef = useRef(null);
-
+ 
  
   const openSearchTab = () => {
     setSearch(!openSearch)  
@@ -160,10 +160,10 @@ useEffect(() => {
           <span>search</span>
         </div>
        <div className="authBTN">
-       <NavLink to='/login' className='navlink'>
+       <NavLink to='/Login' className='navlink'>
           <span>USER LOGIN</span>
           </NavLink>
-          <NavLink to='/signup' className='navlink'>
+          <NavLink to='/Sign-up' className='navlink'>
           <span className='sign-up' > angle sign up</span>
           </NavLink>
        </div>

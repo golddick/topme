@@ -7,13 +7,14 @@ import Post from '../../components/post/Post'
 import MobilePost from '../../components/mobileComponent /mobilePostCont/MobilePost'
 import Notifiction from '../../components/notification/Notifiction'
 import PostStatus from '../../components/postLink/PostStatus'
-
+import NavStatus from '../../components/mobileComponent /Nav_Status/NavStatus'
 
 function AngelProfile() {
   return (
     <div className='profile'> 
         <div className="mobileHeader"> 
-          < Topbar/> 
+          < NavStatus/> 
+         
         </div>
         
         <div className="profile_Containerleft">
@@ -24,12 +25,11 @@ function AngelProfile() {
            <div className="widget"><Widget/></div>
             <div className="stat"><Stats/></div>
            </div>
-           <div className="Profile_ContainerBody" style={{overflowY: 'scroll'}}>
+           <div className="Profile_ContainerBody" >
            <div className="postContainer">
              <Post/>
              </div>
              <div className="mobileCont">
-              <PostStatus/>
               <MobilePost/>
               <MobilePost/>
               <MobilePost/>

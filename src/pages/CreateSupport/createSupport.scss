@@ -4,7 +4,7 @@
     height: 100vh;
     //margin-top: -100px;
     display:grid ;
-    grid-template-columns: 1fr 5fr ; 
+    grid-template-columns: 1.5fr 5fr ; 
     grid-template-rows: 100vh; 
 
 
@@ -18,11 +18,16 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding: 20px;
         
-    
+    .supportTop{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
         
         .CreateSupport-post{
-            width: 1100px;
+            width: 90%;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -69,10 +74,10 @@
 
         .horizontal{
             background: rgba(128, 128, 128, 0.50);
-            width: 958px;
+            width: 85%;
             height: 1.5px;
             margin-top: 15px;
-            margin-left: 45px;
+            //margin-left: 45px;
             margin-bottom: 10px;
             display: flex;
             justify-content: center;
@@ -104,25 +109,29 @@
             .input{
                 margin-top: 20px;
                 display: flex;
-                width: 958px;
-                height: 255px;
+                width: 100%;
+                height: 150px;
                 align-items: center;
+                background-color: transparent;
             }
         
            }
 
            .postInfo{
-            margin-left: 50px;
+            //margin-left: 50px;
+            margin: auto;
+            width: 90%;
             display: flex;
             align-items: center;
             align-content: center;
             justify-content: center;
             gap: 24px;
             flex-wrap: wrap;
+            margin-bottom: 50px;
             
             .amount{
                 display: flex;
-                width: 303px;
+                width: 300px;
                 padding: 12px;
                 align-items: center;
                 gap: 10px;
@@ -187,12 +196,14 @@
 
            }
             button{
+                padding: auto;
+                margin: auto;
                 width: 110px;
                 display: flex;
                 color: #F6F6F6;
                 border-radius: 4px;
                 background: #43C4B2;
-                height: 45px;
+                height: 100%;
                 justify-content: center;
                 align-items: center;
                 gap: 5px;
@@ -206,7 +217,7 @@
 }
 
 
-@media  screen and (max-width: 900px) {
+@media  screen and (max-width: 1200px) {
     .CreateSupport{
         background-color: #fff;
         width: 100%;
@@ -492,6 +503,7 @@
                 flex-direction: column;
                 gap: 20px;
                 width: 100%;
+                padding: 0;
             
                 .supportTop{
                     display: none;

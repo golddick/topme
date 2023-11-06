@@ -64,7 +64,7 @@ function CampaignDetails() {
             <TruncateBio/>
             <YoutubeTab/>
             <Comment/>
-            <CampaignBox/>
+            <CampaignBox/> 
             <AngelProgress/>
             <Join />
             <AngelFooter/>

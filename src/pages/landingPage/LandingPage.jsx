@@ -32,7 +32,7 @@ function LandingPage() {
     <AngelFooter/>
     </div>
    
-    </div> 
+    </div>  
   )
 }
 

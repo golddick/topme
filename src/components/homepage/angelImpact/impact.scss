@@ -126,7 +126,7 @@
                     .impactBody{
                             display: flex;
                             flex-direction: column;
-                            align-items: start;
+                            align-items: flex-start;
                             //margin: 10px;
                             
                            
@@ -200,11 +200,16 @@
                     }
                 }
               
-                .btn{
-                    display: flex;
+                .viewbtn{
+
+                    align-self: flex-start ;
+                    justify-content: center;
+                    display: flex !important; 
+                    flex-direction: row;
                     gap: 10px;
                     width: 200px;
                     height: 37px;
+                    //background-color: blueviolet;
 
                     color: #43C4B2;
                     font-family: Poppins;
@@ -217,6 +222,12 @@
 
                     .mobile-arrow{
                        display: none;
+                    }
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
                     }
                 }
 
@@ -237,14 +248,15 @@
                    overflow: hidden;
                 }
 
-                .impactBox:hover .btn{
+                .impactBox:hover .viewbtn{
                     color: white;
                     background-color: #43C4B2;
            
             }
         
-            .btn:hover{
+            .viewbtn:hover{
                 border-radius: 100px;
+                
             }
         }
  
@@ -630,7 +642,7 @@
   }
   
   /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .Impact{
         display: flex;
         width: 100%;

@@ -3,12 +3,18 @@ import HomeTop from '../../components/homepage/HomeTop/Hometop'
 import {BiChevronDown} from 'react-icons/bi'
 import RadioButtons from '../../components/radionBtn/Radiobtn'
 import AngleFooter from '../../components/homepage/footer/AngelFooter'
+import {IoChevronBackCircle} from 'react-icons/io5'
 
 function Claim() { 
   return (
     <div className='Claim'>
         <HomeTop/>
-        <div className="claimCont">
+        <div className="claimWrapper">
+            <div className="back">
+                <IoChevronBackCircle className='backArrow'/>
+            </div>
+
+            <div className="claimCont">
             <div className="submitHeader">
                 <h2>SUBMIT AN ANGEL CLAIM</h2>
                 <h5>
@@ -54,6 +60,10 @@ function Claim() {
                     dis parturient montes, nascetur ridiculus mus.</p>
             </>
         </div>
+
+        <div className="claimRight"> </div>
+        </div>
+        
         <AngleFooter/>
         </div>
   )

@@ -50,11 +50,7 @@
                 position: relative;
                
 
-                // .icon{
-                //     width: 26px;
-                //     height: 26px;
-                //     margin-left: 20px;
-                // }
+        
 
                 input{
                     border-radius: 16px;
@@ -88,8 +84,8 @@
                     position: absolute;
                     left: 0px;
                     cursor: pointer;
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                     outline: none;
                     border-style: none;
                     border-radius: 50%;
@@ -98,8 +94,17 @@
                     transition: .2s linear;
                     color: #000;
                     padding-left: 10px;
+                    //background: yellowgreen;
+                    transition: transform 0.8s; 
                   }
                   
+
+                  &.clicked {
+                    .icon {
+                      transform: translateX(250px); // Adjust the value as needed
+                    }
+                  }
+
                   .icon:focus ~ input,
                   input:focus {
                     box-shadow: none;
@@ -135,17 +140,23 @@
                     letter-spacing: 0.175px;
                     text-transform: uppercase;
                    margin-right: 5px;
+                   display: flex;
+                   align-items: center;
 
                     
 
                 }
                 .openTextColor, .openText{
                     color: #43C4B2;
+                    display: flex !important;
+                    //background-color: #a01d1d;
                 }
                 .itextIcon{
                     width: 30px;
+                    display: flex;
                     height: 30px;
                     color: #000;
+                  
                 }
             }
 
@@ -167,13 +178,15 @@
         background-color: #000000;
 
         .categoryContainer{
-            width: 80%;
+            width: 70%;
             display: flex;
             align-items: start;
             flex-direction: column;
+            margin-top: 10px;
              //background: #a01d1d;
             color: #FFF;
             //padding: 20px;
+            //padding-left: 10%;
         }
 
         h3{
@@ -186,6 +199,7 @@
             line-height: normal;
             letter-spacing: 0.175px;
             text-transform: uppercase;
+            margin-left: 0.9%;
         }
         .categoryBox{
             display: flex;
@@ -194,10 +208,10 @@
             flex-wrap: wrap;
             height: auto;
             align-items: flex-start;
-            gap: 24px;
-            background-color: blanchedalmond;
-            padding-left: -50px;
-            //background-color: rgb(1, 1, 1);
+            gap: 20px;
+            //background-color: blanchedalmond;
+            //padding-left: -50px;
+            background-color: rgb(1, 1, 1);
             padding: 0;
             margin: 0;
 
@@ -206,6 +220,9 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
+                //background-color: blue;
+                padding-left: 0;
+                //margin-left: -1%;
                 
               
               
@@ -226,15 +243,17 @@
     }
 
     .openedSearch{
-        width: 80%;
+        width: 70%;
         display: flex;
         align-items: start;
         flex-direction: column;
-        background: #a01d1d;
+        //background: #a01d1d;
         color: #FFF;
-        padding: 20px;
+        //padding: 10px;
+        padding-top: 10px;
         margin: auto;
         flex-wrap: wrap;
+        gap: 10px;
 
         h6{
             color: #FFF;
@@ -252,11 +271,12 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap;
 
             .search-box{
                 display: flex;
-                width: 241px;
-                height: 52px;
+                width: 230px;
+                height: 50px;
                 padding: 8px;
                 justify-content: center;
                 align-items: center;
@@ -363,11 +383,6 @@
                 }
         
                }
-                // .profileImg:hover{
-                //     transform: scale(1.1);
-                // }
-        
-        
         
                 .impactBody{
                         display: flex;
@@ -460,6 +475,12 @@
                 line-height: normal;
                 letter-spacing: 0.175px;
                 text-transform: uppercase;
+
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
             }
     }
     .impactBox:hover .profileImg{

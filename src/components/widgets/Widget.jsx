@@ -4,42 +4,43 @@ function Widget() {
   return (
     <div className='widget'>
    <div className="widgetWrapper">
-   <img src="https://www.ohchr.org/sites/default/files/styles/hero_image_2/public/2021-07/Ethiopia-UN0418425.jpg?itok=7wJB8CbZ"
-       alt="" />
         <div className="widgetInfo">
-       <span>Open Campaign(s)</span>
-       <p>6 +</p>
-       <button>View All</button>
+        <div className="topcircle">   <span>Open Campaign(s)</span><div className="innerCircle"></div></div>
+     <div className="centerInfo">
+       <p>6+</p>
+     </div>
+       <div className="buttom-circle"><div className="inner-Circle"></div></div>
         </div>
         
    </div>
    <div className="widgetWrapper">
-   <img src="https://www.ohchr.org/sites/default/files/styles/hero_image_2/public/2021-07/Ethiopia-UN0418425.jpg?itok=7wJB8CbZ"
-       alt="" />
         <div className="widgetInfo">
-       <span>Closed Campaign(s)</span>
+        <div className="topcircle"><span>Closed Campaign(s)</span><div className="innerCircle"> </div></div>
+       <div className="centerInfo">
+       
        <p>10 +</p>
-       <button>View All</button>
+       </div>
+       <div className="buttom-circle"><div className="inner-Circle"></div></div>
         </div>
         
    </div>
    <div className="widgetWrapper">
-   <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/11/20/09/children-0.jpg"
-       alt="" />
         <div className="widgetInfo">
-       <span>Campaign awaiting <br/>approval </span>
+          <div className="topcircle"> <span>Decline Campaign(s) </span><div className="innerCircle"></div></div>
+     <div className="centerInfo">
        <p className='num'>6 +</p>
-       <button className='btn'>View All</button>
+     </div>
+       <div className="buttom-circle"><div className="inner-Circle"></div></div>
         </div>
         
    </div>
    <div className="widgetWrapper">
-   <img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg"
-       alt="" />
         <div className="widgetInfo">
-       <span>Decline Campaign(s) </span>
-       <p>6 +</p>
-       <button>View All</button>
+        <div className="topcircle"><span>Campaign awaiting <br/>approval </span><div className="innerCircle"></div></div>
+      <div className="centerInfo">
+       <p>6 +</p>   
+      </div>
+       <div className="buttom-circle"><div className="inner-Circle"></div></div>
         </div> 
         
    </div>

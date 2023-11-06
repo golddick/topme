@@ -269,7 +269,7 @@ export default class LazyLoad extends Component {
                       </div>
                   
                       <NavLink to='/Single' className='navlink'>
-                      <div className="btn">
+                      <div className="viewbtn">
                         <span>
                           view impact story <BiChevronRight  className='pc-arrow'/>
                         

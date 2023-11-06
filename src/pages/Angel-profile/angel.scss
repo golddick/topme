@@ -3,10 +3,12 @@
     background-color: #FFF;
     width: 100%;
     height: 100vh;
+    gap: 20px;
     //margin-top: -100px;
     display:grid ;
-    grid-template-columns: 1fr 5fr ; 
-    grid-template-rows: 100vh; 
+    grid-template-columns: 1.5fr 5fr ; 
+   // grid-template-rows: 100vh;
+    // padding: 20px;
 
     .mobileHeader{
         display: none;
@@ -15,14 +17,18 @@
 
     .profile_Containerleft{
         flex: 1;
-        //display: none;
+        // //display: none;
         display: flex;
         background-color: #FFF;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
-
-        position: static;
+        position: sticky;
+        left: 0;
+        // width: 360px;
+        
+        // position: fixed; /* Fix the sidebar in place */
+        // top: 0; /* Position it at the top of the viewport */
+        // left: 0; /* Position it at the left side of the viewport */
+        overflow: auto;
     }
 
     .Profile-ContainerRight{
@@ -31,24 +37,29 @@
         flex: 5;
         background-color: #FFF;
         flex-direction: column;
-        height: 100%;
+        //height: 100vh;
         width: 100%;
         padding: 20px;
+       padding-top: 60px;
         padding-bottom: 0;
+        overflow: auto;
+        max-height: 100vh;
 
 
         .Profile-topBar{
-
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         }
 
         .Profile_ContainerBody{
             display: grid;
             width: 100%;
             height: 100%;
-            grid-template-columns: 3fr 2fr;
-            grid-template-rows: 100%; 
+            grid-template-columns: 2fr 1fr;
+            //grid-template-rows: 100%; 
             background-color: #FFF;
-            //overflow-y: auto;
+            overflow-y: scroll;
             //     height: calc(100vh - 60px);
 
             .postContainer{
@@ -69,7 +80,6 @@
                 flex: 1;
                 background-color:#FFF;
                 flex-direction: column;
-                padding: 30px;
                 height: 100%;
                 width: 100%;
             }
@@ -77,22 +87,103 @@
     }
 }
 
-@media  screen and (max-width: 1024px) {
-
-  }
-  
-  /* MEDIA QUERIES (SMALL DEVICES)*/
-  @media screen and  (max-width: 600px) {
+@media  screen and (max-width: 1200px) {
     .profile{
         background-color: #FFF;
         width: 100%;
         height: 100vh;
-        margin-top: 80px;
+        gap: 20px;
+        //margin-top: -100px;
+        display:flex ;
+        //grid-template-columns: 1.5fr 5fr ; 
+       // grid-template-rows: 100vh;
+        // padding: 20px;
+    
+        .mobileHeader{
+            display: none;
+        }
+       
+    
+        .profile_Containerleft{
+            flex: 1;
+            // //display: none;
+            display: flex;
+            flex-direction: column;
+             width: 100%;
+            overflow: auto;
+        }
+    
+        .Profile-ContainerRight{
+            //display: none;
+            display: flex;
+            flex: 5;
+            background-color: #FFF;
+            flex-direction: column;
+            //height: 100vh;
+            width: 80%;
+            padding: 20px;
+           padding-top: 60px;
+            padding-bottom: 0;
+    
+    
+            .Profile-topBar{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            }
+    
+            .Profile_ContainerBody{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 3fr 1fr;
+                //grid-template-rows: 100%; 
+                background-color: #FFF;
+                overflow-y: scroll;
+                //     height: calc(100vh - 60px);
+    
+                .postContainer{
+                    flex: 2;
+                    display: flex;
+                    background-color: #FFF;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+    
+                .mobileCont{
+                    display: none;
+                }
+                .notificationContainer{
+                    display: flex;
+                    flex: 1;
+                    background-color:#FFF;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+  }
+  
+  /* MEDIA QUERIES (SMALL DEVICES)*/
+  @media screen and  (max-width: 640px) {
+    .profile{
+        background-color: #FFF;
+        width: 100%;
+        height: 100vh;
+        //margin-top: 80px;
         display:flex ;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
 
         .mobileHeader{
             display: flex;
+            //background-color: chartreuse;
+            // height: 100px;
         }
     
         .profile_Containerleft{
@@ -104,6 +195,7 @@
             flex: 5;
             background-color: #FFF;
             flex-direction: column;
+            padding: 0;
             height: 100%;
             width: 100%;
     
@@ -129,7 +221,8 @@
 
                 .mobileCont{
                     display: block;
-                    padding-bottom: 30px;
+                    margin-top: 100px;
+                   // padding-bottom: 30px;
                 }
                 .notificationContainer{
                     display: none;

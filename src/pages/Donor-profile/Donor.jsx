@@ -8,17 +8,21 @@ import MobilePost from '../../components/mobileComponent /mobilePostCont/MobileP
 import PostStatus from '../../components/postLink/PostStatus';
 import Post from '../../components/post/Post'
 import AngelFooter from '../../components/homepage/footer/AngelFooter';
+import VisitorNavStatus from '../../components/mobileComponent /visitorNavStatus/VisitorNavStatus';
 import {FaEnvelope} from 'react-icons/fa'
-
+import { useNavigate } from 'react-router-dom';
 
 
 function Donor() {
+
   return (
     <div className='campPage'>
+        <div className="navheader-">
           <Hometop/>
+        </div>
 
         <div className="campPageBody">
-        <div className="postStatus"> <PostStatus/></div>
+       
         <div className="PageContainerleft">
 
         <div >
@@ -31,10 +35,22 @@ function Donor() {
 
 
           <div className="PageContainerRight">
+          {/* <div className="postStatus"> <PostStatus/></div> */}
+          {/* <Post/> */}
            <div className="largeView"> <Post/></div>
-           <div className="mobileView"> <MobilePost/>
-            <MobilePost/></div>
+           <div className="mobileView">
+            <VisitorNavStatus/>
+           <div className="mobileViewBody">
+           <Sidebar/>
+             <MobilePost/>
+            <MobilePost/>
+           
+           </div>
+           <AngelFooter/>
             </div>
+            </div>
+
+            <div className="exRight"></div>
             
 
         </div>

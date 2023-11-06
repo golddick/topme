@@ -4,7 +4,7 @@
     height: 100vh;
     //margin-top: 100px;
     display:grid ;
-    grid-template-columns: 1fr 5fr ; 
+    grid-template-columns: 1.5fr 5fr ; 
     grid-template-rows: 100vh; 
 
     .Analytics_profile-mobileHeader{
@@ -30,11 +30,17 @@
         flex-direction: column;
         height: 100%;
         width: 100%;
+        padding-top: 60px !important;
+        padding-bottom: 0;
         padding: 20px;
+        overflow: auto;
+        max-height: 100vh;
 
 
         .Analytics_topBar{
-
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
     }
